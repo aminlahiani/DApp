@@ -20,9 +20,7 @@ const pages = [
   { id: 2, title: "Services", href: "services" },
   { id: 3, title: "About Us", href: "about" },
   { id: 4, title: "Portfolio", href: "portfolio" },
- 
   { id: 6, title: "FQS", href: "fqs" },
-
   { id: 7, title: "Contact Us", href: "/contact" },
 ];
 //const settings = ["Profile", "Account", "Dashboard", "Logout"];
