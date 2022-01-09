@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
+import ContactPage from "./pages/Contact";
 import FQS from "./pages/FQS";
 
 import Home from "./pages/Home";
@@ -14,7 +14,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="contact" element={<ContactPage />} />
           <Route path="services" element={<Services />} />
           <Route path="about" element={<About />} />
           <Route path="fqs" element={<FQS />} />

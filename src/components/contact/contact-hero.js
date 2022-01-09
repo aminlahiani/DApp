@@ -1,7 +1,7 @@
-import { Box, Button, Container, Grid, Link, Typography } from '@mui/material';
+import { Box, Button, Container, Grid, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
-export const HomeAbout = (props) => {
+export const ContactHero = (props) => {
   const theme = useTheme();
 
   return (
@@ -30,8 +30,8 @@ export const HomeAbout = (props) => {
             }}
           >
             <div>
-              <Typography color="textPrimary" variant="h3">
-              About Us
+              <Typography  color="textPrimary" variant="h3">
+              Organic company growth with targeted leads
               </Typography>
               <Typography
                 color="textSecondary"
@@ -41,39 +41,15 @@ export const HomeAbout = (props) => {
                 Not just a set of tools, the package includes ready-to-deploy conceptual
                 applications written in JavaScript & TypeScript.
               </Typography>
-             
-                
-                <Grid container spacing={3}>
-                  <Grid item   md={6}
-            xs={12} >
- <Typography  color="textPrimary"variant="h3">
- Who are we?
-              </Typography>
-              <Typography
-                color="textSecondary"
-                sx={{ my: 3 }}
-                variant="subtitle1"
-              >
-                Not just a set of tools, the package includes ready-to-deploy conceptual
-                applications written in JavaScript & TypeScript.
-              </Typography>
-                  </Grid>
-                  <Grid item   md={6}
-            xs={12}>
-                   <Typography color="textPrimary" variant="h3">
-                   Our story
-              </Typography>
-              <Typography
-                color="textSecondary"
-                sx={{ my: 3 }}
-                variant="subtitle1"
-              >
-                Not just a set of tools, the package includes ready-to-deploy conceptual
-                applications written in JavaScript & TypeScript.
-              </Typography>
-                    </Grid>
-                </Grid>
-             
+            
+                <Button
+                  size="large"
+                  component="a"
+                  variant="contained"
+                >
+                  Browse Components
+                </Button>
+              
             </div>
           </Grid>
           <Grid
@@ -102,7 +78,7 @@ export const HomeAbout = (props) => {
             >
               <img
                 alt="For developers"
-                src={`/static/home/developers_${theme.palette.mode}.png`}
+                src={`/static/contact/undraw_contact_us.svg`}
               />
             </Box>
           </Grid>

@@ -45,23 +45,8 @@ export const Contact = () => {
                 mt: 8
               }}
             >
-              <Avatar
-                sx={{
-                  backgroundColor: 'primary.main',
-                  color: 'primary.contrastText',
-                  mr: 2
-                }}
-                variant="rounded"
-              >
-                <MailIcon fontSize="small" />
-              </Avatar>
-              <Typography
-              color="textSecondary"
-              sx={{ my: 3 }}
-              variant="subtitle1"
-            >
-              Contact sales
-            </Typography>
+             
+           
             </Box>
             <Typography color="textPrimary" variant="h1">
               Talk to our account expert
@@ -90,30 +75,7 @@ export const Contact = () => {
             </Box>
           </Container>
         </Box>
-        <Box
-          sx={{
-            backgroundColor: 'background.paper',
-            px: 6,
-            py: 15
-          }}
-        >
-          <Container
-            maxWidth="md"
-            sx={{
-              pr: {
-                lg: 15
-              }
-            }}
-          >
-            <Typography
-              sx={{ pb: 3 }}
-              variant="h6"
-            >
-              Fill the form below
-            </Typography>
-            <ContactForm />
-          </Container>
-        </Box>
+     
       </Box>
     </>
   );

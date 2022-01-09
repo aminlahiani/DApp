@@ -4,6 +4,8 @@ import { Box } from "@mui/system";
 import React from "react";
 import { AboutDevelopers } from "../components/about/about-developers";
 import { AboutHero } from "../components/about/about-hero";
+import { AboutHero1 } from "../components/about/about-hero1";
+
 
 function About() {
   const theme = useTheme();
@@ -12,9 +14,11 @@ function About() {
   });
   return (
       <>
-      <AboutHero/>
+      <AboutHero1/>
+     
       <AboutDevelopers/>
-   
+     
+      <AboutHero/>
     </>
   );
 }

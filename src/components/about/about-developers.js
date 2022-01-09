@@ -9,7 +9,7 @@ export const AboutDevelopers = (props) => {
   return (
     <Box
       sx={{
-        backgroundColor: 'background.default',
+        backgroundColor: 'background.paper',
         py: 15
       }}
       {...props}>

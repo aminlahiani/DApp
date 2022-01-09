@@ -8,8 +8,8 @@ export const AboutHero = (props) => {
   return (
     <Box
       sx={{
-        backgroundColor: 'background.paper',
-        py: 20  
+        backgroundColor: 'primary.main',
+        py: 15  
       }}
       {...props}>
       <Container
@@ -24,13 +24,13 @@ export const AboutHero = (props) => {
         <Typography
           align="center"
           variant="h1"
-          color="textPrimary"
+          color="primary.contrastText"
         >
           Material Kit Pro v5.0
         </Typography>
         <Typography
           align="center"
-          color="textSecondary"
+          color="primary.contrastText"
           variant="subtitle1"
           sx={{ py: 3 }}
         >
