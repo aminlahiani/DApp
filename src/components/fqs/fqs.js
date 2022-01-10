@@ -30,23 +30,23 @@ function FQS1() {
     <div>
       <Box
         sx={{
-          backgroundColor: "background.default",
-          py: 15,
+          backgroundColor: "background.paper",
+          py: 6,
         }}
       >
         <Container maxWidth="md">
-        <Typography align="center" color="textPrimary" variant="h4">
-        Do you have any Question?
+       
+        <Typography sx={{ mb : 2}}   color="textPrimary" variant="h4">
+        Basics
         </Typography>
-
-        <Typography
-          align="center"
-          color="textSecondary"
-          variant="subtitle1"
-          sx={{ py: 3 }}
-        >
-         Here are some of the basic types of questions
-for our customers .
+          <FaqList faqList={faqList} />
+          <Typography  sx={{ mt : 4 , mb : 2 }}  color="textPrimary" variant="h4">
+          Account & settings
+        </Typography>
+        
+          <FaqList faqList={faqList} />
+          <Typography sx={{ mt : 4 , mb : 2 }}  color="textPrimary" variant="h4">
+          Security
         </Typography>
           <FaqList faqList={faqList} />
         </Container>

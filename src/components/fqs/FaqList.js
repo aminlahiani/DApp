@@ -15,6 +15,7 @@ const FaqList = ({ faqList }) => {
           <Accordion
             key={item.id}
             sx={{
+              backgroundColor : "background.default",
               color: "text.secondary",
               marginBottom: 0.5,
               padding: "10px 20px",

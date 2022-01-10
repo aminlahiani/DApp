@@ -17,10 +17,10 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import NightsStayOutlinedIcon from "@mui/icons-material/NightsStayOutlined";
 const pages = [
   { id: 1, title: "Home", href: "/" },
-  { id: 2, title: "Services", href: "services" },
-  { id: 3, title: "About Us", href: "about" },
+  { id: 2, title: "About Us", href: "about" },
+  { id: 3, title: "Services", href: "services" }, 
   { id: 4, title: "Portfolio", href: "portfolio" },
-  { id: 6, title: "FQS", href: "fqs" },
+  { id: 6, title: "FAQ", href: "fqs" },
   { id: 7, title: "Contact Us", href: "/contact" },
 ];
 //const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -44,12 +44,16 @@ const ResponsiveAppBar = ({ setSelectedTheme, selectedTheme }) => {
 
   return (
     <AppBar
+    elevation={10}
       sx={{
         backgroundColor: "background.paper",
+        borderBottomColor: 'divider',
+        borderBottomStyle: 'solid',
+        borderBottomWidth: 1,
       }}
     >
       <Container maxWidth="lg">
-        <Toolbar disableGutters>
+        <Toolbar  sx={{ minHeight: 64 }} disableGutters>
          <Box sx={{  mt :1,
                   width: 40}}>
     <img src="/landingpage.svg"   />
