@@ -45,9 +45,10 @@ export const HomeNewsletter = () => {
             >
               Subscribe to our newsletter to make sure you don&apos;t miss anything.
             </Typography>
+          
             <TextField
               fullWidth
-              label="Email address"
+              label="Email Here..."
               name="email"
               sx={{ flexGrow: 1 }}
               type="email"

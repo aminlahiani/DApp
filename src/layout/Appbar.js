@@ -20,7 +20,7 @@ const pages = [
   { id: 2, title: "About Us", href: "about" },
   { id: 3, title: "Services", href: "services" }, 
   { id: 4, title: "Portfolio", href: "portfolio" },
-  { id: 6, title: "FAQ", href: "fqs" },
+  { id: 6, title: "FAQ", href: "faq" },
   { id: 7, title: "Contact Us", href: "/contact" },
 ];
 //const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -48,8 +48,7 @@ const ResponsiveAppBar = ({ setSelectedTheme, selectedTheme }) => {
       sx={{
         backgroundColor: "background.paper",
         borderBottomColor: 'divider',
-        borderBottomStyle: 'solid',
-        borderBottomWidth: 1,
+       
       }}
     >
       <Container maxWidth="lg">

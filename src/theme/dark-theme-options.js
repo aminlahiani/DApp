@@ -23,7 +23,7 @@ const primary = {
   main: '#1976d2',
   light: '#42a5f5',
   dark: '#1565c0',
-  mainGradient: "linear-gradient(to bottom, #111827 , #0B0F19 )",
+  mainGradient: "linear-gradient(to bottom, #111827 , #14244a )",
   contrastText: neutral[900]
 };
 

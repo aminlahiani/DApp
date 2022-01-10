@@ -1,10 +1,26 @@
 
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import { useEffect, useRef } from "react";
+// typed-js
+import * as Typed from "typed.js";
 
 export const HomeServices = (props) => {
   const theme = useTheme();
+  const typedJSRef = useRef(null);
+   // Setting up typedJS
+  useEffect(() => {
+    const typedJS = new Typed(typedJSRef.current, {
+      strings: ["team", "design", "tool"],
+      typeSpeed: 90,
+      backSpeed: 90,
+      backDelay: 200,
+      startDelay: 500,
+      loop: true,
+    });
 
+    return () => typedJS.destroy();
+  }, []);
   return (
     <Box
       sx={{
@@ -32,7 +48,7 @@ export const HomeServices = (props) => {
           >
             <div>
               <Typography variant="h3">
-              Organic company growth with targeted leads
+              Organic company growth with targeted leads <span ref={typedJSRef} />
               </Typography>
               <Typography
                 color="textSecondary"

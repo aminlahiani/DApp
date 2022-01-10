@@ -102,7 +102,7 @@ export const HomeHero1 = (props) => {
             >
               <img
                 alt="For developers"
-                src={`/static/contact/undraw_contact_us.svg`}
+                src={`/static/contact/undraw_contact_us_${theme.palette.mode}.svg`}
               />
             </Box>
           </Grid>
