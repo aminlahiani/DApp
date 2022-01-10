@@ -8,7 +8,7 @@ export const HomeHero1 = (props) => {
     <Box
       sx={{
          background: theme.palette.primary.mainGradient ,
-        py: 15
+        py: 8
       }}
       {...props}>
       <Container maxWidth="lg">
