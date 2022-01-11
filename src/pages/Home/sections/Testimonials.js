@@ -1,6 +1,6 @@
 import { Avatar, Box, Container, Typography } from '@mui/material';
 
-export const HomeTestimonials = (props) => (
+export const Testimonials = (props) => (
   <Box
     sx={{
       backgroundColor: 'primary.main',

@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Portfolio() {
+function index() {
     return (
         <div>
-            ssss
+            Portfolio
         </div>
     )
 }
 
-export default Portfolio
+export default index

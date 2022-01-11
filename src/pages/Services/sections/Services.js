@@ -9,7 +9,7 @@ const services = [
   { id: 6,title : "Seo Services" , icon: "public" },
 ];
 import FacebookIcon from "@mui/icons-material/Facebook";
-export const HomeServices = () => {
+export const Services = () => {
      
   return (
     <Box

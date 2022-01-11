@@ -1,7 +1,7 @@
 import { Box, Button, Container, Grid, Link, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
-export const HomeAbout = (props) => {
+export const AboutUs = (props) => {
   const theme = useTheme();
 
   return (

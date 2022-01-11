@@ -1,7 +1,7 @@
 import { Box, Button, Card, Grid, TextField, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
-export const HomeNewsletter = () => {
+export const Newsletter = () => {
   const theme = useTheme();
 
   return (

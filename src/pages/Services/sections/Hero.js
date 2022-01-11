@@ -1,13 +1,30 @@
+
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import { useEffect, useRef } from "react";
+// typed-js
+import * as Typed from "typed.js";
 
-export const AboutHero1 = (props) => {
+export const Hero = (props) => {
   const theme = useTheme();
+  const typedJSRef = useRef(null);
+   // Setting up typedJS
+  useEffect(() => {
+    const typedJS = new Typed(typedJSRef.current, {
+      strings: ["team", "design", "tool"],
+      typeSpeed: 90,
+      backSpeed: 90,
+      backDelay: 200,
+      startDelay: 500,
+      loop: true,
+    });
 
+    return () => typedJS.destroy();
+  }, []);
   return (
     <Box
       sx={{
-         background: theme.palette.primary.mainGradient ,
+        backgroundColor: 'background.default',
         py: 15
       }}
       {...props}>
@@ -30,54 +47,26 @@ export const AboutHero1 = (props) => {
             }}
           >
             <div>
-            <Typography color="textPrimary" variant="h1">
-              Talk to our account expert
-            </Typography>
-            <Typography
-              sx={{ py: 3 }}
-              variant="body1"
-              color="textSecondary"
-         
-            >
-              Have questions about integrating our APIs? Fill out the form
-              and a senior web expert will be in touch shortly.
-            </Typography>
-            <Typography
-              sx={{ color: 'primary.main' }}
-              variant="h6"
-            >
-              Join 3,000+ forward-thinking companies:
-            </Typography>
-              <Box
-          sx={{
-            display: 'flex',
-            flexWrap: 'wrap',
+              <Typography variant="h3">
+              Organic company growth with targeted leads <span ref={typedJSRef} />
+              </Typography>
+              <Typography
+                color="textSecondary"
+                sx={{ my: 3 }}
+                variant="subtitle1"
+              >
+                Not just a set of tools, the package includes ready-to-deploy conceptual
+                applications written in JavaScript & TypeScript.
+              </Typography>
             
-            mx: -1,
-            mt: 2,
-            mb: 6,
-            '& > a': {
-              m: 1
-            }
-          }}
-        >
-              <Button
-            href="/#about"
-              component="a"
-              size="large"
-              variant="outlined"
-            >
-              About Us
-            </Button>
-       
                 <Button
                   size="large"
                   component="a"
                   variant="contained"
                 >
-                  Contact Us
+                  Browse Components
                 </Button>
-              </Box>
+              
             </div>
           </Grid>
           <Grid
@@ -106,7 +95,7 @@ export const AboutHero1 = (props) => {
             >
               <img
                 alt="For developers"
-                src={`/static/contact/undraw_contact_us.svg`}
+                src={`/static/home/developers_${theme.palette.mode}.png`}
               />
             </Box>
           </Grid>
