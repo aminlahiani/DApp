@@ -1,9 +1,13 @@
 import React from 'react'
+import { Hero } from './sections/Hero'
+import { PortfolioList } from './sections/PortfolioList'
 
 function index() {
     return (
         <div>
-            Portfolio
+            <Hero />
+          
+            <PortfolioList/>
         </div>
     )
 }
