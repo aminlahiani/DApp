@@ -26,7 +26,7 @@ function MainLayout() {
     
     const MainLayoutRoot = styled('div')(() => ({
       height: '100%',
-      paddingTop: 64
+      paddingTop: 59
     }));
     return (
         <>

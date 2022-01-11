@@ -18,14 +18,16 @@ import NightsStayOutlinedIcon from "@mui/icons-material/NightsStayOutlined";
 const pages = [
   { id: 1, title: "Home", href: "/" },
   { id: 2, title: "About Us", href: "about" },
-  { id: 3, title: "Services", href: "services" }, 
+  { id: 3, title: "Services", href: "services" },
   { id: 4, title: "Portfolio", href: "portfolio" },
+  { id: 5, title: "Blogs", href: "blogs" },
   { id: 6, title: "FAQ", href: "faq" },
   { id: 7, title: "Contact Us", href: "/contact" },
 ];
 //const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const ResponsiveAppBar = ({ setSelectedTheme, selectedTheme }) => {
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -44,38 +46,33 @@ const ResponsiveAppBar = ({ setSelectedTheme, selectedTheme }) => {
 
   return (
     <AppBar
-    elevation={10}
+      elevation={3}
       sx={{
         backgroundColor: "background.paper",
-        borderBottomColor: 'divider',
-       
+        borderBottomColor: "divider",
+        maxHeight: 59
       }}
     >
       <Container maxWidth="lg">
-        <Toolbar  sx={{ minHeight: 64 }} disableGutters>
-         <Box sx={{  mt :1,
-                  width: 40}}>
-    <img src="/landingpage.svg"   />
-         </Box>
-       
-      
+        <Toolbar sx={{ height: 59 }} disableGutters>
+          <Box sx={{ mt: 1, width: 40 }}>
+            <img src="/landingpage.svg" />
+          </Box>
 
-         
-         
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-               <Link  key={page.id} style={{ textDecoration: 'none' }} to={page.href}>
-              <Button
-               
-              
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, display: "block" }}
+              <Link
+                key={page.id}
+                style={{ textDecoration: "none" }}
+                to={page.href}
               >
-                 
-                {page.title}
-               
-              </Button>
+                <Button
+                  onClick={handleCloseNavMenu}
+                  sx={{  display: "block", color: "text.primary" }}
+                >
+                  {page.title}
+                </Button>
               </Link>
             ))}
           </Box>
@@ -93,7 +90,7 @@ const ResponsiveAppBar = ({ setSelectedTheme, selectedTheme }) => {
           <IconButton>
             <FacebookIcon fontSize="small" color="primary" />
           </IconButton>
-          <Box sx={{  display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -123,9 +120,15 @@ const ResponsiveAppBar = ({ setSelectedTheme, selectedTheme }) => {
               }}
             >
               {pages.map((page) => (
-                <Link key={page.id} to={page.href} style={{ textDecoration: 'none' }}>
+                <Link
+                  key={page.id}
+                  to={page.href}
+                  style={{ textDecoration: "none" }}
+                >
                   <MenuItem onClick={handleCloseNavMenu}>
-                    <Typography  color="primary" textAlign="center">{page.title}</Typography>
+                    <Typography color="textPrimary" textAlign="center">
+                      {page.title}
+                    </Typography>
                   </MenuItem>
                 </Link>
               ))}

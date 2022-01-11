@@ -10,15 +10,10 @@ function Index() {
   return (
     <div>
       <Hero />
-
       <Services />
-
       <AboutUs />
-
       <Testimonials />
-
       <FAQ />
-
       <Newsletter />
     </div>
   );

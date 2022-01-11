@@ -7,11 +7,8 @@ export const Hero = (props) => {
   return (
     <Box
       sx={{
-         background: theme.palette.primary.mainGradient ,
-          height: "100vh",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: { xs:  "baseline" , md : "center"}
+        background: theme.palette.primary.mainGradient ,
+        py: 10
       }}
       {...props}>
       <Container maxWidth="lg">
@@ -26,7 +23,6 @@ export const Hero = (props) => {
             md={6}
             xs={12}
             sx={{
-            
               order: {
                 xs: 2,
                 md: 1
@@ -34,9 +30,8 @@ export const Hero = (props) => {
             }}
           >
             <div>
-              <Typography  color="textPrimary"  
-          variant="h1" >
-               Digital Agency UI React template with MUI
+              <Typography  color="textPrimary" variant="h3">
+              Organic company growth with targeted leads
               </Typography>
               <Typography
                 color="textSecondary"
@@ -46,36 +41,15 @@ export const Hero = (props) => {
                 Not just a set of tools, the package includes ready-to-deploy conceptual
                 applications written in JavaScript & TypeScript.
               </Typography>
-              <Box
-          sx={{
-            display: 'flex',
-            flexWrap: 'wrap',
             
-            mx: -1,
-            mt: 2,
-            mb: 6,
-            '& > a': {
-              m: 1
-            }
-          }}
-        >
-              <Button
-            href="/#about"
-              component="a"
-              size="large"
-              variant="outlined"
-            >
-              About Us
-            </Button>
-       
                 <Button
                   size="large"
                   component="a"
                   variant="contained"
                 >
-                  Contact Us
+                  Browse Components
                 </Button>
-              </Box>
+              
             </div>
           </Grid>
           <Grid
@@ -92,9 +66,8 @@ export const Hero = (props) => {
           >
             <Box
               sx={{
-                display: { xs: "none" , md:"block" },
                 position: 'relative',
-                pt: 'calc(960 / 1225 * 100%)',
+                pt: 'calc(960 / 1225 * 85%)',
                 '& img': {
                   height: 'auto',
                   position: 'absolute',
@@ -105,6 +78,7 @@ export const Hero = (props) => {
             >
               <img
                 alt="For developers"
+              
                 src={`/static/contact/undraw_contact_us_${theme.palette.mode}.svg`}
               />
             </Box>
