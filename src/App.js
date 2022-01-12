@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Services from "./pages/Services";
 import Blogs from "./pages/Blogs";
+import NotFound from "./pages/NotFound";
 
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="faq" element={<FAQ />} />
           <Route path="contact" element={<ContactPage />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
