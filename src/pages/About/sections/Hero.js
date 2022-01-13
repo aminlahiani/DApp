@@ -8,7 +8,10 @@ export const Hero = (props) => {
     <Box
       sx={{
          background: theme.palette.primary.mainGradient ,
-        py: 15
+         height: "100vh",
+         display: "flex",
+         justifyContent: "center",
+         alignItems: { xs:  "baseline" , md : "center"}
       }}
       {...props}>
       <Container maxWidth="lg">

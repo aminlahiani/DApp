@@ -8,7 +8,11 @@ export const Hero = (props) => {
     <Box
       sx={{
         background: theme.palette.primary.mainGradient ,
-        py: 10
+        background: theme.palette.primary.mainGradient ,
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: { xs:  "baseline" , md : "center"}
       }}
       {...props}>
       <Container maxWidth="lg">
@@ -30,7 +34,7 @@ export const Hero = (props) => {
             }}
           >
             <div>
-              <Typography  color="textPrimary" variant="h3">
+              <Typography  color="textPrimary" variant="h1">
               Organic company growth with targeted leads
               </Typography>
               <Typography

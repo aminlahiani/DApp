@@ -1,4 +1,3 @@
-
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { useEffect, useRef } from "react";
@@ -22,10 +21,15 @@ export const Hero = (props) => {
     return () => typedJS.destroy();
   }, []);
   return (
+
+  
     <Box
       sx={{
-        backgroundColor: 'background.default',
-        py: 15
+        background: theme.palette.primary.mainGradient ,
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: { xs:  "baseline" , md : "center"}
       }}
       {...props}>
       <Container maxWidth="lg">
@@ -47,7 +51,7 @@ export const Hero = (props) => {
             }}
           >
             <div>
-              <Typography variant="h3">
+              <Typography    color="textPrimary"  variant="h1">
               Organic company growth with targeted leads <span ref={typedJSRef} />
               </Typography>
               <Typography
