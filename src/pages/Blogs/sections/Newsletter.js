@@ -1,4 +1,4 @@
-import { Box, Button, Card, Grid, TextField, Typography } from '@mui/material';
+import { Box, Button, Card, Container, Grid, TextField, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
 export const Newsletter = () => {
@@ -10,9 +10,12 @@ export const Newsletter = () => {
     
        sx={{
         backgroundColor: 'background.paper',
-        py: 15,
-        px: 8
+        py: 2,
+    
       }}>
+        <Container maxWidth="lg">
+          
+       
       <Grid
         alignItems="center"
         container
@@ -92,6 +95,7 @@ export const Newsletter = () => {
           </Box>
         </Grid>
       </Grid>
+      </Container>
       </Box>
   );
 };

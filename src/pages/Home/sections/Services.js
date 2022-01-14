@@ -9,13 +9,18 @@ const services = [
   { id: 6,title : "Seo Services" , icon: "public" },
 ];
 import FacebookIcon from "@mui/icons-material/Facebook";
+import { InfoCard } from "./InfoCard";
+const infocards = [1, 2, 3];
 export const Services  = () => {
      
   return (
     <Box
+    minHeight="100vh"
       sx={{
         backgroundColor: "background.paper",
-        py: 15
+        display : "flex",
+        alignItems: "center",
+
       }}
     >
       <Container
@@ -34,52 +39,20 @@ export const Services  = () => {
           align="center"
           color="textSecondary"
           variant="subtitle1"
-          sx={{ py: 3 }}
+          sx={{ pt: 0 , pb :6 }}
         >
           Build a beautiful, modern website with flexible, fully customizable,
           atomic MUI Components
         </Typography>
 
-        <Grid sx={{ mt : 3 }} container spacing={3}>
-          {services.map((service) => (
-            <Grid key={service.id} item md={4} xs={12}>
-              <Box
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                {" "}
-                <Avatar
-                  sx={{
-                    backgroundColor: "primary.main",
-                    color: "primary.contrastText",
-                    height: 48,
-                    width: 48,
-                  }}
-                >
-               <Icon>
-{service.icon}
-</Icon>
-                </Avatar>{" "}
-              </Box>
-
-              <Typography
-              sx={{ mt : 2}}
-                align="center"
-                variant="h6"
-                align="center"
-                color="textPrimary"
-              >
-               {service.title}
-              </Typography>
-              <Typography  sx={{ mt : 2}} align="center" variant="body1" color="textSecondary">
-                theFront is built to make your life easier. Variables, build
-                tooling, documentation, and reusable components.
-              </Typography>
+       
+        <Grid  container spacing={3}>
+          {services.map(info => (
+            <Grid key={info} item xs={12} md={6} lg={4}>
+<InfoCard title={info.title} icon={info.icon} />
             </Grid>
           ))}
-        </Grid>
+            </Grid>
       </Container>
     </Box>
   );

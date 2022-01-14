@@ -15,6 +15,10 @@ import {
   import { alpha } from '@mui/material/styles';
   import { MinusOutlined as MinusOutlinedIcon } from '../icons/minus-outlined';
   import Icon from '@mui/material/Icon';
+  import FacebookIcon from "@mui/icons-material/Facebook";
+  import InstagramIcon from '@mui/icons-material/Instagram';
+  import TwitterIcon from '@mui/icons-material/Twitter';
+  import LinkedInIcon from '@mui/icons-material/LinkedIn';
   //import { Logo } from './logo';
   function Copyright() {
     return (
@@ -63,6 +67,7 @@ import {
   ];
   const socialIcons = [
     {
+      icon2 :  <FacebookIcon fontSize="small" color="primary" /> ,
       icon: (
         <svg
           role="img"
@@ -79,6 +84,7 @@ import {
       href: "https://github.com/dunky11/react-saas-template"
     },
     {
+      icon2 :  <InstagramIcon fontSize="small" color="primary" /> ,
       icon: (
         <svg
           role="img"
@@ -95,6 +101,7 @@ import {
       href: "https://facebook.com"
     },
     {
+      icon2 :  <TwitterIcon fontSize="small" color="primary" /> ,
       icon: (
         <svg
           role="img"
@@ -111,6 +118,7 @@ import {
       href: "https://www.linkedin.com/"
     },
     {
+      icon2 :  <LinkedInIcon fontSize="small" color="primary" /> ,
       icon: (
         <svg
           role="img"
@@ -257,13 +265,14 @@ import {
                     }}
                       href={socialIcon.href}
                     >
-                    <Icon sx={{ color: theme.palette.primary.main }}>public</Icon>
+                  {socialIcon.icon2}
+
                     </IconButton>
                   </Box>
                 ))}
   
           </Box>
-  
+         
           </Box>
         </Container>
       </Box>

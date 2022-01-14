@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
 import About from "./pages/About";
 import ContactPage from "./pages/Contact";
@@ -12,7 +12,6 @@ import Services from "./pages/Services";
 import Blogs from "./pages/Blogs";
 import BlogDetails from "./pages/BlogDetails";
 import NotFound from "./pages/NotFound";
-
 
 export default function App() {
   return (
@@ -29,7 +28,8 @@ export default function App() {
           <Route path="faq" element={<FAQ />} />
           <Route path="contact" element={<ContactPage />} />
         </Route>
-        <Route path="*" element={<NotFound />} />
+        <Route path="/not-found" element={<NotFound />} />
+        <Route path="*" element={<Navigate to="/not-found" />} />
       </Routes>
     </BrowserRouter>
   );

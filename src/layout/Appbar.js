@@ -47,10 +47,13 @@ const ResponsiveAppBar = ({ setSelectedTheme, selectedTheme }) => {
   return (
     <AppBar
       elevation={3}
+      
       sx={{
         backgroundColor: "background.paper",
         borderBottomColor: "divider",
-        maxHeight: 59
+        maxHeight: 59 ,
+        opacity :0.8
+        
       }}
     >
       <Container maxWidth="lg">
@@ -87,9 +90,7 @@ const ResponsiveAppBar = ({ setSelectedTheme, selectedTheme }) => {
           <IconButton>
             <GitHubIcon fontSize="small" color="primary" />
           </IconButton>
-          <IconButton>
-            <FacebookIcon fontSize="small" color="primary" />
-          </IconButton>
+         
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
