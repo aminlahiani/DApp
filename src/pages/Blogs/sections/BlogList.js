@@ -12,7 +12,8 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import { styled } from "@mui/material/styles";
+
+import BlogCard from "components/Cards/BlogCard";
 
 const posts = [
   {
@@ -101,10 +102,7 @@ const posts = [
   },
 ];
 
-const BlogPostCardMediaWrapper = styled("div")({
-  paddingTop: "calc(100% * 4 / 4)",
-  position: "relative",
-});
+
 
 export const BlogList = () => (
   <Box
@@ -126,75 +124,12 @@ export const BlogList = () => (
       <Grid container spacing={3}>
         {posts.map((post) => (
           <Grid item key={post.id} md={4} mt={2} xs={12}>
-            <Card
-              sx={{
-                height: "100%",
-                p: 2,
-                overflow: "visible",
-                borderRadius: 2,
-                transition: ".3s all",
-                "&:hover": {
-                  boxShadow: 20,
-                  transform: "translateY(-12px)",
-                },
-              }}
-            >
-              <BlogPostCardMediaWrapper>
-                <CardMedia
-                  image={post.cover}
-                  sx={{
-                    height: "100%",
-                    position: "absolute",
-                    top: -30,
-                    zIndex: 1,
-                    width: "100%",
-                    borderRadius: 2,
-                    boxShadow: 15,
-                  }}
-                />
-                <CardMedia
-                  image={post.cover}
-                  sx={{
-                    height: "100%",
-                    position: "absolute",
-                    top: -25,
-                    zIndex: 0,
-                    width: "100%",
-                    borderRadius: 2,
-                    boxShadow: 15,
-                    filter: "blur(12px)",
-                  }}
-                />
-              </BlogPostCardMediaWrapper>
-              <Stack justifyContent={"space-between"} spacing={2}>
-                <Box>
-                  <Box mb={1}>
-                    <Chip label={post.category} variant="outlined" />
-                  </Box>
-
-                  <Link href="blog-details" variant="h5" sx={{ cursor: "pointer" }}>
-                    {post.title}
-                  </Link>
-                  <Typography
-                    color="textSecondary"
-                    sx={{
-                      height: 72,
-                      mt: 1,
-                      overflow: "hidden",
-                      textOverflow: "ellipsis",
-                      WebkitBoxOrient: "vertical",
-                      WebkitLineClamp: 2,
-                    }}
-                    variant="body1"
-                  >
-                    {post.shortDescription}
-                  </Typography>
-                </Box>
-                <Button href="blog-details" component="a" size="small" endIcon={<ArrowForward />}>
-                  Learn more
-                </Button>
-              </Stack>
-            </Card>
+            <BlogCard
+              category={post.category}
+              cover={post.cover}
+              title={post.title}
+              shortDescription={post.shortDescription}
+            />
           </Grid>
         ))}
       </Grid>
