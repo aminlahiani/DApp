@@ -149,7 +149,7 @@ export const PortfolioList = () => (
                 />
               </div>
              
-              <Link variant="h5">
+              <Link href="portfolio-deatils" variant="h5">
                 {post.title}
               </Link>
               <Typography

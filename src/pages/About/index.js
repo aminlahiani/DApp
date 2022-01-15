@@ -17,7 +17,7 @@ function About() {
       <Featuring />
       <Testimonial />
       <Team />
-    
+
       <Newsletter />
     </>
   );
