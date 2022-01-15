@@ -2,7 +2,8 @@ import React from "react";
 import { Avatar, Box, Container, Grid, Icon, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-export const InfoCard = ({ title, icon }) => {
+export const InfoCard = (props) => {
+  const { title, icon } = props;
   const theme = useTheme();
   return (
     <>
@@ -35,8 +36,7 @@ export const InfoCard = ({ title, icon }) => {
         {title}
       </Typography>
       <Typography variant="body1" align="center" color="textSecondary">
-        The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and
-        that process will continue whatever.
+       {description}
       </Typography>
     </>
   );

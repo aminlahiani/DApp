@@ -1,13 +1,15 @@
 import { Avatar, Box, Container, Grid, Typography } from "@mui/material";
 import Icon from "@mui/material/Icon";
+
 const services = [
-  { id: 1, title: "Business Stratagy", icon: "public" },
-  { id: 2, title: "Website Development", icon: "public" },
-  { id: 3, title: "Marketing & Reporting", icon: "public" },
-  { id: 4, title: "Mobile App Development", icon: "public" },
-  { id: 5, title: "Application Development", icon: "public" },
-  { id: 6, title: "Seo Services", icon: "public" },
+  { id: 1, title: "Business Stratagy", icon: "public"  , description :"The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever."},
+  { id: 2, title: "Website Development", icon: "public"  , description :"The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever."},
+  { id: 3, title: "Marketing & Reporting", icon: "public"  , description :"The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever."},
+  { id: 4, title: "Mobile App Development", icon: "public"  , description :"The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever."},
+  { id: 5, title: "Application Development", icon: "public"  , description :"The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever."},
+  { id: 6, title: "Seo Services", icon: "public"  , description :"The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever."},
 ];
+
 import FacebookIcon from "@mui/icons-material/Facebook";
 import { InfoCard } from "./InfoCard";
 const infocards = [1, 2, 3];
@@ -40,7 +42,7 @@ export const Services = () => {
         <Grid container spacing={3}>
           {services.map((info) => (
             <Grid key={info.id} item xs={12} md={6} lg={4}>
-              <InfoCard title={info.title} icon={info.icon} />
+              <InfoCard title={info.title} icon={info.icon} description={info.description}  />
             </Grid>
           ))}
         </Grid>
