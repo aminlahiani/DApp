@@ -3,7 +3,7 @@ import { Avatar, Box, Container, Grid, Icon, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
 export const InfoCard = (props) => {
-  const { title, icon } = props;
+  const { title, icon , description} = props;
   const theme = useTheme();
   return (
     <>
