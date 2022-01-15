@@ -13,6 +13,7 @@ import {
 } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import { styled } from "@mui/material/styles";
+import BlogCard from "components/Cards/BlogCard";
 
 const posts = [
   {
@@ -28,6 +29,7 @@ const posts = [
     shortDescription:
       "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi in turpis ac quam luctus interdum. Nullam ac lorem ligula. Integer sed massa bibendum, blandit ipsum et, iaculis augue. Curabitur nec enim eget dolor tincidunt posuere eget nec dolor. Ut ullamcorper dignissim arcu vel laoreet. Sed ligula dolor, vulputate quis eros ac, maximus pharetra orci. Aenean lobortis volutpat vehicula. Suspendisse vel nunc enim. Cras ultrices metus libero, non aliquam diam condimentum vel. Vestibulum arcu leo, consectetur id diam a, semper elementum odio. Proin eleifend volutpat sapien tempor bibendum. Etiam sagittis nulla sit amet aliquam sollicitudin.",
     title: "Scrum Has Hit the Glass Ceiling",
+    url : "blog-details",
   },
   {
     id: "2",
@@ -42,6 +44,7 @@ const posts = [
     shortDescription:
       "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi in turpis ac quam luctus interdum. Nullam ac lorem ligula. Integer sed massa bibendum, blandit ipsum et, iaculis augue. Curabitur nec enim eget dolor tincidunt posuere eget nec dolor. Ut ullamcorper dignissim arcu vel laoreet. Sed ligula dolor, vulputate quis eros ac, maximus pharetra orci. Aenean lobortis volutpat vehicula. Suspendisse vel nunc enim. Cras ultrices metus libero, non aliquam diam condimentum vel. Vestibulum arcu leo, consectetur id diam a, semper elementum odio. Proin eleifend volutpat sapien tempor bibendum. Etiam sagittis nulla sit amet aliquam sollicitudin.",
     title: "Scrum Has Hit the Glass Ceiling",
+    url : "blog-details",
   },
   {
     id: "3",
@@ -56,6 +59,7 @@ const posts = [
     shortDescription:
       "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi in turpis ac quam luctus interdum. Nullam ac lorem ligula. Integer sed massa bibendum, blandit ipsum et, iaculis augue. Curabitur nec enim eget dolor tincidunt posuere eget nec dolor. Ut ullamcorper dignissim arcu vel laoreet. Sed ligula dolor, vulputate quis eros ac, maximus pharetra orci. Aenean lobortis volutpat vehicula. Suspendisse vel nunc enim. Cras ultrices metus libero, non aliquam diam condimentum vel. Vestibulum arcu leo, consectetur id diam a, semper elementum odio. Proin eleifend volutpat sapien tempor bibendum. Etiam sagittis nulla sit amet aliquam sollicitudin.",
     title: "Scrum Has Hit the Glass Ceiling",
+    url : "blog-details",
   },
 ];
 const BlogPostCardMediaWrapper = styled("div")({
@@ -90,80 +94,13 @@ export const LatestPosts = () => {
           <Grid sx={{ mt: 2 }} container spacing={3}>
             {posts.map((post) => (
               <Grid item key={post.id} md={4} mt={2} xs={12}>
-                <Card
-                  sx={{
-                    height: "100%",
-                    p: 2,
-                    overflow: "visible",
-                    borderRadius: 2,
-                    transition: ".3s all",
-                    "&:hover": {
-                      boxShadow: 20,
-                      transform: "translateY(-12px)",
-                    },
-                  }}
-                >
-                  <BlogPostCardMediaWrapper>
-                    <CardMedia
-                      image={post.cover}
-                      sx={{
-                        height: "100%",
-                        position: "absolute",
-                        top: -30,
-                        zIndex: 1,
-                        width: "100%",
-                        borderRadius: 2,
-                        boxShadow: 15,
-                      }}
-                    />
-                    <CardMedia
-                      image={post.cover}
-                      sx={{
-                        height: "100%",
-                        position: "absolute",
-                        top: -25,
-                        zIndex: 0,
-                        width: "100%",
-                        borderRadius: 2,
-                        boxShadow: 15,
-                        filter: "blur(12px)",
-                      }}
-                    />
-                  </BlogPostCardMediaWrapper>
-                  <Stack justifyContent={"space-between"} spacing={2}>
-                    <Box>
-                      <Box mb={1}>
-                        <Chip label={post.category} variant="outlined" />
-                      </Box>
-
-                      <Link variant="h5" sx={{ cursor: "pointer" }}>
-                        {post.title}
-                      </Link>
-                      <Typography
-                        color="textSecondary"
-                        sx={{
-                          height: 72,
-                          mt: 1,
-                          overflow: "hidden",
-                          textOverflow: "ellipsis",
-                          WebkitBoxOrient: "vertical",
-                          WebkitLineClamp: 2,
-                        }}
-                        variant="body1"
-                      >
-                        {post.shortDescription}
-                      </Typography>
-                    </Box>
-                    <Button
-                      to="/blog-details"
-                      component={RouterLink}
-                      size="small"
-                      endIcon={<ArrowForward />}
-                    >
-                      Learn more
-                    </Button>
-                  </Stack>
-                </Card>
+            <BlogCard
+              category={post.category}
+              cover={post.cover}
+              title={post.title}
+              shortDescription={post.shortDescription}
+              url={post.url}
+            />
               </Grid>
             ))}
           </Grid>

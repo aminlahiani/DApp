@@ -12,12 +12,12 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-
+import { Link as RouterLink } from "react-router-dom";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
 function BlogCard(props) {
-  const { cover, category, title, shortDescription } = props;
+  const { cover, category, title, shortDescription  , url} = props;
   return (
     <Card
       sx={{
@@ -65,7 +65,7 @@ function BlogCard(props) {
             <Chip label={category} variant="outlined" />
           </Box>
 
-          <Link href="blog-details" variant="h5" sx={{ cursor: "pointer" }}>
+          <Link component={RouterLink}  to={url} variant="h5" sx={{ cursor: "pointer" }}>
             {title}
           </Link>
           <Typography
@@ -83,7 +83,7 @@ function BlogCard(props) {
             {shortDescription}
           </Typography>
         </Box>
-        <Button href="blog-details" component="a" size="small" endIcon={<ArrowForward />}>
+        <Button component={RouterLink}  to={url}  size="small" endIcon={<ArrowForward />}>
           Learn more
         </Button>
       </Stack>
@@ -96,6 +96,7 @@ BlogCard.propTypes = {
   category: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   shortDescription: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 };
 
 export default BlogCard;

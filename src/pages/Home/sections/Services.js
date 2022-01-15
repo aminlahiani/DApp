@@ -2,12 +2,12 @@ import { Avatar, Box, Container, Grid, Typography } from "@mui/material";
 import Icon from "@mui/material/Icon";
 
 const services = [
-  { id: 1, title: "Business Stratagy", icon: "public"  , description :"The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever."},
-  { id: 2, title: "Website Development", icon: "public"  , description :"The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever."},
-  { id: 3, title: "Marketing & Reporting", icon: "public"  , description :"The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever."},
-  { id: 4, title: "Mobile App Development", icon: "public"  , description :"The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever."},
-  { id: 5, title: "Application Development", icon: "public"  , description :"The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever."},
-  { id: 6, title: "Seo Services", icon: "public"  , description :"The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever."},
+  { id: 1, title: "Business Stratagy", icon: "public"  , url : "blog-details",  description :"The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever." },
+  { id: 2, title: "Website Development", icon: "public"  , url : "blog-details", description :"The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever."},
+  { id: 3, title: "Marketing & Reporting", icon: "public"  , url : "blog-details", description :"The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever."},
+  { id: 4, title: "Mobile App Development", icon: "public"  ,  url : "blog-details",description :"The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever."},
+  { id: 5, title: "Application Development", icon: "public"  , url : "blog-details", description :"The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever."},
+  { id: 6, title: "Seo Services", icon: "public"  ,  url : "blog-details",description :"The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever."},
 ];
 
 import { InfoCard } from "components/Cards/InfoCard";
@@ -41,7 +41,7 @@ export const Services = () => {
         <Grid container spacing={3}>
           {services.map((info) => (
             <Grid key={info.id} item xs={12} md={6} lg={4}>
-              <InfoCard title={info.title} icon={info.icon} description={info.description}  />
+              <InfoCard title={info.title} icon={info.icon} description={info.description} url={info.url}   />
             </Grid>
           ))}
         </Grid>
