@@ -6,7 +6,7 @@ function index() {
   return (
     <div>
       <Hero />
-      <Details/>
+      <Details />
     </div>
   );
 }

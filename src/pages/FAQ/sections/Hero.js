@@ -24,28 +24,18 @@ export const Hero = (props) => {
         <Typography align="center" color="textPrimary" variant="h1">
           Have any Question?
         </Typography>
-        <Typography
-          align="center"
-          color="textSecondary"
-          variant="subtitle1"
-          sx={{ pt: 3 , mb : 5 }}
-        >
+        <Typography align="center" color="textSecondary" variant="subtitle1" sx={{ pt: 3, mb: 5 }}>
           Search our FAQ for answers to anything you might ask.
         </Typography>
 
-<Grid  container spacing={3}>
-          {infocards.map(info => (
+        <Grid container spacing={3}>
+          {infocards.map((info) => (
             <Grid key={info} item xs={12} md={6} lg={4}>
-<InfoCard/>
+              <InfoCard />
             </Grid>
           ))}
-            </Grid>
-
-   
-
+        </Grid>
       </Container>
     </Box>
   );
-}
-
-
+};

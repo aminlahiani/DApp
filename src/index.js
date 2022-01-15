@@ -3,10 +3,7 @@ import ReactDOM from "react-dom";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
 import App from "./App";
-import {
-  SettingsConsumer,
-  SettingsProvider,
-} from "./contexts/settings-context";
+import { SettingsConsumer, SettingsProvider } from "./contexts/settings-context";
 import { createTheme } from "./theme";
 
 ReactDOM.render(

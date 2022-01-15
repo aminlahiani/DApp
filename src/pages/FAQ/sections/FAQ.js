@@ -35,24 +35,21 @@ export const FAQ = () => {
         }}
       >
         <Container maxWidth="md">
-       
-        <Typography sx={{ mb : 2}}   color="textPrimary" variant="h4">
-        Basics
-        </Typography>
+          <Typography sx={{ mb: 2 }} color="textPrimary" variant="h4">
+            Basics
+          </Typography>
           <FaqList faqList={faqList} />
-          <Typography  sx={{ mt : 4 , mb : 2 }}  color="textPrimary" variant="h4">
-          Account & settings
-        </Typography>
-        
+          <Typography sx={{ mt: 4, mb: 2 }} color="textPrimary" variant="h4">
+            Account & settings
+          </Typography>
+
           <FaqList faqList={faqList} />
-          <Typography sx={{ mt : 4 , mb : 2 }}  color="textPrimary" variant="h4">
-          Security
-        </Typography>
+          <Typography sx={{ mt: 4, mb: 2 }} color="textPrimary" variant="h4">
+            Security
+          </Typography>
           <FaqList faqList={faqList} />
         </Container>
       </Box>
     </div>
   );
-}
-
-
+};

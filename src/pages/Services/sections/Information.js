@@ -1,6 +1,6 @@
 import { Box, Button, Container, Grid, Link, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import { CheckCircleOutlined as CheckCircleOutlinedIcon } from '../../../icons/check-circle-outlined';
+import { CheckCircleOutlined as CheckCircleOutlinedIcon } from "../../../icons/check-circle-outlined";
 export const Information = (props) => {
   const theme = useTheme();
 
@@ -27,35 +27,27 @@ export const Information = (props) => {
           >
             <div>
               <Typography color="textPrimary" variant="h3">
-              The powerful and flexible theme for all kinds of businesses
+                The powerful and flexible theme for all kinds of businesses
               </Typography>
-              <Typography
-                color="textSecondary"
-                sx={{ my: 3 }}
-                variant="subtitle1"
-              >
-                Send one-off and automated email, push, and in-app messages to people.
-Create better stories.
+              <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
+                Send one-off and automated email, push, and in-app messages to people. Create better
+                stories.
               </Typography>
-              {['JavaScript', 'TypeScript', 'Figma', 'Sketch'].map((item) => (
-            <Box
-              key={item}
-              sx={{
-                alignItems: 'center',
-                display: 'flex',
-                m: 2
-              }}
-            >
-              <CheckCircleOutlinedIcon
-                color="info"
-                sx={{ mr: 1 }}
-              />
-              <Typography  color="textSecondary" variant="body1">
-                {item}
-              </Typography>
-            </Box>
-          ))}
-             
+              {["JavaScript", "TypeScript", "Figma", "Sketch"].map((item) => (
+                <Box
+                  key={item}
+                  sx={{
+                    alignItems: "center",
+                    display: "flex",
+                    m: 2,
+                  }}
+                >
+                  <CheckCircleOutlinedIcon color="info" sx={{ mr: 1 }} />
+                  <Typography color="textSecondary" variant="body1">
+                    {item}
+                  </Typography>
+                </Box>
+              ))}
             </div>
           </Grid>
           <Grid
@@ -82,10 +74,7 @@ Create better stories.
                 },
               }}
             >
-              <img
-                alt="For developers"
-                src={`/static/home/developers_${theme.palette.mode}.png`}
-              />
+              <img alt="For developers" src={`/static/home/developers_${theme.palette.mode}.png`} />
             </Box>
           </Grid>
         </Grid>

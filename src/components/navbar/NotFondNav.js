@@ -4,21 +4,16 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
 
-
 import { Link } from "react-router-dom";
 
-
 const NotFondNav = () => {
-
-
-
   return (
     <AppBar
       elevation={3}
       sx={{
         backgroundColor: "background.paper",
         borderBottomColor: "divider",
-        maxHeight: 59
+        maxHeight: 59,
       }}
     >
       <Container maxWidth="lg">
@@ -28,7 +23,6 @@ const NotFondNav = () => {
           </Box>
 
           <Box sx={{ flexGrow: 1 }} />
-        
         </Toolbar>
       </Container>
     </AppBar>

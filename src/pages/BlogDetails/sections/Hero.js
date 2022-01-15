@@ -1,30 +1,23 @@
-import { useTheme } from '@mui/material/styles';
+import { useTheme } from "@mui/material/styles";
 // Images
-import { Box, Container, Grid, Typography } from '@mui/material';
+import { Box, Container, Grid, Typography } from "@mui/material";
 import bgImage from "../../../assets/images/bg5.jpg";
 
-export const Hero = () => { 
-    const theme = useTheme();
-    return (
-        <>
-        <Box
+export const Hero = () => {
+  const theme = useTheme();
+  return (
+    <>
+      <Box
         minHeight="85vh"
         width="100%"
         sx={{
-         
-            backgroundImage:  `url(${bgImage})`,
+          backgroundImage: `url(${bgImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "grid",
           placeItems: "center",
         }}
-      >
-           
-    
-           
-           
-      </Box>
-        </>
-
-    )
+      ></Box>
+    </>
+  );
 };

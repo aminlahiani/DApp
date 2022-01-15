@@ -26,8 +26,8 @@ const posts = [
 
     readTime: "5 min",
     shortDescription:
-    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi in turpis ac quam luctus interdum. Nullam ac lorem ligula. Integer sed massa bibendum, blandit ipsum et, iaculis augue. Curabitur nec enim eget dolor tincidunt posuere eget nec dolor. Ut ullamcorper dignissim arcu vel laoreet. Sed ligula dolor, vulputate quis eros ac, maximus pharetra orci. Aenean lobortis volutpat vehicula. Suspendisse vel nunc enim. Cras ultrices metus libero, non aliquam diam condimentum vel. Vestibulum arcu leo, consectetur id diam a, semper elementum odio. Proin eleifend volutpat sapien tempor bibendum. Etiam sagittis nulla sit amet aliquam sollicitudin.",
-  title: "Scrum Has Hit the Glass Ceiling",
+      "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi in turpis ac quam luctus interdum. Nullam ac lorem ligula. Integer sed massa bibendum, blandit ipsum et, iaculis augue. Curabitur nec enim eget dolor tincidunt posuere eget nec dolor. Ut ullamcorper dignissim arcu vel laoreet. Sed ligula dolor, vulputate quis eros ac, maximus pharetra orci. Aenean lobortis volutpat vehicula. Suspendisse vel nunc enim. Cras ultrices metus libero, non aliquam diam condimentum vel. Vestibulum arcu leo, consectetur id diam a, semper elementum odio. Proin eleifend volutpat sapien tempor bibendum. Etiam sagittis nulla sit amet aliquam sollicitudin.",
+    title: "Scrum Has Hit the Glass Ceiling",
   },
   {
     id: "2",
@@ -68,8 +68,8 @@ const posts = [
 
     readTime: "5 min",
     shortDescription:
-    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi in turpis ac quam luctus interdum. Nullam ac lorem ligula. Integer sed massa bibendum, blandit ipsum et, iaculis augue. Curabitur nec enim eget dolor tincidunt posuere eget nec dolor. Ut ullamcorper dignissim arcu vel laoreet. Sed ligula dolor, vulputate quis eros ac, maximus pharetra orci. Aenean lobortis volutpat vehicula. Suspendisse vel nunc enim. Cras ultrices metus libero, non aliquam diam condimentum vel. Vestibulum arcu leo, consectetur id diam a, semper elementum odio. Proin eleifend volutpat sapien tempor bibendum. Etiam sagittis nulla sit amet aliquam sollicitudin.",
-  title: "Scrum Has Hit the Glass Ceiling",
+      "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi in turpis ac quam luctus interdum. Nullam ac lorem ligula. Integer sed massa bibendum, blandit ipsum et, iaculis augue. Curabitur nec enim eget dolor tincidunt posuere eget nec dolor. Ut ullamcorper dignissim arcu vel laoreet. Sed ligula dolor, vulputate quis eros ac, maximus pharetra orci. Aenean lobortis volutpat vehicula. Suspendisse vel nunc enim. Cras ultrices metus libero, non aliquam diam condimentum vel. Vestibulum arcu leo, consectetur id diam a, semper elementum odio. Proin eleifend volutpat sapien tempor bibendum. Etiam sagittis nulla sit amet aliquam sollicitudin.",
+    title: "Scrum Has Hit the Glass Ceiling",
   },
   {
     id: "5",
@@ -96,8 +96,8 @@ const posts = [
 
     readTime: "3 min",
     shortDescription:
-    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi in turpis ac quam luctus interdum. Nullam ac lorem ligula. Integer sed massa bibendum, blandit ipsum et, iaculis augue. Curabitur nec enim eget dolor tincidunt posuere eget nec dolor. Ut ullamcorper dignissim arcu vel laoreet. Sed ligula dolor, vulputate quis eros ac, maximus pharetra orci. Aenean lobortis volutpat vehicula. Suspendisse vel nunc enim. Cras ultrices metus libero, non aliquam diam condimentum vel. Vestibulum arcu leo, consectetur id diam a, semper elementum odio. Proin eleifend volutpat sapien tempor bibendum. Etiam sagittis nulla sit amet aliquam sollicitudin.",
-  title: "Scrum Has Hit the Glass Ceiling",
+      "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi in turpis ac quam luctus interdum. Nullam ac lorem ligula. Integer sed massa bibendum, blandit ipsum et, iaculis augue. Curabitur nec enim eget dolor tincidunt posuere eget nec dolor. Ut ullamcorper dignissim arcu vel laoreet. Sed ligula dolor, vulputate quis eros ac, maximus pharetra orci. Aenean lobortis volutpat vehicula. Suspendisse vel nunc enim. Cras ultrices metus libero, non aliquam diam condimentum vel. Vestibulum arcu leo, consectetur id diam a, semper elementum odio. Proin eleifend volutpat sapien tempor bibendum. Etiam sagittis nulla sit amet aliquam sollicitudin.",
+    title: "Scrum Has Hit the Glass Ceiling",
   },
 ];
 
@@ -119,14 +119,8 @@ export const BlogList = () => (
         Build accessible React apps with speed
       </Typography>
 
-      <Typography
-        align="center"
-        color="textSecondary"
-        variant="subtitle1"
-        sx={{ py: 3 }}
-      >
-        Build a beautiful, modern website with flexible, fully customizable,
-        atomic MUI Components
+      <Typography align="center" color="textSecondary" variant="subtitle1" sx={{ py: 3 }}>
+        Build a beautiful, modern website with flexible, fully customizable, atomic MUI Components
       </Typography>
 
       <Grid container spacing={3}>
@@ -172,13 +166,15 @@ export const BlogList = () => (
                   }}
                 />
               </BlogPostCardMediaWrapper>
-              <Stack justifyContent={"space-between"} spacing={2} >
+              <Stack justifyContent={"space-between"} spacing={2}>
                 <Box>
                   <Box mb={1}>
                     <Chip label={post.category} variant="outlined" />
                   </Box>
 
-                  <Link href="blog-details" variant="h5" sx={{ cursor: "pointer" }}>{post.title}</Link>
+                  <Link href="blog-details" variant="h5" sx={{ cursor: "pointer" }}>
+                    {post.title}
+                  </Link>
                   <Typography
                     color="textSecondary"
                     sx={{
@@ -194,12 +190,7 @@ export const BlogList = () => (
                     {post.shortDescription}
                   </Typography>
                 </Box>
-                <Button
-                  href="blog-details"
-                  component="a"
-                  size="small"
-                  endIcon={<ArrowForward />}
-                >
+                <Button href="blog-details" component="a" size="small" endIcon={<ArrowForward />}>
                   Learn more
                 </Button>
               </Stack>

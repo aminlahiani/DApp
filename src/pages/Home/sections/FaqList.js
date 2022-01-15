@@ -38,7 +38,6 @@ const FaqList = ({ faqList }) => {
               </Typography>
             </AccordionSummary>
             <AccordionDetails sx={{ padding: "0 0 10px" }}>
-             
               <Typography color="textSecondary" variant="body1">
                 {item.ans}
               </Typography>

@@ -1,14 +1,14 @@
-import React from 'react'
-import NotFondNav from '../../components/navbar/NotFondNav'
-import Error from './sections/Error'
+import React from "react";
+import NotFondNav from "../../components/navbar/NotFondNav";
+import Error from "./sections/Error";
 
 function index() {
-    return (
-        <div>
-            <NotFondNav/>
-            <Error/>
-        </div>
-    )
+  return (
+    <div>
+      <NotFondNav />
+      <Error />
+    </div>
+  );
 }
 
-export default index
+export default index;

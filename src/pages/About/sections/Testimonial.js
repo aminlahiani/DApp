@@ -1,6 +1,5 @@
-import { Avatar, Box, Button, Container, Typography } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
-
+import { Avatar, Box, Button, Container, Typography } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 export const Testimonial = (props) => {
   const theme = useTheme();
@@ -8,39 +7,27 @@ export const Testimonial = (props) => {
   return (
     <Box
       sx={{
-        backgroundColor: '#132F4C',
-        py: 15  
+        backgroundColor: "#132F4C",
+        py: 15,
       }}
-      {...props}>
+      {...props}
+    >
       <Container
         maxWidth="md"
         sx={{
-          alignItems: 'center',
-          display: 'flex',
-          flexDirection: 'column'
+          alignItems: "center",
+          display: "flex",
+          flexDirection: "column",
         }}
       >
-       
-        <Typography
-          align="center"
-          variant="h1"
-          color='#FFFFFF'
-        >
+        <Typography align="center" variant="h1" color="#FFFFFF">
           Material Kit Pro v5.0
         </Typography>
-        <Typography
-          align="center"
-          color='#FFFFFF'
-          variant="subtitle1"
-          sx={{ py: 3 }}
-        >
-          A professional kit that comes with ready-to-use MUI© components developed with one
-          common goal in mind, help you build faster &amp; beautiful applications.
+        <Typography align="center" color="#FFFFFF" variant="subtitle1" sx={{ py: 3 }}>
+          A professional kit that comes with ready-to-use MUI© components developed with one common
+          goal in mind, help you build faster &amp; beautiful applications.
         </Typography>
-      
       </Container>
-    
-     
     </Box>
   );
 };

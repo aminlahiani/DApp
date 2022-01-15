@@ -1,5 +1,5 @@
-import { Box, Button, Container, Grid, Typography } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 export const Hero = (props) => {
   const theme = useTheme();
@@ -7,72 +7,53 @@ export const Hero = (props) => {
   return (
     <Box
       sx={{
-         background: theme.palette.primary.mainGradient ,
-          height: "100vh",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: { xs:  "baseline" , md : "center"}
+        background: theme.palette.primary.mainGradient,
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: { xs: "baseline", md: "center" },
       }}
-      {...props}>
+      {...props}
+    >
       <Container maxWidth="lg">
-        <Grid
-          alignItems="center"
-          container
-          justifyContent="center"
-          spacing={3}
-        >
+        <Grid alignItems="center" container justifyContent="center" spacing={3}>
           <Grid
             item
             md={6}
             xs={12}
             sx={{
-            
               order: {
                 xs: 2,
-                md: 1
-              }
+                md: 1,
+              },
             }}
           >
             <div>
-              <Typography  color="textPrimary"  
-          variant="h1" >
-               Digital Agency UI React template with MUI
+              <Typography color="textPrimary" variant="h1">
+                Digital Agency UI React template with MUI
               </Typography>
-              <Typography
-                color="textSecondary"
-                sx={{ my: 3 }}
-                variant="subtitle1"
-              >
+              <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
                 Not just a set of tools, the package includes ready-to-deploy conceptual
                 applications written in JavaScript & TypeScript.
               </Typography>
               <Box
-          sx={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            
-            mx: -1,
-            mt: 2,
-            mb: 6,
-            '& > a': {
-              m: 1
-            }
-          }}
-        >
-              <Button
-            href="/#about"
-              component="a"
-              size="large"
-              variant="outlined"
-            >
-              About Us
-            </Button>
-       
-                <Button
-                  size="large"
-                  component="a"
-                  variant="contained"
-                >
+                sx={{
+                  display: "flex",
+                  flexWrap: "wrap",
+
+                  mx: -1,
+                  mt: 2,
+                  mb: 6,
+                  "& > a": {
+                    m: 1,
+                  },
+                }}
+              >
+                <Button href="/#about" component="a" size="large" variant="outlined">
+                  About Us
+                </Button>
+
+                <Button size="large" component="a" variant="contained">
                   Contact Us
                 </Button>
               </Box>
@@ -86,21 +67,21 @@ export const Hero = (props) => {
             sx={{
               order: {
                 xs: 1,
-                md: 2
-              }
+                md: 2,
+              },
             }}
           >
             <Box
               sx={{
-                display: { xs: "none" , md:"block" },
-                position: 'relative',
-                pt: 'calc(960 / 1225 * 100%)',
-                '& img': {
-                  height: 'auto',
-                  position: 'absolute',
+                display: { xs: "none", md: "block" },
+                position: "relative",
+                pt: "calc(960 / 1225 * 100%)",
+                "& img": {
+                  height: "auto",
+                  position: "absolute",
                   top: 0,
-                  width: '100%'
-                }
+                  width: "100%",
+                },
               }}
             >
               <img

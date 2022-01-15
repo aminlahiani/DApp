@@ -41,27 +41,24 @@ export const Details = () => {
     <Box
       sx={{
         backgroundColor: "background.paper",
-    
       }}
     >
-        <Container maxWidth="md">
+      <Container maxWidth="md">
         <Box
           sx={{
             alignItems: "center",
             display: "flex",
-         pt : 3
+            pt: 3,
           }}
         >
           <Chip label={post.category} variant="outlined" />
 
           <Box sx={{ ml: 2 }}>
-            <Typography variant="subtitle2" color="textSecondary" >
+            <Typography variant="subtitle2" color="textSecondary">
               By {post.author.name} • {format(post.publishedAt, "MMMM d, yyyy")}
             </Typography>
           </Box>
         </Box>
-      
-      
 
         <Typography
           color="textPrimary"
@@ -76,8 +73,6 @@ export const Details = () => {
         <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
           {post.shortDescription}
         </Typography>
-        
-       
       </Container>
     </Box>
   );

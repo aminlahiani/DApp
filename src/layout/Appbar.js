@@ -27,7 +27,6 @@ const pages = [
 //const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const ResponsiveAppBar = ({ setSelectedTheme, selectedTheme }) => {
-
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -47,14 +46,12 @@ const ResponsiveAppBar = ({ setSelectedTheme, selectedTheme }) => {
   return (
     <AppBar
       elevation={3}
-      
       sx={{
         position: "sticky",
         backgroundColor: "background.paper",
         borderBottomColor: "divider",
-        maxHeight: 59 ,
-        opacity :0.8
-        
+        maxHeight: 59,
+        opacity: 0.8,
       }}
     >
       <Container maxWidth="lg">
@@ -66,14 +63,10 @@ const ResponsiveAppBar = ({ setSelectedTheme, selectedTheme }) => {
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <Link
-                key={page.id}
-                style={{ textDecoration: "none" }}
-                to={page.href}
-              >
+              <Link key={page.id} style={{ textDecoration: "none" }} to={page.href}>
                 <Button
                   onClick={handleCloseNavMenu}
-                  sx={{  display: "block", color: "text.primary" }}
+                  sx={{ display: "block", color: "text.primary" }}
                 >
                   {page.title}
                 </Button>
@@ -91,7 +84,7 @@ const ResponsiveAppBar = ({ setSelectedTheme, selectedTheme }) => {
           <IconButton>
             <GitHubIcon fontSize="small" color="primary" />
           </IconButton>
-         
+
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -122,11 +115,7 @@ const ResponsiveAppBar = ({ setSelectedTheme, selectedTheme }) => {
               }}
             >
               {pages.map((page) => (
-                <Link
-                  key={page.id}
-                  to={page.href}
-                  style={{ textDecoration: "none" }}
-                >
+                <Link key={page.id} to={page.href} style={{ textDecoration: "none" }}>
                   <MenuItem onClick={handleCloseNavMenu}>
                     <Typography color="textPrimary" textAlign="center">
                       {page.title}

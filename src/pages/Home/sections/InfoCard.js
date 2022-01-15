@@ -2,7 +2,7 @@ import React from "react";
 import { Avatar, Box, Container, Grid, Icon, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-export const InfoCard = ({title ,icon  }) => {
+export const InfoCard = ({ title, icon }) => {
   const theme = useTheme();
   return (
     <>
@@ -18,31 +18,25 @@ export const InfoCard = ({title ,icon  }) => {
             color: "white",
             height: 48,
             width: 48,
-            display : "flex" ,
+            display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            borderRadius : 1.5,
-            boxShadow: 'inset 0px 5px 8px rgba(256, 256, 256, 0.3), 0px 5px 8px rgba(21, 101, 192, 0.3)',
+            borderRadius: 1.5,
+            boxShadow:
+              "inset 0px 5px 8px rgba(256, 256, 256, 0.3), 0px 5px 8px rgba(21, 101, 192, 0.3)",
             // boxShadow: 'inset 0px 5px 8px rgba(256, 256, 256, 0.3)'
-
-
           }}
         >
           <Icon>{icon}</Icon>
         </Box>
       </Box>
 
-      <Typography
-        align="center"
-        variant="h6"
-        color="textPrimary"
-        sx={{ mt: 2.5, mb: 1.5 }}
-      >
+      <Typography align="center" variant="h6" color="textPrimary" sx={{ mt: 2.5, mb: 1.5 }}>
         {title}
       </Typography>
       <Typography variant="body1" align="center" color="textSecondary">
-        The Arctic Ocean freezes every winter and much of the sea-ice then thaws
-        every summer, and that process will continue whatever.
+        The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and
+        that process will continue whatever.
       </Typography>
     </>
   );

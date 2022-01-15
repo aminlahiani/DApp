@@ -1,161 +1,126 @@
-import { Box, Container, Typography , Avatar } from '@mui/material'
-import React from 'react'
+import { Box, Container, Typography, Avatar } from "@mui/material";
+import React from "react";
 //import { CheckCircleOutlined as CheckCircleOutlinedIcon } from '../../../icons/check-circle-outlined';
-import { Users as UsersIcon } from '../../../icons/users';
-import { Star as StarIcon } from '../../../icons/star';
-import { Template as TemplateIcon } from '../../../icons/template';
+import { Users as UsersIcon } from "../../../icons/users";
+import { Star as StarIcon } from "../../../icons/star";
+import { Template as TemplateIcon } from "../../../icons/template";
 export const Featuring = (props) => {
-    return (
-        <Box sx={{ py: 8 , backgroundColor: 'background.default' }}>
-        <Container
-          maxWidth="md"
+  return (
+    <Box sx={{ py: 8, backgroundColor: "background.default" }}>
+      <Container
+        maxWidth="md"
+        sx={{
+          alignItems: "center",
+          display: "flex",
+          justifyContent: "space-between",
+          flexDirection: {
+            xs: "column",
+            md: "row",
+          },
+          px: 3,
+        }}
+      >
+        <Box
           sx={{
-            alignItems: 'center',
-            display: 'flex',
-            justifyContent: 'space-between',
-            flexDirection: {
-              xs: 'column',
-              md: 'row'
-            },
-            px: 3
+            alignItems: "center",
+            display: "flex",
+            flexDirection: "column",
           }}
         >
-          <Box
+          <Avatar
             sx={{
-              alignItems: 'center',
-              display: 'flex',
-              flexDirection: 'column'
+              backgroundColor: "primary.main",
+              height: 40,
+              mb: 2,
+              width: 40,
             }}
+            variant="rounded"
           >
-            <Avatar
-              sx={{
-                backgroundColor: 'primary.main',
-                height: 40,
-                mb: 2,
-                width: 40
-              }}
-              variant="rounded"
-            >
-              <UsersIcon fontSize="small" />
-            </Avatar>
-            <Typography
-              
-                color='textPrimary'
-                textAlign='center'
-              
-              variant="h4"
-            >
-              4.5k+
-            </Typography>
-            <Typography
-               color='textPrimary'
-              variant="overline"
-            >
-              Happy customers
-            </Typography>
-          </Box>
-          <Box
+            <UsersIcon fontSize="small" />
+          </Avatar>
+          <Typography color="textPrimary" textAlign="center" variant="h4">
+            4.5k+
+          </Typography>
+          <Typography color="textPrimary" variant="overline">
+            Happy customers
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            alignItems: "center",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <Avatar
             sx={{
-              alignItems: 'center',
-              display: 'flex',
-              flexDirection: 'column'
+              backgroundColor: "secondary.main",
+              height: 40,
+              mb: 2,
+              width: 40,
             }}
+            variant="rounded"
           >
-            <Avatar
-              sx={{
-                backgroundColor: 'secondary.main',
-                height: 40,
-                mb: 2,
-                width: 40
-              }}
-              variant="rounded"
-            >
-              <StarIcon fontSize="small" />
-            </Avatar>
-            <Typography
-               color='textPrimary'
-               textAlign='center'
-              variant="h4"
-            >
-              4.9/5
-            </Typography>
-            <Typography
-               color='textPrimary'
-               textAlign='center'
-              variant="overline"
-            >
-              CUSTOMER Rating
-            </Typography>
-          </Box>
-          <Box
+            <StarIcon fontSize="small" />
+          </Avatar>
+          <Typography color="textPrimary" textAlign="center" variant="h4">
+            4.9/5
+          </Typography>
+          <Typography color="textPrimary" textAlign="center" variant="overline">
+            CUSTOMER Rating
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            alignItems: "center",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <Avatar
             sx={{
-              alignItems: 'center',
-              display: 'flex',
-              flexDirection: 'column'
+              backgroundColor: "warning.main",
+              height: 40,
+              mb: 2,
+              width: 40,
             }}
+            variant="rounded"
           >
-            <Avatar
-              sx={{
-                backgroundColor: 'warning.main',
-                height: 40,
-                mb: 2,
-                width: 40
-              }}
-              variant="rounded"
-            >
-              <TemplateIcon fontSize="small" />
-            </Avatar>
-            <Typography
-                color='textPrimary'
-                textAlign='center'
-              variant="h4"
-            >
-              UX
-            </Typography>
-            <Typography
-              color='textPrimary'
-              textAlign='center'
-              variant="overline"
-            >
-              complete flows
-            </Typography>
-          </Box>
-          <Box
+            <TemplateIcon fontSize="small" />
+          </Avatar>
+          <Typography color="textPrimary" textAlign="center" variant="h4">
+            UX
+          </Typography>
+          <Typography color="textPrimary" textAlign="center" variant="overline">
+            complete flows
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            alignItems: "center",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <Avatar
             sx={{
-              alignItems: 'center',
-              display: 'flex',
-              flexDirection: 'column'
+              backgroundColor: "info.main",
+              height: 40,
+              mb: 2,
+              width: 40,
             }}
+            variant="rounded"
           >
-            <Avatar
-              sx={{
-                backgroundColor: 'info.main',
-                height: 40,
-                mb: 2,
-                width: 40
-              }}
-              variant="rounded"
-            >
-              <UsersIcon fontSize="small" />
-            </Avatar>
-            <Typography
-               color='textPrimary'
-               textAlign='center'
-              variant="h4"
-            >
-              $10k+
-            </Typography>
-            <Typography
-               color='textPrimary'
-               textAlign='center'
-              variant="overline"
-            >
-              In people hours saved
-            </Typography>
-          </Box>
-        </Container>
-      </Box>
-    )
-}
-
-
+            <UsersIcon fontSize="small" />
+          </Avatar>
+          <Typography color="textPrimary" textAlign="center" variant="h4">
+            $10k+
+          </Typography>
+          <Typography color="textPrimary" textAlign="center" variant="overline">
+            In people hours saved
+          </Typography>
+        </Box>
+      </Container>
+    </Box>
+  );
+};

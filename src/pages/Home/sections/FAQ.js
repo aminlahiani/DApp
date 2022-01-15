@@ -26,7 +26,7 @@ const faqList = [
 ];
 
 export const FAQ = (props) => {
-  return ( 
+  return (
     <div>
       <Box
         sx={{
@@ -35,24 +35,16 @@ export const FAQ = (props) => {
         }}
       >
         <Container maxWidth="md">
-        <Typography align="center" color="textPrimary" variant="h4">
-        Do you have any Question?
-        </Typography>
+          <Typography align="center" color="textPrimary" variant="h4">
+            Do you have any Question?
+          </Typography>
 
-        <Typography
-          align="center"
-          color="textSecondary"
-          variant="subtitle1"
-          sx={{ py: 3 }}
-        >
-         Here are some of the basic types of questions
-for our customers .
-        </Typography>
+          <Typography align="center" color="textSecondary" variant="subtitle1" sx={{ py: 3 }}>
+            Here are some of the basic types of questions for our customers .
+          </Typography>
           <FaqList faqList={faqList} />
         </Container>
       </Box>
     </div>
   );
-}
-
-
+};

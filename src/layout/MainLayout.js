@@ -37,10 +37,7 @@ function MainLayout() {
             // paddingTop: '59px'
           }}
         >
-          <ResponsiveAppBar
-            selectedTheme={selectedTheme}
-            setSelectedTheme={setSelectedTheme}
-          />
+          <ResponsiveAppBar selectedTheme={selectedTheme} setSelectedTheme={setSelectedTheme} />
 
           <Outlet />
           <Footer1 />

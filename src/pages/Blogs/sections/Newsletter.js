@@ -1,101 +1,85 @@
-import { Box, Button, Card, Container, Grid, TextField, Typography } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
+import { Box, Button, Card, Container, Grid, TextField, Typography } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 export const Newsletter = () => {
   const theme = useTheme();
 
   return (
     <Box
-   
-    
-       sx={{
-        backgroundColor: 'background.paper',
+      sx={{
+        backgroundColor: "background.paper",
         py: 2,
-    
-      }}>
-        <Container maxWidth="lg">
-          
-       
-      <Grid
-        alignItems="center"
-        container
-        justifyContent="space-between"
-        spacing={3}
-        wrap="nowrap"
-      >
+      }}
+    >
+      <Container maxWidth="lg">
         <Grid
-          item
-          md={8}
-          xs={12}
+          alignItems="center"
+          container
+          justifyContent="space-between"
+          spacing={3}
+          wrap="nowrap"
         >
-          <Box
-            sx={{
-              alignItems: 'flex-start',
-              display: 'flex',
-              flexDirection: 'column'
-            }}
-          >
-            <Typography color="textPrimary" variant="h4">
-              Join the developer list
-            </Typography>
-            <Typography
-              color="textSecondary"
-              variant="body2"
+          <Grid item md={8} xs={12}>
+            <Box
               sx={{
-                mb: 3,
-                mt: 1
+                alignItems: "flex-start",
+                display: "flex",
+                flexDirection: "column",
               }}
             >
-              Subscribe to our newsletter to make sure you don&apos;t miss anything.
-            </Typography>
-          
-            <TextField
-              fullWidth
-              label="Email Here..."
-              name="email"
-              sx={{ flexGrow: 1 }}
-              type="email"
-            />
-            <Button
-              fullWidth
-              size="large"
-              sx={{ mt: 2 }}
-              variant="contained"
-            >
-              Subscribe
-            </Button>
-          </Box>
-        </Grid>
-        <Grid
-          item
-          md={4}
-          sx={{
-            display: {
-              md: 'block',
-              xs: 'none'
-            }
-          }}
-        >
-          <Box
+              <Typography color="textPrimary" variant="h4">
+                Join the developer list
+              </Typography>
+              <Typography
+                color="textSecondary"
+                variant="body2"
+                sx={{
+                  mb: 3,
+                  mt: 1,
+                }}
+              >
+                Subscribe to our newsletter to make sure you don&apos;t miss anything.
+              </Typography>
+
+              <TextField
+                fullWidth
+                label="Email Here..."
+                name="email"
+                sx={{ flexGrow: 1 }}
+                type="email"
+              />
+              <Button fullWidth size="large" sx={{ mt: 2 }} variant="contained">
+                Subscribe
+              </Button>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            md={4}
             sx={{
-              position: 'relative',
-              pt: 'calc(421 / 472 * 100%)',
-              '& img': {
-                height: 'auto',
-                position: 'absolute',
-                top: 0,
-                width: '100%'
-              }
+              display: {
+                md: "block",
+                xs: "none",
+              },
             }}
           >
-            <img
-              alt=""
-              src={`/static/blog/blog_${theme.palette.mode}.svg`}
-            />
-          </Box>
+            <Box
+              sx={{
+                position: "relative",
+                pt: "calc(421 / 472 * 100%)",
+                "& img": {
+                  height: "auto",
+                  position: "absolute",
+                  top: 0,
+                  width: "100%",
+                },
+              }}
+            >
+              <img alt="" src={`/static/blog/blog_${theme.palette.mode}.svg`} />
+            </Box>
+          </Grid>
         </Grid>
-      </Grid>
       </Container>
-      </Box>
+    </Box>
   );
 };

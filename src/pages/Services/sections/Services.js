@@ -33,14 +33,8 @@ export const Services = () => {
           Build accessible React apps with speed
         </Typography>
 
-        <Typography
-          align="center"
-          color="textSecondary"
-          variant="subtitle1"
-          sx={{ pt: 0, pb: 6 }}
-        >
-          Build a beautiful, modern website with flexible, fully customizable,
-          atomic MUI Components
+        <Typography align="center" color="textSecondary" variant="subtitle1" sx={{ pt: 0, pb: 6 }}>
+          Build a beautiful, modern website with flexible, fully customizable, atomic MUI Components
         </Typography>
 
         <Grid container spacing={3}>

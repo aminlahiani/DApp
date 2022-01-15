@@ -1,5 +1,5 @@
-import { Box, Button, Container, Grid, Link, Typography } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
+import { Box, Button, Container, Grid, Link, Typography } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 export const AboutUs = (props) => {
   const theme = useTheme();
@@ -7,17 +7,13 @@ export const AboutUs = (props) => {
   return (
     <Box
       sx={{
-        backgroundColor: 'background.default',
-        py: 4
+        backgroundColor: "background.default",
+        py: 4,
       }}
-      {...props}>
+      {...props}
+    >
       <Container maxWidth="lg">
-        <Grid
-          alignItems="center"
-          container
-          justifyContent="center"
-          spacing={3}
-        >
+        <Grid alignItems="center" container justifyContent="center" spacing={3}>
           <Grid
             item
             md={6}
@@ -25,55 +21,39 @@ export const AboutUs = (props) => {
             sx={{
               order: {
                 xs: 2,
-                md: 1
-              }
+                md: 1,
+              },
             }}
           >
             <div>
               <Typography color="textPrimary" variant="h3">
-              About Us
+                About Us
               </Typography>
-              <Typography
-                color="textSecondary"
-                sx={{ my: 3 }}
-                variant="subtitle1"
-              >
+              <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
                 Not just a set of tools, the package includes ready-to-deploy conceptual
                 applications written in JavaScript & TypeScript.
               </Typography>
-             
-                
-                <Grid container spacing={3}>
-                  <Grid item   md={6}
-            xs={12} >
- <Typography  color="textPrimary"variant="h3">
- Who are we?
-              </Typography>
-              <Typography
-                color="textSecondary"
-                sx={{ my: 3 }}
-                variant="subtitle1"
-              >
-                Not just a set of tools, the package includes ready-to-deploy conceptual
-                applications written in JavaScript & TypeScript.
-              </Typography>
-                  </Grid>
-                  <Grid item   md={6}
-            xs={12}>
-                   <Typography color="textPrimary" variant="h3">
-                   Our story
-              </Typography>
-              <Typography
-                color="textSecondary"
-                sx={{ my: 3 }}
-                variant="subtitle1"
-              >
-                Not just a set of tools, the package includes ready-to-deploy conceptual
-                applications written in JavaScript & TypeScript.
-              </Typography>
-                    </Grid>
+
+              <Grid container spacing={3}>
+                <Grid item md={6} xs={12}>
+                  <Typography color="textPrimary" variant="h3">
+                    Who are we?
+                  </Typography>
+                  <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
+                    Not just a set of tools, the package includes ready-to-deploy conceptual
+                    applications written in JavaScript & TypeScript.
+                  </Typography>
                 </Grid>
-             
+                <Grid item md={6} xs={12}>
+                  <Typography color="textPrimary" variant="h3">
+                    Our story
+                  </Typography>
+                  <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
+                    Not just a set of tools, the package includes ready-to-deploy conceptual
+                    applications written in JavaScript & TypeScript.
+                  </Typography>
+                </Grid>
+              </Grid>
             </div>
           </Grid>
           <Grid
@@ -84,26 +64,23 @@ export const AboutUs = (props) => {
             sx={{
               order: {
                 xs: 1,
-                md: 2
-              }
+                md: 2,
+              },
             }}
           >
             <Box
               sx={{
-                position: 'relative',
-                pt: 'calc(960 / 1225 * 100%)',
-                '& img': {
-                  height: 'auto',
-                  position: 'absolute',
+                position: "relative",
+                pt: "calc(960 / 1225 * 100%)",
+                "& img": {
+                  height: "auto",
+                  position: "absolute",
                   top: 0,
-                  width: '100%'
-                }
+                  width: "100%",
+                },
               }}
             >
-              <img
-                alt="For developers"
-                src={`/static/home/developers_${theme.palette.mode}.png`}
-              />
+              <img alt="For developers" src={`/static/home/developers_${theme.palette.mode}.png`} />
             </Box>
           </Grid>
         </Grid>

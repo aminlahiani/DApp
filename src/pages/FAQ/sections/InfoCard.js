@@ -18,31 +18,25 @@ export const InfoCard = (props) => {
             color: "white",
             height: 48,
             width: 48,
-            display : "flex" ,
+            display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            borderRadius : 1.5,
-            boxShadow: 'inset 0px 5px 8px rgba(256, 256, 256, 0.3), 0px 5px 8px rgba(21, 101, 192, 0.3)',
+            borderRadius: 1.5,
+            boxShadow:
+              "inset 0px 5px 8px rgba(256, 256, 256, 0.3), 0px 5px 8px rgba(21, 101, 192, 0.3)",
             // boxShadow: 'inset 0px 5px 8px rgba(256, 256, 256, 0.3)'
-
-
           }}
         >
           <Icon>public</Icon>
         </Box>
       </Box>
 
-      <Typography
-        align="center"
-        variant="h5"
-        color="textPrimary"
-        sx={{ mt: 2.5, mb: 1.5 }}
-      >
+      <Typography align="center" variant="h5" color="textPrimary" sx={{ mt: 2.5, mb: 1.5 }}>
         Detailed Documentation
       </Typography>
       <Typography variant="body1" align="center" color="textSecondary">
-        The Arctic Ocean freezes every winter and much of the sea-ice then thaws
-        every summer, and that process will continue whatever.
+        The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and
+        that process will continue whatever.
       </Typography>
     </>
   );
