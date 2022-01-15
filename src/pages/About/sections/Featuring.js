@@ -6,7 +6,7 @@ import { Star as StarIcon } from '../../../icons/star';
 import { Template as TemplateIcon } from '../../../icons/template';
 export const Featuring = (props) => {
     return (
-        <Box sx={{ py: 8 , backgroundColor: 'background.paper' }}>
+        <Box sx={{ py: 8 , backgroundColor: 'background.default' }}>
         <Container
           maxWidth="md"
           sx={{

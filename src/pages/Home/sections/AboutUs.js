@@ -8,7 +8,7 @@ export const AboutUs = (props) => {
     <Box
       sx={{
         backgroundColor: 'background.default',
-        py: 15
+        py: 4
       }}
       {...props}>
       <Container maxWidth="lg">

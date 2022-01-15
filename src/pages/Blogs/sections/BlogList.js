@@ -178,7 +178,7 @@ export const BlogList = () => (
                     <Chip label={post.category} variant="outlined" />
                   </Box>
 
-                  <Link variant="h5" sx={{ cursor: "pointer" }}>{post.title}</Link>
+                  <Link href="blog-details" variant="h5" sx={{ cursor: "pointer" }}>{post.title}</Link>
                   <Typography
                     color="textSecondary"
                     sx={{
@@ -195,7 +195,7 @@ export const BlogList = () => (
                   </Typography>
                 </Box>
                 <Button
-                  href="/#about"
+                  href="blog-details"
                   component="a"
                   size="small"
                   endIcon={<ArrowForward />}

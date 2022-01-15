@@ -34,7 +34,7 @@ function MainLayout() {
         <Box
           sx={{
             backgroundColor: "background.default",
-            paddingTop: '59px'
+            // paddingTop: '59px'
           }}
         >
           <ResponsiveAppBar

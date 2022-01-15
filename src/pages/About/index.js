@@ -6,15 +6,18 @@ import { Team } from "./sections/Team";
 import { Featuring } from "./sections/Featuring";
 import { Newsletter } from "./sections/Newsletter";
 import { Testimonial } from "./sections/Testimonial";
+import { About2 } from "./sections/About2";
 
 function About() {
   return (
     <>
       <Hero />
       <AboutUs />
+      <About2 />
+      <Featuring />
       <Testimonial />
       <Team />
-      <Featuring />
+    
       <Newsletter />
     </>
   );

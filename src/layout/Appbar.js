@@ -49,6 +49,7 @@ const ResponsiveAppBar = ({ setSelectedTheme, selectedTheme }) => {
       elevation={3}
       
       sx={{
+        position: "sticky",
         backgroundColor: "background.paper",
         borderBottomColor: "divider",
         maxHeight: 59 ,

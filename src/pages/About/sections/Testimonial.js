@@ -8,7 +8,7 @@ export const Testimonial = (props) => {
   return (
     <Box
       sx={{
-        backgroundColor: 'primary.main',
+        backgroundColor: '#132F4C',
         py: 15  
       }}
       {...props}>
@@ -24,13 +24,13 @@ export const Testimonial = (props) => {
         <Typography
           align="center"
           variant="h1"
-          color="primary.contrastText"
+          color='#FFFFFF'
         >
           Material Kit Pro v5.0
         </Typography>
         <Typography
           align="center"
-          color="primary.contrastText"
+          color='#FFFFFF'
           variant="subtitle1"
           sx={{ py: 3 }}
         >

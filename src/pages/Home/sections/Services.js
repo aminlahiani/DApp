@@ -48,7 +48,7 @@ export const Services  = () => {
        
         <Grid  container spacing={3}>
           {services.map(info => (
-            <Grid key={info} item xs={12} md={6} lg={4}>
+            <Grid key={info.id} item xs={12} md={6} lg={4}>
 <InfoCard title={info.title} icon={info.icon} />
             </Grid>
           ))}
