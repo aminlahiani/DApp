@@ -1,5 +1,5 @@
 import React from "react";
-import NotFondNav from "../../components/navbar/NotFondNav";
+import NotFondNav from "components/Navbars/NotFondNav";
 import Error from "./sections/Error";
 
 function index() {

@@ -10,9 +10,8 @@ const services = [
   { id: 6, title: "Seo Services", icon: "public"  , description :"The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever."},
 ];
 
-import FacebookIcon from "@mui/icons-material/Facebook";
-import { InfoCard } from "./InfoCard";
-const infocards = [1, 2, 3];
+import { InfoCard } from "components/Cards/InfoCard";
+
 export const Services = () => {
   return (
     <Box
