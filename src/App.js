@@ -26,7 +26,7 @@ export default function App() {
           <Route path="service-deatils" element={<ServiceDetails />} />
 
           <Route path="blogs" element={<Blogs />} />
-          <Route path="blog-details" element={<BlogDetails />} />
+          <Route path="blog-details/:postId" element={<BlogDetails />} />
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="portfolio-deatils" element={<PortfolioDetails />} />
           <Route path="faq" element={<FAQ />} />

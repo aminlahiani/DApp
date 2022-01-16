@@ -1,11 +1,10 @@
-import { ArrowForward } from "@mui/icons-material";
 import {
   Box,
   Container,
   Grid,
   Typography,
 } from "@mui/material";
-
+import BlogsData from "data/blog/blogs-data.json";
 import BlogCard from "components/Cards/BlogCard";
 
 const posts = [
@@ -121,7 +120,7 @@ export const BlogList = () => (
       </Typography>
 
       <Grid container spacing={3}>
-        {posts.map((post) => (
+        {BlogsData.map((post) => (
           <Grid item key={post.id} md={4} mt={2} xs={12}>
             <BlogCard
               category={post.category}
@@ -129,6 +128,7 @@ export const BlogList = () => (
               title={post.title}
               shortDescription={post.shortDescription}
               url={post.url}
+              id={post.id}
             />
           </Grid>
         ))}

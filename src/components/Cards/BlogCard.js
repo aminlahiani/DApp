@@ -17,7 +17,7 @@ import { Link as RouterLink } from "react-router-dom";
 import PropTypes from "prop-types";
 
 function BlogCard(props) {
-  const { cover, category, title, shortDescription  , url} = props;
+  const { cover, category, title, shortDescription  , url , id} = props;
   return (
     <Card
       sx={{
@@ -65,7 +65,7 @@ function BlogCard(props) {
             <Chip label={category} variant="outlined" />
           </Box>
 
-          <Link component={RouterLink}  to={url} variant="h5" sx={{ cursor: "pointer" }}>
+          <Link component={RouterLink}  to={`/blog-details/${id}`} variant="h5" sx={{ cursor: "pointer" }}>
             {title}
           </Link>
           <Typography
