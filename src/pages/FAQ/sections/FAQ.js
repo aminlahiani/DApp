@@ -1,7 +1,8 @@
 import { Container, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-import FaqList from "./FaqList";
+import FaqList from "components/FaqList";
+
 const faqList = [
   {
     id: 1,
