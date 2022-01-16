@@ -5,18 +5,16 @@ import {
     Card,
     CardContent,
     CardMedia,
-    Grid,
     Chip,
     Divider,
     Link,
     Typography,
-    Container,
   } from "@mui/material";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
 function TeamCard(props) {
-    const { cover, avatar, name, commonConnections, skills } = props;
+    const { cover, avatar, name, commonConnections } = props;
     return (
         <Card>
         <CardMedia image={cover} sx={{ height: 200 }} />
@@ -52,11 +50,7 @@ function TeamCard(props) {
             {commonConnections}
           </Typography>
           <Divider sx={{ my: 2 }} />
-          <Box sx={{ m: -0.5 }}>
-            {skills.map((skill) => (
-              <Chip key={skill} label={skill} sx={{ m: 0.5 }} variant="outlined" />
-            ))}
-          </Box>
+         
         </CardContent>
       </Card>
     )
@@ -66,6 +60,6 @@ TeamCard.propTypes = {
     avatar: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     commonConnections: PropTypes.string.isRequired,
-    skills: PropTypes.arrayOf(PropTypes.string),
+   
   };
 export default TeamCard
