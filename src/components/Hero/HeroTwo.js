@@ -1,32 +1,27 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import { useEffect, useRef } from "react";
 import { Link as RouterLink } from "react-router-dom";
+// typed-js
+import * as Typed from "typed.js";
 
-function HeroOne(props) {
-  const { heading, shortDescription, buttons, imagesrc , nomobileimg } = props;
-
-  const hero = {
-    heading: "Digital Agency UI React template with MUI",
-    shortDescription:
-      "  Not just a set of tools, the package includes ready-to-deploy conceptualapplications written in JavaScript & TypeScript.",
-    buttons: [
-      {
-        variant: "contained",
-        buttonColor: "btn-warning",
-        url: "/about",
-        text: "About Us",
-      },
-      {
-        buttonColor: "btn-light",
-        url: "/contact",
-        text: "Contact Us",
-        variant: "outlined",
-      },
-    ],
-  };
-
+function HeroTwo(props) {
+  const { heading, headingtypedJS, shortDescription, imagesrc, buttons } = props;
   const theme = useTheme();
+  const typedJSRef = useRef(null);
+  // Setting up typedJS
+  useEffect(() => {
+    const typedJS = new Typed(typedJSRef.current, {
+      strings: headingtypedJS,
+      typeSpeed: 90,
+      backSpeed: 90,
+      backDelay: 200,
+      startDelay: 500,
+      loop: true,
+    });
 
+    return () => typedJS.destroy();
+  }, []);
   return (
     <Box
       sx={{
@@ -36,6 +31,7 @@ function HeroOne(props) {
         justifyContent: "center",
         alignItems: { xs: "baseline", md: "center" },
       }}
+   
     >
       <Container maxWidth="lg">
         <Grid alignItems="center" container justifyContent="center" spacing={3}>
@@ -52,36 +48,23 @@ function HeroOne(props) {
           >
             <div>
               <Typography color="textPrimary" variant="h1">
-                {heading}
+                {heading} <span ref={typedJSRef} />
               </Typography>
               <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
                 {shortDescription}
               </Typography>
-              <Box
-                sx={{
-                  display: "flex",
-                  flexWrap: "wrap",
 
-                  mx: -1,
-                  mt: 2,
-                  mb: 6,
-                  "& > a": {
-                    m: 1,
-                  },
-                }}
-              >
-                {buttons.map((item, index) => (
-                  <Button
-                    key={index}
-                    to={item.url}
-                    component={RouterLink}
-                    size="large"
-                    variant={item.variant}
-                  >
-                    {item.text}
-                  </Button>
-                ))}
-              </Box>
+              {buttons.map((item, index) => (
+                <Button
+                  key={index}
+                  to={item.url}
+                  component={RouterLink}
+                  size="large"
+                  variant={item.variant}
+                >
+                  {item.text}
+                </Button>
+              ))}
             </div>
           </Grid>
           <Grid
@@ -98,7 +81,6 @@ function HeroOne(props) {
           >
             <Box
               sx={{
-                display: nomobileimg ? { xs: "none", md: "block" } :  "block"  ,
                 position: "relative",
                 pt: "calc(960 / 1225 * 100%)",
                 "& img": {
@@ -118,4 +100,4 @@ function HeroOne(props) {
   );
 }
 
-export default HeroOne;
+export default HeroTwo;
