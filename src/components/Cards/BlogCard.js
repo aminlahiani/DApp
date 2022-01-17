@@ -17,7 +17,7 @@ import { Link as RouterLink } from "react-router-dom";
 import PropTypes from "prop-types";
 
 function BlogCard(props) {
-  const { cover, category, title, shortDescription  , url , id} = props;
+  const { data } = props;
   return (
     <Card
       sx={{
@@ -34,7 +34,7 @@ function BlogCard(props) {
     >
       <Box sx={{ paddingTop: "calc(100% * 4 / 4)", position: "relative" }}>
         <CardMedia
-          image={cover}
+          image={data.cover}
           sx={{
             height: "100%",
             position: "absolute",
@@ -46,7 +46,7 @@ function BlogCard(props) {
           }}
         />
         <CardMedia
-          image={cover}
+          image={data.cover}
           sx={{
             height: "100%",
             position: "absolute",
@@ -62,11 +62,16 @@ function BlogCard(props) {
       <Stack justifyContent={"space-between"} spacing={2}>
         <Box>
           <Box mb={1}>
-            <Chip label={category} variant="outlined" />
+            <Chip label={data.category} variant="outlined" />
           </Box>
 
-          <Link component={RouterLink}  to={`/blog-details/${id}`} variant="h5" sx={{ cursor: "pointer" }}>
-            {title}
+          <Link
+            component={RouterLink}
+            to={`/blog-details/${data.id}`}
+            variant="h5"
+            sx={{ cursor: "pointer" }}
+          >
+            {data.title}
           </Link>
           <Typography
             color="textSecondary"
@@ -80,10 +85,15 @@ function BlogCard(props) {
             }}
             variant="body1"
           >
-            {shortDescription}
+            {data.shortDescription}
           </Typography>
         </Box>
-        <Button component={RouterLink}  to={url}  size="small" endIcon={<ArrowForward />}>
+        <Button
+          component={RouterLink}
+          to={`/blog-details/${data.id}`}
+          size="small"
+          endIcon={<ArrowForward />}
+        >
           Learn more
         </Button>
       </Stack>
@@ -92,11 +102,7 @@ function BlogCard(props) {
 }
 
 BlogCard.propTypes = {
-  cover: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  shortDescription: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 
 export default BlogCard;

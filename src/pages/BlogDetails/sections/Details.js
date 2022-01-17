@@ -20,7 +20,7 @@ export const Details = (props) => {
 
           <Box sx={{ ml: 2 }}>
             <Typography variant="subtitle2" color="textSecondary">
-              By {data.author.name} • {data.publishedAt}
+              By {data.authorname} • {data.publishedAt}
             </Typography>
           </Box>
         </Box>

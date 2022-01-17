@@ -1,3 +1,4 @@
+import HeroOne from "components/Hero/HeroOne";
 import React from "react";
 import { AboutUs } from "./sections/AboutUs";
 import { FAQ } from "./sections/FAQ";
@@ -10,6 +11,7 @@ import { Testimonials } from "./sections/Testimonials";
 function Index() {
   return (
     <div>
+       <HeroOne/>
       <Hero />
       <Services />
       <AboutUs />
@@ -17,6 +19,7 @@ function Index() {
 
       <LatestPosts />
       <FAQ />
+     
     </div>
   );
 }

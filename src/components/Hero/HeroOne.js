@@ -1,9 +1,32 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import { Link as RouterLink } from "react-router-dom";
 
-export const Hero = (props) => {
+
+
+function HeroOne() {
+  const hero = {
+    heading: "Digital Agency UI React template with MUI",
+    shortDescription : "  Not just a set of tools, the package includes ready-to-deploy conceptualapplications written in JavaScript & TypeScript.",
+    buttons: [
+      {
+        variant: "contained",
+        buttonColor: "btn-warning",
+        url: "/about",
+        text: "About Us",
+      },
+      {
+        buttonColor: "btn-light",
+        url: "/contact",
+        text: "Contact Us",
+        variant: "outlined",
+      },
+    ],
+  };
+
   const theme = useTheme();
 
+ 
   return (
     <Box
       sx={{
@@ -13,7 +36,6 @@ export const Hero = (props) => {
         justifyContent: "center",
         alignItems: { xs: "baseline", md: "center" },
       }}
-      
     >
       <Container maxWidth="lg">
         <Grid alignItems="center" container justifyContent="center" spacing={3}>
@@ -30,11 +52,10 @@ export const Hero = (props) => {
           >
             <div>
               <Typography color="textPrimary" variant="h1">
-                Digital Agency UI React template with MUI
+                {hero.heading}
               </Typography>
               <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
-                Not just a set of tools, the package includes ready-to-deploy conceptual
-                applications written in JavaScript & TypeScript.
+               {hero.shortDescription}
               </Typography>
               <Box
                 sx={{
@@ -49,13 +70,17 @@ export const Hero = (props) => {
                   },
                 }}
               >
-                <Button href="/#about" component="a" size="large" variant="outlined">
-                  About Us
-                </Button>
-
-                <Button size="large" component="a" variant="contained">
-                  Contact Us
-                </Button>
+                {hero.buttons.map((item, index) => (
+                  <Button
+                    key={index}
+                    to={item.url}
+                    component={RouterLink}
+                    size="large"
+                    variant={item.variant}
+                  >
+                    {item.text}
+                  </Button>
+                ))}
               </Box>
             </div>
           </Grid>
@@ -94,4 +119,6 @@ export const Hero = (props) => {
       </Container>
     </Box>
   );
-};
+}
+
+export default HeroOne;

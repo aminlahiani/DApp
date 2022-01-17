@@ -1,10 +1,7 @@
 [
   {
     "id": "1",
-    "author": {
-      "avatar": "/static/mock-images/avatars/avatar-jie_yan_song.png",
-      "name": "Jie Yan Song"
-    },
+    "authorname":"Omar Darobe" , 
     "publishedAt": "3 March 2022",
     "category": "Programming",
     "cover": "/static/mock-images/covers/cover_4.jpeg",
@@ -15,10 +12,8 @@
   },
   {
     "id": "2",
-    "author": {
-      "avatar": "/static/mock-images/avatars/avatar-omar_darboe.png",
-      "name": "Omar Darobe"
-    },
+    "authorname":"Omar Darobe" , 
+
     "category": "Productivity",
     "cover": "/static/mock-images/covers/cover_5.jpeg",
     "publishedAt": "3 March 2022",
@@ -29,10 +24,7 @@
   },
   {
     "id": "3",
-    "author": {
-      "avatar": "/static/mock-images/avatars/avatar-siegbert_gottfried.png",
-      "name": "Siegbert Gottfried"
-    },
+    "authorname":"Omar Darobe" , 
     "category": "Entrepreneurs",
     "cover": "/static/mock-images/covers/cover_6.jpeg",
     "publishedAt": "3 March 2022",
@@ -43,10 +35,7 @@
   },
   {
     "id": "4",
-    "author": {
-      "avatar": "/static/mock-images/avatars/avatar-jie_yan_song.png",
-      "name": "Jie Yan Song"
-    },
+    "authorname":"Omar Darobe" , 
     "category": "Programming",
     "cover": "/static/mock-images/covers/cover_4.jpeg",
     "publishedAt": "3 March 2022",
@@ -57,10 +46,7 @@
   },
   {
     "id": "5",
-    "author": {
-      "avatar": "/static/mock-images/avatars/avatar-omar_darboe.png",
-      "name": "Omar Darobe"
-    },
+    "authorname":"Omar Darobe" , 
     "category": "Productivity",
     "cover": "/static/mock-images/covers/cover_5.jpeg",
     "publishedAt": "3 March 2022",
@@ -71,10 +57,7 @@
   },
   {
     "id": "6",
-    "author": {
-      "avatar": "/static/mock-images/avatars/avatar-siegbert_gottfried.png",
-      "name": "Siegbert Gottfried"
-    },
+    "authorname":"Omar Darobe" , 
     "category": "Entrepreneurs",
     "cover": "/static/mock-images/covers/cover_6.jpeg",
     "publishedAt": "3 March 2022",
