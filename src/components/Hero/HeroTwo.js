@@ -26,7 +26,7 @@ function HeroTwo(props) {
     <Box
       sx={{
         background: theme.palette.primary.mainGradient,
-        height: "100vh",
+        height: "584px",
         display: "flex",
         justifyContent: "center",
         alignItems: { xs: "baseline", md: "center" },

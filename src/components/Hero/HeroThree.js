@@ -1,8 +1,8 @@
-import { Avatar, Box, Button, Container, Typography } from "@mui/material";
+import {  Box, Container, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
 function HeroThree (props) {
-    const { shortDescription , heading } = props ;
+    const { data} = props ;
   const theme = useTheme();
 
   return (
@@ -26,10 +26,10 @@ function HeroThree (props) {
         }}
       >
         <Typography align="center" variant="h1" color="textPrimary">
-        {heading}
+        {data.heading}
         </Typography>
         <Typography align="center" color="textSecondary" variant="subtitle1" sx={{ pt: 3 }}>
-         {shortDescription}
+         {data.shortDescription}
         </Typography>
       </Container>
     </Box>

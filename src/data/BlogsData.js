@@ -1,5 +1,5 @@
-export const HomeHeroData = {
-  heading: "Digital Agency UI React template with MUI",
+export const BlogsHeroData = {
+  heading: "Organic company growth with targeted leads",
   shortDescription:
     "  Not just a set of tools, the package includes ready-to-deploy conceptualapplications written in JavaScript & TypeScript.",
   imgdark: "/static/contact/undraw_contact_us_dark.svg",
@@ -9,13 +9,7 @@ export const HomeHeroData = {
       variant: "contained",
       buttonColor: "btn-warning",
       url: "/about",
-      text: "About Us",
-    },
-    {
-      buttonColor: "btn-light",
-      url: "/contact",
-      text: "Contact Us",
-      variant: "outlined",
+      text: "Browse Components",
     },
   ],
 };

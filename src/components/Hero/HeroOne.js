@@ -3,27 +3,9 @@ import { useTheme } from "@mui/material/styles";
 import { Link as RouterLink } from "react-router-dom";
 
 function HeroOne(props) {
-  const { heading, shortDescription, buttons, imagesrc , nomobileimg } = props;
+  const { nomobileimg , data } = props;
 
-  const hero = {
-    heading: "Digital Agency UI React template with MUI",
-    shortDescription:
-      "  Not just a set of tools, the package includes ready-to-deploy conceptualapplications written in JavaScript & TypeScript.",
-    buttons: [
-      {
-        variant: "contained",
-        buttonColor: "btn-warning",
-        url: "/about",
-        text: "About Us",
-      },
-      {
-        buttonColor: "btn-light",
-        url: "/contact",
-        text: "Contact Us",
-        variant: "outlined",
-      },
-    ],
-  };
+  
 
   const theme = useTheme();
  const isXs= useMediaQuery(theme.breakpoints.down("sm"))
@@ -32,7 +14,8 @@ function HeroOne(props) {
     <Box
       sx={{
         background: theme.palette.primary.mainGradient,
-        height: { xs: nomobileimg ?"80vh" :  "100vh", md: "100vh" },
+        height: { xs: nomobileimg ?"80vh" :  "100vh", md: "584px" },
+       
         display: "flex",
         justifyContent: "center",
         alignItems: { xs: "center", md: "center" },
@@ -53,10 +36,10 @@ function HeroOne(props) {
           >
             <div>
               <Typography color="textPrimary" variant="h1">
-                {heading}
+                {data.heading}
               </Typography>
               <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
-                {shortDescription}
+                {data.shortDescription}
               </Typography>
               <Box
                 sx={{
@@ -71,7 +54,7 @@ function HeroOne(props) {
                   },
                 }}
               >
-                {buttons.map((item, index) => (
+                {data.buttons.map((item, index) => (
                   <Button
                     key={index}
                     to={item.url}
@@ -111,7 +94,7 @@ function HeroOne(props) {
                 },
               }}
             >
-              <img alt="For developers" src={imagesrc} />
+              <img alt="For developers"   src={theme.palette.mode === "dark" ? data.imgdark : data.imagesrc} />
             </Box>
           </Grid>
         </Grid>

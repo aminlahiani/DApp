@@ -18,103 +18,10 @@ import "swiper/css/navigation"; // Navigation module
 
 import { Box, Container, Grid, IconButton, Typography } from "@mui/material";
 
-const header = [{
-    heading: "Material Design - News1",
-    shortDescription:
-      "Pain is what we go through as we become older. We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder",
-    keyword: " Connect with us on",
-    socialIcons: [
-      {
-        icon: <FacebookIcon fontSize="small" color="primary" />,
-  
-        label: "Github",
-        href: "https://github.com/dunky11/react-saas-template",
-      },
-      {
-        icon: <InstagramIcon fontSize="small" color="primary" />,
-  
-        label: "Facebook",
-        href: "https://facebook.com",
-      },
-      {
-        icon: <TwitterIcon fontSize="small" color="primary" />,
-  
-        label: "LinkedIn",
-        href: "https://www.linkedin.com/",
-      },
-      {
-        icon: <LinkedInIcon fontSize="small" color="primary" />,
-  
-        label: "Twitter",
-        href: "https://www.twitter.com/",
-      },
-    ],
-  }, {
-    heading: "Material Design - News2",
-    shortDescription:
-      "Pain is what we go through as we become older. We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder",
-    keyword: " Connect with us on",
-    socialIcons: [
-      {
-        icon: <FacebookIcon fontSize="small" color="primary" />,
-  
-        label: "Github",
-        href: "https://github.com/dunky11/react-saas-template",
-      },
-      {
-        icon: <InstagramIcon fontSize="small" color="primary" />,
-  
-        label: "Facebook",
-        href: "https://facebook.com",
-      },
-      {
-        icon: <TwitterIcon fontSize="small" color="primary" />,
-  
-        label: "LinkedIn",
-        href: "https://www.linkedin.com/",
-      },
-      {
-        icon: <LinkedInIcon fontSize="small" color="primary" />,
-  
-        label: "Twitter",
-        href: "https://www.twitter.com/",
-      },
-    ],
-  }, 
-  {
-    heading: "Material Design - News3",
-    shortDescription:
-      "Pain is what we go through as we become older. We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder",
-    keyword: " Connect with us on",
-    socialIcons: [
-      {
-        icon: <FacebookIcon fontSize="small" color="primary" />,
-  
-        label: "Github",
-        href: "https://github.com/dunky11/react-saas-template",
-      },
-      {
-        icon: <InstagramIcon fontSize="small" color="primary" />,
-  
-        label: "Facebook",
-        href: "https://facebook.com",
-      },
-      {
-        icon: <TwitterIcon fontSize="small" color="primary" />,
-  
-        label: "LinkedIn",
-        href: "https://www.linkedin.com/",
-      },
-      {
-        icon: <LinkedInIcon fontSize="small" color="primary" />,
-  
-        label: "Twitter",
-        href: "https://www.twitter.com/",
-      },
-    ],
-  }];
+
 
 function HeroFour(props) {
+  const { data } = props ;
   const theme = useTheme();
   //const { heading } = props;
   SwiperCore.use([Autoplay, Navigation]);
@@ -127,13 +34,13 @@ function HeroFour(props) {
       navigation
       loop
     >
-      {header.map((item, index) => (
+      {data.map((item, index) => (
         <SwiperSlide key={index}>
           <Box
-            minHeight="85vh"
+            minHeight="584px"
             width="100%"
             sx={{
-              backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.2),  rgba(0,0,0,0.9)), url(${bgImage})`,
+              backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.2),  rgba(0,0,0,0.9)), url(${item.img})`,
 
               backgroundSize: "cover",
               backgroundPosition: "center",
