@@ -4,12 +4,14 @@ import { Services } from "./sections/Services";
 import { Information } from "./sections/Information";
 import HeroTwo from "components/Hero/HeroTwo";
 import { useTheme } from "@mui/material/styles";
+import { ServicesHeroData } from "data/ServicesData";
 
 function index() {
   const theme = useTheme();
   return (
     <div>
-      <HeroTwo
+      <HeroTwo 
+      data={ServicesHeroData}
         heading="Organic company growth with targeted leads"
         headingtypedJS={["team", "design", "tool", "trfr"]}
         shortDescription="Not just a set of tools, the package includes ready-to-deploy conceptual

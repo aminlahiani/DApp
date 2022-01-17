@@ -6,13 +6,13 @@ import { Link as RouterLink } from "react-router-dom";
 import * as Typed from "typed.js";
 
 function HeroTwo(props) {
-  const { heading, headingtypedJS, shortDescription, imagesrc, imgdark ,  buttons } = props;
+  const { data } = props;
   const theme = useTheme();
   const typedJSRef = useRef(null);
   // Setting up typedJS
   useEffect(() => {
     const typedJS = new Typed(typedJSRef.current, {
-      strings: headingtypedJS,
+      strings: data.headingtypedJS,
       typeSpeed: 90,
       backSpeed: 90,
       backDelay: 200,
@@ -31,7 +31,6 @@ function HeroTwo(props) {
         justifyContent: "center",
         alignItems: { xs: "baseline", md: "center" },
       }}
-   
     >
       <Container maxWidth="lg">
         <Grid alignItems="center" container justifyContent="center" spacing={3}>
@@ -48,13 +47,13 @@ function HeroTwo(props) {
           >
             <div>
               <Typography color="textPrimary" variant="h1">
-                {heading} <span ref={typedJSRef} />
+                {data.heading} <span ref={typedJSRef} />
               </Typography>
               <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
-                {shortDescription}
+                {data.shortDescription}
               </Typography>
 
-              {buttons.map((item, index) => (
+              {data.buttons.map((item, index) => (
                 <Button
                   key={index}
                   to={item.url}
@@ -91,7 +90,10 @@ function HeroTwo(props) {
                 },
               }}
             >
-              <img alt="For developers"  src={theme.palette.mode === "dark" ? imgdark : imagesrc } />
+              <img
+                alt="For developers"
+                src={theme.palette.mode === "dark" ? data.imgdark : data.imagesrc}
+              />
             </Box>
           </Grid>
         </Grid>
