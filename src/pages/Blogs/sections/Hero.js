@@ -26,7 +26,7 @@ export const Hero = (props) => {
             }}
           >
             <div>
-              <Typography color="textPrimary" variant="h3">
+              <Typography color="textPrimary" variant="h1">
                 Organic company growth with targeted leads
               </Typography>
               <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
