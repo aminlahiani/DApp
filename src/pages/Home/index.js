@@ -12,7 +12,7 @@ function Index() {
   return (
     <div>
       <HeroOne
-      //nomobileimg
+      nomobileimg
         heading="Digital Agency UI React template with MUI"
         shortDescription="  Not just a set of tools, the package includes ready-to-deploy conceptualapplications written in JavaScript & TypeScript."
        imagesrc = {`/static/contact/undraw_contact_us_${theme.palette.mode}.svg`}

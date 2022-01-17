@@ -7,11 +7,13 @@ import { Featuring } from "./sections/Featuring";
 import { Newsletter } from "./sections/Newsletter";
 import { Testimonial } from "./sections/Testimonial";
 import { About2 } from "./sections/About2";
+import HeroFour from "components/Hero/HeroFour";
 
 function About() {
   return (
     <>
-      <Hero />
+      {/* <Hero /> */}
+      <HeroFour/>
       <AboutUs />
       <About2 />
       <Featuring />

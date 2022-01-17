@@ -1,4 +1,4 @@
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import { Box, Button, Container, Grid, Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { Link as RouterLink } from "react-router-dom";
 
@@ -26,15 +26,16 @@ function HeroOne(props) {
   };
 
   const theme = useTheme();
-
+ const isXs= useMediaQuery(theme.breakpoints.down("sm"))
+ console.log(isXs)
   return (
     <Box
       sx={{
         background: theme.palette.primary.mainGradient,
-        height: "100vh",
+        height: { xs: nomobileimg ?"80vh" :  "100vh", md: "100vh" },
         display: "flex",
         justifyContent: "center",
-        alignItems: { xs: "baseline", md: "center" },
+        alignItems: { xs: "center", md: "center" },
       }}
     >
       <Container maxWidth="lg">
@@ -77,6 +78,7 @@ function HeroOne(props) {
                     component={RouterLink}
                     size="large"
                     variant={item.variant}
+                    fullWidth={isXs}
                   >
                     {item.text}
                   </Button>

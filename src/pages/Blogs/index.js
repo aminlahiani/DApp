@@ -21,7 +21,6 @@ function index() {
             url: "/about",
             text: "Browse Components",
           },
-         
         ]}
       />
       <BlogList />
