@@ -13,7 +13,6 @@ export const Hero = (props) => {
         justifyContent: "center",
         alignItems: { xs: "baseline", md: "center" },
       }}
-      
     >
       <Container maxWidth="lg">
         <Grid alignItems="center" container justifyContent="center" spacing={3}>

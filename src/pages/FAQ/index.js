@@ -1,11 +1,20 @@
+import HeroFive from "components/Hero/HeroFive";
 import React from "react";
 import { FAQ } from "./sections/FAQ";
-import { Hero } from "./sections/Hero";
 
 function index() {
   return (
     <>
-      <Hero />
+      <HeroFive
+        heading="Have any Question?"
+        shortDescription="Search our FAQ for answers to ."
+        headingtypedJS={[
+          "anything you might ask.",
+          "anything you might ask.",
+          "anything you might ask.",
+          "anything you might ask.",
+        ]}
+      />
       <FAQ />
     </>
   );
