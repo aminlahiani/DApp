@@ -6,7 +6,7 @@ import { Link as RouterLink } from "react-router-dom";
 import * as Typed from "typed.js";
 
 function HeroTwo(props) {
-  const { heading, headingtypedJS, shortDescription, imagesrc, buttons } = props;
+  const { heading, headingtypedJS, shortDescription, imagesrc, imgdark ,  buttons } = props;
   const theme = useTheme();
   const typedJSRef = useRef(null);
   // Setting up typedJS
@@ -91,7 +91,7 @@ function HeroTwo(props) {
                 },
               }}
             >
-              <img alt="For developers" src={imagesrc} />
+              <img alt="For developers"  src={theme.palette.mode === "dark" ? imgdark : imagesrc } />
             </Box>
           </Grid>
         </Grid>
