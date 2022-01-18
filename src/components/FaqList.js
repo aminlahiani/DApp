@@ -7,10 +7,11 @@ import Box from "@mui/material/Box";
 import PropTypes from "prop-types";
 import { Typography } from "@mui/material";
 
-const FaqList = ({ faqList }) => {
+function FaqList(props) {
+  const { data } = props;
   return (
     <Box sx={{ height: "100%" }}>
-      {faqList.map((item) => {
+      {data.map((item) => {
         return (
           <Accordion
             key={item.id}
@@ -48,10 +49,10 @@ const FaqList = ({ faqList }) => {
       })}
     </Box>
   );
-};
+}
 
 export default FaqList;
 
-FaqList.propTypes = {
-  faqList: PropTypes.array.isRequired,
-};
+// FaqList.propTypes = {
+//   faqList: PropTypes.array.isRequired,
+// };
