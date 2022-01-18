@@ -3,7 +3,7 @@ import Icon from "@mui/material/Icon";
 
 import { InfoCard } from "components/Cards/InfoCard";
 
-function ServicesOne(props) {
+function ServiceList(props) {
   const { data } = props;
   return (
     <Box
@@ -42,4 +42,4 @@ function ServicesOne(props) {
   );
 }
 
-export default ServicesOne;
+export default ServiceList;

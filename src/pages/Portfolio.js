@@ -1,10 +1,8 @@
 import HeroThree from "components/Hero/HeroThree";
 import { PortfolioHeroData } from "data/PortfolioData";
-import React from "react";
+import  PortfolioList  from "components/PortfolioList";
 
-import { PortfolioList } from "./sections/PortfolioList";
-
-function index() {
+function Portfolio() {
   return (
     <div>
       <HeroThree data={PortfolioHeroData} />
@@ -14,4 +12,4 @@ function index() {
   );
 }
 
-export default index;
+export default Portfolio;

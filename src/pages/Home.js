@@ -8,7 +8,7 @@ import {
 
 import HomeAbout from "components/About/HomeAbout";
 import SwiperTestimonial from "components/Testimonials/SwiperTestimonial";
-import ServicesOne from "components/Services/ServicesOne";
+import ServiceList from "components/ServiceList";
 import LatestPosts from "components/LatestPosts";
 import CtaNewsletter from "components/Cta/CtaNewsletter";
 import HeroOne from "components/Hero/HeroOne";
@@ -18,7 +18,7 @@ function Home() {
     <div>
       <HeroOne nomobileimg data={HomeHeroData} />
 
-      <ServicesOne data={HomeServicesData} />
+      <ServiceList data={HomeServicesData} />
 
       <HomeAbout data={HomeAboutData} />
 

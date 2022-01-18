@@ -1,7 +1,7 @@
 import HeroTwo from "components/Hero/HeroTwo";
 import { useTheme } from "@mui/material/styles";
 import { ServicesHeroData, ServicesData, ServiceFeaturingData } from "data/ServicesData";
-import ServicesOne from "components/Services/ServicesOne";
+import ServiceList from "components/ServiceList";
 import FeaturingOne from "components/Featuring/FeaturingOne";
 import CtaNewsletter from "components/Cta/CtaNewsletter";
 
@@ -10,7 +10,7 @@ function Services() {
   return (
     <div>
       <HeroTwo data={ServicesHeroData} />
-      <ServicesOne data={ServicesData} />
+      <ServiceList data={ServicesData} />
       <FeaturingOne data={ServiceFeaturingData} />
       <CtaNewsletter />
     </div>

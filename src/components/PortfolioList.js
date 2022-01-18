@@ -1,15 +1,5 @@
-import {
-  Avatar,
-  Box,
-  Card,
-  CardMedia,
-  Chip,
-  Container,
-  Grid,
-  Link,
-  Typography,
-} from "@mui/material";
-import { styled } from "@mui/material/styles";
+import { Box, Container, Grid } from "@mui/material";
+
 import PortfolioCard from "components/Cards/PortfolioCard";
 
 const posts = [
@@ -105,36 +95,32 @@ const posts = [
   },
 ];
 
-export const PortfolioList = () => (
-  <Box
-    sx={{
-      backgroundColor: "background.default",
-      minHeight: "100%",
-      py: 6,
-    }}
-  >
-    <Container>
-      <Typography align="center" color="textPrimary" variant="h4">
-        Build accessible React apps with speed
-      </Typography>
+function PortfolioList(props) {
+  return (
+    <Box
+      sx={{
+        backgroundColor: "background.default",
+        minHeight: "100%",
+        py: 6,
+      }}
+    >
+      <Container maxWidth="lg">
+        <Grid container spacing={3}>
+          {posts.map((post) => (
+            <Grid item key={post.id} md={4} xs={12}>
+              <PortfolioCard
+                cover={post.cover}
+                category={post.category}
+                title={post.title}
+                shortDescription={post.shortDescription}
+                url={post.url}
+              />
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </Box>
+  );
+}
 
-      <Typography align="center" color="textSecondary" variant="subtitle1" sx={{ py: 3 }}>
-        Build a beautiful, modern website with flexible, fully customizable, atomic MUI Components
-      </Typography>
-
-      <Grid container spacing={3}>
-        {posts.map((post) => (
-          <Grid item key={post.id} md={4} xs={12}>
-            <PortfolioCard
-              cover={post.cover}
-              category={post.category}
-              title={post.title}
-              shortDescription={post.shortDescription}
-              url={post.url}
-            />
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
-  </Box>
-);
+export default PortfolioList;

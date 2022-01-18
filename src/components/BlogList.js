@@ -1,17 +1,17 @@
 import { Box, Container, Grid } from "@mui/material";
 import BlogsData from "data/blog/blogs-data.json";
 import BlogCard from "components/Cards/BlogCard";
-import deAT from "date-fns/esm/locale/de-AT/index.js";
+
 
 function BlogList(props) {
   const { data } = props;
-  console.log(BlogsData.map((item) => item.cover));
+
   return (
     <Box
       minHeight="100%"
       sx={{
         backgroundColor: "background.default",
-        py: 4,
+        py: 6
       }}
     >
       <Container maxWidth="lg">
