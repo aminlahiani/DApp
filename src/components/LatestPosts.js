@@ -55,7 +55,8 @@ const posts = [
   },
 ];
 
-export const LatestPosts = () => {
+function LatestPosts  (props) {
+  const {data } = props;
   return (
     <>
       <Box
@@ -73,15 +74,15 @@ export const LatestPosts = () => {
             }}
           >
             <Typography align="center" color="textPrimary" variant="h2">
-              Latest Posts
+              {data.heading}
             </Typography>
-            <Button size="small" component={RouterLink} to="/blogs" endIcon={<ArrowForward />}>
-              Learn more
+            <Button size="small" component={RouterLink} to={data.buttonurl} endIcon={<ArrowForward />}>
+              {data.buttontest}
             </Button>
           </Box>
 
           <Grid sx={{ mt: 2 }} container spacing={3}>
-            {posts.map((post, index) => (
+            {data.posts.map((post, index) => (
               <Grid item key={index} md={4} mt={2} xs={12}>
                 <BlogCard data={post} />
               </Grid>
@@ -92,3 +93,4 @@ export const LatestPosts = () => {
     </>
   );
 };
+export default LatestPosts;

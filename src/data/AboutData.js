@@ -104,3 +104,11 @@ export const AboutHeroData = [
     ],
   },
 ];
+
+export const AboutTestimonialData = {
+  testimonial:
+    "Devias builds some of the best templates you can find for React. They will save you time",
+  Avatar: "/static/home/olivier.png",
+  name: "Olivier Tassinari",
+  role: "co-creator of @MUI",
+};

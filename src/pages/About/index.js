@@ -1,15 +1,16 @@
 import React from "react";
 
-import { Hero } from "./sections/Hero";
+
 import { AboutUs } from "./sections/AboutUs";
 import { Team } from "./sections/Team";
 import { Featuring } from "./sections/Featuring";
 import { Newsletter } from "./sections/Newsletter";
-import { Testimonial } from "./sections/Testimonial";
+
 import { About2 } from "./sections/About2";
 
-import { AboutHeroData } from "data/AboutData";
+import { AboutHeroData , AboutTestimonialData } from "data/AboutData";
 import HeroFour from "components/Hero/HeroFour";
+import SimpleTestimonial from "components/Testimonials/SimpleTestimonial";
 
 function About() {
   return (
@@ -19,8 +20,9 @@ function About() {
       <AboutUs />
       <About2 />
      
-      <Testimonial />
-      <Featuring />
+    
+      <SimpleTestimonial data={AboutTestimonialData} />
+      <Featuring/>
       <Team />
 
       <Newsletter />

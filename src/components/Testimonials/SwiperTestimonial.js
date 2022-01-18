@@ -9,10 +9,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Styles must use direct files imports
 import "swiper/css"; // core Swiper
 import "swiper/css/navigation"; // Navigation module
-export const SwiperTestimonial = (props) => {
+function SwiperTestimonial(props) {
   const { data } = props;
   const theme = useTheme();
-  const data = [1, 2, 3];
+
   SwiperCore.use([Autoplay, Navigation]);
   return (
     <Swiper
@@ -40,7 +40,7 @@ export const SwiperTestimonial = (props) => {
               }}
             >
               <Typography align="center" color="white" variant="h3">
-                &quot;{data.testimonial}.&quot;
+                &quot;{item.testimonial}.&quot;
               </Typography>
               <Box
                 sx={{
@@ -49,13 +49,13 @@ export const SwiperTestimonial = (props) => {
                   mt: 3,
                 }}
               >
-                <Avatar src={data.avatar} sx={{ mr: 2 }} variant="rounded" />
+                <Avatar src={item.avatar} sx={{ mr: 2 }} variant="rounded" />
                 <div>
                   <Typography color="white" variant="h6">
-                    {data.name}
+                    {item.name}
                   </Typography>
                   <Typography color="white" variant="body2">
-                    {data.role}
+                    {item.role}
                   </Typography>
                 </div>
               </Box>
@@ -65,4 +65,5 @@ export const SwiperTestimonial = (props) => {
       ))}
     </Swiper>
   );
-};
+}
+export default SwiperTestimonial;
