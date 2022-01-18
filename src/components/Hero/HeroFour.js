@@ -10,18 +10,14 @@ import SwiperCore, { Autoplay, Navigation } from "swiper";
 // SwiperJS react components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-
-import bgImage from "assets/images/bg5.jpg";
 // Styles must use direct files imports
 import "swiper/css"; // core Swiper
 import "swiper/css/navigation"; // Navigation module
 
 import { Box, Container, Grid, IconButton, Typography } from "@mui/material";
 
-
-
 function HeroFour(props) {
-  const { data } = props ;
+  const { data } = props;
   const theme = useTheme();
   //const { heading } = props;
   SwiperCore.use([Autoplay, Navigation]);

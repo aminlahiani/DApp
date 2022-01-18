@@ -1,17 +1,19 @@
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-export const Hero = (props) => {
+function HomeAbout(props) {
+  const { data } = props;
   const theme = useTheme();
 
   return (
     <Box
+      minHeight="584px"
       sx={{
-        background: theme.palette.primary.mainGradient,
-        height: "100vh",
+        backgroundColor: "background.default",
+
         display: "flex",
         justifyContent: "center",
-        alignItems: { xs: "baseline", md: "center" },
+        alignItems: { xs: "center", md: "center" },
       }}
     >
       <Container maxWidth="lg">
@@ -28,34 +30,31 @@ export const Hero = (props) => {
             }}
           >
             <div>
-              <Typography color="textPrimary" variant="h1">
-                Digital Agency UI React template with MUI
+              <Typography color="textPrimary" variant="h3">
+                {data.heading}
               </Typography>
               <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
-                Not just a set of tools, the package includes ready-to-deploy conceptual
-                applications written in JavaScript & TypeScript.
+                {data.shortDescription}
               </Typography>
-              <Box
-                sx={{
-                  display: "flex",
-                  flexWrap: "wrap",
 
-                  mx: -1,
-                  mt: 2,
-                  mb: 6,
-                  "& > a": {
-                    m: 1,
-                  },
-                }}
-              >
-                <Button href="/#about" component="a" size="large" variant="outlined">
-                  About Us
-                </Button>
-
-                <Button size="large" component="a" variant="contained">
-                  Contact Us
-                </Button>
-              </Box>
+              <Grid container spacing={3}>
+                <Grid item md={6} xs={12}>
+                  <Typography color="textPrimary" variant="h3">
+                    {data.heading2}
+                  </Typography>
+                  <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
+                    {data.shortDescription2}
+                  </Typography>
+                </Grid>
+                <Grid item md={6} xs={12}>
+                  <Typography color="textPrimary" variant="h3">
+                    {data.heading3}
+                  </Typography>
+                  <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
+                    {data.shortDescription3}
+                  </Typography>
+                </Grid>
+              </Grid>
             </div>
           </Grid>
           <Grid
@@ -72,7 +71,6 @@ export const Hero = (props) => {
           >
             <Box
               sx={{
-                display: { xs: "none", md: "block" },
                 position: "relative",
                 pt: "calc(960 / 1225 * 100%)",
                 "& img": {
@@ -83,14 +81,13 @@ export const Hero = (props) => {
                 },
               }}
             >
-              <img
-                alt="For developers"
-                src={`/static/contact/undraw_contact_us_${theme.palette.mode}.svg`}
-              />
+              <img alt="For developers" src={data.imgsrc} />
             </Box>
           </Grid>
         </Grid>
       </Container>
     </Box>
   );
-};
+}
+
+export default HomeAbout;

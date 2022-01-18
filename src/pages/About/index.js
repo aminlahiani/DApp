@@ -18,8 +18,9 @@ function About() {
       <HeroFour data={AboutHeroData} />
       <AboutUs />
       <About2 />
-      <Featuring />
+     
       <Testimonial />
+      <Featuring />
       <Team />
 
       <Newsletter />

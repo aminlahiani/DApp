@@ -1,8 +1,8 @@
-import {  Box, Container, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-function HeroThree (props) {
-    const { data} = props ;
+function HeroThree(props) {
+  const { data } = props;
   const theme = useTheme();
 
   return (
@@ -15,7 +15,6 @@ function HeroThree (props) {
         justifyContent: "center",
         alignItems: { xs: "baseline", md: "center" },
       }}
-      
     >
       <Container
         maxWidth="md"
@@ -26,14 +25,14 @@ function HeroThree (props) {
         }}
       >
         <Typography align="center" variant="h1" color="textPrimary">
-        {data.heading}
+          {data.heading}
         </Typography>
         <Typography align="center" color="textSecondary" variant="subtitle1" sx={{ pt: 3 }}>
-         {data.shortDescription}
+          {data.shortDescription}
         </Typography>
       </Container>
     </Box>
   );
-};
+}
 
-export default HeroThree
+export default HeroThree;

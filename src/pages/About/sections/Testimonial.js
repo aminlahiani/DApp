@@ -10,7 +10,6 @@ export const Testimonial = (props) => {
         backgroundColor: "#132F4C",
         py: 15,
       }}
-      {...props}
     >
       <Container
         maxWidth="md"
@@ -20,13 +19,27 @@ export const Testimonial = (props) => {
           flexDirection: "column",
         }}
       >
-        <Typography align="center" variant="h1" color="#FFFFFF">
-          Material Kit Pro v5.0
+        <Typography align="center" color="white" variant="h3">
+          &quot;Devias builds some of the best templates you can find for React. They will save you
+          time.&quot;
         </Typography>
-        <Typography align="center" color="#FFFFFF" variant="subtitle1" sx={{ py: 3 }}>
-          A professional kit that comes with ready-to-use MUI© components developed with one common
-          goal in mind, help you build faster &amp; beautiful applications.
-        </Typography>
+        <Box
+          sx={{
+            alignItems: "center",
+            display: "flex",
+            mt: 3,
+          }}
+        >
+          <Avatar src="/static/home/olivier.png" sx={{ mr: 2 }} variant="rounded" />
+          <div>
+            <Typography color="white" variant="h6">
+              Olivier Tassinari,
+            </Typography>
+            <Typography color="white" variant="body2">
+              co-creator of @MUI
+            </Typography>
+          </div>
+        </Box>
       </Container>
     </Box>
   );

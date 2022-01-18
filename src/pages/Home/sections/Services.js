@@ -15,7 +15,7 @@ import { InfoCard } from "components/Cards/InfoCard";
 export const Services = () => {
   return (
     <Box
-      minHeight="100vh"
+    minHeight="584px"
       sx={{
         backgroundColor: "background.paper",
         display: "flex",
