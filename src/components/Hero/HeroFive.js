@@ -26,8 +26,8 @@ function HeroFive(props) {
       sx={{
         background: theme.palette.primary.mainGradient,
         py: 2,
-        height: { xs:"25vh", md: "50vh" } ,
-        
+        height: { xs: "25vh", md: "50vh" },
+
         display: "flex",
         justifyContent: "center",
         alignItems: { xs: "baseline", md: "center" },

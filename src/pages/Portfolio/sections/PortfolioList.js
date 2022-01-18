@@ -105,8 +105,6 @@ const posts = [
   },
 ];
 
-
-
 export const PortfolioList = () => (
   <Box
     sx={{

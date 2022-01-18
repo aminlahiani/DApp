@@ -1,4 +1,4 @@
-import { Box, Button, Container, Grid, Typography , useMediaQuery} from "@mui/material";
+import { Box, Button, Container, Grid, Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { useEffect, useRef } from "react";
 import { Link as RouterLink } from "react-router-dom";
@@ -6,7 +6,7 @@ import { Link as RouterLink } from "react-router-dom";
 import * as Typed from "typed.js";
 
 function HeroTwo(props) {
-  const { data , nomobileimg} = props;
+  const { data, nomobileimg } = props;
   const theme = useTheme();
   const typedJSRef = useRef(null);
   // Setting up typedJS
@@ -22,12 +22,12 @@ function HeroTwo(props) {
 
     return () => typedJS.destroy();
   }, []);
-  const isXs= useMediaQuery(theme.breakpoints.down("sm"))
+  const isXs = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Box
       sx={{
         background: theme.palette.primary.mainGradient,
-        height: { xs: nomobileimg ?"80vh" :  "100vh", md: "584px" },
+        height: { xs: nomobileimg ? "80vh" : "100vh", md: "584px" },
         display: "flex",
         justifyContent: "center",
         alignItems: { xs: "baseline", md: "center" },
@@ -81,7 +81,7 @@ function HeroTwo(props) {
           >
             <Box
               sx={{
-                display: nomobileimg ? { xs: "none", md: "block" } :  "block"  ,
+                display: nomobileimg ? { xs: "none", md: "block" } : "block",
                 position: "relative",
                 pt: "calc(960 / 1225 * 100%)",
                 "& img": {

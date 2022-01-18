@@ -1,8 +1,8 @@
 import { Avatar, Box, Button, Container, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-function SimpleTestimonial (props){
-    const { data } = props;
+function SimpleTestimonial(props) {
+  const { data } = props;
   const theme = useTheme();
 
   return (
@@ -43,5 +43,5 @@ function SimpleTestimonial (props){
       </Container>
     </Box>
   );
-};
-export default SimpleTestimonial
+}
+export default SimpleTestimonial;

@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "authorname":"Omar Darobe" , 
+    "authorname": "Omar Darobe",
     "publishedAt": "3 March 2022",
     "category": "Programming",
     "cover": "/static/mock-images/covers/cover_4.jpeg",
@@ -12,7 +12,7 @@
   },
   {
     "id": "2",
-    "authorname":"Omar Darobe" , 
+    "authorname": "Omar Darobe",
 
     "category": "Productivity",
     "cover": "/static/mock-images/covers/cover_5.jpeg",
@@ -24,7 +24,7 @@
   },
   {
     "id": "3",
-    "authorname":"Omar Darobe" , 
+    "authorname": "Omar Darobe",
     "category": "Entrepreneurs",
     "cover": "/static/mock-images/covers/cover_6.jpeg",
     "publishedAt": "3 March 2022",
@@ -35,7 +35,7 @@
   },
   {
     "id": "4",
-    "authorname":"Omar Darobe" , 
+    "authorname": "Omar Darobe",
     "category": "Programming",
     "cover": "/static/mock-images/covers/cover_4.jpeg",
     "publishedAt": "3 March 2022",
@@ -46,7 +46,7 @@
   },
   {
     "id": "5",
-    "authorname":"Omar Darobe" , 
+    "authorname": "Omar Darobe",
     "category": "Productivity",
     "cover": "/static/mock-images/covers/cover_5.jpeg",
     "publishedAt": "3 March 2022",
@@ -57,7 +57,7 @@
   },
   {
     "id": "6",
-    "authorname":"Omar Darobe" , 
+    "authorname": "Omar Darobe",
     "category": "Entrepreneurs",
     "cover": "/static/mock-images/covers/cover_6.jpeg",
     "publishedAt": "3 March 2022",

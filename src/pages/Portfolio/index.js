@@ -7,7 +7,7 @@ import { PortfolioList } from "./sections/PortfolioList";
 function index() {
   return (
     <div>
-      <HeroThree data={PortfolioHeroData}  />
+      <HeroThree data={PortfolioHeroData} />
 
       <PortfolioList />
     </div>

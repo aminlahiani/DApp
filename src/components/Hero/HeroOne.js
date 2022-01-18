@@ -3,19 +3,17 @@ import { useTheme } from "@mui/material/styles";
 import { Link as RouterLink } from "react-router-dom";
 
 function HeroOne(props) {
-  const { nomobileimg , data } = props;
-
-  
+  const { nomobileimg, data } = props;
 
   const theme = useTheme();
- const isXs= useMediaQuery(theme.breakpoints.down("sm"))
- console.log(isXs)
+  const isXs = useMediaQuery(theme.breakpoints.down("sm"));
+  console.log(isXs);
   return (
     <Box
       sx={{
         background: theme.palette.primary.mainGradient,
-        height: { xs: nomobileimg ?"80vh" :  "100vh", md: "584px" },
-       
+        height: { xs: nomobileimg ? "80vh" : "100vh", md: "584px" },
+
         display: "flex",
         justifyContent: "center",
         alignItems: { xs: "center", md: "center" },
@@ -83,7 +81,7 @@ function HeroOne(props) {
           >
             <Box
               sx={{
-                display: nomobileimg ? { xs: "none", md: "block" } :  "block"  ,
+                display: nomobileimg ? { xs: "none", md: "block" } : "block",
                 position: "relative",
                 pt: "calc(960 / 1225 * 100%)",
                 "& img": {
@@ -94,7 +92,10 @@ function HeroOne(props) {
                 },
               }}
             >
-              <img alt="For developers"   src={theme.palette.mode === "dark" ? data.imgdark : data.imagesrc} />
+              <img
+                alt="For developers"
+                src={theme.palette.mode === "dark" ? data.imgdark : data.imagesrc}
+              />
             </Box>
           </Grid>
         </Grid>

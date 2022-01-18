@@ -1,17 +1,19 @@
-import HeroOne from "components/Hero/HeroOne";
-import React from "react";
-//import { FAQ } from "./sections/FAQ";
-
-import { HomeHeroData, HomeServicesData, HomeAboutData, HomeTestimonialData } from "data/HomeData";
+import {
+  HomeHeroData,
+  HomeServicesData,
+  HomeAboutData,
+  HomeTestimonialData,
+  HomeLatestPostsData,
+} from "data/HomeData";
 
 import HomeAbout from "components/About/HomeAbout";
 import SwiperTestimonial from "components/Testimonials/SwiperTestimonial";
 import ServicesOne from "components/Services/ServicesOne";
 import LatestPosts from "components/LatestPosts";
-import { HomeLatestPostsData } from "data/HomeData";
 import CtaNewsletter from "components/Cta/CtaNewsletter";
+import HeroOne from "components/Hero/HeroOne";
 
-function Index() {
+function Home() {
   return (
     <div>
       <HeroOne nomobileimg data={HomeHeroData} />
@@ -24,11 +26,9 @@ function Index() {
 
       <LatestPosts data={HomeLatestPostsData} />
 
-      <CtaNewsletter/>
-
-      {/* <FAQ /> */}
+      <CtaNewsletter />
     </div>
   );
 }
 
-export default Index;
+export default Home;

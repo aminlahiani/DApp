@@ -15,9 +15,8 @@ import { Link as RouterLink } from "react-router-dom";
 import { styled } from "@mui/material/styles";
 import BlogCard from "components/Cards/BlogCard";
 
-
-function LatestPosts  (props) {
-  const {data } = props;
+function LatestPosts(props) {
+  const { data } = props;
   return (
     <>
       <Box
@@ -37,7 +36,12 @@ function LatestPosts  (props) {
             <Typography align="center" color="textPrimary" variant="h2">
               {data.heading}
             </Typography>
-            <Button size="small" component={RouterLink} to={data.buttonurl} endIcon={<ArrowForward />}>
+            <Button
+              size="small"
+              component={RouterLink}
+              to={data.buttonurl}
+              endIcon={<ArrowForward />}
+            >
               {data.buttontest}
             </Button>
           </Box>
@@ -53,5 +57,5 @@ function LatestPosts  (props) {
       </Box>
     </>
   );
-};
+}
 export default LatestPosts;

@@ -1,16 +1,15 @@
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import { Box, Button, Container, Grid, Link, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-
-export const Hero = (props) => {
+import { CheckCircleOutlined as CheckCircleOutlinedIcon } from "icons/check-circle-outlined";
+function FeaturingOne(props) {
   const theme = useTheme();
-
+  const { data } = props;
   return (
     <Box
       sx={{
-        background: theme.palette.primary.mainGradient,
-        py: 10,
+        backgroundColor: "background.default",
+        py: 4,
       }}
-      {...props}
     >
       <Container maxWidth="lg">
         <Grid alignItems="center" container justifyContent="center" spacing={3}>
@@ -26,17 +25,27 @@ export const Hero = (props) => {
             }}
           >
             <div>
-              <Typography color="textPrimary" variant="h1">
-                Organic company growth with targeted leads
+              <Typography color="textPrimary" variant="h3">
+                {data.heading}
               </Typography>
               <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
-                Not just a set of tools, the package includes ready-to-deploy conceptual
-                applications written in JavaScript & TypeScript.
+                {data.shortDescription}
               </Typography>
-
-              <Button size="large" component="a" variant="contained">
-                Browse Components
-              </Button>
+              {data.featuring.map((item) => (
+                <Box
+                  key={item}
+                  sx={{
+                    alignItems: "center",
+                    display: "flex",
+                    m: 2,
+                  }}
+                >
+                  <CheckCircleOutlinedIcon color="info" sx={{ mr: 1 }} />
+                  <Typography color="textSecondary" variant="body1">
+                    {item}
+                  </Typography>
+                </Box>
+              ))}
             </div>
           </Grid>
           <Grid
@@ -54,7 +63,7 @@ export const Hero = (props) => {
             <Box
               sx={{
                 position: "relative",
-                pt: "calc(960 / 1225 * 85%)",
+                pt: "calc(960 / 1225 * 100%)",
                 "& img": {
                   height: "auto",
                   position: "absolute",
@@ -63,14 +72,12 @@ export const Hero = (props) => {
                 },
               }}
             >
-              <img
-                alt="For developers"
-                src={`/static/contact/undraw_contact_us_${theme.palette.mode}.svg`}
-              />
+              <img alt="For developers" src={`/static/home/developers_${theme.palette.mode}.png`} />
             </Box>
           </Grid>
         </Grid>
       </Container>
     </Box>
   );
-};
+}
+export default FeaturingOne;

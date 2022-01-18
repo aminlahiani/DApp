@@ -10,7 +10,6 @@ export const Hero = (props) => {
         background: theme.palette.primary.mainGradient,
         py: 6,
       }}
-      
     >
       <Container
         maxWidth="md"
