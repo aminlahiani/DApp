@@ -1,0 +1,101 @@
+[
+  {
+    "heading": "Material Design - News1",
+    "shortDescription": "Pain is what we go through as we become older. We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder",
+    "keyword": " Connect with us on",
+    "img": "/static/about/bg5.jpg",
+    "socialIcons": [
+      {
+        "baseicon": "fab",
+        "icon": "fa-facebook-square",
+        "label": "Facebook",
+        "href": "https://facebook.com"
+      },
+      {
+        "baseicon": "fab",
+        "icon": "fa-instagram",
+        "label": "Instagram",
+        "href": "https://www.instagram.com/"
+      },
+
+      {
+        "baseicon": "fab",
+        "icon": "fa-linkedin",
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/"
+      },
+      {
+        "baseicon": "fab",
+        "icon": "fa-twitter",
+        "label": "Twitter",
+        "href": "https://www.twitter.com/"
+      }
+    ]
+  },
+  {
+    "heading": "Material Design - News2",
+    "shortDescription": "Pain is what we go through as we become older. We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder",
+    "keyword": " Connect with us on",
+    "img": "/static/about/bg-about-us.jpg",
+    "socialIcons": [
+      {
+        "baseicon": "fab",
+        "icon": "fa-facebook-square",
+        "label": "Facebook",
+        "href": "https://facebook.com"
+      },
+      {
+        "baseicon": "fab",
+        "icon": "fa-instagram",
+        "label": "Instagram",
+        "href": "https://www.instagram.com/"
+      },
+
+      {
+        "baseicon": "fab",
+        "icon": "fa-linkedin",
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/"
+      },
+      {
+        "baseicon": "fab",
+        "icon": "fa-twitter",
+        "label": "Twitter",
+        "href": "https://www.twitter.com/"
+      }
+    ]
+  },
+  {
+    "heading": "Material Design - News3",
+    "shortDescription": "Pain is what we go through as we become older. We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder",
+    "keyword": " Connect with us on",
+    "img": "/static/about/bg8.jpg",
+    "socialIcons": [
+      {
+        "baseicon": "fab",
+        "icon": "fa-facebook-square",
+        "label": "Facebook",
+        "href": "https://facebook.com"
+      },
+      {
+        "baseicon": "fab",
+        "icon": "fa-instagram",
+        "label": "Instagram",
+        "href": "https://www.instagram.com/"
+      },
+
+      {
+        "baseicon": "fab",
+        "icon": "fa-linkedin",
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/"
+      },
+      {
+        "baseicon": "fab",
+        "icon": "fa-twitter",
+        "label": "Twitter",
+        "href": "https://www.twitter.com/"
+      }
+    ]
+  }
+]

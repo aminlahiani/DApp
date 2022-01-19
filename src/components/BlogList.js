@@ -1,5 +1,5 @@
 import { Box, Container, Grid } from "@mui/material";
-import BlogsData from "data/blog/blogs-data.json";
+
 import BlogCard from "components/Cards/BlogCard";
 
 

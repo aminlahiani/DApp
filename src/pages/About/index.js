@@ -7,15 +7,23 @@ import { Newsletter } from "./sections/Newsletter";
 
 import { About2 } from "./sections/About2";
 
-import { AboutHeroData, AboutTestimonialData } from "data/AboutData";
+import {  AboutTestimonialData } from "data/AboutData";
 import HeroFour from "components/Hero/HeroFour";
 import SimpleTestimonial from "components/Testimonials/SimpleTestimonial";
+import Icon from '@mui/material/Icon';
+
+import AboutHeroData from 'data/About/about-hero-data.json';
 
 function About() {
   return (
     <>
+    
+  
       {/* <Hero /> */}
+      {JSON.stringify(AboutHeroData)}
+     
       <HeroFour data={AboutHeroData} />
+     
       <AboutUs />
       <About2 />
 

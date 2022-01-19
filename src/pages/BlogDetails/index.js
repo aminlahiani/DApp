@@ -2,7 +2,7 @@ import React from "react";
 import { Details } from "./sections/Details";
 import { Hero } from "./sections/Hero";
 
-import BlogsData from "data/blog/blogs-data.json";
+import BlogsData from "data/Blogs/blogs-data.json";
 import { useParams } from "react-router-dom";
 function index() {
   const parameter = useParams();

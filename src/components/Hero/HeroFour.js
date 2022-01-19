@@ -14,7 +14,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // core Swiper
 import "swiper/css/navigation"; // Navigation module
 
-import { Box, Container, Grid, IconButton, Typography } from "@mui/material";
+import { Box, Container, Grid, Icon, IconButton, Typography } from "@mui/material";
 
 function HeroFour(props) {
   const { data } = props;
@@ -75,7 +75,8 @@ function HeroFour(props) {
                         }}
                         href={socialIcon.href}
                       >
-                        {socialIcon.icon}
+                     
+                      <Icon baseClassName={socialIcon.baseicon} className={socialIcon.icon}  color="primary" fontSize="small" />
                       </IconButton>
                     </Box>
                   ))}
