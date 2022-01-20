@@ -13,13 +13,12 @@ import AboutFeaturing from "components/About/AboutFeaturing";
 import SimpleTestimonial from "components/Testimonials/SimpleTestimonial";
 
 import AboutHeroData from "data/About/about-hero-data.json";
-import AboutTestimonialData from "data/About/about-testimonial-data.json";
-
 import AboutOneData from "data/About/about-one-data.json";
 import AboutTowData from "data/About/about-tow-data.json";
 import AboutThreeData from "data/About/about-three-data.json";
 import AboutFeaturingData from "data/About/about-featuring-data.json";
-
+import AboutTestimonialData from "data/About/about-testimonial-data.json";
+import Card1 from "./sections/Card1";
 
 function About() {
   return (
@@ -39,6 +38,8 @@ function About() {
 
       <SimpleTestimonial data={AboutTestimonialData} />
 
+       <Card1/>
+       
       <Team />
 
       <Newsletter />
