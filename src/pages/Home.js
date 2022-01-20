@@ -1,4 +1,6 @@
-import HomeAbout from "components/About/HomeAbout";
+
+
+import HomeAbout from "components/Home/HomeAbout";
 import SwiperTestimonial from "components/Testimonials/SwiperTestimonial";
 import ServiceList from "components/ServiceList";
 import LatestPosts from "components/LatestPosts";

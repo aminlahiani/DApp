@@ -8,10 +8,10 @@ export const About2 = (props) => {
   return (
     <Box
       sx={{
-        backgroundColor: "background.default",
-        py: 15,
+        backgroundColor: "background.paper",
+        py: 3,
       }}
-      {...props}
+ 
     >
       <Container maxWidth="lg">
         <Grid alignItems="center" container justifyContent="center" spacing={3}>

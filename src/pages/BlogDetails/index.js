@@ -12,6 +12,7 @@ function index() {
     <div>
       <Hero />
       <Details data={data[0]} />
+      
     </div>
   );
 }
