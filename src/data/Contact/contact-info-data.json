@@ -1,0 +1,43 @@
+{
+  "heading": "The powerful and flexible theme for all kinds of businesses",
+  "shortDescription": " Send one-off and automated email, push, and in-app messages to people. Create betterstories.",
+  "featuring": [
+    "JavaScript",
+    "TypeScript",
+    "Figma",
+    "Sketch",
+    "JavaScript",
+    "TypeScript",
+    "Figma",
+    "Sketch",
+    "JavaScript",
+    "TypeScript",
+    "Figma",
+    "Sketch"
+  ],
+  "imgdark": "/static/home/developers_dark.png",
+  "imglight": "/static/home/developers_light.png",
+  "infoquot": "Everyone thinks of changing the world, but no one thinks of changing himself",
+  "infolist": [
+    {
+      "baseicon": "fab",
+      "icon": "fa-facebook-square",
+      "infocontent": "Everyone thinks of changing"
+    },
+    {
+      "baseicon": "fab",
+      "icon": "fa-facebook-square",
+      "infocontent": "Everyone thinks of changing"
+    },
+    {
+      "baseicon": "fab",
+      "icon": "fa-facebook-square",
+      "infocontent": "Everyone thinks of changing"
+    },
+    {
+      "baseicon": "fab",
+      "icon": "fa-facebook-square",
+      "infocontent": "Everyone thinks of changing"
+    }
+  ]
+}
