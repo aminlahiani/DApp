@@ -1,4 +1,4 @@
-import { Chip, Container, Typography, Box } from "@mui/material";
+import { Chip, Container, Typography, Box, Card, CardMedia } from "@mui/material";
 
 export const Details = (props) => {
   const { data } = props;
@@ -9,6 +9,19 @@ export const Details = (props) => {
       }}
     >
       <Container maxWidth="md">
+        <Card sx={{ width: "100%", height: "100%", pt: 3 }}>
+          <CardMedia image={data.image} sx={{ height: 500 }} />
+        </Card>
+        <Typography
+          color="textPrimary"
+          sx={{
+            fontWeight: "fontWeightBold",
+            mt: 3,
+          }}
+          variant="h2"
+        >
+          {data.title}
+        </Typography>
         <Box
           sx={{
             alignItems: "center",
@@ -24,19 +37,25 @@ export const Details = (props) => {
             </Typography>
           </Box>
         </Box>
-
-        <Typography
-          color="textPrimary"
-          sx={{
-            fontWeight: "fontWeightBold",
-            mt: 3,
-          }}
-          variant="h2"
-        >
-          {data.title}
+        <Typography color="textPrimary" sx={{ mt: 3 }} variant="h3">
+          {data.subtitle1}
         </Typography>
+
         <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
           {data.shortDescription}
+        </Typography>
+
+        <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
+          {data.paragraph1}
+        </Typography>
+        <Typography color="textPrimary" sx={{ mt: 3 }} variant="h3">
+          {data.subtitle2}
+        </Typography>
+        <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
+          {data.paragraph2}
+        </Typography>
+        <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
+          {data.paragraph3}
         </Typography>
       </Container>
     </Box>
