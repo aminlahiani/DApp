@@ -9,8 +9,7 @@ import {
   Link,
   Typography,
 } from "@mui/material";
-import RotatingCardBack from "./RotatingCard/RotatingCardBack";
-import RotatingCardFront from "./RotatingCard/RotatingCardFront";
+
 import { useState } from "react";
 
 import { useTheme } from "@mui/system";
