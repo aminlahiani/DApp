@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
 import About from "./pages/About";
@@ -16,7 +17,13 @@ import BlogDetails from "./pages/BlogDetails";
 import NotFound from "./pages/NotFound";
 import NotFondLayout from "layout/NotFondLayout";
 
+import 'aos/dist/aos.css';
+import AOS from "aos";
 export default function App() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <BrowserRouter>
       <Routes>

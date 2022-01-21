@@ -2,7 +2,7 @@ import { Box, Container, Grid } from "@mui/material";
 
 import BlogCard from "components/Cards/BlogCard";
 
-function BlogList(props) {
+function BlogsList(props) {
   const { data } = props;
 
   return (
@@ -26,4 +26,4 @@ function BlogList(props) {
   );
 }
 
-export default BlogList;
+export default BlogsList;

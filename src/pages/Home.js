@@ -17,17 +17,26 @@ function Home() {
     <div>
       {/* {JSON.stringify(HomeLatestPostsData)} */}
 
-      <HomeHero nomobileimg data={HomeHeroData} />
+      <div data-aos="fade-up">
+        <HomeHero nomobileimg data={HomeHeroData} />
+      </div>
 
-      <HomeServiceList data={HomeServicesData} />
+      <div data-aos="fade-up">
+        <HomeServiceList data={HomeServicesData} />
+      </div>
 
-      <HomeAbout data={HomeAboutData} />
-
-      <HomeTestimonial data={HomeTestimonialData} />
-
-      <HomeLatestPosts data={HomeLatestPostsData} />
-
-      <CtaNewsletter />
+      <div data-aos="fade-up">
+        <HomeAbout data={HomeAboutData} />
+      </div>
+      <div data-aos="fade-up">
+        <HomeTestimonial data={HomeTestimonialData} />
+      </div>
+      <div data-aos="fade-up">
+        <HomeLatestPosts data={HomeLatestPostsData} />
+      </div>
+      <div data-aos="fade-up">
+        <CtaNewsletter />
+      </div>
     </div>
   );
 }

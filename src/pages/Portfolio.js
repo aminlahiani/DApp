@@ -1,15 +1,18 @@
-import HeroThree from "components/Hero/HeroThree";
-import PortfolioList from "components/PortfolioList";
+import PortfolioHero from "components/Portfolio/PortfolioHero";
+import PortfolioList from "components/Portfolio/PortfolioList";
 
 //data
 import PortfolioHeroData from "data/Portfolio/portfolio-hero-data.json";
+import PortfolioListData from "data/Portfolio/portfolio-list-data.json";
 
 function Portfolio() {
+  
+  
   return (
     <div>
-      {/* {JSON.stringify(PortfolioHeroData)} */}
-      <HeroThree data={PortfolioHeroData} />
-      <PortfolioList />
+      {/* {JSON.stringify(posts)}  */}
+      <PortfolioHero data={PortfolioHeroData} />
+      <PortfolioList data={PortfolioListData} />
     </div>
   );
 }

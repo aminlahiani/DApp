@@ -1,20 +1,20 @@
-import HeroOne from "components/Hero/HeroOne";
-import BlogList from "components/BlogList";
+import BlogsList from "components/Blogs/BlogsList";
 import CtaNewsletter from "components/Cta/CtaNewsletter";
 
 import BlogsHeroData from "data/Blogs/blog-hero-data.json";
 import BlogsData from "data/Blogs/blogs-data.json";
+import BlogsHero from "components/Blogs/BlogsHero";
 
 function Blogs() {
   return (
     <div>
       {/* {JSON.stringify(BlogsData)} */}
-      <HeroOne
+      <BlogsHero
         //nomobileimg
         data={BlogsHeroData}
       />
-
-      <BlogList data={BlogsData} />
+      
+      <BlogsList data={BlogsData} />
       <CtaNewsletter />
     </div>
   );
