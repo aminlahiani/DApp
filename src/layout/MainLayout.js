@@ -1,14 +1,13 @@
 import React from "react";
-import ResponsiveAppBar from "./Appbar";
 import { useEffect, useState } from "react";
 
 import { Box, ThemeProvider } from "@mui/material";
 import { useSettings } from "../hooks/use-settings";
-import { styled } from "@mui/material/styles";
+
 import { createTheme } from "../theme";
 import { Outlet } from "react-router-dom";
-import { Footer1 } from "./footer1";
-
+import { MainFooter } from "../components/Footers/MainFooter";
+import MainNavbar from "components/Navbars/MainNavbar";
 function MainLayout() {
   const { settings } = useSettings();
   const [selectedTheme, setSelectedTheme] = useState(settings.theme);
@@ -22,11 +21,6 @@ function MainLayout() {
     mode: selectedTheme,
   });
 
-  // const MainLayoutRoot = styled('div')(() => ({
-  //   height: '100%',
-  //   paddingTop: 59,
-  //   backgroundColor: "",
-  // }));
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -37,10 +31,10 @@ function MainLayout() {
             // paddingTop: '59px'
           }}
         >
-          <ResponsiveAppBar selectedTheme={selectedTheme} setSelectedTheme={setSelectedTheme} />
+          <MainNavbar selectedTheme={selectedTheme} setSelectedTheme={setSelectedTheme} />
 
           <Outlet />
-          <Footer1 />
+          <MainFooter />
         </Box>
       </ThemeProvider>
     </>

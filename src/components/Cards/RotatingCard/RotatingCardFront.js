@@ -41,7 +41,6 @@ function RotatingCardFront(props) {
           cover="/static/mock-images/covers/cover_1.jpg"
           name="Anika Visser"
         />
-   
       </Box>
     </>
   );

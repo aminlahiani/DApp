@@ -19,11 +19,9 @@ import { styled } from "@mui/material/styles";
 
 export default styled(Box)(({ theme, ownerState }) => {
   const { palette } = theme;
-  const { variant, bgColor, color, opacity} = ownerState;
+  const { variant, bgColor, color, opacity } = ownerState;
 
   const { gradients, grey, white } = palette;
-
-
 
   const greyColors = {
     "grey-100": grey[100],
@@ -72,7 +70,6 @@ export default styled(Box)(({ theme, ownerState }) => {
     "grey-900",
   ];
 
-
   // background value
   let backgroundValue = bgColor;
 
@@ -96,11 +93,10 @@ export default styled(Box)(({ theme, ownerState }) => {
   // borderRadius value
 
   // boxShadow value
-  
+
   return {
     opacity,
     background: backgroundValue,
     color: colorValue,
-    
   };
 });

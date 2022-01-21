@@ -35,7 +35,7 @@ function FlipCard() {
             color: "black",
           }}
         >
-            aaaaa
+          aaaaa
         </Box>
         <Box
           sx={{
@@ -48,7 +48,7 @@ function FlipCard() {
             transform: "rotateY(180deg)",
           }}
         >
-            bbbb
+          bbbb
         </Box>
       </Box>
     </Box>

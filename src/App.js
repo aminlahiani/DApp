@@ -14,6 +14,7 @@ import ServiceDetails from "./pages/ServiceDetails";
 import Blogs from "./pages/Blogs";
 import BlogDetails from "./pages/BlogDetails";
 import NotFound from "./pages/NotFound";
+import NotFondLayout from "layout/NotFondLayout";
 
 export default function App() {
   return (
@@ -32,7 +33,9 @@ export default function App() {
           <Route path="faq" element={<FAQ />} />
           <Route path="contact" element={<ContactPage />} />
         </Route>
-        <Route path="/not-found" element={<NotFound />} />
+        <Route path="/not-found" element={<NotFondLayout />}>
+          <Route index element={<NotFound />} />
+        </Route>
         <Route path="*" element={<Navigate to="/not-found" />} />
       </Routes>
     </BrowserRouter>

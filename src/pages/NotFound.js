@@ -4,7 +4,7 @@ import { Button, Typography, Box, Container, useMediaQuery } from "@mui/material
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Error() {
+function NotFound() {
   const theme = useTheme();
   const mobileDevice = useMediaQuery(theme.breakpoints.down("sm"));
   return (
@@ -60,4 +60,4 @@ function Error() {
   );
 }
 
-export default Error;
+export default NotFound;

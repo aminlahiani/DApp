@@ -3,16 +3,16 @@ import { useTheme } from "@mui/material/styles";
 import { Link as RouterLink } from "react-router-dom";
 
 function AboutOne(props) {
-const {  data } = props;
+  const { data } = props;
 
   const theme = useTheme();
   const isXs = useMediaQuery(theme.breakpoints.down("sm"));
   console.log(isXs);
-  
+
   return (
     <Box
       sx={{
-       // background: theme.palette.primary.mainGradient,
+        // background: theme.palette.primary.mainGradient,
         // height: { xs: nomobileimg ? "80vh" : "100vh", md: "584px" },
         backgroundColor: "background.default",
         display: "flex",
@@ -43,7 +43,6 @@ const {  data } = props;
               <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
                 {data.paragraph2}
               </Typography>
-             
             </div>
           </Grid>
           <Grid
@@ -60,7 +59,7 @@ const {  data } = props;
           >
             <Box
               sx={{
-                display : "block",
+                display: "block",
                 position: "relative",
                 pt: "calc(960 / 1225 * 100%)",
                 "& img": {

@@ -13,7 +13,7 @@ import {
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { alpha } from "@mui/material/styles";
-import { MinusOutlined as MinusOutlinedIcon } from "../icons/minus-outlined";
+import { MinusOutlined as MinusOutlinedIcon } from "../../icons/minus-outlined";
 import Icon from "@mui/material/Icon";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -134,7 +134,7 @@ const socialIcons = [
     href: "https://www.twitter.com/",
   },
 ];
-export const Footer1 = (props) => {
+export const MainFooter = (props) => {
   const theme = useTheme();
   return (
     <Box

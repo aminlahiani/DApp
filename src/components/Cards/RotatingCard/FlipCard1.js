@@ -15,7 +15,6 @@ function FlipCard1() {
   const theme = useTheme();
   return (
     <Box
-  
       sx={{
         bgcolor: "transparent",
         height: 500,
@@ -87,42 +86,38 @@ function FlipCard1() {
           </CardContent>
         </Box>
         <Box
-        
-              width="100%"
-              height="100%"
-          
+          width="100%"
+          height="100%"
           sx={{
             display: "flex",
-   
-         
+
             flexDirection: "column",
             position: "absolute",
             background: theme.palette.primary.mainGradient,
-           // backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.7),  rgba(0,0,0,0.9)), url(/static/mock-images/covers/cover_2.jpg)`,
+            // backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.7),  rgba(0,0,0,0.9)), url(/static/mock-images/covers/cover_2.jpg)`,
             backgroundSize: "cover",
 
             backfaceVisibility: "hidden",
 
-      
             transform: "rotateY(180deg)",
           }}
         >
-          <Box sx={{ 
-   justifyItems : "center",
-   alignItems : "center ",
-
-                }}>
-          <Typography color="textPrimary" variant="h5"    sx={{ display: "block" }}   align="center">
-            develop creative
-          </Typography>
-          <Typography color="textSecondary"    align="center" sx={{ my: 3 }} variant="subtitle1">
-            orem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum
-            ornare vehicula odio posuere quisque ultrices tempus cras id blandit maecenas in ornare
-            quis dolor tempus risus vitae feugiat fames aliquet
-          </Typography>
-
+          <Box
+            sx={{
+              justifyItems: "center",
+              alignItems: "center ",
+            }}
+          >
+            <Typography color="textPrimary" variant="h5" sx={{ display: "block" }} align="center">
+              develop creative
+            </Typography>
+            <Typography color="textSecondary" align="center" sx={{ my: 3 }} variant="subtitle1">
+              orem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum
+              ornare vehicula odio posuere quisque ultrices tempus cras id blandit maecenas in
+              ornare quis dolor tempus risus vitae feugiat fames aliquet
+            </Typography>
           </Box>
-        
+
           {/* <CardMedia image="/static/mock-images/covers/cover_2.jpg" sx={{ height: 200 }} />
           <CardContent sx={{ pt: 0 }}>
             <Box

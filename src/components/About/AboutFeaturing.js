@@ -1,8 +1,6 @@
-import { Box, Container, Typography, Avatar, Grid , Icon } from "@mui/material";
+import { Box, Container, Typography, Avatar, Grid, Icon } from "@mui/material";
 
-
-
-function AboutFeaturing (props) {
+function AboutFeaturing(props) {
   const { data } = props;
   return (
     <Box sx={{ py: 8, backgroundColor: "background.default" }}>
@@ -31,7 +29,12 @@ function AboutFeaturing (props) {
                   }}
                   variant="rounded"
                 >
-                  <Icon baseClassName={item.baseicon} className={item.icon}  color="white" fontSize="small" />
+                  <Icon
+                    baseClassName={item.baseicon}
+                    className={item.icon}
+                    color="white"
+                    fontSize="small"
+                  />
                 </Avatar>
                 <Typography color="textPrimary" textAlign="center" variant="h4">
                   {item.title}
@@ -46,5 +49,5 @@ function AboutFeaturing (props) {
       </Container>
     </Box>
   );
-};
-export default AboutFeaturing ;
+}
+export default AboutFeaturing;

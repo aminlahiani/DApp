@@ -14,7 +14,7 @@ import {
 import TeamCard from "components/Cards/TeamCard";
 
 function AboutTeamList(props) {
-    const { data } = props ;
+  const { data } = props;
   return (
     <Box
       sx={{
@@ -32,7 +32,7 @@ function AboutTeamList(props) {
         </Typography>
 
         <Grid container spacing={3}>
-        {data.teamlist.map((item, index) => (
+          {data.teamlist.map((item, index) => (
             <Grid item key={index} md={3} sm={3} xs={12}>
               <TeamCard data={item} />
             </Grid>

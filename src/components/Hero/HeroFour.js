@@ -75,8 +75,12 @@ function HeroFour(props) {
                         }}
                         href={socialIcon.href}
                       >
-                     
-                      <Icon baseClassName={socialIcon.baseicon} className={socialIcon.icon}  color="primary" fontSize="small" />
+                        <Icon
+                          baseClassName={socialIcon.baseicon}
+                          className={socialIcon.icon}
+                          color="primary"
+                          fontSize="small"
+                        />
                       </IconButton>
                     </Box>
                   ))}

@@ -48,7 +48,6 @@ function ContactForm(props) {
           </Box>
           <Typography align="center" color="textSecondary" sx={{ mt: 2 }} variant="body2">
             {data.msg}
-           
           </Typography>
         </form>
       </Container>

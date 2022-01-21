@@ -13,7 +13,7 @@ import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import FacebookIcon from "@mui/icons-material/Facebook";
+
 import NightsStayOutlinedIcon from "@mui/icons-material/NightsStayOutlined";
 const pages = [
   { id: 1, title: "Home", href: "/" },
@@ -26,7 +26,7 @@ const pages = [
 ];
 //const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
-const ResponsiveAppBar = ({ setSelectedTheme, selectedTheme }) => {
+const MainNavbar = ({ setSelectedTheme, selectedTheme }) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -130,4 +130,4 @@ const ResponsiveAppBar = ({ setSelectedTheme, selectedTheme }) => {
     </AppBar>
   );
 };
-export default ResponsiveAppBar;
+export default MainNavbar;

@@ -8,9 +8,7 @@ export const baseThemeOptions = {
       xl: 1920,
     },
   },
-  functions: {
-    
-  },
+  functions: {},
   components: {
     MuiAvatar: {
       styleOverrides: {

@@ -2,7 +2,7 @@ import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { ExternalLink as ExternalLinkIcon } from "icons/external-link";
 import { CheckCircleOutlined as CheckCircleOutlinedIcon } from "icons/check-circle-outlined";
-import PlaylistAddCheckCircleIcon from '@mui/icons-material/PlaylistAddCheckCircle';
+import PlaylistAddCheckCircleIcon from "@mui/icons-material/PlaylistAddCheckCircle";
 function AboutThree(props) {
   const { data } = props;
   const theme = useTheme();

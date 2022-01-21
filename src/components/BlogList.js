@@ -2,7 +2,6 @@ import { Box, Container, Grid } from "@mui/material";
 
 import BlogCard from "components/Cards/BlogCard";
 
-
 function BlogList(props) {
   const { data } = props;
 
@@ -11,7 +10,7 @@ function BlogList(props) {
       minHeight="100%"
       sx={{
         backgroundColor: "background.default",
-        py: 6
+        py: 6,
       }}
     >
       <Container maxWidth="lg">
