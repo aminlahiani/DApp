@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Styles must use direct files imports
 import "swiper/css"; // core Swiper
 import "swiper/css/navigation"; // Navigation module
-function SwiperTestimonial(props) {
+function HomeTestimonial(props) {
   const { data } = props;
   const theme = useTheme();
 
@@ -66,4 +66,4 @@ function SwiperTestimonial(props) {
     </Swiper>
   );
 }
-export default SwiperTestimonial;
+export default HomeTestimonial;

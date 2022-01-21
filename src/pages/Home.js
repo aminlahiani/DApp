@@ -1,9 +1,9 @@
+import HomeHero from "components/Home/HomeHero";
 import HomeAbout from "components/Home/HomeAbout";
-import SwiperTestimonial from "components/Testimonials/SwiperTestimonial";
-import ServiceList from "components/ServiceList";
-import LatestPosts from "components/LatestPosts";
+import HomeTestimonial from "components/Home/HomeTestimonial";
+import HomeServiceList from "components/Home/HomeServiceList";
+import HomeLatestPosts from "components/Home/HomeLatestPosts";
 import CtaNewsletter from "components/Cta/CtaNewsletter";
-import HeroOne from "components/Hero/HeroOne";
 
 //data
 import HomeHeroData from "data/Home/home-hero-data.json";
@@ -16,15 +16,16 @@ function Home() {
   return (
     <div>
       {/* {JSON.stringify(HomeLatestPostsData)} */}
-      <HeroOne nomobileimg data={HomeHeroData} />
 
-      <ServiceList data={HomeServicesData} />
+      <HomeHero nomobileimg data={HomeHeroData} />
+
+      <HomeServiceList data={HomeServicesData} />
 
       <HomeAbout data={HomeAboutData} />
 
-      <SwiperTestimonial data={HomeTestimonialData} />
+      <HomeTestimonial data={HomeTestimonialData} />
 
-      <LatestPosts data={HomeLatestPostsData} />
+      <HomeLatestPosts data={HomeLatestPostsData} />
 
       <CtaNewsletter />
     </div>

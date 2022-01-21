@@ -1,6 +1,7 @@
-import HeroTwo from "components/Hero/HeroTwo";
-import ServiceList from "components/ServiceList";
-import FeaturingOne from "components/Featuring/FeaturingOne";
+//import ServiceList from "components/ServiceList";
+import ServisesHero from "components/Services/ServisesHero";
+import ServicesList from "components/Services/ServicesList";
+import ServiceFeaturing from "components/Services/ServiceFeaturing";
 import CtaNewsletter from "components/Cta/CtaNewsletter";
 
 //data
@@ -12,9 +13,13 @@ function Services() {
   return (
     <div>
       {/* {JSON.stringify(ServiceFeaturingData)} */}
-      <HeroTwo data={ServicesHeroData} />
-      <ServiceList data={ServicesData} />
-      <FeaturingOne data={ServiceFeaturingData} />
+
+      <ServisesHero data={ServicesHeroData} />
+      <ServicesList data={ServicesData} />
+      <ServiceFeaturing data={ServiceFeaturingData} />
+
+      {/* <ServiceList data={ServicesData} /> */}
+
       <CtaNewsletter />
     </div>
   );

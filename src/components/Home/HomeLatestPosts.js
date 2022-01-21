@@ -15,7 +15,7 @@ import { Link as RouterLink } from "react-router-dom";
 import { styled } from "@mui/material/styles";
 import BlogCard from "components/Cards/BlogCard";
 
-function LatestPosts(props) {
+function HomeLatestPosts(props) {
   const { data } = props;
   return (
     <>
@@ -58,4 +58,4 @@ function LatestPosts(props) {
     </>
   );
 }
-export default LatestPosts;
+export default HomeLatestPosts;
