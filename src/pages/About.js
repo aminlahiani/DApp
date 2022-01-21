@@ -1,10 +1,11 @@
-import HeroFour from "components/Hero/HeroFour";
+import AboutHero from "components/About/AboutHero";
 import AboutOne from "components/About/AboutOne";
 import AboutTwo from "components/About/AboutTwo";
 import AboutThree from "components/About/AboutThree";
 import AboutFeaturing from "components/About/AboutFeaturing";
-import SimpleTestimonial from "components/Testimonials/SimpleTestimonial";
+import AboutTestimonial from "components/About/AboutTestimonial";
 import AboutTeamList from "components/About/AboutTeamList";
+
 import CtaNewsletter from "components/Cta/CtaNewsletter";
 
 import AboutHeroData from "data/About/about-hero-data.json";
@@ -21,7 +22,7 @@ function About() {
       {/* <Hero /> */}
       {/* {JSON.stringify(AboutTestimonialData)} */}
 
-      <HeroFour data={AboutHeroData} />
+      <AboutHero data={AboutHeroData} />
 
       <AboutOne data={AboutOneData} />
 
@@ -31,7 +32,7 @@ function About() {
 
       <AboutFeaturing data={AboutFeaturingData} />
 
-      <SimpleTestimonial data={AboutTestimonialData} />
+      <AboutTestimonial data={AboutTestimonialData} />
 
       <AboutTeamList data={AboutTeamData} />
 

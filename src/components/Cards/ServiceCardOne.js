@@ -17,7 +17,8 @@ function ServiceCardOne(props) {
 
             position: "relative",
             transform: rotate ? "rotateY(180deg)" : "rotateY(0)",
-            transition: "transform 0.6s",
+            //transition: "transform 0.6s",
+            transition: "all 0.8s cubic-bezier(0.30, 1.45, 0.7, 1.2)",
             transformStyle: "preserve-3d",
           }}
         >

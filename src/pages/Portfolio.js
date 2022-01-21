@@ -9,7 +9,6 @@ function Portfolio() {
     <div>
       {/* {JSON.stringify(PortfolioHeroData)} */}
       <HeroThree data={PortfolioHeroData} />
-
       <PortfolioList />
     </div>
   );
