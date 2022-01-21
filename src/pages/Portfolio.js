@@ -6,8 +6,6 @@ import PortfolioHeroData from "data/Portfolio/portfolio-hero-data.json";
 import PortfolioListData from "data/Portfolio/portfolio-list-data.json";
 
 function Portfolio() {
-  
-  
   return (
     <div>
       {/* {JSON.stringify(posts)}  */}

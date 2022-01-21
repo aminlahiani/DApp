@@ -1,4 +1,3 @@
-
 import { Avatar, Box, Button, Container, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { useEffect, useRef } from "react";

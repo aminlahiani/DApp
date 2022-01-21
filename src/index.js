@@ -6,8 +6,6 @@ import App from "./App";
 import { SettingsConsumer, SettingsProvider } from "./contexts/settings-context";
 import { createTheme } from "./theme";
 
-
-
 ReactDOM.render(
   <SettingsProvider>
     <SettingsConsumer>

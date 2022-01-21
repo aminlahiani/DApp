@@ -17,7 +17,7 @@ import BlogDetails from "./pages/BlogDetails";
 import NotFound from "./pages/NotFound";
 import NotFondLayout from "layout/NotFondLayout";
 
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 import AOS from "aos";
 export default function App() {
   useEffect(() => {

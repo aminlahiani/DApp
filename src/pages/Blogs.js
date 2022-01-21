@@ -13,7 +13,7 @@ function Blogs() {
         //nomobileimg
         data={BlogsHeroData}
       />
-      
+
       <BlogsList data={BlogsData} />
       <CtaNewsletter />
     </div>
