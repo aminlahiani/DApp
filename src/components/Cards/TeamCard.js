@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Avatar,
   Box,
@@ -10,54 +9,117 @@ import {
   Link,
   Typography,
 } from "@mui/material";
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
+import RotatingCardBack from "./RotatingCard/RotatingCardBack";
+import RotatingCardFront from "./RotatingCard/RotatingCardFront";
+import { useState } from "react";
 
+import { useTheme } from "@mui/system";
 function TeamCard(props) {
-  const { cover, avatar, name, commonConnections } = props;
+  const { data } = props;
+  const theme = useTheme();
+  const [rotate, setRotate] = useState(false);
+
+  const rotate0 = () => setRotate(false);
+  const rotate180 = () => setRotate(true);
   return (
-    <Card>
-      <CardMedia image={cover} sx={{ height: 200 }} />
-      <CardContent sx={{ pt: 0 }}>
+    <>
+      <Box sx={{ perspective: "50rem" }} onMouseEnter={rotate180} onMouseLeave={rotate0}>
         <Box
           sx={{
-            display: "flex",
-            justifyContent: "center",
-            mb: 2,
-            mt: "-100px",
+            backgroundColor: "transparent",
+
+            position: "relative",
+            transform: rotate ? "rotateY(180deg)" : "rotateY(0)",
+            transition: "transform 0.6s",
+            transformStyle: "preserve-3d",
           }}
         >
-          <Avatar
-            alt="Applicant"
-            src={avatar}
+          {/* routing team card front  */}
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
             sx={{
-              border: "3px solid #FFFFFF",
-              height: 200,
-              width: 200,
+              zIndex: 2,
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+
+              position: "relative",
+              backfaceVisibility: "hidden",
             }}
-          />
+          >
+            <Card sx={{ width: "100%", height: "100%" }}>
+              <CardMedia image={data.cover} sx={{ height: 200 }} />
+              <CardContent sx={{ pt: 0 }}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    mb: 2,
+                    mt: "-100px",
+                  }}
+                >
+                  <Avatar
+                    alt="Applicant"
+                    src={data.avatar}
+                    sx={{
+                      border: "3px solid #FFFFFF",
+                      height: 200,
+                      width: 200,
+                    }}
+                  />
+                </Box>
+                <Link
+                  align="center"
+                  color="textPrimary"
+                  sx={{ display: "block" }}
+                  underline="none"
+                  variant="h5"
+                >
+                  {data.name}
+                </Link>
+
+                <Divider sx={{ my: 2 }} />
+              </CardContent>
+            </Card>
+          </Box>
+          {/* routing team card back  */}
+
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            sx={{
+              top: 0,
+              left: 0,
+              zIndex: 5,
+              width: "100%",
+              height: "100%",
+
+              background: theme.palette.primary.mainGradient,
+
+              position: "absolute",
+
+              backgroundSize: "cover",
+              backfaceVisibility: "hidden",
+              transform: "rotateY(180deg)",
+            }}
+          >
+            <Box>
+              <Typography align="center" variant="h5" color="textSecondary">
+                {data.role}
+              </Typography>
+              <Typography align="center" variant="subtitle1" color="textSecondary">
+                {data.shortDescription}
+              </Typography>
+            </Box>
+          </Box>
         </Box>
-        <Link
-          align="center"
-          color="textPrimary"
-          sx={{ display: "block" }}
-          underline="none"
-          variant="h6"
-        >
-          {name}
-        </Link>
-        <Typography align="center" variant="body2" color="textSecondary">
-          {commonConnections}
-        </Typography>
-        <Divider sx={{ my: 2 }} />
-      </CardContent>
-    </Card>
+      </Box>
+    </>
   );
 }
-TeamCard.propTypes = {
-  cover: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  commonConnections: PropTypes.string.isRequired,
-};
+
 export default TeamCard;

@@ -12,33 +12,47 @@ import {
 } from "@mui/material";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
+import { useTheme } from "@emotion/react";
 
 function RotatingCardBack(props) {
+  const theme = useTheme();
   const { data } = props;
   return (
     <>
       <Box
-       zIndex={5}
-         position="absolute"
+        // zIndex={5}
+        //  position="absolute"
         //backfaceVisibility ="hidden"
-        width="100%"
-        height="100%"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
         sx={{
+          //  borderRadius :1 ,
+          top: 0,
+          left: 0,
+          zIndex: 5,
+          width: "100%",
+          height: "100%",
           // position: "absolute",
-          backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.2),  rgba(0,0,0,0.9)), url(/static/mock-images/covers/cover_2.jpg)`,
+          background: theme.palette.primary.mainGradient,
+          // backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.2),  rgba(0,0,0,0.9)), url(/static/mock-images/covers/cover_2.jpg)`,
+
+          position: "absolute",
+
+          // backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.7),  rgba(0,0,0,0.9)), url(/static/mock-images/covers/cover_2.jpg)`,
 
           backgroundSize: "cover",
-           backfaceVisibility: "hidden",
+          backfaceVisibility: "hidden",
           transform: "rotateY(180deg)",
         }}
       >
         <Box>
-          <Typography align="center" variant="body2" color="textSecondary">
-            Anika Visser
+          <Typography align="center" variant="h5" color="textSecondary">
+            JS Developer
           </Typography>
-          <Typography align="center" variant="body2" color="textSecondary">
-          We already completed 470 projects successfully and more counting.
-
+          <Typography align="center" variant="subtitle1" color="textSecondary">
+            Artist is a term applied to a Artist is a term applied to a Artist is a term applied to
+            a Artist is a term applied to a
           </Typography>
         </Box>
       </Box>

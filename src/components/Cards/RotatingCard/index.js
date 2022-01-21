@@ -23,7 +23,7 @@ import Card from "@mui/material/Card";
 
 // Material Kit 2 PRO React components
 
-import { Box as MKBox } from "@mui/material";
+import MKBox from "components/MKBox";
 
 function RotatingCard({ children }) {
   const [rotate, setRotate] = useState(false);
@@ -33,18 +33,19 @@ function RotatingCard({ children }) {
 
   return (
     <MKBox sx={{ perspective: "50rem" }} onMouseEnter={rotate180} onMouseLeave={rotate0}>
-      <Card
+      <MKBox
         sx={{
           backgroundColor: "transparent",
-          boxShadow: "none",
+
           position: "relative",
           transform: rotate ? "rotateY(180deg)" : "rotateY(0)",
+          transition: "transform 0.6s",
           transformStyle: "preserve-3d",
-          transition: "all 0.8s cubic-bezier(0.34, 1.45, 0.7, 1)",
+          //transition: "all 0.8s cubic-bezier(0.34, 1.45, 0.7, 1)",
         }}
       >
         {children}
-      </Card>
+      </MKBox>
     </MKBox>
   );
 }

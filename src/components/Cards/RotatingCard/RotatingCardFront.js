@@ -12,32 +12,36 @@ import {
 } from "@mui/material";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
+import TeamCardTest from "../TeamCardTest";
+import { useTheme } from "@emotion/react";
 
 function RotatingCardFront(props) {
+  const theme = useTheme();
   const { data } = props;
   return (
     <>
       <Box
-        //
         display="flex"
         justifyContent="center"
-        alignContent="center"
-        borderRadius="lg"
-        position="relative"
-        zIndex={2}
-        backfaceVisibility="hidden"
+        alignItems="center"
         sx={{
-          backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.2),  rgba(0,0,0,0.9)), url(/static/mock-images/covers/cover_2.jpg)`,
-
+          zIndex: 2,
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          //  borderRadius: 2,
+          position: "relative",
           backfaceVisibility: "hidden",
-          backgroundSize: "cover",
         }}
       >
-        <Box>
-          <Typography align="center" variant="body2" color="textSecondary">
-            Anika Visser1
-          </Typography>
-        </Box>
+        <TeamCardTest
+          avatar="/static/mock-images/avatars/avatar-anika_visser.png"
+          commonConnections="UI Designer"
+          cover="/static/mock-images/covers/cover_1.jpg"
+          name="Anika Visser"
+        />
+   
       </Box>
     </>
   );

@@ -1,0 +1,34 @@
+{
+  "heading": "The Executive Team",
+  "shortDescription": " There's nothing I really wanted to do in life that I wasn't able to get good at. That's myskill.",
+  "teamlist": [
+    {
+      "avatar": "/static/mock-images/avatars/avatar-anika_visser.png",
+      "cover": "/static/mock-images/covers/cover_1.jpg",
+      "name": "Anika Visser",
+      "role": "UI Designer",
+      "shortDescription": " Send one-off and automated email, push, and in-app messages to people. Create betterstories."
+    },
+    {
+      "avatar": "/static/mock-images/avatars/avatar-anika_visser.png",
+      "cover": "/static/mock-images/covers/cover_1.jpg",
+      "name": "Anika Visser",
+      "role": "UI Designer",
+      "shortDescription": " Send one-off and automated email, push, and in-app messages to people. Create betterstories."
+    },
+    {
+      "avatar": "/static/mock-images/avatars/avatar-anika_visser.png",
+      "cover": "/static/mock-images/covers/cover_1.jpg",
+      "name": "Anika Visser",
+      "role": "UI Designer",
+      "shortDescription": " Send one-off and automated email, push, and in-app messages to people. Create betterstories."
+    },
+    {
+      "avatar": "/static/mock-images/avatars/avatar-anika_visser.png",
+      "cover": "/static/mock-images/covers/cover_1.jpg",
+      "name": "Anika Visser",
+      "role": "UI Designer",
+      "shortDescription": " Send one-off and automated email, push, and in-app messages to people. Create betterstories."
+    }
+  ]
+}
