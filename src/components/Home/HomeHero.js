@@ -12,7 +12,7 @@ function HomeHero(props) {
     <Box
       sx={{
         background: theme.palette.primary.mainGradient,
-        height: { xs: nomobileimg ? "80vh" : "100vh", md: "584px" },
+        height: { xs: nomobileimg ? "84vh" : "100vh", md: "584px" },
 
         display: "flex",
         justifyContent: "center",
@@ -33,10 +33,19 @@ function HomeHero(props) {
             }}
           >
             <div>
-              <Typography color="textPrimary" variant="h1">
+              <Typography
+                color="textPrimary"
+                variant="h1"
+                textAlign={{ xs: "center", md: "start" }}
+              >
                 {data.heading}
               </Typography>
-              <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
+              <Typography
+                color="textSecondary"
+                textAlign={{ xs: "center", md: "start" }}
+                sx={{ my: 3 }}
+                variant="subtitle1"
+              >
                 {data.shortDescription}
               </Typography>
               <Box
@@ -45,7 +54,7 @@ function HomeHero(props) {
                   flexWrap: "wrap",
 
                   mx: -1,
-                  mt: 2,
+                  mt: 4,
                   mb: 6,
                   "& > a": {
                     m: 1,

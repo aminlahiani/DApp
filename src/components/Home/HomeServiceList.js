@@ -12,6 +12,7 @@ function ServiceList(props) {
         backgroundColor: "background.paper",
         display: "flex",
         alignItems: "center",
+        py:6
       }}
     >
       <Container
