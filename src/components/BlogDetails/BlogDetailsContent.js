@@ -1,6 +1,6 @@
 import { Chip, Container, Typography, Box, Card, CardMedia } from "@mui/material";
 
-const BlogDetails = (props) => {
+const BlogDetailsContent = (props) => {
   const { data } = props;
   return (
     <Box
@@ -62,4 +62,4 @@ const BlogDetails = (props) => {
   );
 };
 
-export default BlogDetails ;
+export default BlogDetailsContent ;

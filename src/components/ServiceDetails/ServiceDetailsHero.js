@@ -1,7 +1,7 @@
 import { Avatar, Box, Button, Container, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import bgImage from "../../../assets/images/bg5.jpg";
-export const Hero = (props) => {
+import bgImage from "assets/images/bg5.jpg";
+const ServiceDetailsHero = (props) => {
   const theme = useTheme();
 
   return (
@@ -14,7 +14,6 @@ export const Hero = (props) => {
         alignItems: "center",
         display: "flex",
       }}
-
     >
       <Container maxWidth="md">
         <Typography align="center " variant="h2" color="white">
@@ -24,3 +23,4 @@ export const Hero = (props) => {
     </Box>
   );
 };
+export default ServiceDetailsHero;

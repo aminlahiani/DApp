@@ -24,3 +24,5 @@
 ## ServicesPAge
 
 ## NotFound
+
+## BlogDetails

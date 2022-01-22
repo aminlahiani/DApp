@@ -1,5 +1,5 @@
 import BlogDetailsHero from "components/BlogDetails/BlogDetailsHero";
-import BlogDetails from "components/BlogDetails/BlogDetails";
+import BlogDetailsContent from "components/BlogDetails/BlogDetailsContent";
 import RecentPostsList from "components/BlogDetails/RecentPostsList";
 
 import { useParams } from "react-router-dom";
@@ -8,7 +8,7 @@ import { Container, Grid } from "@mui/material";
 
 import BlogsData from "data/Blogs/blogs-data.json";
 
-function index() {
+function BlogDetails() {
   const parameter = useParams();
   const postId = parameter.postId;
   const data = BlogsData.filter((blog) => blog.id === postId);
@@ -31,4 +31,4 @@ function index() {
   );
 }
 
-export default index;
+export default BlogDetails;
