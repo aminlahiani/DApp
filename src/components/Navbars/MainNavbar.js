@@ -25,8 +25,13 @@ const pages = [
   { id: 7, title: "Contact Us", href: "/contact" },
 ];
 //const settings = ["Profile", "Account", "Dashboard", "Logout"];
+//import { ColorModeContext } from "context/ColorModeContext";
+import { useTheme } from "@mui/material";
+import { ColorModeContext } from "contexts/ColorModeContext";
 
 const MainNavbar = ({ setSelectedTheme, selectedTheme }) => {
+  const theme = useTheme();
+  const colorMode = React.useContext(ColorModeContext);
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -35,12 +40,6 @@ const MainNavbar = ({ setSelectedTheme, selectedTheme }) => {
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
-
-  const handleSwitch = () => {
-    setSelectedTheme((prevSelectedTheme) => {
-      return prevSelectedTheme === "light" ? "dark" : "light";
-    });
   };
 
   return (
@@ -73,14 +72,20 @@ const MainNavbar = ({ setSelectedTheme, selectedTheme }) => {
               </Link>
             ))}
           </Box>
-
-          <IconButton onClick={handleSwitch}>
+          <IconButton onClick={colorMode.toggleColorMode}>
+            {theme.palette.mode === "dark" ? (
+              <LightModeOutlinedIcon fontSize="small" color="primary" />
+            ) : (
+              <NightsStayOutlinedIcon fontSize="small" color="primary" />
+            )}
+          </IconButton>
+          {/* <IconButton onClick={handleSwitch}>
             {selectedTheme === "light" ? (
               <NightsStayOutlinedIcon fontSize="small" color="primary" />
             ) : (
               <LightModeOutlinedIcon fontSize="small" color="primary" />
             )}
-          </IconButton>
+          </IconButton> */}
           <IconButton>
             <GitHubIcon fontSize="small" color="primary" />
           </IconButton>

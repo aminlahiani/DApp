@@ -9,21 +9,12 @@ import { Outlet } from "react-router-dom";
 import { MainFooter } from "../components/Footers/MainFooter";
 import MainNavbar from "components/Navbars/MainNavbar";
 function MainLayout() {
-  const { settings } = useSettings();
-  const [selectedTheme, setSelectedTheme] = useState(settings.theme);
 
-  useEffect(() => {
-    setSelectedTheme(settings.theme);
-  }, [settings.theme]);
 
-  const theme = createTheme({
-    ...settings,
-    mode: selectedTheme,
-  });
 
   return (
     <>
-      <ThemeProvider theme={theme}>
+    
         {/* <ButtonAppBar/> */}
         <Box
           sx={{
@@ -31,12 +22,12 @@ function MainLayout() {
             // paddingTop: '59px'
           }}
         >
-          <MainNavbar selectedTheme={selectedTheme} setSelectedTheme={setSelectedTheme} />
+          <MainNavbar />
 
           <Outlet />
           <MainFooter />
         </Box>
-      </ThemeProvider>
+      
     </>
   );
 }
