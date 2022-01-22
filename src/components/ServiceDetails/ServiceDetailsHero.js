@@ -16,7 +16,7 @@ const ServiceDetailsHero = (props) => {
       }}
     >
       <Container maxWidth="md">
-        <Typography align="center " variant="h2" color="white">
+        <Typography align="center" variant="h2" color="white">
           Service Details
         </Typography>
       </Container>

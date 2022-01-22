@@ -8,21 +8,13 @@
 - Added design from Material Dashboard Pro BS3 by Creative Tim
 
 ## About
-
 ## Blogs
-
 ## Contact
-
 ## FAQ
-
 ## Home
-
 ## NotFound
-
 ## Portfolio
-
 ## ServicesPAge
-
 ## NotFound
-
 ## BlogDetails
+## ServiceDetails

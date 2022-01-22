@@ -1,6 +1,6 @@
 import { Chip, Container, Typography, Box, Card, CardMedia } from "@mui/material";
 
-export const ServiceDetails = (props) => {
+const ServiceDetailsContent = (props) => {
   const { data } = props;
   return (
     <Box
@@ -30,7 +30,18 @@ export const ServiceDetails = (props) => {
         <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
           {data.descriptionback}
         </Typography>
+        <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
+          {data.paragraph1}
+        </Typography>
+        <Typography color="textPrimary" sx={{ mt: 3 }} variant="h4">
+          {data.subtitle1}
+        </Typography>
+        <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
+          {data.paragraph2}
+        </Typography>
       </Container>
     </Box>
   );
 };
+
+export default ServiceDetailsContent;
