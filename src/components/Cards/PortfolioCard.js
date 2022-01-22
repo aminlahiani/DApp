@@ -27,7 +27,7 @@ function PortfolioCard(props) {
           <Chip label={data.category} variant="outlined" />
         </div>
 
-        <Link component={RouterLink} to={data.url} variant="h5">
+        <Link component={RouterLink} to={`/portfolio-deatils/${data.id}`} variant="h5">
           {data.title}
         </Link>
         <Typography

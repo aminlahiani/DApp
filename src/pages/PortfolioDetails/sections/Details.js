@@ -1,8 +1,7 @@
-import { Container, Divider, Grid, Typography } from "@mui/material";
-import { Box } from "@mui/system";
-import React from "react";
+import { Container, Box, Grid, Typography, Card, CardMedia } from "@mui/material";
 
-export const Details = () => {
+export const Details = (props) => {
+  const { data } = props;
   return (
     <Box
       sx={{
@@ -10,26 +9,32 @@ export const Details = () => {
         py: 3,
       }}
     >
-      <Container>
-        <Grid container spacing={3} item xs={12} lg={8} mx="auto">
-          <Typography variant="h3" color="textPrimary" mb={3}>
-            Trydo
-          </Typography>
+      <Container maxWidth="md">
+        <Card sx={{ width: "100%", height: "100%", pt: 3 }}>
+          <CardMedia image={data.cover} sx={{ height: 500 }} />
+        </Card>
+        <Typography variant="h3" mt={3} color="textPrimary" mb={3}>
+          {data.title}
+        </Typography>
+        <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
+          {data.paragraph1}
+        </Typography>
 
-          <Typography color="textSecondary" variant="body1">
-            This is the paragraph where you can write more details about your product. Keep you user
-            engaged by providing meaningful information. Remember that by this time, the user is
-            curious, otherwise he wouldn&apos;t scroll to get here. Add a button if you want the
-            user to see more. We are here to make life better.
-            <br /> <br />
-            And now I look and look around and there&aposl;s so many Kanyes I&apos;ve been trying to
-            figure out the bed design for the master bedroom at our Hidden Hills compound... and
-            thank you for turning my personal jean jacket into a couture piece.
-            <br /> <br />
-            The way to survive in modern society is to be an ascetic. It is to retreat from society.
-            There&aposl;s too much society everywhere you go…The only solution is turn it off.
-          </Typography>
+        <Grid container spacing={3} xs={12} lg={12} mt={3}>
+          {data.images.map((item, index) => (
+            <Grid key={index} xs={12} lg={6} item>
+              <Card sx={{ width: "100%", height: "100%", pt: 3 }}>
+                <CardMedia image={item} sx={{ height: 300 }} />
+              </Card>
+            </Grid>
+          ))}
         </Grid>
+        <Typography color="textPrimary" sx={{ mt: 3 }} variant="h4">
+          {data.subtitle1}
+        </Typography>
+        <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
+          {data.paragraph2}
+        </Typography>
       </Container>
     </Box>
   );
