@@ -31,7 +31,7 @@ function About() {
         <AboutTwo data={AboutTowData} />
       </div>
       <AboutThree data={AboutThreeData} />
-      <div data-aos="fade-left">
+      <div data-aos="fade-up">
         <AboutFeaturing data={AboutFeaturingData} />
       </div>
       <div data-aos="fade-up">
