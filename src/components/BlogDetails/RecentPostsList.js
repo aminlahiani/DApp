@@ -4,7 +4,7 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import RecentPostCard from "components/Cards/RecentPostCard";
 
 function RecentPostsList(props) {
-    const { data } = props ;
+  const { data } = props;
   const data1 = [1, 2, 3, 4, 5, 6];
   return (
     <Box pt={3}>

@@ -62,4 +62,4 @@ const BlogDetailsContent = (props) => {
   );
 };
 
-export default BlogDetailsContent ;
+export default BlogDetailsContent;

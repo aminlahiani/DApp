@@ -1,19 +1,21 @@
-import { Details } from "./sections/Details";
 import PortfolioDetailsHero from "components/PortfolioDetails/PortfolioDetailsHero";
+import PortfolioDetailsContent from "components/PortfolioDetails/PortfolioDetailsContent";
+
 import PortfolioListData from "data/Portfolio/portfolio-list-data.json";
 
 import { useParams } from "react-router-dom";
-function index() {
+
+function PortfolioDetails() {
   const parameter = useParams();
   const portfolioId = parameter.portfolioId;
   const data = PortfolioListData.filter((Service) => Service.id === portfolioId);
-  console.log(data)
+  console.log(data);
   return (
     <div>
-      <PortfolioDetailsHero  />
-      <Details data={data[0]} />
+      <PortfolioDetailsHero />
+      <PortfolioDetailsContent data={data[0]} />
     </div>
   );
 }
 
-export default index;
+export default PortfolioDetails;

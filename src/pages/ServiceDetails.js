@@ -11,8 +11,8 @@ function ServiceDetails(props) {
 
   return (
     <>
-       <ServiceDetailsHero />
-       <ServiceDetailsContent data={data[0]} /> 
+      <ServiceDetailsHero />
+      <ServiceDetailsContent data={data[0]} />
     </>
   );
 }

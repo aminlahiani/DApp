@@ -1,6 +1,6 @@
 import { Container, Box, Grid, Typography, Card, CardMedia } from "@mui/material";
 
-export const Details = (props) => {
+const PortfolioDetailsContent = (props) => {
   const { data } = props;
   return (
     <Box
@@ -20,7 +20,7 @@ export const Details = (props) => {
           {data.paragraph1}
         </Typography>
 
-        <Grid container spacing={3} xs={12} lg={12} mt={3}>
+        <Grid container spacing={3} mt={3}>
           {data.images.map((item, index) => (
             <Grid key={index} xs={12} lg={6} item>
               <Card sx={{ width: "100%", height: "100%", pt: 3 }}>
@@ -39,3 +39,4 @@ export const Details = (props) => {
     </Box>
   );
 };
+export default PortfolioDetailsContent;
