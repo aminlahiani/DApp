@@ -20,7 +20,7 @@ function BlogDetails() {
       <Container maxWidth="lg">
         <Grid container spacing={3}>
           <Grid item md={8} xs={12}>
-            <BlogDetails data={data[0]} />
+            <BlogDetailsContent data={data[0]} />
           </Grid>
           <Grid item md={4} xs={12}>
             <RecentPostsList data={BlogsData} />
