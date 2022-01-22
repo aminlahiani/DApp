@@ -10,7 +10,7 @@ export const Details = (props) => {
     >
       <Container maxWidth="md">
         <Card sx={{ width: "100%", height: "100%", pt: 3 }}>
-          <CardMedia image={data.image} sx={{ height: 500 }} />
+          <CardMedia image={data.cover} sx={{ height: 500 }} />
         </Card>
         <Typography
           color="textPrimary"
