@@ -21,22 +21,29 @@ function About() {
     <>
       {/* <Hero /> */}
       {/* {JSON.stringify(AboutTestimonialData)} */}
-
-      <AboutHero data={AboutHeroData} />
-
-      <AboutOne data={AboutOneData} />
-
-      <AboutTwo data={AboutTowData} />
-
+      <div data-aos="fade-up">
+        <AboutHero data={AboutHeroData} />
+      </div>
+      <div data-aos="fade-up">
+        <AboutOne data={AboutOneData} />
+      </div>
+      <div data-aos="fade-up">
+        <AboutTwo data={AboutTowData} />
+      </div>
       <AboutThree data={AboutThreeData} />
+      <div data-aos="fade-left">
+        <AboutFeaturing data={AboutFeaturingData} />
+      </div>
+      <div data-aos="fade-up">
+        <AboutTestimonial data={AboutTestimonialData} />
+      </div>
 
-      <AboutFeaturing data={AboutFeaturingData} />
-
-      <AboutTestimonial data={AboutTestimonialData} />
-
-      <AboutTeamList data={AboutTeamData} />
-
-      <CtaNewsletter />
+      <div data-aos="fade-up">
+        <AboutTeamList data={AboutTeamData} />
+      </div>
+      <div data-aos="fade-up">
+        <CtaNewsletter />
+      </div>
     </>
   );
 }

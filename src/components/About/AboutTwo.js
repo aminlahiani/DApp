@@ -6,7 +6,7 @@ function AboutTwo(props) {
   return (
     <Box
       sx={{
-        py: 3,
+        py: 6,
         backgroundColor: "background.default",
       }}
     >

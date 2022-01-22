@@ -1,16 +1,4 @@
-import {
-  Avatar,
-  Box,
-  Card,
-  CardContent,
-  CardMedia,
-  Grid,
-  Chip,
-  Divider,
-  Link,
-  Typography,
-  Container,
-} from "@mui/material";
+import { Box, Grid, Typography, Container } from "@mui/material";
 import TeamCard from "components/Cards/TeamCard";
 
 function AboutTeamList(props) {
@@ -20,7 +8,7 @@ function AboutTeamList(props) {
       sx={{
         backgroundColor: "background.default",
         minHeight: "100%",
-        py: 10,
+        py: 6,
       }}
     >
       <Container maxWidth="lg">

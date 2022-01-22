@@ -22,7 +22,7 @@ function HomeLatestPosts(props) {
       <Box
         sx={{
           backgroundColor: "background.paper",
-          py: 3,
+          py: 6,
         }}
       >
         <Container maxWidth="lg">

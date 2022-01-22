@@ -11,11 +11,19 @@ function Contact() {
   return (
     <div>
       {/* {JSON.stringify(ContactHeroData)} */}
-      <ContactHero data={ContactHeroData} />
-      <ContactForm data={ContactFormData} />
-      <ContactInfo data={ContactInfoData} />
+      <div data-aos="fade-up">
+        <ContactHero data={ContactHeroData} />
+      </div>
+      <div data-aos="fade-up">
+        <ContactForm data={ContactFormData} />
+      </div>
+      <div data-aos="fade-up">
+        <ContactInfo data={ContactInfoData} />
+      </div>
 
-      <CtaNewsletter />
+      <div data-aos="fade-up">
+        <CtaNewsletter />
+      </div>
     </div>
   );
 }

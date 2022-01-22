@@ -9,7 +9,9 @@ function Portfolio() {
   return (
     <div>
       {/* {JSON.stringify(posts)}  */}
+
       <PortfolioHero data={PortfolioHeroData} />
+
       <PortfolioList data={PortfolioListData} />
     </div>
   );

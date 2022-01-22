@@ -18,6 +18,7 @@ function AboutOne(props) {
         display: "flex",
         justifyContent: "center",
         alignItems: { xs: "center", md: "center" },
+        py:6
       }}
     >
       <Container maxWidth="lg">

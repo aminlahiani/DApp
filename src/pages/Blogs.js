@@ -9,13 +9,18 @@ function Blogs() {
   return (
     <div>
       {/* {JSON.stringify(BlogsData)} */}
-      <BlogsHero
-        //nomobileimg
-        data={BlogsHeroData}
-      />
-
-      <BlogsList data={BlogsData} />
-      <CtaNewsletter />
+      <div data-aos="fade-up">
+        <BlogsHero
+          //nomobileimg
+          data={BlogsHeroData}
+        />
+      </div>
+      <div data-aos="fade-up">
+        <BlogsList data={BlogsData} />
+      </div>
+      <div data-aos="fade-up">
+        <CtaNewsletter />
+      </div>
     </div>
   );
 }

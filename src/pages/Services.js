@@ -13,14 +13,19 @@ function Services() {
   return (
     <div>
       {/* {JSON.stringify(ServiceFeaturingData)} */}
+      <div data-aos="fade-up">
+        <ServisesHero data={ServicesHeroData} />
+      </div>
+      <div data-aos="fade-up">
+        <ServicesList data={ServicesData} />
+      </div>
+      <div data-aos="fade-up">
+        <ServiceFeaturing data={ServiceFeaturingData} />
+      </div>
 
-      <ServisesHero data={ServicesHeroData} />
-      <ServicesList data={ServicesData} />
-      <ServiceFeaturing data={ServiceFeaturingData} />
-
-      {/* <ServiceList data={ServicesData} /> */}
-
-      <CtaNewsletter />
+      <div data-aos="fade-up">
+        <CtaNewsletter />
+      </div>
     </div>
   );
 }
