@@ -5,24 +5,13 @@ import { ThemeProvider } from "@mui/material/styles";
 import App from "./App";
 import { SettingsConsumer, SettingsProvider } from "./contexts/settings-context";
 import { createTheme } from "./theme";
+import AppThemeProvider from "theme1/AppThemeProvider";
 
 ReactDOM.render(
-  <SettingsProvider>
-    <SettingsConsumer>
-      {({ settings }) => (
-        <ThemeProvider
-          theme={createTheme({
-            direction: settings.direction,
-            responsiveFontSizes: settings.responsiveFontSizes,
-            mode: settings.theme,
-          })}
-        >
+  <AppThemeProvider>
           {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
           <CssBaseline />
           <App />
-        </ThemeProvider>
-      )}
-    </SettingsConsumer>
-  </SettingsProvider>,
+          </AppThemeProvider>,
   document.querySelector("#root")
 );
