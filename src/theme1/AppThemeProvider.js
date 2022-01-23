@@ -2,9 +2,9 @@ import { amber, deepOrange, grey } from "@mui/material/colors";
 import * as React from "react";
 import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
 //import { ColorModeContext } from 'context/ColorModeContext';
-import { darkThemeOptions } from "./dark-theme-options";
-import { lightThemeOptions } from "./light-theme-options";
-import { baseThemeOptions } from "./base-theme-options";
+import { DarkThemeOptions } from "./DarkThemeOptions";
+import { LightThemeOptions } from "./LightThemeOptions";
+import { BaseThemeOptions } from "./BaseThemeOptions";
 import { ColorModeContext } from "contexts/ColorModeContext";
 
 const themeMode = localStorage.getItem("theme") || "light";
@@ -22,7 +22,7 @@ export default function AppThemeProvider(props) {
   );
 
   const theme = React.useMemo(
-    () => createTheme(baseThemeOptions, mode === "light" ? lightThemeOptions : darkThemeOptions),
+    () => createTheme(BaseThemeOptions, mode === "light" ? LightThemeOptions : DarkThemeOptions),
     [mode]
   );
 

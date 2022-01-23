@@ -1,4 +1,4 @@
-export const baseThemeOptions = {
+export const BaseThemeOptions = {
   breakpoints: {
     values: {
       xs: 0,

@@ -77,7 +77,7 @@ const text = {
   disabled: "rgba(55, 65, 81, 0.48)",
 };
 
-export const lightThemeOptions = {
+export const LightThemeOptions = {
   components: {
     MuiAvatar: {
       styleOverrides: {
