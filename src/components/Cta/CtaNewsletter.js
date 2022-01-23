@@ -3,7 +3,8 @@ import { useTheme } from "@mui/material/styles";
 
 function CtaNewsletter() {
   const theme = useTheme();
-
+  const imgdark = "/static/newsletter/newsletter_dark.svg";
+  const imgligth = "/static/newsletter/newsletter_light.svg";
   return (
     <Box
       sx={{
@@ -74,7 +75,7 @@ function CtaNewsletter() {
                 },
               }}
             >
-              <img alt="" src={`/static/blog/blog_${theme.palette.mode}.svg`} />
+              <img src={theme.palette.mode === "dark" ? imgdark : imgligth} />
             </Box>
           </Grid>
         </Grid>
