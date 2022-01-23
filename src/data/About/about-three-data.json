@@ -15,6 +15,6 @@
     "Figma",
     "Sketch"
   ],
-  "imgdark": "/static/home/developers_dark.png",
-  "imglight": "/static/home/developers_light.png"
+  "imgdark": "/static/about/about_three_dark.png",
+  "imglight": "/static/about/about_three_light.png"
 }

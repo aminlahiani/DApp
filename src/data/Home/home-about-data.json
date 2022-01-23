@@ -5,5 +5,6 @@
   "shortDescription2": " Not just a set of tools, the package includes ready-to-deploy conceptualapplications written in JavaScript & TypeScript",
   "heading3": "Our story",
   "shortDescription3": " Not just a set of tools, the package includes ready-to-deploy conceptualapplications written in JavaScript & TypeScript",
-  "imgsrc": "/static/home/home-about-dark1.png"
+  "imgligth": "/static/home/home-about-light.png",
+  "imgdark": "/static/home/home-about-dark.png"
 }

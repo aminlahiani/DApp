@@ -70,15 +70,15 @@ function HomeAbout(props) {
               },
             }}
           >
-            <Box>
+       
               <Box
                 sx={{ borderRadius: 3 }}
                 component="img"
-                src={`${data.imgsrc}`}
+                src={theme.palette.mode === "light" ? data.imgligth : data.imgdark}
                 alt="macbook"
                 width="100%"
               />
-            </Box>
+           
           </Grid>
         </Grid>
       </Container>

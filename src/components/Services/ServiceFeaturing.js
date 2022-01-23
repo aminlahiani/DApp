@@ -12,7 +12,7 @@ function ServiceFeaturing(props) {
       }}
     >
       <Container maxWidth="lg">
-        <Grid alignItems="center" container justifyContent="center" spacing={3}>
+        <Grid alignItems="center" container justifyContent="center" spacing={5}>
           <Grid
             item
             md={6}
@@ -61,19 +61,12 @@ function ServiceFeaturing(props) {
             }}
           >
             <Box
-              sx={{
-                position: "relative",
-                pt: "calc(960 / 1225 * 100%)",
-                "& img": {
-                  height: "auto",
-                  position: "absolute",
-                  top: 0,
-                  width: "100%",
-                },
-              }}
-            >
-              <img alt="For developers" src={`/static/home/developers_${theme.palette.mode}.png`} />
-            </Box>
+              sx={{ borderRadius: 3 }}
+              component="img"
+              src={theme.palette.mode === "light" ? data.imglight : data.imgdark}
+              alt="macbook"
+              width="100%"
+            />
           </Grid>
         </Grid>
       </Container>

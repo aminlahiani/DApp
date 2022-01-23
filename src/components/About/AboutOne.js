@@ -18,11 +18,11 @@ function AboutOne(props) {
         display: "flex",
         justifyContent: "center",
         alignItems: { xs: "center", md: "center" },
-        py:6
+        py: 6,
       }}
     >
       <Container maxWidth="lg">
-        <Grid alignItems="center" container justifyContent="center" spacing={3}>
+        <Grid alignItems="center" container justifyContent="center" spacing={5}>
           <Grid
             item
             md={6}
@@ -58,7 +58,7 @@ function AboutOne(props) {
               },
             }}
           >
-            <Box
+            {/* <Box
               sx={{
                 display: "block",
                 position: "relative",
@@ -75,7 +75,14 @@ function AboutOne(props) {
                 alt="For developers"
                 src={theme.palette.mode === "dark" ? data.imgdark : data.imglight}
               />
-            </Box>
+            </Box> */}
+            <Box
+              sx={{ borderRadius: 3 }}
+              component="img"
+              src={theme.palette.mode === "light" ? data.imglight : data.imgdark}
+              alt="macbook"
+              width="100%"
+            />
           </Grid>
         </Grid>
       </Container>
