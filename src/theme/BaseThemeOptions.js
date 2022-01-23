@@ -292,17 +292,17 @@ export const BaseThemeOptions = {
     },
     h1: {
       fontWeight: 700,
-      fontSize: "3.5rem",
+      fontSize: "3rem",
       lineHeight: 1.375,
     },
     h2: {
       fontWeight: 700,
-      fontSize: "3rem",
+      fontSize: "2.5rem",
       lineHeight: 1.375,
     },
     h3: {
       fontWeight: 700,
-      fontSize: "2.25rem",
+      fontSize: "2rem",
       lineHeight: 1.375,
     },
     h4: {
@@ -317,7 +317,7 @@ export const BaseThemeOptions = {
     },
     h6: {
       fontWeight: 600,
-      fontSize: "1.125rem",
+      fontSize: "1.1rem",
       lineHeight: 1.375,
     },
   },

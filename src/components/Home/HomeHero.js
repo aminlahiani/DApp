@@ -33,13 +33,14 @@ function HomeHero(props) {
             }}
           >
             <div>
-              <Typography
-                color="textPrimary"
+        
+               <Typography
+               
                 variant="h1"
                 textAlign={{ xs: "center", md: "start" }}
               >
                 {data.heading}
-              </Typography>
+              </Typography> 
               <Typography
                 color="textSecondary"
                 textAlign={{ xs: "center", md: "start" }}
@@ -48,6 +49,7 @@ function HomeHero(props) {
               >
                 {data.shortDescription}
               </Typography>
+            
               <Box
                 sx={{
                   display: "flex",
