@@ -14,11 +14,11 @@ function HomeAbout(props) {
         display: "flex",
         justifyContent: "center",
         alignItems: { xs: "center", md: "center" },
-        py:6
+        py: 6,
       }}
     >
       <Container maxWidth="lg">
-        <Grid alignItems="center" container justifyContent="center" spacing={3}>
+        <Grid container spacing={5} alignItems="center" justifyContent="center">
           <Grid
             item
             md={6}
@@ -61,7 +61,7 @@ function HomeAbout(props) {
           <Grid
             item
             md={6}
-            sm={8}
+            sm={6}
             xs={12}
             sx={{
               order: {
@@ -70,19 +70,14 @@ function HomeAbout(props) {
               },
             }}
           >
-            <Box
-              sx={{
-                position: "relative",
-                pt: "calc(960 / 1225 * 100%)",
-                "& img": {
-                  height: "auto",
-                  position: "absolute",
-                  top: 0,
-                  width: "100%",
-                },
-              }}
-            >
-              <img alt="For developers" src={data.imgsrc} />
+            <Box>
+              <Box
+                sx={{ borderRadius: 3 }}
+                component="img"
+                src={`${data.imgsrc}`}
+                alt="macbook"
+                width="100%"
+              />
             </Box>
           </Grid>
         </Grid>

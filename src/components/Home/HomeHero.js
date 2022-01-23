@@ -1,10 +1,8 @@
 import { Box, Button, Container, Grid, Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { Link as RouterLink } from "react-router-dom";
-
 function HomeHero(props) {
   const { nomobileimg, data } = props;
-
   const theme = useTheme();
   const isXs = useMediaQuery(theme.breakpoints.down("sm"));
   console.log(isXs);
@@ -20,7 +18,7 @@ function HomeHero(props) {
       }}
     >
       <Container maxWidth="lg">
-        <Grid alignItems="center" container justifyContent="center" spacing={3}>
+        <Grid alignItems="center" container justifyContent="center" spacing={5}>
           <Grid
             item
             md={6}
@@ -33,14 +31,13 @@ function HomeHero(props) {
             }}
           >
             <div>
-        
-               <Typography
-               
+              <Typography
                 variant="h1"
+                color="textPrimary"
                 textAlign={{ xs: "center", md: "start" }}
               >
                 {data.heading}
-              </Typography> 
+              </Typography>
               <Typography
                 color="textSecondary"
                 textAlign={{ xs: "center", md: "start" }}
@@ -49,7 +46,7 @@ function HomeHero(props) {
               >
                 {data.shortDescription}
               </Typography>
-            
+
               <Box
                 sx={{
                   display: "flex",
