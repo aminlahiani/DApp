@@ -14,25 +14,15 @@ function ContactInfo(props) {
       }}
     >
       <Container maxWidth="lg">
-        <Grid alignItems="center" container justifyContent="space-between" spacing={3}>
+        <Grid alignItems="center" container justifyContent="space-between" spacing={5}>
           <Grid item md={6} sm={8} xs={12}>
-            <Box
-              sx={{
-                position: "relative",
-                pt: "calc(960 / 1225 * 100%)",
-                "& img": {
-                  height: "auto",
-                  position: "absolute",
-                  top: 0,
-                  width: "100%",
-                },
-              }}
-            >
-              <img
-                alt="For designers"
-                src={theme.palette.mode === "dark" ? data.imgdark : data.imglight}
-              />
-            </Box>
+          <Box
+              sx={{ borderRadius: 3 }}
+              component="img"
+              src={theme.palette.mode === "light" ? data.imglight : data.imgdark}
+              alt="macbook"
+              width="100%"
+            />
           </Grid>
           <Grid item md={6} xs={12}>
             <Card>

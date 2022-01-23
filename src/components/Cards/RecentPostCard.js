@@ -11,9 +11,17 @@ function RecentPostCard(props) {
           pt: 3,
         }}
       >
-        <Card>
-          <CardMedia image={data.cover} sx={{ height: 80, width: 80 }} />
-        </Card>
+          <Box
+              sx={{ borderRadius: 1 , height: 80 }}
+              component="img"
+              src="/static/blogs/blog_dark1.png" 
+              alt="macbook"
+             width="80" 
+            />
+          
+        {/* <Card>
+          <CardMedia image="/static/blogs/blog_dark.png" sx={{ height: 80, width: 80 }} />
+        </Card> */}
         <Box sx={{ ml: 2 }}>
           <Link component={RouterLink} to={`/blog-details/${data.id}`} underline="hover">
             <Typography color="textPrimary">{data.title}</Typography>

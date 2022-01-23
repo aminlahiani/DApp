@@ -9,6 +9,13 @@ const BlogDetailsContent = (props) => {
       }}
     >
       <Container maxWidth="md">
+      <Box
+              sx={{ borderRadius: 3 }}
+              component="img"
+              src="/static/blogs/blog_dark1.png"
+              alt="macbook"
+              width="100%"
+            />
         <Card sx={{ width: "100%", height: "100%", pt: 3 }}>
           <CardMedia image={data.cover} sx={{ height: 500 }} />
         </Card>
