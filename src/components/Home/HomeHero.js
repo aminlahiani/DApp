@@ -5,13 +5,13 @@ function HomeHero(props) {
   const { nomobileimg, data } = props;
   const theme = useTheme();
   const isXs = useMediaQuery(theme.breakpoints.down("sm"));
-  console.log(isXs);
+
   return (
     <Box
       sx={{
         background: theme.palette.primary.mainGradient,
         // height: { xs: nomobileimg ? "84vh" : "100vh", md: "584px" },
-
+        minHeight: "584px",
         display: "flex",
         justifyContent: "center",
         alignItems: { xs: "center", md: "center" },
