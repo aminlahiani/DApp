@@ -15,7 +15,7 @@ function HomeHero(props) {
         display: "flex",
         justifyContent: "center",
         alignItems: { xs: "center", md: "center" },
-        py: 6,
+        py: 3,
       }}
     >
       <Container maxWidth="lg">

@@ -13,7 +13,7 @@ function PortfolioCard(props) {
     >
       <Box sx={{ paddingTop: "calc(100% * 4 / 4)", position: "relative" }}>
         <CardMedia
-          image={data.cover}
+          image={data.image}
           sx={{
             height: "100%",
             position: "absolute",
@@ -22,6 +22,7 @@ function PortfolioCard(props) {
           }}
         />
       </Box>
+
       <Box sx={{ mt: 2 }}>
         <div>
           <Chip label={data.category} variant="outlined" />

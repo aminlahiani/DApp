@@ -85,7 +85,7 @@ function ServiceCardOne(props) {
               width: "100%",
               height: "100%",
 
-              backgroundImage: `linear-gradient(to bottom, rgba(11, 121, 208, 0.85),  rgba(0,0,0,0.85)), url(/static/about/bg5.jpg)`,
+              backgroundImage: `linear-gradient(to bottom, rgba(11, 121, 208, 0.85),  rgba(0,0,0,0.85)), url(${data.image})`,
 
               position: "absolute",
 

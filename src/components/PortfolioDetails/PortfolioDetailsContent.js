@@ -10,9 +10,14 @@ const PortfolioDetailsContent = (props) => {
       }}
     >
       <Container maxWidth="md">
-        <Card sx={{ width: "100%", height: "100%", pt: 3 }}>
-          <CardMedia image={data.cover} sx={{ height: 500 }} />
-        </Card>
+        <Box
+          sx={{ pt: 3, borderRadius: 3 }}
+          component="img"
+          src={data.image}
+          alt="macbook"
+          width="100%"
+        />
+
         <Typography variant="h3" mt={3} color="textPrimary" mb={3}>
           {data.title}
         </Typography>
@@ -20,12 +25,10 @@ const PortfolioDetailsContent = (props) => {
           {data.paragraph1}
         </Typography>
 
-        <Grid container spacing={3} mt={3}>
+        <Grid container spacing={5} mt={3}>
           {data.images.map((item, index) => (
             <Grid key={index} xs={12} lg={6} item>
-              <Card sx={{ width: "100%", height: "100%", pt: 3 }}>
-                <CardMedia image={item} sx={{ height: 300 }} />
-              </Card>
+              <Box sx={{ borderRadius: 3 }} component="img" src={item} alt="macbook" width="100%" />
             </Grid>
           ))}
         </Grid>

@@ -9,9 +9,14 @@ const ServiceDetailsContent = (props) => {
       }}
     >
       <Container maxWidth="md">
-        <Card sx={{ width: "100%", height: "100%", pt: 3 }}>
-          <CardMedia image={data.image} sx={{ height: 500 }} />
-        </Card>
+      <Box
+          sx={{ pt: 3, borderRadius: 3 }}
+          component="img"
+          src={data.image}
+          alt="macbook"
+          width="100%"
+        />
+
         <Typography
           color="textPrimary"
           sx={{
