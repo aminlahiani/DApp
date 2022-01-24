@@ -3,7 +3,7 @@ import { Avatar, Box, Container, Grid, Icon, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
 export const InfoCard = (props) => {
-  const { title, icon, description } = props;
+  const { data  } = props;
   const theme = useTheme();
   return (
     <>
@@ -28,15 +28,15 @@ export const InfoCard = (props) => {
             // boxShadow: 'inset 0px 5px 8px rgba(256, 256, 256, 0.3)'
           }}
         >
-          <Icon>{icon}</Icon>
+        <Icon baseClassName={data.baseicon} className={data.icon} color="white" fontSize="small" />
         </Box>
       </Box>
 
       <Typography align="center" variant="h6" color="textPrimary" sx={{ mt: 2.5, mb: 1.5 }}>
-        {title}
+        {data.title}
       </Typography>
       <Typography variant="body1" align="center" color="textSecondary">
-        {description}
+        {data.description}
       </Typography>
     </>
   );

@@ -32,9 +32,9 @@ function ServiceList(props) {
         </Typography>
 
         <Grid container spacing={3}>
-          {data.services.map((info) => (
-            <Grid key={info.id} item xs={12} md={6} lg={4}>
-              <InfoCard title={info.title} icon={info.icon} description={info.description} />
+          {data.services.map((item , index) => (
+            <Grid key={index} item xs={12} md={6} lg={4}>
+              <InfoCard data={item} />
             </Grid>
           ))}
         </Grid>
