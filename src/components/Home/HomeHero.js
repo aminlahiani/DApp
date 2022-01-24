@@ -54,7 +54,7 @@ function HomeHero(props) {
               <Typography
                 color="textSecondary"
                 textAlign={{ xs: "center", md: "start" }}
-                sx={{ my: 3 }}
+              
                 variant="subtitle1"
               >
                 {data.shortDescription}
@@ -66,7 +66,7 @@ function HomeHero(props) {
                   flexWrap: "wrap",
 
                   mx: -1,
-                  mt: 4,
+                  mt: 2,
                   mb: 6,
                   "& > a": {
                     m: 1,
@@ -91,7 +91,7 @@ function HomeHero(props) {
           <Grid
             item
             md={6}
-            sm={8}
+            sm={6}
             xs={12}
             sx={{
               order: {
@@ -100,7 +100,15 @@ function HomeHero(props) {
               },
             }}
           >
-            <Box
+               <Box
+    
+              component="img"
+              src={theme.palette.mode === "dark" ? data.imgdark : data.imagesrc}
+              alt="macbook"
+              width="100%"
+            />
+
+            {/* <Box
               sx={{
                 display: nomobileimg ? { xs: "none", md: "block" } : "block",
                 position: "relative",
@@ -117,7 +125,8 @@ function HomeHero(props) {
                 alt="For developers"
                 src={theme.palette.mode === "dark" ? data.imgdark : data.imagesrc}
               />
-            </Box>
+            </Box> */}
+
           </Grid>
         </Grid>
       </Container>

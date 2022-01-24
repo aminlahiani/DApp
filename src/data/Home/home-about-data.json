@@ -1,10 +1,11 @@
 {
   "heading": "About Us",
-  "shortDescription": " Not just a set of tools, the package includes ready-to-deploy conceptual applications written in JavaScript & TypeScript. Not just a set of tools, thepackage includes ready-to-deploy conceptual applications written in JavaScript &TypeScript",
+
+  "shortDescription":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue eros leo, et fermentum nisl aliquet eu. Ut mollis orci neque, eu facilisis enim volutpat et. Curabitur lacus urna, ultricies ac molestie eu, faucibus sit amet sem. Praesent lorem libero." ,
   "heading2": "Who are we?",
   "shortDescription2": " Not just a set of tools, the package includes ready-to-deploy conceptualapplications written in JavaScript & TypeScript",
   "heading3": "Our story",
   "shortDescription3": " Not just a set of tools, the package includes ready-to-deploy conceptualapplications written in JavaScript & TypeScript",
-  "imglight": "/static/home/home-about-light.png",
-  "imgdark": "/static/home/home-about-dark.png"
+  "imglight": "/static/home/home-about-light.jpg",
+  "imgdark": "/static/home/home-about-dark.jpg"
 }

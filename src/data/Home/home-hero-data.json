@@ -5,8 +5,8 @@
   "heading": "Digital Agency UI React template with MUI",
   "shortDescription":  "A professional React Template that comes with plenty of ready-to-use MUI Core components that will help you to build faster & beautiful website for your Digital Agency" ,
 
-  "imgdark": "/static/contact/10140Dark.svg",
-  "imagesrc": "/static/contact/10140.svg",
+  "imgdark": "/static/home/home_hero_dark.svg",
+  "imagesrc": "/static/home/home_hero_light.svg",
   "buttons": [
     { "variant": "contained", "buttonColor": "btn-warning", "url": "/about", "text": "About Us" },
     { "buttonColor": "btn-light", "url": "/contact", "text": "Contact Us", "variant": "outlined" }
