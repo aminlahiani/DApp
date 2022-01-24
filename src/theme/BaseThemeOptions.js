@@ -292,7 +292,7 @@ export const BaseThemeOptions = {
     },
     h1: {
       fontWeight: 700,
-      fontSize: "3rem",
+    fontSize: "clamp(2.625rem, 1.2857rem + 3.5714vw, 4rem)",
       lineHeight: 1.375,
     },
     h2: {

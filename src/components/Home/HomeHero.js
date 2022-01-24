@@ -10,11 +10,12 @@ function HomeHero(props) {
     <Box
       sx={{
         background: theme.palette.primary.mainGradient,
-        height: { xs: nomobileimg ? "84vh" : "100vh", md: "584px" },
+        // height: { xs: nomobileimg ? "84vh" : "100vh", md: "584px" },
 
         display: "flex",
         justifyContent: "center",
         alignItems: { xs: "center", md: "center" },
+        py: 6,
       }}
     >
       <Container maxWidth="lg">
@@ -36,8 +37,20 @@ function HomeHero(props) {
                 color="textPrimary"
                 textAlign={{ xs: "center", md: "start" }}
               >
-                {data.heading}
+                {data.headingpartone}
+                <Box component="span" sx={{ color: "primary.main", display: "block" }}>
+                  {data.hedingspan}
+                </Box>
+                {data.hedinparttwo}
               </Typography>
+              {/* <Typography
+                variant="h1"
+                color="textPrimary"
+                textAlign={{ xs: "center", md: "start" }}
+              >
+                {data.heading}
+              </Typography> */}
+
               <Typography
                 color="textSecondary"
                 textAlign={{ xs: "center", md: "start" }}

@@ -1,4 +1,7 @@
 {
+  "headingpartone" : "Digital Agency" ,
+  "hedingspan" : "React template" , 
+  "hedinparttwo" : "with MUI" , 
   "heading": "Digital Agency UI React template with MUI",
   "shortDescription": " Not just a set of tools, the package includes ready-to-deploy conceptualapplications written in JavaScript & TypeScript.",
   "imgdark": "/static/contact/10140Dark.svg",

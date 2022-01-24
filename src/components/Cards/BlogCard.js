@@ -34,7 +34,7 @@ function BlogCard(props) {
     >
       <Box sx={{ paddingTop: "calc(100% * 4 / 4)", position: "relative" }}>
         <CardMedia
-          image={data.cover}
+          image={data.image}
           sx={{
             height: "100%",
             position: "absolute",
@@ -46,7 +46,7 @@ function BlogCard(props) {
           }}
         />
         <CardMedia
-          image={data.cover}
+          image={data.image}
           sx={{
             height: "100%",
             position: "absolute",

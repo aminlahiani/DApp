@@ -11,14 +11,14 @@ function RecentPostCard(props) {
           pt: 3,
         }}
       >
-          <Box
-              sx={{ borderRadius: 1 , height: 80 }}
-              component="img"
-              src="/static/blogs/blog_dark1.png" 
-              alt="macbook"
-             width="80" 
-            />
-          
+        <Box
+          sx={{ borderRadius: 1, height: 80 }}
+          component="img"
+          src={data.image}
+          alt="macbook"
+          width="80"
+        />
+
         {/* <Card>
           <CardMedia image="/static/blogs/blog_dark.png" sx={{ height: 80, width: 80 }} />
         </Card> */}
