@@ -79,7 +79,14 @@ function BlogsHero(props) {
               },
             }}
           >
-            <Box
+                <Box
+              sx={{ display: nomobileimg ? { xs: "none", md: "block" } : "block" }}
+              component="img"
+              src={theme.palette.mode === "dark" ? data.imgdark : data.imagesrc}
+              alt="macbook"
+              width="100%"
+            />
+            {/* <Box
               sx={{
                 display: nomobileimg ? { xs: "none", md: "block" } : "block",
                 position: "relative",
@@ -96,7 +103,7 @@ function BlogsHero(props) {
                 alt="For developers"
                 src={theme.palette.mode === "dark" ? data.imgdark : data.imagesrc}
               />
-            </Box>
+            </Box> */}
           </Grid>
         </Grid>
       </Container>

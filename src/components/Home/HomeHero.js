@@ -54,7 +54,6 @@ function HomeHero(props) {
               <Typography
                 color="textSecondary"
                 textAlign={{ xs: "center", md: "start" }}
-              
                 variant="subtitle1"
               >
                 {data.shortDescription}
@@ -100,8 +99,8 @@ function HomeHero(props) {
               },
             }}
           >
-               <Box
-    
+            <Box
+              sx={{ display: nomobileimg ? { xs: "none", md: "block" } : "block" }}
               component="img"
               src={theme.palette.mode === "dark" ? data.imgdark : data.imagesrc}
               alt="macbook"
@@ -126,7 +125,6 @@ function HomeHero(props) {
                 src={theme.palette.mode === "dark" ? data.imgdark : data.imagesrc}
               />
             </Box> */}
-
           </Grid>
         </Grid>
       </Container>

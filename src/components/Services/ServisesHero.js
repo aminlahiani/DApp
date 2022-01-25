@@ -32,6 +32,7 @@ function ServisesHero(props) {
         display: "flex",
         justifyContent: "center",
         alignItems: { xs: "baseline", md: "center" },
+        py : 3
       }}
     >
       <Container maxWidth="lg">
@@ -48,8 +49,9 @@ function ServisesHero(props) {
             }}
           >
             <div>
-              <Typography color="textPrimary" variant="h1">
-                {data.heading} <span ref={typedJSRef} />
+              <Typography   textAlign={{ xs: "center", md: "start" }} color="textPrimary" variant="h1">
+                {data.heading}   <Box ref={typedJSRef}  component="span" sx={{ color: "primary.main"}} />
+                
               </Typography>
               <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
                 {data.shortDescription}
@@ -62,6 +64,7 @@ function ServisesHero(props) {
                   component={RouterLink}
                   size="large"
                   variant={item.variant}
+                  fullWidth
                 >
                   {item.text}
                 </Button>
@@ -80,7 +83,14 @@ function ServisesHero(props) {
               },
             }}
           >
-            <Box
+              <Box
+              sx={{ display: nomobileimg ? { xs: "none", md: "block" } : "block" }}
+              component="img"
+              src={theme.palette.mode === "dark" ? data.imgdark : data.imagesrc}
+              alt="macbook"
+              width="100%"
+            />
+            {/* <Box
               sx={{
                 display: nomobileimg ? { xs: "none", md: "block" } : "block",
                 position: "relative",
@@ -97,7 +107,7 @@ function ServisesHero(props) {
                 alt="For developers"
                 src={theme.palette.mode === "dark" ? data.imgdark : data.imagesrc}
               />
-            </Box>
+            </Box> */}
           </Grid>
         </Grid>
       </Container>

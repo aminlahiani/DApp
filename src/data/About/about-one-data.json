@@ -1,7 +1,8 @@
 {
   "heading": "Who We Are ?",
-  "paragraph1": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut.",
-  "paragraph2": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed.",
-  "imgdark": "/static/about/about_one_dark.png",
+  "paragraph1": "Lorem ipsum dolor sit amet. Veritatis repellat et eligendi consequatur ut culpa totam. Sit nostrum temporibus sed magni unde sit ipsum officiis. Est odio odio eos distinctio assumenda ut iusto voluptatibus et soluta magnam.",
+ 
+  "paragraph2": "Lorem ipsum dolor sit amet. Veritatis repellat et eligendi consequatur ut culpa totam. Sit nostrum temporibus sed magni unde sit ipsum officiis. Est odio odio eos distinctio assumenda ut iusto voluptatibus et soluta magnam.",
+   "imgdark": "/static/about/about_one_dark.png",
   "imglight": "/static/about/about_one_light.png"
 }

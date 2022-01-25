@@ -49,7 +49,11 @@ function HomeTestimonial(props) {
                   mt: 3,
                 }}
               >
-                <Avatar src={item.avatar} sx={{ mr: 2 }} variant="rounded" />
+           <Avatar
+          src={item.avatar}
+          sx={{ mr: 2 }}
+          variant="rounded"
+        />
                 <div>
                   <Typography color="white" variant="h6">
                     {item.name}

@@ -1,20 +1,22 @@
 [
   {
-    "testimonial": "Devias builds some of the best templates you can find for React. They will save you time",
-    "Avatar": "/static/home/olivier.png",
-    "name": "Olivier Tassinari",
-    "role": "co-creator of @MUI"
+    "testimonial": "Daap React template high-quality Source code with personal experience.! Highly recommended",
+
+    "avatar": "/static/home/avatar.jpg",
+    "name": "Stephen L. Hartwell",
+    "role": "CEO of Hamber"
   },
   {
-    "testimonial": "Devias builds some of the best templates you can find for React. They will save you time",
-    "Avatar": "/static/home/olivier.png",
-    "name": "Olivier Tassinari",
-    "role": "co-creator of @MUI"
+    "testimonial": "With Daap Digital Agency React template with MUI i create my website in 3 days! Thanks so much!",
+
+    "avatar": "/static/home/irvin.jpg",
+    "name": "Irvin E. Carey",
+    "role": "CEO of LevelUP"
   },
   {
-    "testimonial": "Devias builds some of the best templates you can find for React. They will save you time",
-    "Avatar": "/static/home/olivier.png",
-    "name": "Olivier Tassinari",
-    "role": "co-creator of @MUI"
+    "testimonial": "Daap  some of the best templates you can find for React. They will save you time",
+    "avatar": "/static/home/amber.jpg",
+    "name": "Amber J. Turner",
+    "role": "CEO of DigitalDO"
   }
 ]

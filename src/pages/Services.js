@@ -14,7 +14,7 @@ function Services() {
     <div>
       {/* {JSON.stringify(ServiceFeaturingData)} */}
       <div data-aos="fade-up">
-        <ServisesHero data={ServicesHeroData} />
+        <ServisesHero nomobileimg data={ServicesHeroData} />
       </div>
       <div data-aos="fade-up">
         <ServicesList data={ServicesData} />
