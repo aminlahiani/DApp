@@ -62,19 +62,17 @@ function ServisesHero(props) {
               <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
                 {data.subHeding}
               </Typography>
-
-              {data.buttons.map((item, index) => (
-                <Button
-                  key={index}
-                  to={item.url}
+              <Button
+              
+                  to={data.btnUrl}
                   component={RouterLink}
                   size="large"
-                  variant={item.variant}
+                  variant={data.btnVariant}
                   fullWidth
                 >
-                  {item.text}
+                  {data.btnText}
                 </Button>
-              ))}
+         
             </div>
           </Grid>
           <Grid

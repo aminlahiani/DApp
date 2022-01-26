@@ -1,10 +1,9 @@
 import React from "react";
-import { Avatar, Box, Container, Grid, Icon, Typography } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
+import { Box, Icon, Typography } from "@mui/material";
 
 export const InfoCard = (props) => {
-  const { data  } = props;
-  const theme = useTheme();
+  const { data } = props;
+
   return (
     <>
       <Box
@@ -28,7 +27,12 @@ export const InfoCard = (props) => {
             // boxShadow: 'inset 0px 5px 8px rgba(256, 256, 256, 0.3)'
           }}
         >
-        <Icon baseClassName={data.baseicon} className={data.icon} color="white" fontSize="small" />
+          <Icon
+            baseClassName={data.baseicon}
+            className={data.icon}
+            color="white"
+            fontSize="small"
+          />
         </Box>
       </Box>
 

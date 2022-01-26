@@ -2,10 +2,14 @@
   "heading": "Digital Agency Organ company  with ",
   "headingtypedJS": ["team", "design", "tool", "expo", "listing", "online"],
   "subHeding": "A professional React Template that comes with plenty of ready-to-use MUI Core components that will help you to build faster & beautiful website for your Digital Agency",
-  "image": "/static/services/home_hero_light.svg",
-  "imageDark": "/static/services/home_hero_light.svg",
 
-  "buttons": [
-    { "variant": "contained", "buttonColor": "btn-warning", "url": "/about", "text": "About Us" }
-  ]
+  "image": "/static/services/services_hero_light.svg",
+
+  "imageDark": "/static/services/services_hero_dark.svg",
+  "btnText": "About Us" ,
+  "btnUrl": "/about",
+  "btnVariant": "contained",
+  "buttonColor": "btn-warning"
+ 
+  
 }

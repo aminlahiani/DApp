@@ -59,7 +59,7 @@ function BlogsHero(props) {
                     component={RouterLink}
                     size="large"
                     variant={item.variant}
-                    fullWidth={isXs}
+                    fullWidth
                   >
                     {item.text}
                   </Button>
