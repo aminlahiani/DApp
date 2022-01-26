@@ -18,7 +18,7 @@ function AboutTwo(props) {
                 {item.heading}
               </Typography>
               <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
-                {item.paragraph}
+                {item.content}
               </Typography>
             </Grid>
           ))}

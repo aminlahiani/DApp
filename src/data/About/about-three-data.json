@@ -1,6 +1,6 @@
 {
   "heading": "The powerful and flexible theme for all kinds of businesses",
-  "shortDescription": " Lorem ipsum dolor sit amet. Qui quia porro eos deleniti suscipit et tempora accusamus At explicabo",
+  "subHeading": " Lorem ipsum dolor sit amet. Qui quia porro eos deleniti suscipit et tempora accusamus At explicabo",
   "featuring": [
     "JavaScript",
     "TypeScript",
@@ -15,6 +15,6 @@
     "Figma",
     "Sketch"
   ],
-  "imgdark": "/static/about/about_three_dark.png",
-  "imglight": "/static/about/about_three_light.png"
+  "imageDark": "/static/about/about_three_dark.png",
+  "image": "/static/about/about_three_light.png"
 }

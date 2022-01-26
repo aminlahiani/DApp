@@ -28,7 +28,7 @@ function ServiceList(props) {
         </Typography>
 
         <Typography align="center" color="textSecondary" variant="subtitle1" sx={{ pt: 0, pb: 6 }}>
-          {data.shortDescription}
+          {data.subHeading}
         </Typography>
 
         <Grid container spacing={3}>

@@ -59,7 +59,7 @@ function HomeTestimonial(props) {
                     {item.name}
                   </Typography>
                   <Typography color="white" variant="body2">
-                    {item.role}
+                    {item.designation}
                   </Typography>
                 </div>
               </Box>

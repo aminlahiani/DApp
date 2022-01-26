@@ -36,7 +36,7 @@ export const InfoCard = (props) => {
         {data.title}
       </Typography>
       <Typography variant="body1" align="center" color="textSecondary">
-        {data.description}
+        {data.shortDescription}
       </Typography>
     </>
   );

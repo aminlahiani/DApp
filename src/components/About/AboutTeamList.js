@@ -15,8 +15,8 @@ function AboutTeamList(props) {
         <Typography color="textPrimary" variant="h3">
           {data.heading}
         </Typography>
-        <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
-          {data.shortDescription}
+        <Typography color="textSecondary" sx={{ pt: 0, pb: 6 }} variant="subtitle1">
+          {data.subHeding}
         </Typography>
 
         <Grid container spacing={3}>

@@ -1,14 +1,23 @@
 {
-  "headingpartone" : "Digital Agency" ,
-  "hedingspan" : "React template" , 
-  "hedinparttwo" : "with MUI" , 
+  "headingPartOne": "Digital Agency",
+  "hedingPartTwo": "React template",
+  "hedinPartThree": "with MUI",
   "heading": "Digital Agency UI React template with MUI",
-  "shortDescription":  "A professional React Template that comes with plenty of ready-to-use MUI Core components that will help you to build faster & beautiful website for your Digital Agency" ,
-
-  "imgdark": "/static/home/home_hero_dark.svg",
-  "imagesrc": "/static/home/home_hero_light.svg",
+  "subHeading": "A professional React Template that comes with plenty of ready-to-use MUI Core components that will help you to build faster & beautiful website for your Digital Agency",
+  "image": "/static/home/home_hero_light.svg",
+  "imageDark": "/static/home/home_hero_dark.svg",
   "buttons": [
-    { "variant": "contained", "buttonColor": "btn-warning", "url": "/about", "text": "About Us" },
-    { "buttonColor": "btn-light", "url": "/contact", "text": "Contact Us", "variant": "outlined" }
+    {
+      "btnVariant": "contained",
+      "buttonColor": "btn-warning",
+      "btnUrl": "/about",
+      "btnText": "About Us"
+    },
+    {
+      "btnText": "Contact Us",
+      "buttonColor": "btn-light",
+      "btnUrl": "/contact",
+      "btnVariant": "outlined"
+    }
   ]
 }

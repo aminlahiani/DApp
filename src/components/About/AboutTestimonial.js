@@ -36,7 +36,7 @@ function AboutTestimonial(props) {
               {data.name}
             </Typography>
             <Typography color="white" variant="body2">
-              {data.role}
+              {data.designation}
             </Typography>
           </div>
         </Box>

@@ -32,27 +32,27 @@ function HomeAbout(props) {
           >
             <div>
               <Typography color="textPrimary" variant="h3">
-                {data.heading}
+                {data.headingOne}
               </Typography>
               <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
-                {data.shortDescription}
+                {data.shortDescriptionOne}
               </Typography>
 
               <Grid container spacing={3}>
                 <Grid item md={6} xs={12}>
                   <Typography color="textPrimary" variant="h3">
-                    {data.heading2}
+                    {data.headingTow}
                   </Typography>
                   <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
-                    {data.shortDescription2}
+                    {data.shortDescriptionTwo}
                   </Typography>
                 </Grid>
                 <Grid item md={6} xs={12}>
                   <Typography color="textPrimary" variant="h3">
-                    {data.heading3}
+                    {data.headingThree}
                   </Typography>
                   <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
-                    {data.shortDescription3}
+                    {data.shortDescriptionThree}
                   </Typography>
                 </Grid>
               </Grid>
@@ -73,7 +73,7 @@ function HomeAbout(props) {
             <Box
               sx={{ borderRadius: 3 }}
               component="img"
-              src={theme.palette.mode === "light" ? data.imglight : data.imgdark}
+              src={theme.palette.mode === "light" ? data.image : data.imageDark}
               alt="macbook"
               width="100%"
             />

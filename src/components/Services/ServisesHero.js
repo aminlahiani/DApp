@@ -27,12 +27,12 @@ function ServisesHero(props) {
     <Box
       sx={{
         background: theme.palette.primary.mainGradient,
-       // height: { xs: nomobileimg ? "80vh" : "100vh", md: "584px" },
-       minHeight: "584px",
+        // height: { xs: nomobileimg ? "80vh" : "100vh", md: "584px" },
+        minHeight: "584px",
         display: "flex",
         justifyContent: "center",
         alignItems: { xs: "baseline", md: "center" },
-        py : 3
+        py: 3,
       }}
     >
       <Container maxWidth="lg">
@@ -49,12 +49,16 @@ function ServisesHero(props) {
             }}
           >
             <div>
-              <Typography   textAlign={{ xs: "center", md: "start" }} color="textPrimary" variant="h1">
-                {data.heading}   <Box ref={typedJSRef}  component="span" sx={{ color: "primary.main"}} />
-                
+              <Typography
+                textAlign={{ xs: "center", md: "start" }}
+                color="textPrimary"
+                variant="h1"
+              >
+                {data.heading}{" "}
+                <Box ref={typedJSRef} component="span" sx={{ color: "primary.main" }} />
               </Typography>
               <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
-                {data.shortDescription}
+                {data.subHeding}
               </Typography>
 
               {data.buttons.map((item, index) => (
@@ -83,31 +87,14 @@ function ServisesHero(props) {
               },
             }}
           >
-              <Box
+            <Box
               sx={{ display: nomobileimg ? { xs: "none", md: "block" } : "block" }}
               component="img"
-              src={theme.palette.mode === "dark" ? data.imgdark : data.imagesrc}
+              src={theme.palette.mode === "light" ? data.image : data.imageDark}
               alt="macbook"
               width="100%"
             />
-            {/* <Box
-              sx={{
-                display: nomobileimg ? { xs: "none", md: "block" } : "block",
-                position: "relative",
-                pt: "calc(960 / 1225 * 100%)",
-                "& img": {
-                  height: "auto",
-                  position: "absolute",
-                  top: 0,
-                  width: "100%",
-                },
-              }}
-            >
-              <img
-                alt="For developers"
-                src={theme.palette.mode === "dark" ? data.imgdark : data.imagesrc}
-              />
-            </Box> */}
+          
           </Grid>
         </Grid>
       </Container>

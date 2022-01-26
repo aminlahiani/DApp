@@ -1,10 +1,10 @@
 {
-  "heading": "About Us",
-  "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue eros leo, et fermentum nisl aliquet eu. Ut mollis orci neque, eu facilisis enim volutpat et. Curabitur lacus urna, ultricies ac molestie eu, faucibus sit amet sem. Praesent lorem libero.",
-  "heading2": "Who are we?",
-  "shortDescription2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue eros leo, et fermentum nisl aliquet eu. Ut mollis orci neque.",
-  "heading3": "Our story",
-  "shortDescription3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue eros leo, et fermentum nisl aliquet eu. Ut mollis orci neque.",
-  "imglight": "/static/home/home-about-light.jpg",
-  "imgdark": "/static/home/home-about-dark.jpg"
+  "headingOne": "About Us",
+  "shortDescriptionOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue eros leo, et fermentum nisl aliquet eu. Ut mollis orci neque, eu facilisis enim volutpat et. Curabitur lacus urna, ultricies ac molestie eu, faucibus sit amet sem. Praesent lorem libero.",
+  "headingTow": "Who are we?",
+  "shortDescriptionTwo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue eros leo, et fermentum nisl aliquet eu. Ut mollis orci neque.",
+  "headingThree": "Our story",
+  "shortDescriptionThree": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue eros leo, et fermentum nisl aliquet eu. Ut mollis orci neque.",
+  "image": "/static/home/home-about-light.jpg",
+  "imageDark": "/static/home/home-about-dark.jpg"
 }

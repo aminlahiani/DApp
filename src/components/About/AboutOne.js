@@ -38,12 +38,11 @@ function AboutOne(props) {
               <Typography color="textPrimary" variant="h1">
                 {data.heading}
               </Typography>
-              <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
-                {data.paragraph1}
-              </Typography>
-              <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
-                {data.paragraph2}
-              </Typography>
+              {data.content.map((item, index) => (
+                <Typography key={index} color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
+                  {item}
+                </Typography>
+              ))}
             </div>
           </Grid>
           <Grid
@@ -79,7 +78,7 @@ function AboutOne(props) {
             <Box
               sx={{ borderRadius: 3 }}
               component="img"
-              src={theme.palette.mode === "light" ? data.imglight : data.imgdark}
+              src={theme.palette.mode === "light" ? data.image : data.imageDark}
               alt="macbook"
               width="100%"
             />

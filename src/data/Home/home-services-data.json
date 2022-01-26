@@ -1,6 +1,6 @@
 {
   "heading": "We'll have your brand teeming with creative inspiration.",
-  "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporMUI Components ",
+  "subHeading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporMUI Components ",
   "services": [
     {
       "id": 1,
@@ -8,43 +8,44 @@
       "baseicon": "fab",
       "icon": "fa-instagram",
 
-      "description": " Lorem ipsum, sed do aliqua eiusmod tempor Lorem ipsum dolor sit amet, consectetur  incididunt ut labore et dolore magna ."
+      "shortDescription": " Lorem ipsum, sed do aliqua eiusmod tempor Lorem ipsum dolor sit amet, consectetur  incididunt ut labore et dolore magna ."
     },
     {
       "id": 2,
       "title": "Website Development",
+      
 
       "baseicon": "fab",
       "icon": "fa-instagram",
-      "description": " Lorem ipsum, sed do aliqua eiusmod tempor Lorem ipsum dolor sit amet, consectetur  incididunt ut labore et dolore magna ."
+      "shortDescription": " Lorem ipsum, sed do aliqua eiusmod tempor Lorem ipsum dolor sit amet, consectetur  incididunt ut labore et dolore magna ."
     },
     {
       "id": 3,
       "title": "Marketing & Reporting",
       "baseicon": "fab",
       "icon": "fa-instagram",
-      "description": " Lorem ipsum, sed do aliqua eiusmod tempor Lorem ipsum dolor sit amet, consectetur  incididunt ut labore et dolore magna ."
+      "shortDescription": " Lorem ipsum, sed do aliqua eiusmod tempor Lorem ipsum dolor sit amet, consectetur  incididunt ut labore et dolore magna ."
     },
     {
       "id": 4,
       "title": "Mobile App Development",
       "baseicon": "fab",
       "icon": "fa-instagram",
-      "description": " Lorem ipsum, sed do aliqua eiusmod tempor Lorem ipsum dolor sit amet, consectetur  incididunt ut labore et dolore magna ."
+      "shortDescription": " Lorem ipsum, sed do aliqua eiusmod tempor Lorem ipsum dolor sit amet, consectetur  incididunt ut labore et dolore magna ."
     },
     {
       "id": 5,
       "title": "Application Development",
       "baseicon": "fab",
       "icon": "fa-instagram",
-      "description": " Lorem ipsum, sed do aliqua eiusmod tempor Lorem ipsum dolor sit amet, consectetur  incididunt ut labore et dolore magna ."
+      "shortDescription": " Lorem ipsum, sed do aliqua eiusmod tempor Lorem ipsum dolor sit amet, consectetur  incididunt ut labore et dolore magna ."
     },
     {
       "id": 6,
       "title": "Seo Services",
       "baseicon": "fab",
       "icon": "fa-instagram",
-      "description": " Lorem ipsum, sed do aliqua eiusmod tempor Lorem ipsum dolor sit amet, consectetur  incididunt ut labore et dolore magna ."
+      "shortDescription": " Lorem ipsum, sed do aliqua eiusmod tempor Lorem ipsum dolor sit amet, consectetur  incididunt ut labore et dolore magna ."
     }
   ]
 }

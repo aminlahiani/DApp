@@ -10,7 +10,6 @@ function HomeHero(props) {
     <Box
       sx={{
         background: theme.palette.primary.mainGradient,
-        // height: { xs: nomobileimg ? "84vh" : "100vh", md: "584px" },
         minHeight: "584px",
         display: "flex",
         justifyContent: "center",
@@ -37,26 +36,19 @@ function HomeHero(props) {
                 color="textPrimary"
                 textAlign={{ xs: "center", md: "start" }}
               >
-                {data.headingpartone}
+                {data.headingPartOne}
                 <Box component="span" sx={{ color: "primary.main", display: "block" }}>
-                  {data.hedingspan}
+                  {data.hedingPartTwo}
                 </Box>
-                {data.hedinparttwo}
+                {data.hedinPartThree}
               </Typography>
-              {/* <Typography
-                variant="h1"
-                color="textPrimary"
-                textAlign={{ xs: "center", md: "start" }}
-              >
-                {data.heading}
-              </Typography> */}
 
               <Typography
                 color="textSecondary"
                 textAlign={{ xs: "center", md: "start" }}
                 variant="subtitle1"
               >
-                {data.shortDescription}
+                {data.subHeading}
               </Typography>
 
               <Box
@@ -75,13 +67,13 @@ function HomeHero(props) {
                 {data.buttons.map((item, index) => (
                   <Button
                     key={index}
-                    to={item.url}
+                    to={item.btnUrl}
                     component={RouterLink}
                     size="large"
-                    variant={item.variant}
+                    variant={item.btnVariant}
                     fullWidth={isXs}
                   >
-                    {item.text}
+                    {item.btnText}
                   </Button>
                 ))}
               </Box>
@@ -102,29 +94,10 @@ function HomeHero(props) {
             <Box
               sx={{ display: nomobileimg ? { xs: "none", md: "block" } : "block" }}
               component="img"
-              src={theme.palette.mode === "dark" ? data.imgdark : data.imagesrc}
+              src={theme.palette.mode === "light" ? data.image : data.imageDark}
               alt="macbook"
               width="100%"
             />
-
-            {/* <Box
-              sx={{
-                display: nomobileimg ? { xs: "none", md: "block" } : "block",
-                position: "relative",
-                pt: "calc(960 / 1225 * 100%)",
-                "& img": {
-                  height: "auto",
-                  position: "absolute",
-                  top: 0,
-                  width: "100%",
-                },
-              }}
-            >
-              <img
-                alt="For developers"
-                src={theme.palette.mode === "dark" ? data.imgdark : data.imagesrc}
-              />
-            </Box> */}
           </Grid>
         </Grid>
       </Container>

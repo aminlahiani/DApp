@@ -1,7 +1,5 @@
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import { ExternalLink as ExternalLinkIcon } from "icons/external-link";
-import { CheckCircleOutlined as CheckCircleOutlinedIcon } from "icons/check-circle-outlined";
 import PlaylistAddCheckCircleIcon from "@mui/icons-material/PlaylistAddCheckCircle";
 function AboutThree(props) {
   const { data } = props;
@@ -17,10 +15,10 @@ function AboutThree(props) {
       <Container maxWidth="lg">
         <Grid alignItems="center" container justifyContent="center" spacing={5}>
           <Grid item md={6} sm={8} xs={12}>
-          <Box
+            <Box
               sx={{ borderRadius: 3 }}
               component="img"
-              src={theme.palette.mode === "light" ? data.imglight : data.imgdark}
+              src={theme.palette.mode === "light" ? data.image : data.imageDark}
               alt="macbook"
               width="100%"
             />
@@ -31,7 +29,7 @@ function AboutThree(props) {
                 {data.heading}
               </Typography>
               <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
-                {data.shortDescription}
+                {data.subHeding}
               </Typography>
 
               <Grid container>
