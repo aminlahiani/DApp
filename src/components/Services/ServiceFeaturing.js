@@ -31,9 +31,9 @@ function ServiceFeaturing(props) {
               <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
                 {data.shortDescription}
               </Typography>
-              {data.featuring.map((item) => (
+              {data.featuring.map((item , index) => (
                 <Box
-                  key={item}
+                  key={index}
                   sx={{
                     alignItems: "center",
                     display: "flex",
