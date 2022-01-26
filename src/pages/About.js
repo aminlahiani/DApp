@@ -1,3 +1,4 @@
+// About page components
 import AboutHero from "components/About/AboutHero";
 import AboutOne from "components/About/AboutOne";
 import AboutTwo from "components/About/AboutTwo";
@@ -8,6 +9,7 @@ import AboutTeamList from "components/About/AboutTeamList";
 
 import CtaNewsletter from "components/Cta/CtaNewsletter";
 
+// About page data
 import AboutHeroData from "data/About/about-hero-data.json";
 import AboutOneData from "data/About/about-one-data.json";
 import AboutTowData from "data/About/about-tow-data.json";

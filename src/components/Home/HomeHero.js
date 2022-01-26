@@ -1,7 +1,11 @@
+// @mui material components
 import { Box, Button, Container, Grid, Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+
+// react-router-dom components
 import { Link as RouterLink } from "react-router-dom";
-function HomeHero(props) {
+
+const HomeHero = (props) => {
   const { nomobileimg, data } = props;
   const theme = useTheme();
   const isXs = useMediaQuery(theme.breakpoints.down("sm"));
@@ -103,6 +107,6 @@ function HomeHero(props) {
       </Container>
     </Box>
   );
-}
+};
 
 export default HomeHero;

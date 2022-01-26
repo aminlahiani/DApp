@@ -1,4 +1,5 @@
-import { Avatar, Box, Button, Container, Typography } from "@mui/material";
+// @mui material components
+import { Avatar, Box, Container, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
 function AboutTestimonial(props) {

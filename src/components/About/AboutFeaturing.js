@@ -1,3 +1,4 @@
+// @mui material components
 import { Box, Container, Typography, Avatar, Grid, Icon } from "@mui/material";
 
 function AboutFeaturing(props) {

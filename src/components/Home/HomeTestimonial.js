@@ -1,5 +1,7 @@
-import { Avatar, Box, Button, Container, Typography } from "@mui/material";
+// @mui material components
+import { Avatar, Box, Container, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+
 // SwiperJS
 import SwiperCore, { Autoplay, Navigation } from "swiper";
 
@@ -9,7 +11,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Styles must use direct files imports
 import "swiper/css"; // core Swiper
 import "swiper/css/navigation"; // Navigation module
-function HomeTestimonial(props) {
+
+const HomeTestimonial = (props) => {
   const { data } = props;
   const theme = useTheme();
 
@@ -49,11 +52,7 @@ function HomeTestimonial(props) {
                   mt: 3,
                 }}
               >
-           <Avatar
-          src={item.avatar}
-          sx={{ mr: 2 }}
-          variant="rounded"
-        />
+                <Avatar src={item.avatar} sx={{ mr: 2 }} variant="rounded" />
                 <div>
                   <Typography color="white" variant="h6">
                     {item.name}
@@ -69,5 +68,5 @@ function HomeTestimonial(props) {
       ))}
     </Swiper>
   );
-}
+};
 export default HomeTestimonial;

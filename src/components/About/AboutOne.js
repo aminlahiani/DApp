@@ -1,5 +1,8 @@
+// @mui material components
 import { Box, Button, Container, Grid, Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+
+// react-router-dom components
 import { Link as RouterLink } from "react-router-dom";
 
 function AboutOne(props) {

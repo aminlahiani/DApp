@@ -1,7 +1,9 @@
+// @mui material components
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import PlaylistAddCheckCircleIcon from "@mui/icons-material/PlaylistAddCheckCircle";
-function AboutThree(props) {
+
+const  AboutThree = (props) => {
   const { data } = props;
   const theme = useTheme();
 

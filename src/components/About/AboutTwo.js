@@ -1,7 +1,7 @@
+// @mui material components
 import { Box, Container, Grid, Typography } from "@mui/material";
-import React from "react";
 
-function AboutTwo(props) {
+const  AboutTwo = (props)  => {
   const { data } = props;
   return (
     <Box

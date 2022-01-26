@@ -1,7 +1,8 @@
+// @mui material components
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-function HomeAbout(props) {
+const HomeAbout = (props) => {
   const { data } = props;
   const theme = useTheme();
 
@@ -82,6 +83,6 @@ function HomeAbout(props) {
       </Container>
     </Box>
   );
-}
+};
 
 export default HomeAbout;

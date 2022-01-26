@@ -1,3 +1,4 @@
+// Home page components
 import HomeHero from "components/Home/HomeHero";
 import HomeAbout from "components/Home/HomeAbout";
 import HomeTestimonial from "components/Home/HomeTestimonial";
@@ -5,7 +6,7 @@ import HomeServiceList from "components/Home/HomeServiceList";
 import HomeLatestPosts from "components/Home/HomeLatestPosts";
 import CtaNewsletter from "components/Cta/CtaNewsletter";
 
-//data
+// Home page data
 import HomeHeroData from "data/Home/home-hero-data.json";
 import HomeServicesData from "data/Home/home-services-data.json";
 import HomeAboutData from "data/Home/home-about-data.json";
