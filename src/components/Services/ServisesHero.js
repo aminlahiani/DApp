@@ -1,5 +1,7 @@
+// @mui material components
 import { Box, Button, Container, Grid, Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+
 import { useEffect, useRef } from "react";
 import { Link as RouterLink } from "react-router-dom";
 // typed-js

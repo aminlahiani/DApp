@@ -1,10 +1,9 @@
-import { Avatar, Box, Container, Grid, Typography } from "@mui/material";
-import Icon from "@mui/material/Icon";
+// @mui material components
+import { Box, Container, Grid, Typography } from "@mui/material";
 
-import { InfoCard } from "components/Cards/InfoCard";
 import ServiceCardOne from "components/Cards/ServiceCardOne";
 
-function ServicesList(props) {
+const ServicesList = (props) => {
   const { data } = props;
   return (
     <Box
@@ -41,6 +40,6 @@ function ServicesList(props) {
       </Container>
     </Box>
   );
-}
+};
 
 export default ServicesList;

@@ -1,7 +1,11 @@
-import { Box, Button, Container, Grid, Link, Typography } from "@mui/material";
+// @mui material components
+import { Box, Container, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import { CheckCircleOutlined as CheckCircleOutlinedIcon } from "icons/check-circle-outlined";
-function ServiceFeaturing(props) {
+
+// @mui icons
+import PlaylistAddCheckCircleIcon from "@mui/icons-material/PlaylistAddCheckCircle";
+
+const ServiceFeaturing = (props) => {
   const theme = useTheme();
   const { data } = props;
   return (
@@ -31,7 +35,7 @@ function ServiceFeaturing(props) {
               <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
                 {data.shortDescription}
               </Typography>
-              {data.featuring.map((item , index) => (
+              {data.featuring.map((item, index) => (
                 <Box
                   key={index}
                   sx={{
@@ -40,7 +44,7 @@ function ServiceFeaturing(props) {
                     m: 2,
                   }}
                 >
-                  <CheckCircleOutlinedIcon color="info" sx={{ mr: 1 }} />
+                  <PlaylistAddCheckCircleIcon color="info" sx={{ mr: 1 }} />
                   <Typography color="textSecondary" variant="body1">
                     {item}
                   </Typography>
@@ -72,5 +76,5 @@ function ServiceFeaturing(props) {
       </Container>
     </Box>
   );
-}
+};
 export default ServiceFeaturing;
