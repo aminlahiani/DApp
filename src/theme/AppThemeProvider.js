@@ -1,6 +1,5 @@
-import { amber, deepOrange, grey } from "@mui/material/colors";
 import * as React from "react";
-import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
+import {  ThemeProvider, createTheme } from "@mui/material/styles";
 //import { ColorModeContext } from 'context/ColorModeContext';
 import { DarkThemeOptions } from "./DarkThemeOptions";
 import { LightThemeOptions } from "./LightThemeOptions";

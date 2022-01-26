@@ -1,10 +1,14 @@
-import ServiceDetailsHero from "components/ServiceDetails/ServiceDetailsHero";
-import ServiceDetailsContent from "components/ServiceDetails/ServiceDetailsContent";
+// react-router-dom components
 import { useParams } from "react-router-dom";
 
+// ServiceDetails page components
+import ServiceDetailsHero from "components/ServiceDetails/ServiceDetailsHero";
+import ServiceDetailsContent from "components/ServiceDetails/ServiceDetailsContent";
+
+// ServiceDetails page data
 import ServicesData from "data/Services/services-data.json";
 
-function ServiceDetails(props) {
+function ServiceDetails() {
   const parameter = useParams();
   const serviceId = parameter.serviceId;
   const data = ServicesData.serviceslist.filter((Service) => Service.id === serviceId);

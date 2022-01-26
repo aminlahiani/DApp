@@ -22,7 +22,6 @@ function About() {
   return (
     <>
       {/* <Hero /> */}
-      {/* {JSON.stringify(AboutTestimonialData)} */}
       <div data-aos="fade-up">
         <AboutHero data={AboutHeroData} />
       </div>

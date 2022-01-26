@@ -10,7 +10,6 @@ function Portfolio() {
   return (
     <div>
       <PortfolioHero data={PortfolioHeroData} />
-
       <PortfolioList data={PortfolioListData} />
     </div>
   );
