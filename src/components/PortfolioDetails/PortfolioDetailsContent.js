@@ -1,3 +1,4 @@
+// @mui material components
 import { Container, Box, Grid, Typography, Card, CardMedia } from "@mui/material";
 
 const PortfolioDetailsContent = (props) => {
@@ -22,7 +23,10 @@ const PortfolioDetailsContent = (props) => {
           {data.title}
         </Typography>
         <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
-          {data.paragraph1}
+          {data.shortDescription}
+        </Typography>
+        <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
+          {data.paragraphOne}
         </Typography>
 
         <Grid container spacing={5} mt={3}>
@@ -33,10 +37,10 @@ const PortfolioDetailsContent = (props) => {
           ))}
         </Grid>
         <Typography color="textPrimary" sx={{ mt: 3 }} variant="h4">
-          {data.subtitle1}
+          {data.subtitle}
         </Typography>
         <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
-          {data.paragraph2}
+          {data.paragraphTwo}
         </Typography>
       </Container>
     </Box>

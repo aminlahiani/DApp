@@ -1,104 +1,68 @@
 [
   {
-    "id": "24b76cac9a128cd949747090",
-    "author": {
-      "avatar": "/static/mock-images/avatars/avatar-jie_yan_song.png",
-      "name": "Jie Yan Song"
-    },
+    "id": "1",
+    "title": "Why I Still Lisp, and You ",
     "category": "Programming",
     "image": "/static/portfolio/portfolioone.jpg",
-    "readTime": "5 min",
-    "shortDescription": "Aliquam dapibus elementum nulla at malesuada. Ut mi nisl, aliquet non mollis vel, feugiat non nibh. Vivamus sit amet tristique dui. Praesent in bibendum arcu, at placerat augue. Nam varius fermentum diam, at tristique libero ultrices non. Praesent scelerisque diam vitae posuere dignissim. In et purus ac sapien posuere accumsan sit amet id diam. Pellentesque sit amet nulla ante. Maecenas nec leo vitae quam volutpat pretium id vitae augue.",
-    "title": "Why I Still Lisp, and You ",
-    "url": "/portfolio-deatils",
-    "subtitle1": "We develop creative solutions",
-    "paragraph1": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
-    "paragraph2": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed.",
-    "images": ["/static/portfolio/potfolioimg.png", "/static/portfolio/potfolioimg.png"]
+    "shortDescription": "Aliquam dapibus elementum nulla at malesuada. Ut mi nisl, aliquet non mollis vel, feugiat non nibh. Vivamus sit amet tristique .",
+    "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
+    "images": ["/static/portfolio/potfolioimg.png", "/static/portfolio/potfolioimg.png"],
+    "subtitle": "We develop creative solutions",
+    "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed."
   },
   {
-    "id": "a9c19d0caf2ca91020aac51f",
-    "author": {
-      "avatar": "/static/mock-images/avatars/avatar-omar_darboe.png",
-      "name": "Omar Darobe"
-    },
-    "category": "Productivity",
-    "image": "/static/mock-images/covers/cover_5.jpeg",
-    "readTime": "6 min",
-    "shortDescription": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi in turpis ac quam luctus interdum. Nullam ac lorem ligula. Integer sed massa bibendum, blandit ipsum et, iaculis augue. Curabitur nec enim eget dolor tincidunt posuere eget nec dolor. Ut ullamcorper dignissim arcu vel laoreet. Sed ligula dolor, vulputate quis eros ac, maximus pharetra orci. Aenean lobortis volutpat vehicula. Suspendisse vel nunc enim. Cras ultrices metus libero, non aliquam diam condimentum vel. Vestibulum arcu leo, consectetur id diam a, semper elementum odio. Proin eleifend volutpat sapien tempor bibendum. Etiam sagittis nulla sit amet aliquam sollicitudin.",
-    "title": "Scrum Has Hit the Glass ",
-    "url": "/portfolio-deatils",
-    "subtitle1": "We develop creative solutions",
-    "paragraph1": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
-    "paragraph2": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed.",
-    "images": ["/static/mock-images/covers/cover_4.jpeg", "/static/mock-images/covers/cover_5.jpeg"]
-  },
-  {
-    "id": "44df90cbf89963b8aa655c7d",
-    "author": {
-      "avatar": "/static/mock-images/avatars/avatar-siegbert_gottfried.png",
-      "name": "Siegbert Gottfried"
-    },
-    "category": "Entrepreneurs",
-    "image": "/static/mock-images/covers/cover_6.jpeg",
-    "readTime": "3 min",
-    "shortDescription": "Praesent eget leo mauris. Morbi ac vulputate nibh. In hac habitasse platea dictumst. Praesent fermentum lacus eleifend erat cursus, congue rhoncus mi porta. Mauris rhoncus mollis nisl, vitae tempus tortor. Proin sit amet feugiat felis. Donec nunc urna, pretium sed viverra vel, blandit at urna. Integer pharetra placerat mauris, at fringilla arcu dignissim a. Morbi nec fermentum purus. Integer vel justo interdum lectus euismod bibendum.",
-    "title": "How Model View Controller (MVC) Architectures Work",
-    "url": "/portfolio-deatils",
-    "subtitle1": "We develop creative solutions",
-    "paragraph1": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
-    "paragraph2": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed.",
-    "images": ["/static/mock-images/covers/cover_4.jpeg", "/static/mock-images/covers/cover_5.jpeg"]
-  },
-  {
-    "id": "24b76cac9a128cd949747080",
-    "author": {
-      "avatar": "/static/mock-images/avatars/avatar-jie_yan_song.png",
-      "name": "Jie Yan Song"
-    },
+    "id": "2",
+    "title": "Why I Still Lisp, and 2 ",
     "category": "Programming",
-    "image": "/static/mock-images/covers/cover_4.jpeg",
-    "readTime": "5 min",
-    "shortDescription": "Aliquam dapibus elementum nulla at malesuada. Ut mi nisl, aliquet non mollis vel, feugiat non nibh. Vivamus sit amet tristique dui. Praesent in bibendum arcu, at placerat augue. Nam varius fermentum diam, at tristique libero ultrices non. Praesent scelerisque diam vitae posuere dignissim. In et purus ac sapien posuere accumsan sit amet id diam. Pellentesque sit amet nulla ante. Maecenas nec leo vitae quam volutpat pretium id vitae augue.",
-    "title": "Why I Still Lisp, and You ",
-    "url": "/portfolio-deatils",
-    "subtitle1": "We develop creative solutions",
-    "paragraph1": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
-    "paragraph2": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed.",
-    "images": ["/static/mock-images/covers/cover_4.jpeg", "/static/mock-images/covers/cover_5.jpeg"]
+    "image": "/static/portfolio/portfolioone.jpg",
+    "shortDescription": "Aliquam dapibus elementum nulla at malesuada. Ut mi nisl, aliquet non mollis vel, feugiat non nibh. Vivamus sit amet tristique .",
+    "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
+    "images": ["/static/portfolio/potfolioimg.png", "/static/portfolio/potfolioimg.png"],
+    "subtitle": "We develop creative solutions",
+    "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed."
   },
   {
-    "id": "a9c19d0caf2ca91020aacd1f",
-    "author": {
-      "avatar": "/static/mock-images/avatars/avatar-omar_darboe.png",
-      "name": "Omar Darobe"
-    },
-    "category": "Productivity",
-    "image": "/static/mock-images/covers/cover_5.jpeg",
-    "readTime": "6 min",
-    "shortDescription": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi in turpis ac quam luctus interdum. Nullam ac lorem ligula. Integer sed massa bibendum, blandit ipsum et, iaculis augue. Curabitur nec enim eget dolor tincidunt posuere eget nec dolor. Ut ullamcorper dignissim arcu vel laoreet. Sed ligula dolor, vulputate quis eros ac, maximus pharetra orci. Aenean lobortis volutpat vehicula. Suspendisse vel nunc enim. Cras ultrices metus libero, non aliquam diam condimentum vel. Vestibulum arcu leo, consectetur id diam a, semper elementum odio. Proin eleifend volutpat sapien tempor bibendum. Etiam sagittis nulla sit amet aliquam sollicitudin.",
-    "title": "Scrum Has Hit the Glass Ceiling",
-    "url": "/portfolio-deatils",
-    "subtitle1": "We develop creative solutions",
-    "paragraph1": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
-    "paragraph2": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed.",
-    "images": ["/static/mock-images/covers/cover_4.jpeg", "/static/mock-images/covers/cover_5.jpeg"]
+    "id": "3",
+    "title": "Why I Still Lisp 3 ",
+    "category": "Programming",
+    "image": "/static/portfolio/portfolioone.jpg",
+    "shortDescription": "Aliquam dapibus elementum nulla at malesuada. Ut mi nisl, aliquet non mollis vel, feugiat non nibh. Vivamus sit amet tristique .",
+    "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
+    "images": ["/static/portfolio/potfolioimg.png", "/static/portfolio/potfolioimg.png"],
+    "subtitle": "We develop creative solutions",
+    "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed."
   },
   {
-    "id": "44df90cbf89963b8aa625c7d",
-    "author": {
-      "avatar": "/static/mock-images/avatars/avatar-siegbert_gottfried.png",
-      "name": "Siegbert Gottfried"
-    },
-    "category": "Entrepreneurs",
-    "image": "/static/mock-images/covers/cover_6.jpeg",
-    "readTime": "3 min",
-    "shortDescription": "Praesent eget leo mauris. Morbi ac vulputate nibh. In hac habitasse platea dictumst. Praesent fermentum lacus eleifend erat cursus, congue rhoncus mi porta. Mauris rhoncus mollis nisl, vitae tempus tortor. Proin sit amet feugiat felis. Donec nunc urna, pretium sed viverra vel, blandit at urna. Integer pharetra placerat mauris, at fringilla arcu dignissim a. Morbi nec fermentum purus. Integer vel justo interdum lectus euismod bibendum.",
-    "title": "How Model View Controller (MVC) Architectures Work",
-    "url": "/portfolio-deatils",
-    "subtitle1": "We develop creative solutions",
-    "paragraph1": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
-    "paragraph2": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed.",
-    "images": ["/static/mock-images/covers/cover_4.jpeg", "/static/mock-images/covers/cover_5.jpeg"]
+    "id": "4",
+    "title": "Why I Still Lisp, and You 4 ",
+    "category": "Programming",
+    "image": "/static/portfolio/portfolioone.jpg",
+    "shortDescription": "Aliquam dapibus elementum nulla at malesuada. Ut mi nisl, aliquet non mollis vel, feugiat non nibh. Vivamus sit amet tristique .",
+    "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
+    "images": ["/static/portfolio/potfolioimg.png", "/static/portfolio/potfolioimg.png"],
+    "subtitle": "We develop creative solutions",
+    "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed."
+  },
+  {
+    "id": "5",
+    "title": "Why I , and You 5 ",
+    "category": "Programming",
+    "image": "/static/portfolio/portfolioone.jpg",
+    "shortDescription": "Aliquam dapibus elementum nulla at malesuada. Ut mi nisl, aliquet non mollis vel, feugiat non nibh. Vivamus sit amet tristique .",
+    "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
+    "images": ["/static/portfolio/potfolioimg.png", "/static/portfolio/potfolioimg.png"],
+    "subtitle": "We develop creative solutions",
+    "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed."
+  },
+  {
+    "id": "6",
+    "title": " Still Lisp, and You 6 ",
+    "category": "Programming",
+    "image": "/static/portfolio/portfolioone.jpg",
+    "shortDescription": "Aliquam dapibus elementum nulla at malesuada. Ut mi nisl, aliquet non mollis vel, feugiat non nibh. Vivamus sit amet tristique .",
+    "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
+    "images": ["/static/portfolio/potfolioimg.png", "/static/portfolio/potfolioimg.png"],
+    "subtitle": "We develop creative solutions",
+    "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed."
   }
 ]

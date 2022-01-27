@@ -3,7 +3,7 @@
     "heading": "Material Design - News1",
     "shortDescription": "Pain is what we go through as we become older. We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder",
     "keyword": " Connect with us on",
-    "img": "/static/about/bg1.jpg",
+    "img": "/static/about/about_hero_bgone.jpg",
     "socialIcons": [
       {
         "baseicon": "fab",
@@ -36,7 +36,7 @@
     "heading": "Material Design - News2",
     "shortDescription": "Pain is what we go through as we become older. We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder",
     "keyword": " Connect with us on",
-    "img": "/static/about/bg-about-us.jpg",
+    "img": "/static/about/about_hero_bgtwo.jpg",
     "socialIcons": [
       {
         "baseicon": "fab",
@@ -69,7 +69,7 @@
     "heading": "Material Design - News3",
     "shortDescription": "Pain is what we go through as we become older. We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder",
     "keyword": " Connect with us on",
-    "img": "/static/about/bg8.jpg",
+    "img": "/static/about/about_hero_bgthree.jpg",
     "socialIcons": [
       {
         "baseicon": "fab",
