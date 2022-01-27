@@ -1,25 +1,26 @@
+import { useState } from "react";
+
+// @mui material components
 import {
   Avatar,
   Box,
   Card,
   CardContent,
   CardMedia,
-  Chip,
   Divider,
   Link,
   Typography,
 } from "@mui/material";
-
-import { useState } from "react";
-
 import { useTheme } from "@mui/system";
-function TeamCard(props) {
+
+const TeamCard = (props) => {
   const { data } = props;
   const theme = useTheme();
   const [rotate, setRotate] = useState(false);
 
   const rotate0 = () => setRotate(false);
   const rotate180 = () => setRotate(true);
+
   return (
     <>
       <Box sx={{ perspective: "50rem" }} onMouseEnter={rotate180} onMouseLeave={rotate0}>
@@ -119,6 +120,6 @@ function TeamCard(props) {
       </Box>
     </>
   );
-}
+};
 
 export default TeamCard;

@@ -2,7 +2,7 @@
 import { Avatar, Box, Container, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-function AboutTestimonial(props) {
+const AboutTestimonial = (props) => {
   const { data } = props;
   const theme = useTheme();
 
@@ -44,5 +44,5 @@ function AboutTestimonial(props) {
       </Container>
     </Box>
   );
-}
+};
 export default AboutTestimonial;

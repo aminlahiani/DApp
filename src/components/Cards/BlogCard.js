@@ -1,23 +1,15 @@
-import { ArrowForward } from "@mui/icons-material";
-import {
-  Avatar,
-  Box,
-  Button,
-  Card,
-  CardMedia,
-  Chip,
-  Container,
-  Grid,
-  Link,
-  Stack,
-  Typography,
-} from "@mui/material";
-import { Link as RouterLink } from "react-router-dom";
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
+// @mui material components
+import { Box, Button, Card, CardMedia, Chip, Link, Stack, Typography } from "@mui/material";
 
-function BlogCard(props) {
+// @mui icons
+import { ArrowForward } from "@mui/icons-material";
+
+// react-router-dom components
+import { Link as RouterLink } from "react-router-dom";
+
+const BlogCard = (props) => {
   const { data } = props;
+
   return (
     <Card
       sx={{
@@ -63,6 +55,11 @@ function BlogCard(props) {
         <Box>
           <Box mb={1}>
             <Chip label={data.category} variant="outlined" />
+            <Box sx={{ mt: 2, ml: 2 }}>
+              <Typography variant="subtitle2" color="textSecondary">
+                By {data.authorname} • {data.publishedAt}
+              </Typography>
+            </Box>
           </Box>
 
           <Link
@@ -99,10 +96,6 @@ function BlogCard(props) {
       </Stack>
     </Card>
   );
-}
-
-BlogCard.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 
 export default BlogCard;

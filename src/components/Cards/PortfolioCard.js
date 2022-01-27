@@ -1,9 +1,12 @@
+// @mui material components
 import { Box, Card, CardMedia, Chip, Link, Typography } from "@mui/material";
 
+// react-router-dom components
 import { Link as RouterLink } from "react-router-dom";
 
 function PortfolioCard(props) {
   const { data } = props;
+
   return (
     <Card
       sx={{
@@ -22,7 +25,6 @@ function PortfolioCard(props) {
           }}
         />
       </Box>
-
       <Box sx={{ mt: 2 }}>
         <div>
           <Chip label={data.category} variant="outlined" />

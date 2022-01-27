@@ -6,18 +6,12 @@
   "subHeading": "A professional React Template that comes with plenty of ready-to-use MUI Core components that will help you to build faster & beautiful website for your Digital Agency",
   "image": "/static/home/home_hero_light.svg",
   "imageDark": "/static/home/home_hero_dark.svg",
-  "buttons": [
-    {
-      "btnVariant": "contained",
-      "buttonColor": "btn-warning",
-      "btnUrl": "/about",
-      "btnText": "About Us"
-    },
-    {
-      "btnText": "Contact Us",
-      "buttonColor": "btn-light",
-      "btnUrl": "/contact",
-      "btnVariant": "outlined"
-    }
-  ]
+  "btnOneText": "About Us",
+  "btnOneUrl": "/about",
+  "btnOneVariant": "contained",
+  "btnOneColor": "primary",
+  "btnTwoText": "About Us",
+  "btnTwoUrl": "/about",
+  "btnTwoVariant": "outlined",
+  "btnTwoColor": "primary"
 }

@@ -1,5 +1,6 @@
 // @mui material components
 import { Box, Grid, Typography, Container } from "@mui/material";
+
 import TeamCard from "components/Cards/TeamCard";
 
 function AboutTeamList(props) {

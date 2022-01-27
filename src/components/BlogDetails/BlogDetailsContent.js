@@ -1,3 +1,4 @@
+// @mui material components
 import { Chip, Container, Typography, Box, Card, CardMedia } from "@mui/material";
 
 const BlogDetailsContent = (props) => {

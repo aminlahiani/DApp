@@ -1,7 +1,12 @@
+// @mui material components
 import { Box, Card, CardMedia, Chip, Link, Typography } from "@mui/material";
+
+// react-router-dom components
 import { Link as RouterLink } from "react-router-dom";
+
 function RecentPostCard(props) {
   const { data } = props;
+
   return (
     <>
       <Box

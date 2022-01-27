@@ -68,18 +68,26 @@ const HomeHero = (props) => {
                   },
                 }}
               >
-                {data.buttons.map((item, index) => (
-                  <Button
-                    key={index}
-                    to={item.btnUrl}
-                    component={RouterLink}
-                    size="large"
-                    variant={item.btnVariant}
-                    fullWidth={isXs}
-                  >
-                    {item.btnText}
-                  </Button>
-                ))}
+                <Button
+                  to={data.btnOneUrl}
+                  component={RouterLink}
+                  size="large"
+                  variant={data.btnOneVariant}
+                  fullWidth={isXs}
+                  color={data.btnOneColor}
+                >
+                  {data.btnOneText}
+                </Button>
+                <Button
+                  to={data.btnTwoUrl}
+                  component={RouterLink}
+                  size="large"
+                  variant={data.btnTwoVariant}
+                  fullWidth={isXs}
+                  color={data.btntwoColor}
+                >
+                  {data.btnTwoText}
+                </Button>
               </Box>
             </div>
           </Grid>

@@ -1,13 +1,18 @@
 import { useState } from "react";
-import { useTheme } from "@mui/system";
-import { Box, Button, Container, Grid, Icon, Typography } from "@mui/material";
+
+// @mui material components
+import { Box, Button, Icon, Typography } from "@mui/material";
+
+// react-router-dom components
 import { Link as RouterLink } from "react-router-dom";
-function ServiceCardOne(props) {
+
+const ServiceCardOne = (props) => {
   const { data } = props;
   const [rotate, setRotate] = useState(false);
 
   const rotate0 = () => setRotate(false);
   const rotate180 = () => setRotate(true);
+
   return (
     <>
       <Box sx={{ perspective: "50rem" }} onMouseEnter={rotate180} onMouseLeave={rotate0}>
@@ -57,7 +62,6 @@ function ServiceCardOne(props) {
                     borderRadius: 1.5,
                     boxShadow:
                       "inset 0px 5px 8px rgba(256, 256, 256, 0.3), 0px 5px 8px rgba(21, 101, 192, 0.3)",
-                    // boxShadow: 'inset 0px 5px 8px rgba(256, 256, 256, 0.3)'
                   }}
                 >
                   <Icon baseClassName="fas" className="fa-globe" color="white" fontSize="small" />
@@ -117,6 +121,6 @@ function ServiceCardOne(props) {
       </Box>
     </>
   );
-}
+};
 
 export default ServiceCardOne;

@@ -1,4 +1,4 @@
-import React from "react";
+// @mui material components
 import { Box, Icon, Typography } from "@mui/material";
 
 export const InfoCard = (props) => {
@@ -24,7 +24,6 @@ export const InfoCard = (props) => {
             borderRadius: 1.5,
             boxShadow:
               "inset 0px 5px 8px rgba(256, 256, 256, 0.3), 0px 5px 8px rgba(21, 101, 192, 0.3)",
-            // boxShadow: 'inset 0px 5px 8px rgba(256, 256, 256, 0.3)'
           }}
         >
           <Icon

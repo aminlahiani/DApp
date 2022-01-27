@@ -1,18 +1,8 @@
-import { ArrowForward } from "@mui/icons-material";
-import {
-  Box,
-  Button,
-  Card,
-  CardMedia,
-  Chip,
-  Container,
-  Grid,
-  Link,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
-import { styled } from "@mui/material/styles";
+
+import { ArrowForward } from "@mui/icons-material";
+
 import BlogCard from "components/Cards/BlogCard";
 
 function HomeLatestPosts(props) {
@@ -37,12 +27,14 @@ function HomeLatestPosts(props) {
               {data.heading}
             </Typography>
             <Button
-              size="small"
+              size="large"
               component={RouterLink}
-              to={data.buttonurl}
+              to={data.btnUrl}
+              variant={data.btnVariant}
+              color={data.btnColor}
               endIcon={<ArrowForward />}
             >
-              {data.buttontest}
+              {data.btnText}
             </Button>
           </Box>
 
