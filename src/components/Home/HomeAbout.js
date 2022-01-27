@@ -77,6 +77,7 @@ const HomeAbout = (props) => {
               src={theme.palette.mode === "light" ? data.image : data.imageDark}
               alt="macbook"
             height="100%"
+            width="100%"
             
             />
           </Grid>
