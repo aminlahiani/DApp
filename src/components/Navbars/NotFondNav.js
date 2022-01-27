@@ -18,9 +18,7 @@ const NotFondNav = () => {
     >
       <Container maxWidth="lg">
         <Toolbar sx={{ height: 59 }} disableGutters>
-          <Box sx={{ mt: 1, width: 40 }}>
-            <img src="/landingpage.svg" />
-          </Box>
+          <Box component="img" src="/landingpage.svg" alt="macbook" height="30px"  />
 
           <Box sx={{ flexGrow: 1 }} />
         </Toolbar>
