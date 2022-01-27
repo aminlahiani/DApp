@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
 // Images
-import bgImage from "assets/images/bg5.jpg";
+import bgImage from "assets/images/bg_blogdetails.jpg";
 
 const BlogDetailsHero = () => {
   const theme = useTheme();

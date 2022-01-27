@@ -63,16 +63,14 @@ function ServisesHero(props) {
                 {data.subHeding}
               </Typography>
               <Button
-              
-                  to={data.btnUrl}
-                  component={RouterLink}
-                  size="large"
-                  variant={data.btnVariant}
-                  fullWidth
-                >
-                  {data.btnText}
-                </Button>
-         
+                to={data.btnUrl}
+                component={RouterLink}
+                size="large"
+                variant={data.btnVariant}
+                fullWidth
+              >
+                {data.btnText}
+              </Button>
             </div>
           </Grid>
           <Grid
@@ -92,9 +90,9 @@ function ServisesHero(props) {
               component="img"
               src={theme.palette.mode === "light" ? data.image : data.imageDark}
               alt="macbook"
+              height="100%"
               width="100%"
             />
-          
           </Grid>
         </Grid>
       </Container>

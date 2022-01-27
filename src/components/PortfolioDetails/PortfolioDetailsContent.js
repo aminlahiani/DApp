@@ -23,9 +23,6 @@ const PortfolioDetailsContent = (props) => {
           {data.title}
         </Typography>
         <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
-          {data.shortDescription}
-        </Typography>
-        <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
           {data.paragraphOne}
         </Typography>
 

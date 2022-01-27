@@ -1,7 +1,8 @@
-import { Avatar, Box, Button, Container, Typography } from "@mui/material";
+
+import { Box, Container, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import bgImage from "assets/images/bg5.jpg";
-const ServiceDetailsHero = (props) => {
+import bgImage from "assets/images/bg_servicedetails.jpg";
+const ServiceDetailsHero = () => {
   const theme = useTheme();
 
   return (
