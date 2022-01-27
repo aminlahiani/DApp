@@ -1,4 +1,5 @@
 // @mui material components
+import { Box, Container, Grid, Icon, IconButton, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
 // SwiperJS
@@ -11,13 +12,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // core Swiper
 import "swiper/css/navigation"; // Navigation module
 
-import { Box, Container, Grid, Icon, IconButton, Typography } from "@mui/material";
-
 function AboutHero(props) {
   const { data } = props;
   const theme = useTheme();
-  //const { heading } = props;
   SwiperCore.use([Autoplay, Navigation]);
+
   return (
     <Swiper
       autoplay={{ delay: 5000 }}
@@ -38,7 +37,7 @@ function AboutHero(props) {
               backgroundSize: "cover",
               backgroundPosition: "center",
               display: "flex",
-              // justifyContent: "center",
+
               alignItems: { xs: "center", md: "center" },
             }}
           >
@@ -63,6 +62,7 @@ function AboutHero(props) {
                     <Box key={index} mr={index !== item.socialIcons.length - 1 ? 1 : 0}>
                       <IconButton
                         aria-label={socialIcon.label}
+                        target={"_blank"}
                         sx={{
                           backgroundColor: theme.palette.background.default,
 

@@ -82,7 +82,7 @@ const BlogCard = (props) => {
             }}
             variant="body1"
           >
-            {data.shortDescription}
+            {data.paragraphOne.slice(0, 108)}...
           </Typography>
         </Box>
         <Button

@@ -10,14 +10,14 @@ const BlogDetailsContent = (props) => {
       }}
     >
       <Container maxWidth="md">
-      <Box
-              sx={{ pt: 3 ,  borderRadius: 3 }}
-              component="img"
-              src={data.image}
-              alt="macbook"
-              width="100%"
-            />
-      
+        <Box
+          sx={{ pt: 3, borderRadius: 3 }}
+          component="img"
+          src={data.image}
+          alt="macbook"
+          width="100%"
+        />
+
         <Typography
           color="textPrimary"
           sx={{
@@ -44,24 +44,24 @@ const BlogDetailsContent = (props) => {
           </Box>
         </Box>
         <Typography color="textPrimary" sx={{ mt: 3 }} variant="h3">
-          {data.subtitle1}
+          {data.subtitleOne}
         </Typography>
 
         <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
-          {data.shortDescription}
+          {data.paragraphOne}
         </Typography>
 
         <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
-          {data.paragraph1}
+          {data.paragraphTwo}
         </Typography>
         <Typography color="textPrimary" sx={{ mt: 3 }} variant="h3">
-          {data.subtitle2}
+          {data.subtitleTwo}
         </Typography>
         <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
-          {data.paragraph2}
+          {data.paragraphThree}
         </Typography>
         <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
-          {data.paragraph3}
+          {data.paragraphFour}
         </Typography>
       </Container>
     </Box>

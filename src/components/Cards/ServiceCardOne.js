@@ -71,7 +71,7 @@ const ServiceCardOne = (props) => {
                 {data.title}
               </Typography>
               <Typography variant="body1" align="center" color="textSecondary">
-                {data.descriptionfront}
+                {data.shortDescriptionFront}
               </Typography>
             </Box>
           </Box>
@@ -103,7 +103,7 @@ const ServiceCardOne = (props) => {
                 The Executive Team
               </Typography> */}
               <Typography align="center" variant="subtitle1" color="white">
-                {data.descriptionback}
+                {data.shortDescriptionBack}
               </Typography>
               <Box textAlign="center">
                 <Button

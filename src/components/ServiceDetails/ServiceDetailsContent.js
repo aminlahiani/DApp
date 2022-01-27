@@ -9,7 +9,7 @@ const ServiceDetailsContent = (props) => {
       }}
     >
       <Container maxWidth="md">
-      <Box
+        <Box
           sx={{ pt: 3, borderRadius: 3 }}
           component="img"
           src={data.image}
@@ -28,21 +28,21 @@ const ServiceDetailsContent = (props) => {
           {data.title}
         </Typography>
 
-        <Typography color="textPrimary" sx={{ mt: 3 }} variant="subtitle1">
-          {data.descriptionfront}
+        <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
+          {data.shortDescriptionFront}
         </Typography>
 
         <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
-          {data.descriptionback}
+          {data.shortDescriptionBack}
         </Typography>
         <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
-          {data.paragraph1}
+          {data.paragraphOne}
         </Typography>
         <Typography color="textPrimary" sx={{ mt: 3 }} variant="h4">
-          {data.subtitle1}
+          {data.subtitle}
         </Typography>
         <Typography color="textSecondary" sx={{ mt: 3 }} variant="subtitle1">
-          {data.paragraph2}
+          {data.paragraphTwo}
         </Typography>
       </Container>
     </Box>

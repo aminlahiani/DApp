@@ -33,7 +33,7 @@ const  AboutThree = (props) => {
                 {data.heading}
               </Typography>
               <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
-                {data.subHeding}
+                {data.subHeading}
               </Typography>
 
               <Grid container>
