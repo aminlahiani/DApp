@@ -110,7 +110,7 @@ const TeamCard = (props) => {
           >
             <Box>
               <Typography align="center" variant="h5" color="textSecondary">
-                {data.role}
+                {data.designation}
               </Typography>
               <Typography align="center" variant="subtitle1" color="textSecondary">
                 {data.shortDescription}
