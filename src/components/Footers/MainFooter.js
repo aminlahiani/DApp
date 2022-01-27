@@ -167,9 +167,14 @@ export const MainFooter = (props) => {
             }}
             xs={12}
           >
-            <Box sx={{ mt: 1, width: 40 }}>
-              <img src="/landingpage.svg" />
-            </Box>
+            <Box
+              component="img"
+              src="/landingpage.svg"
+              alt="macbook"
+              height="200px"
+              width="200px"
+            />
+
             <Typography variant="h6" color="textPrimary">
               About the Company
             </Typography>
