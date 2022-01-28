@@ -103,4 +103,12 @@ function AboutHero(props) {
 AboutHero.propTypes = {
   data: PropTypes.objectOf(PropTypes.string).isRequired,
 };
+// AboutHero.propTypes = {
+//   //  data: PropTypes.objectOf(PropTypes.string, PropTypes.array).isRequired,
+//   data: PropTypes.shape({
+//     heading: PropTypes.string,
+//     shortDescription: PropTypes.string,
+//     serviceslist: PropTypes.arrayOf(PropTypes.object),
+//   }).isRequired,
+// };
 export default AboutHero;

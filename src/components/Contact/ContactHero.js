@@ -1,5 +1,5 @@
 // @mui material components
-import { Box, Button, Container, Grid, Typography, useMediaQuery } from "@mui/material";
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
 // react-router-dom components
@@ -12,7 +12,7 @@ function ContactHero(props) {
   const { nomobileimg, data } = props;
 
   const theme = useTheme();
-  const isXs = useMediaQuery(theme.breakpoints.down("sm"));
+  // const isXs = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <Box
@@ -58,18 +58,15 @@ function ContactHero(props) {
                   },
                 }}
               >
-                {data.buttons.map((item, index) => (
-                  <Button
-                    key={index}
-                    to={item.url}
-                    component={RouterLink}
-                    size="large"
-                    variant={item.variant}
-                    fullWidth={isXs}
-                  >
-                    {item.text}
-                  </Button>
-                ))}
+                <Button
+                  to={data.btnUrl}
+                  component={RouterLink}
+                  size="large"
+                  variant={data.btnVariant}
+                  fullWidth
+                >
+                  {data.btnText}
+                </Button>
               </Box>
             </div>
           </Grid>

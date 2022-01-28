@@ -39,4 +39,7 @@ function PortfolioHero(props) {
   );
 }
 
+PortfolioHero.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
+};
 export default PortfolioHero;

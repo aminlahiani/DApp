@@ -34,8 +34,8 @@ function ServicesList(props) {
         </Typography>
 
         <Grid container spacing={3}>
-          {data.serviceslist.map((item, index) => (
-            <Grid key={index} item xs={12} md={6} lg={4}>
+          {data.serviceslist.map((item) => (
+            <Grid key={item.id} item xs={12} md={6} lg={4}>
               <ServiceCardOne data={item} />
             </Grid>
           ))}
@@ -45,4 +45,15 @@ function ServicesList(props) {
   );
 }
 
+// ServicesList.propTypes = {
+//   data: PropTypes.objectOf(PropTypes.string, PropTypes.array).isRequired,
+// };
+ServicesList.propTypes = {
+  //  data: PropTypes.objectOf(PropTypes.string, PropTypes.array).isRequired,
+  data: PropTypes.shape({
+    heading: PropTypes.string,
+    shortDescription: PropTypes.string,
+    serviceslist: PropTypes.arrayOf(PropTypes.object),
+  }).isRequired,
+};
 export default ServicesList;

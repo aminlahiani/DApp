@@ -17,7 +17,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import NightsStayOutlinedIcon from "@mui/icons-material/NightsStayOutlined";
 
 import { useTheme } from "@mui/material";
-import { ColorModeContext } from "contexts/ColorModeContext";
+import ColorModeContext from "contexts/ColorModeContext";
 
 const pages = [
   { id: 1, title: "Home", href: "/" },
@@ -29,7 +29,7 @@ const pages = [
   { id: 7, title: "Contact Us", href: "/contact" },
 ];
 
-function MainNavbar({ setSelectedTheme, selectedTheme }) {
+function MainNavbar() {
   const theme = useTheme();
   const colorMode = React.useContext(ColorModeContext);
   const [anchorElNav, setAnchorElNav] = React.useState(null);

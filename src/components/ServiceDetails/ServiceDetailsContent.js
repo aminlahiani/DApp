@@ -1,5 +1,5 @@
 // @mui material components
-import { Chip, Container, Typography, Box, Card, CardMedia } from "@mui/material";
+import { Container, Typography, Box } from "@mui/material";
 
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
@@ -53,4 +53,7 @@ function ServiceDetailsContent(props) {
   );
 }
 
+ServiceDetailsContent.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
+};
 export default ServiceDetailsContent;

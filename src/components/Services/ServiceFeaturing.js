@@ -38,9 +38,9 @@ function ServiceFeaturing(props) {
               <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
                 {data.shortDescription}
               </Typography>
-              {data.featuring.map((item, index) => (
+              {data.featuring.map((item) => (
                 <Box
-                  key={index}
+                  key={item}
                   sx={{
                     alignItems: "center",
                     display: "flex",
@@ -80,4 +80,18 @@ function ServiceFeaturing(props) {
     </Box>
   );
 }
+
+ServiceFeaturing.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
+};
+ServiceFeaturing.propTypes = {
+  //  data: PropTypes.objectOf(PropTypes.string, PropTypes.array).isRequired,
+  data: PropTypes.shape({
+    heading: PropTypes.string,
+    shortDescription: PropTypes.string,
+    imglight: PropTypes.string,
+    imgdark: PropTypes.string,
+    featuring: PropTypes.arrayOf(PropTypes.string),
+  }).isRequired,
+};
 export default ServiceFeaturing;

@@ -1,5 +1,5 @@
 // @mui material components
-import { Container, Box, Grid, Typography, Card, CardMedia } from "@mui/material";
+import { Container, Box, Grid, Typography } from "@mui/material";
 
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
@@ -30,8 +30,8 @@ function PortfolioDetailsContent(props) {
         </Typography>
 
         <Grid container spacing={5} mt={3}>
-          {data.images.map((item, index) => (
-            <Grid key={index} xs={12} lg={6} item>
+          {data.images.map((item) => (
+            <Grid key={item} xs={12} lg={6} item>
               <Box sx={{ borderRadius: 3 }} component="img" src={item} alt="macbook" width="100%" />
             </Grid>
           ))}
@@ -46,4 +46,8 @@ function PortfolioDetailsContent(props) {
     </Box>
   );
 }
+
+PortfolioDetailsContent.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
+};
 export default PortfolioDetailsContent;

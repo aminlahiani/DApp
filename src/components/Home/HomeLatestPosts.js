@@ -45,9 +45,9 @@ function HomeLatestPosts(props) {
         </Box>
 
         <Grid sx={{ mt: 2 }} container spacing={3}>
-          {data.posts.map((post, index) => (
-            <Grid item key={index} md={4} mt={2} xs={12}>
-              <BlogCard data={post} />
+          {data.posts.map((item) => (
+            <Grid item key={item.id} md={4} mt={2} xs={12}>
+              <BlogCard data={item} />
             </Grid>
           ))}
         </Grid>

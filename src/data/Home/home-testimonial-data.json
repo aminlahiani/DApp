@@ -1,11 +1,13 @@
 [
   {
+    "id": "1",
     "testimonial": "Daap React template high-quality Source code with personal experience.! Highly recommended",
     "avatar": "/static/home/avatar/avatar.jpg",
     "name": "Stephen L. Hartwell",
     "designation": "CEO of Hamber"
   },
   {
+    "id": "2",
     "testimonial": "With Daap Digital Agency React template with MUI i create my website in 3 days! Thanks so much!",
 
     "avatar": "/static/home/avatar/irvin.jpg",
@@ -13,6 +15,7 @@
     "designation": "CEO of LevelUP"
   },
   {
+    "id": "3",
     "testimonial": "Daap  some of the best templates you can find for React. They will save you time",
     "avatar": "/static/home/avatar/amber.jpg",
     "name": "Amber J. Turner",

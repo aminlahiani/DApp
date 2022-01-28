@@ -1,16 +1,10 @@
 // @mui material components
 import { Box, Container, Typography } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
 
 // image
 import bgImage from "assets/images/bg_servicedetails.jpg";
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 function ServiceDetailsHero() {
-  const theme = useTheme();
-
   return (
     <Box
       sx={{
@@ -30,4 +24,5 @@ function ServiceDetailsHero() {
     </Box>
   );
 }
+
 export default ServiceDetailsHero;

@@ -12,12 +12,13 @@ import {
   Typography,
 } from "@mui/material";
 import { useTheme, alpha } from "@mui/material/styles";
-import Icon from "@mui/material/Icon";
+
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { MinusOutlined as MinusOutlinedIcon } from "../../icons/minus-outlined";
+
+import RemoveOutlinedIcon from "@mui/icons-material/RemoveOutlined";
 
 function Copyright() {
   return (
@@ -64,6 +65,7 @@ const sections = [
 ];
 const socialIcons = [
   {
+    id: "1",
     icon2: <FacebookIcon fontSize="small" color="primary" />,
     icon: (
       <svg
@@ -81,6 +83,7 @@ const socialIcons = [
     href: "https://github.com/dunky11/react-saas-template",
   },
   {
+    id: "2",
     icon2: <InstagramIcon fontSize="small" color="primary" />,
     icon: (
       <svg
@@ -98,6 +101,7 @@ const socialIcons = [
     href: "https://facebook.com",
   },
   {
+    id: "3",
     icon2: <TwitterIcon fontSize="small" color="primary" />,
     icon: (
       <svg
@@ -115,6 +119,7 @@ const socialIcons = [
     href: "https://www.linkedin.com/",
   },
   {
+    id: "4",
     icon2: <LinkedInIcon fontSize="small" color="primary" />,
     icon: (
       <svg
@@ -132,7 +137,7 @@ const socialIcons = [
     href: "https://www.twitter.com/",
   },
 ];
-export function MainFooter(props) {
+function MainFooter(props) {
   const theme = useTheme();
   return (
     <Box
@@ -216,7 +221,7 @@ export function MainFooter(props) {
                         mr: 0.5,
                       }}
                     >
-                      <MinusOutlinedIcon color="primary" />
+                      <RemoveOutlinedIcon color="primary" />
                     </ListItemAvatar>
                     <ListItemText
                       primary={
@@ -233,7 +238,7 @@ export function MainFooter(props) {
         </Grid>
         <Divider
           sx={{
-            borderColor: (theme) => alpha(theme.palette.primary.contrastText, 0.12),
+            borderColor: () => alpha(theme.palette.primary.contrastText, 0.12),
             my: 6,
           }}
         />
@@ -249,8 +254,8 @@ export function MainFooter(props) {
           </Box>
 
           <Box display="flex">
-            {socialIcons.map((socialIcon, index) => (
-              <Box key={index} mr={index !== socialIcons.length - 1 ? 1 : 0}>
+            {socialIcons.map((socialIcon) => (
+              <Box key={socialIcon.id} mr={socialIcon.id !== socialIcons.length - 1 ? 1 : 0}>
                 <IconButton
                   aria-label={socialIcon.label}
                   sx={{
@@ -272,3 +277,5 @@ export function MainFooter(props) {
     </Box>
   );
 }
+
+export default MainFooter;

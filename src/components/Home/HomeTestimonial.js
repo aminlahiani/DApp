@@ -1,6 +1,5 @@
 // @mui material components
 import { Avatar, Box, Container, Typography } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
 
 // import Swiper core and required modules
 import SwiperCore, { Autoplay, Navigation } from "swiper";
@@ -21,7 +20,6 @@ import PropTypes from "prop-types";
 
 function HomeTestimonial(props) {
   const { data } = props;
-  const theme = useTheme();
 
   SwiperCore.use([Autoplay, Navigation]);
   return (
@@ -33,8 +31,8 @@ function HomeTestimonial(props) {
       navigation
       loop
     >
-      {data.map((item, index) => (
-        <SwiperSlide key={index}>
+      {data.map((item) => (
+        <SwiperSlide key={item.id}>
           <Box
             sx={{
               backgroundColor: "#132F4C",
@@ -76,4 +74,8 @@ function HomeTestimonial(props) {
     </Swiper>
   );
 }
+
+HomeTestimonial.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
+};
 export default HomeTestimonial;

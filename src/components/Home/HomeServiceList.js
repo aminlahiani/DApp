@@ -35,8 +35,8 @@ function ServiceList(props) {
         </Typography>
 
         <Grid container spacing={3}>
-          {data.services.map((item, index) => (
-            <Grid key={index} item xs={12} md={6} lg={4}>
+          {data.services.map((item) => (
+            <Grid key={item.id} item xs={12} md={6} lg={4}>
               <ServiceCardTwo data={item} />
             </Grid>
           ))}
@@ -45,5 +45,7 @@ function ServiceList(props) {
     </Box>
   );
 }
-
+ServiceList.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
+};
 export default ServiceList;

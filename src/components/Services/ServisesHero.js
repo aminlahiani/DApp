@@ -1,5 +1,5 @@
 // @mui material components
-import { Box, Button, Container, Grid, Typography, useMediaQuery } from "@mui/material";
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
 import { useEffect, useRef } from "react";
@@ -27,7 +27,7 @@ function ServisesHero(props) {
 
     return () => typedJS.destroy();
   }, []);
-  const isXs = useMediaQuery(theme.breakpoints.down("sm"));
+  // const isXs = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Box
       sx={{
@@ -102,4 +102,21 @@ function ServisesHero(props) {
   );
 }
 
+ServisesHero.defaultProps = {
+  nomobileimg: false,
+};
+ServisesHero.propTypes = {
+  data: PropTypes.shape({
+    heading: PropTypes.string,
+    headingtypedJS: PropTypes.arrayOf(PropTypes.string),
+    subHeding: PropTypes.string,
+    btnText: PropTypes.string,
+    btnUrl: PropTypes.string,
+    btnVariant: PropTypes.string,
+    image: PropTypes.string,
+    imageDark: PropTypes.string,
+    shortDescription: PropTypes.string,
+  }).isRequired,
+  nomobileimg: PropTypes.bool,
+};
 export default ServisesHero;
