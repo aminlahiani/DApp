@@ -64,7 +64,12 @@ const ServiceCardOne = (props) => {
                       "inset 0px 5px 8px rgba(256, 256, 256, 0.3), 0px 5px 8px rgba(21, 101, 192, 0.3)",
                   }}
                 >
-                  <Icon baseClassName="fas" className="fa-globe" color="white" fontSize="small" />
+                  <Icon
+                    baseClassName={data.baseicon}
+                    className={data.icon}
+                    color="white"
+                    fontSize="small"
+                  />
                 </Box>
               </Box>
               <Typography align="center" variant="h6" color="textPrimary" sx={{ mt: 2.5, mb: 1.5 }}>

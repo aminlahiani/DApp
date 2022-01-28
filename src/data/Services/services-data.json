@@ -14,7 +14,7 @@
       "baseicon": "fab",
       "icon": "fa-instagram",
 
-      "image": "/static/services/serviceone.jpg"
+      "image": "/static/services/service/serviceone.jpg"
     },
     {
       "id": "2",
@@ -27,7 +27,7 @@
 
       "baseicon": "fab",
       "icon": "fa-instagram",
-      "image": "/static/services/servicetwo.jpg"
+      "image": "/static/services/service/servicetwo.jpg"
     },
     {
       "id": "3",
@@ -39,7 +39,7 @@
       "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed.",
       "baseicon": "fab",
       "icon": "fa-instagram",
-      "image": "/static/services/servicethree.jpg"
+      "image": "/static/services/service/servicethree.jpg"
     },
     {
       "id": "4",
@@ -51,7 +51,7 @@
       "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed.",
       "baseicon": "fab",
       "icon": "fa-instagram",
-      "image": "/static/services/servicefour.jpg"
+      "image": "/static/services/service/servicefour.jpg"
     },
     {
       "id": "5",
@@ -62,7 +62,8 @@
       "subtitle": "We develop creative solutions",
       "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed.",
       "baseicon": "fab",
-      "image": "/static/services/servicefive.jpg"
+      "icon": "fa-instagram",
+      "image": "/static/services/service/servicefive.jpg"
     },
     {
       "id": "6",
@@ -73,7 +74,8 @@
       "subtitle": "We develop creative solutions",
       "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed.",
       "baseicon": "fab",
-      "image": "/static/services/servicesix.jpg"
+      "icon": "fa-instagram",
+      "image": "/static/services/service/servicesix.jpg"
     }
   ]
 }
