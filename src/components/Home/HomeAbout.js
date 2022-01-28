@@ -18,7 +18,7 @@ function HomeAbout(props) {
         display: "flex",
         justifyContent: "center",
         alignItems: { xs: "center", md: "center" },
-        py: 6
+        py: 6,
       }}
     >
       <Container maxWidth="lg">
@@ -30,8 +30,8 @@ function HomeAbout(props) {
             sx={{
               order: {
                 xs: 2,
-                md: 1
-              }
+                md: 1,
+              },
             }}
           >
             <div>
@@ -70,8 +70,8 @@ function HomeAbout(props) {
             sx={{
               order: {
                 xs: 1,
-                md: 2
-              }
+                md: 2,
+              },
             }}
           >
             <Box
@@ -80,7 +80,8 @@ function HomeAbout(props) {
               src={theme.palette.mode === "light" ? data.image : data.imageDark}
               alt="macbook"
               height="100%"
-              width="100%" />
+              width="100%"
+            />
           </Grid>
         </Grid>
       </Container>

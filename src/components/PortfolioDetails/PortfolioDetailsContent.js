@@ -10,7 +10,7 @@ function PortfolioDetailsContent(props) {
     <Box
       sx={{
         backgroundColor: "background.default",
-        py: 3
+        py: 3,
       }}
     >
       <Container maxWidth="md">
@@ -19,7 +19,8 @@ function PortfolioDetailsContent(props) {
           component="img"
           src={data.image}
           alt="macbook"
-          width="100%" />
+          width="100%"
+        />
 
         <Typography variant="h3" mt={3} color="textPrimary" mb={3}>
           {data.title}

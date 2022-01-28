@@ -15,7 +15,7 @@ function ServiceFeaturing(props) {
     <Box
       sx={{
         backgroundColor: "background.default",
-        py: 4
+        py: 4,
       }}
     >
       <Container maxWidth="lg">
@@ -27,8 +27,8 @@ function ServiceFeaturing(props) {
             sx={{
               order: {
                 xs: 2,
-                md: 1
-              }
+                md: 1,
+              },
             }}
           >
             <div>
@@ -44,7 +44,7 @@ function ServiceFeaturing(props) {
                   sx={{
                     alignItems: "center",
                     display: "flex",
-                    m: 2
+                    m: 2,
                   }}
                 >
                   <PlaylistAddCheckCircleIcon color="info" sx={{ mr: 1 }} />
@@ -63,8 +63,8 @@ function ServiceFeaturing(props) {
             sx={{
               order: {
                 xs: 1,
-                md: 2
-              }
+                md: 2,
+              },
             }}
           >
             <Box
@@ -72,7 +72,8 @@ function ServiceFeaturing(props) {
               component="img"
               src={theme.palette.mode === "light" ? data.imglight : data.imgdark}
               alt="macbook"
-              width="100%" />
+              width="100%"
+            />
           </Grid>
         </Grid>
       </Container>

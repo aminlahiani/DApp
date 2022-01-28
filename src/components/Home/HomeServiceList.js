@@ -15,7 +15,7 @@ function ServiceList(props) {
         backgroundColor: "background.paper",
         display: "flex",
         alignItems: "center",
-        py: 6
+        py: 6,
       }}
     >
       <Container
@@ -23,7 +23,7 @@ function ServiceList(props) {
         sx={{
           alignItems: "center",
           display: "flex",
-          flexDirection: "column"
+          flexDirection: "column",
         }}
       >
         <Typography align="center" color="textPrimary" variant="h4">

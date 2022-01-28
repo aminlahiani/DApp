@@ -19,7 +19,7 @@ function ServiceDetailsHero() {
         backgroundPosition: "center",
         minHeight: "50vh",
         alignItems: "center",
-        display: "flex"
+        display: "flex",
       }}
     >
       <Container maxWidth="md">

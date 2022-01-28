@@ -54,7 +54,6 @@ const TeamCard = (props) => {
             }}
           >
             <Card sx={{ width: "100%", height: "100%" }}>
-
               <CardMedia image={data.cover} sx={{ height: 200 }} />
               <CardContent sx={{ pt: 0 }}>
                 <Box

@@ -7,7 +7,6 @@ import CtaNewsletter from "components/Cta/CtaNewsletter";
 import BlogsHeroData from "data/Blogs/blog-hero-data.json";
 import BlogsData from "data/Blogs/blogs-data.json";
 
-
 function Blogs() {
   return (
     <div>

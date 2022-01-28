@@ -2,20 +2,19 @@
 import { Avatar, Box, Container, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-
 // import Swiper core and required modules
-import SwiperCore, { Autoplay, Navigation } from 'swiper';
+import SwiperCore, { Autoplay, Navigation } from "swiper";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 // swiper bundle styles
-import 'swiper/css/bundle'
+import "swiper/css/bundle";
 
 // swiper core styles
-import 'swiper/css'
+import "swiper/css";
 
 // modules styles
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
@@ -39,7 +38,7 @@ function HomeTestimonial(props) {
           <Box
             sx={{
               backgroundColor: "#132F4C",
-              py: 15
+              py: 15,
             }}
           >
             <Container
@@ -47,7 +46,7 @@ function HomeTestimonial(props) {
               sx={{
                 alignItems: "center",
                 display: "flex",
-                flexDirection: "column"
+                flexDirection: "column",
               }}
             >
               <Typography align="center" color="white" variant="h3">
@@ -57,7 +56,7 @@ function HomeTestimonial(props) {
                 sx={{
                   alignItems: "center",
                   display: "flex",
-                  mt: 3
+                  mt: 3,
                 }}
               >
                 <Avatar src={item.avatar} sx={{ mr: 2 }} variant="rounded" />

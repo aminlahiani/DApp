@@ -9,7 +9,7 @@ function ServiceDetailsContent(props) {
   return (
     <Box
       sx={{
-        backgroundColor: "background.paper"
+        backgroundColor: "background.paper",
       }}
     >
       <Container maxWidth="md">
@@ -18,13 +18,14 @@ function ServiceDetailsContent(props) {
           component="img"
           src={data.image}
           alt="macbook"
-          width="100%" />
+          width="100%"
+        />
 
         <Typography
           color="textPrimary"
           sx={{
             fontWeight: "fontWeightBold",
-            mt: 3
+            mt: 3,
           }}
           variant="h2"
         >
