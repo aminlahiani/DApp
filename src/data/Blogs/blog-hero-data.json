@@ -1,14 +1,10 @@
 {
   "heading": "Organic company growth with targeted leads",
   "shortDescription": " Not just a set of tools, the package includes ready-to-deploy conceptualapplications written in JavaScript & TypeScript.",
-  "imgdark": "/static/blogs/blog_dark.svg",
-  "imagesrc": "/static/blogs/blog_light.svg",
-  "buttons": [
-    {
-      "variant": "contained",
-      "buttonColor": "btn-warning",
-      "url": "/about",
-      "text": "Browse Components"
-    }
-  ]
+  "imageDark": "/static/blogs/blog_hero_dark.svg",
+  "image": "/static/blogs/blog_hero_light.svg",
+  "btnText": "Browse Components",
+  "btnUrl": "/about",
+  "btnVariant": "contained",
+  "buttonColor": "btn-warning"
 }

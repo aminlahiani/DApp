@@ -52,18 +52,16 @@ function BlogsHero(props) {
                   },
                 }}
               >
-                {data.buttons.map((item, index) => (
+            
                   <Button
-                    key={index}
-                    to={item.url}
-                    component={RouterLink}
-                    size="large"
-                    variant={item.variant}
-                    fullWidth
-                  >
-                    {item.text}
-                  </Button>
-                ))}
+                to={data.btnUrl}
+                component={RouterLink}
+                size="large"
+                variant={data.btnVariant}
+                fullWidth
+              >
+                {data.btnText}
+              </Button>
               </Box>
             </div>
           </Grid>
@@ -79,31 +77,13 @@ function BlogsHero(props) {
               },
             }}
           >
-                <Box
+            <Box
               sx={{ display: nomobileimg ? { xs: "none", md: "block" } : "block" }}
               component="img"
-              src={theme.palette.mode === "dark" ? data.imgdark : data.imagesrc}
+              src={theme.palette.mode === "light" ? data.image : data.imageDark}
               alt="macbook"
               width="100%"
             />
-            {/* <Box
-              sx={{
-                display: nomobileimg ? { xs: "none", md: "block" } : "block",
-                position: "relative",
-                pt: "calc(960 / 1225 * 100%)",
-                "& img": {
-                  height: "auto",
-                  position: "absolute",
-                  top: 0,
-                  width: "100%",
-                },
-              }}
-            >
-              <img
-                alt="For developers"
-                src={theme.palette.mode === "dark" ? data.imgdark : data.imagesrc}
-              />
-            </Box> */}
           </Grid>
         </Grid>
       </Container>
