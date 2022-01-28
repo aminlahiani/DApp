@@ -13,7 +13,7 @@ function ContactHero(props) {
 
   const theme = useTheme();
   const isXs = useMediaQuery(theme.breakpoints.down("sm"));
-  console.log(isXs);
+
   return (
     <Box
       sx={{
@@ -109,5 +109,11 @@ function ContactHero(props) {
     </Box>
   );
 }
-
+ContactHero.defaultProps = {
+  nomobileimg: false,
+};
+ContactHero.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  nomobileimg: PropTypes.bool,
+};
 export default ContactHero;

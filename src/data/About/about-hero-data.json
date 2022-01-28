@@ -1,20 +1,20 @@
 [
   {
-    "id" : "1",
+    "id": "1",
     "heading": "Material Design - News1",
     "shortDescription": "Pain is what we go through as we become older. We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder",
     "keyword": " Connect with us on",
     "img": "/static/about/about_hero_bgone.jpg",
     "socialIcons": [
       {
-        "id" : "1",
+        "id": "1",
         "baseicon": "fab",
         "icon": "fa-facebook-square",
         "label": "Facebook",
         "href": "https://facebook.com"
       },
       {
-        "id" : "2",
+        "id": "2",
         "baseicon": "fab",
         "icon": "fa-instagram",
         "label": "Instagram",
@@ -22,14 +22,14 @@
       },
 
       {
-        "id" : "3",
+        "id": "3",
         "baseicon": "fab",
         "icon": "fa-linkedin",
         "label": "LinkedIn",
         "href": "https://www.linkedin.com/"
       },
       {
-        "id" : "4",
+        "id": "4",
         "baseicon": "fab",
         "icon": "fa-twitter",
         "label": "Twitter",
@@ -38,21 +38,21 @@
     ]
   },
   {
-    "id" : "2",
+    "id": "2",
     "heading": "Material Design - News2",
     "shortDescription": "Pain is what we go through as we become older. We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder",
     "keyword": " Connect with us on",
     "img": "/static/about/about_hero_bgtwo.jpg",
     "socialIcons": [
       {
-        "id" : "1",
+        "id": "1",
         "baseicon": "fab",
         "icon": "fa-facebook-square",
         "label": "Facebook",
         "href": "https://facebook.com"
       },
       {
-        "id" : "2",
+        "id": "2",
         "baseicon": "fab",
         "icon": "fa-instagram",
         "label": "Instagram",
@@ -60,14 +60,14 @@
       },
 
       {
-        "id" : "3",
+        "id": "3",
         "baseicon": "fab",
         "icon": "fa-linkedin",
         "label": "LinkedIn",
         "href": "https://www.linkedin.com/"
       },
       {
-        "id" : "4",
+        "id": "4",
         "baseicon": "fab",
         "icon": "fa-twitter",
         "label": "Twitter",
@@ -76,21 +76,21 @@
     ]
   },
   {
-    "id" : "3",
+    "id": "3",
     "heading": "Material Design - News3",
     "shortDescription": "Pain is what we go through as we become older. We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder",
     "keyword": " Connect with us on",
     "img": "/static/about/about_hero_bgthree.jpg",
     "socialIcons": [
       {
-        "id" : "1",
+        "id": "1",
         "baseicon": "fab",
         "icon": "fa-facebook-square",
         "label": "Facebook",
         "href": "https://facebook.com"
       },
       {
-        "id" : "2",
+        "id": "2",
         "baseicon": "fab",
         "icon": "fa-instagram",
         "label": "Instagram",
@@ -98,14 +98,14 @@
       },
 
       {
-        "id" : "3",
+        "id": "3",
         "baseicon": "fab",
         "icon": "fa-linkedin",
         "label": "LinkedIn",
         "href": "https://www.linkedin.com/"
       },
       {
-        "id" : "4",
+        "id": "4",
         "baseicon": "fab",
         "icon": "fa-twitter",
         "label": "Twitter",

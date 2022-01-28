@@ -58,4 +58,7 @@ function FAQHero(props) {
   );
 }
 
+FAQHero.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
+};
 export default FAQHero;

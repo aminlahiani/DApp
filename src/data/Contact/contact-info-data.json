@@ -20,21 +20,25 @@
   "infoquot": "Everyone thinks of changing the world, but no one thinks of changing himself",
   "infolist": [
     {
+      "id": "1",
       "baseicon": "fab",
       "icon": "fa-facebook-square",
       "infocontent": "Everyone thinks of changing"
     },
     {
+      "id": "2",
       "baseicon": "fab",
       "icon": "fa-facebook-square",
       "infocontent": "Everyone thinks of changing"
     },
     {
+      "id": "3",
       "baseicon": "fab",
       "icon": "fa-facebook-square",
       "infocontent": "Everyone thinks of changing"
     },
     {
+      "id": "4",
       "baseicon": "fab",
       "icon": "fa-facebook-square",
       "infocontent": "Everyone thinks of changing"

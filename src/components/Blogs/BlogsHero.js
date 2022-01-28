@@ -1,5 +1,5 @@
 // @mui material components
-import { Box, Button, Container, Grid, Typography, useMediaQuery } from "@mui/material";
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
 // react-router-dom components

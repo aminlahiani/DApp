@@ -15,6 +15,10 @@ import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 import NightsStayOutlinedIcon from "@mui/icons-material/NightsStayOutlined";
+
+import { useTheme } from "@mui/material";
+import { ColorModeContext } from "contexts/ColorModeContext";
+
 const pages = [
   { id: 1, title: "Home", href: "/" },
   { id: 2, title: "About Us", href: "about" },
@@ -25,10 +29,7 @@ const pages = [
   { id: 7, title: "Contact Us", href: "/contact" },
 ];
 
-import { useTheme } from "@mui/material";
-import { ColorModeContext } from "contexts/ColorModeContext";
-
-const MainNavbar = ({ setSelectedTheme, selectedTheme }) => {
+function MainNavbar({ setSelectedTheme, selectedTheme }) {
   const theme = useTheme();
   const colorMode = React.useContext(ColorModeContext);
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -131,5 +132,5 @@ const MainNavbar = ({ setSelectedTheme, selectedTheme }) => {
       </Container>
     </AppBar>
   );
-};
+}
 export default MainNavbar;

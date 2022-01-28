@@ -1,9 +1,6 @@
 import { Box, Button, Container, Grid, TextField, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 function CtaNewsletter() {
   const theme = useTheme();
   const imgdark = "/static/newsletter/newsletter_dark.svg";
@@ -78,7 +75,7 @@ function CtaNewsletter() {
                 },
               }}
             >
-              <img src={theme.palette.mode === "dark" ? imgdark : imgligth} />
+              <img src={theme.palette.mode === "dark" ? imgdark : imgligth} alt="" />
             </Box>
           </Grid>
         </Grid>

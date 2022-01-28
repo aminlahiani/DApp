@@ -10,7 +10,7 @@ import ServicesData from "data/Services/services-data.json";
 
 function ServiceDetails() {
   const parameter = useParams();
-  const serviceId = parameter.serviceId;
+  const { serviceId } = parameter;
   const data = ServicesData.serviceslist.filter((Service) => Service.id === serviceId);
 
   return (

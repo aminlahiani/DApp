@@ -40,7 +40,7 @@ export const SettingsContext = createContext({
   saveSettings: () => {},
 });
 
-export const SettingsProvider = (props) => {
+export function SettingsProvider(props) {
   const { children } = props;
   const [settings, setSettings] = useState(initialSettings);
 
@@ -67,7 +67,7 @@ export const SettingsProvider = (props) => {
       {children}
     </SettingsContext.Provider>
   );
-};
+}
 
 SettingsProvider.propTypes = {
   children: PropTypes.node.isRequired,

@@ -14,7 +14,7 @@ import BlogsData from "data/Blogs/blogs-data.json";
 
 function BlogDetails() {
   const parameter = useParams();
-  const postId = parameter.postId;
+  const { postId } = parameter;
   const data = BlogsData.filter((blog) => blog.id === postId);
 
   return (

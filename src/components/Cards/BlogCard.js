@@ -10,7 +10,7 @@ import { Link as RouterLink } from "react-router-dom";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
-const BlogCard = (props) => {
+function BlogCard(props) {
   const { data } = props;
 
   return (
@@ -54,7 +54,7 @@ const BlogCard = (props) => {
           }}
         />
       </Box>
-      <Stack justifyContent={"space-between"} spacing={2}>
+      <Stack justifyContent="space-between" spacing={2}>
         <Box>
           <Box mb={1}>
             <Chip label={data.category} variant="outlined" />
@@ -99,7 +99,7 @@ const BlogCard = (props) => {
       </Stack>
     </Card>
   );
-};
+}
 
 BlogCard.propTypes = {
   data: PropTypes.objectOf(PropTypes.string).isRequired,

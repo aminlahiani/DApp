@@ -46,8 +46,8 @@ function ContactInfo(props) {
                   &quot; {data.infoquot} &quot;
                 </Typography>
                 <List>
-                  {data.infolist.map((item, index) => (
-                    <ListItem key={index} disableGutters divider>
+                  {data.infolist.map((item) => (
+                    <ListItem key={item.id} disableGutters divider>
                       <ListItemAvatar>
                         <Icon
                           baseClassName={item.baseicon}
@@ -71,5 +71,7 @@ function ContactInfo(props) {
     </Box>
   );
 }
-
+ContactInfo.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
+};
 export default ContactInfo;

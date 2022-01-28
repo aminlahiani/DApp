@@ -19,8 +19,8 @@ function BlogsList(props) {
     >
       <Container maxWidth="lg">
         <Grid container spacing={3}>
-          {data.map((item, index) => (
-            <Grid item key={index} md={4} mt={2} xs={12}>
+          {data.map((item) => (
+            <Grid item key={item.id} md={4} mt={2} xs={12}>
               <BlogCard data={item} />
             </Grid>
           ))}

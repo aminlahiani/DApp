@@ -1,4 +1,4 @@
-export const BaseThemeOptions = {
+const BaseThemeOptions = {
   breakpoints: {
     values: {
       xs: 0,
@@ -325,3 +325,4 @@ export const BaseThemeOptions = {
     drawer: 1100,
   },
 };
+export default BaseThemeOptions;

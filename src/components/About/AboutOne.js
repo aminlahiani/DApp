@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
-import useMediaQuery from "@mui/material/useMediaQuery";
+// import useMediaQuery from "@mui/material/useMediaQuery";
 
 // import Icon from "@mui/material/Icon";
 // import { Box, Container, Grid, Typography, useMediaQuery } from "@mui/material";
@@ -16,9 +16,7 @@ function AboutOne(props) {
   const { data } = props;
 
   const theme = useTheme();
-  const isXs = useMediaQuery(theme.breakpoints.down("sm"));
-  console.log(isXs);
-
+  // const isXs = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Box
       sx={{

@@ -13,7 +13,7 @@ function Blogs() {
       {/* {JSON.stringify(BlogsData)} */}
       <div data-aos="fade-up">
         <BlogsHero
-          //nomobileimg
+          // nomobileimg
           data={BlogsHeroData}
         />
       </div>

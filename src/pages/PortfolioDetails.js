@@ -10,7 +10,7 @@ import PortfolioListData from "data/Portfolio/portfolio-list-data.json";
 
 function PortfolioDetails() {
   const parameter = useParams();
-  const portfolioId = parameter.portfolioId;
+  const { portfolioId } = parameter;
   const data = PortfolioListData.filter((Service) => Service.id === portfolioId);
 
   return (

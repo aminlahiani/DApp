@@ -1,8 +1,8 @@
 import * as React from "react";
 import ReactDOM from "react-dom";
 import CssBaseline from "@mui/material/CssBaseline";
-import App from "./App";
 import AppThemeProvider from "theme/AppThemeProvider";
+import App from "./App";
 
 ReactDOM.render(
   <AppThemeProvider>

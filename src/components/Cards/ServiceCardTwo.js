@@ -4,7 +4,7 @@ import { Box, Icon, Typography } from "@mui/material";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
-const ServiceCardTwo = (props) => {
+function ServiceCardTwo(props) {
   const { data } = props;
 
   return (
@@ -46,7 +46,7 @@ const ServiceCardTwo = (props) => {
       </Typography>
     </>
   );
-};
+}
 
 ServiceCardTwo.propTypes = {
   data: PropTypes.objectOf(PropTypes.string).isRequired,

@@ -11,14 +11,13 @@ import {
   ListItemText,
   Typography,
 } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
-import { alpha } from "@mui/material/styles";
-import { MinusOutlined as MinusOutlinedIcon } from "../../icons/minus-outlined";
+import { useTheme, alpha } from "@mui/material/styles";
 import Icon from "@mui/material/Icon";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { MinusOutlined as MinusOutlinedIcon } from "../../icons/minus-outlined";
 
 function Copyright() {
   return (
@@ -27,8 +26,7 @@ function Copyright() {
       <Link color="inherit" href="https://mui.com/">
         Your Website
       </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
+      {new Date().getFullYear()}.
     </Typography>
   );
 }
@@ -134,7 +132,7 @@ const socialIcons = [
     href: "https://www.twitter.com/",
   },
 ];
-export const MainFooter = (props) => {
+export function MainFooter(props) {
   const theme = useTheme();
   return (
     <Box
@@ -273,4 +271,4 @@ export const MainFooter = (props) => {
       </Container>
     </Box>
   );
-};
+}

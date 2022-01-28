@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
 
-const NotFondNav = () => {
+function NotFondNav() {
   return (
     <AppBar
       elevation={3}
@@ -22,5 +22,5 @@ const NotFondNav = () => {
       </Container>
     </AppBar>
   );
-};
+}
 export default NotFondNav;

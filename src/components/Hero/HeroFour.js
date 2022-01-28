@@ -19,7 +19,7 @@ import { Box, Container, Grid, Icon, IconButton, Typography } from "@mui/materia
 function HeroFour(props) {
   const { data } = props;
   const theme = useTheme();
-  //const { heading } = props;
+  // const { heading } = props;
   SwiperCore.use([Autoplay, Navigation]);
   return (
     <Swiper

@@ -2,8 +2,8 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 
 // layouts
-import MainLayout from "./layout/MainLayout";
 import NotFondLayout from "layout/NotFondLayout";
+import MainLayout from "./layout/MainLayout";
 
 // home page
 import Home from "./pages/Home";
@@ -31,7 +31,7 @@ import BlogDetails from "./pages/BlogDetails";
 // NotFound page
 import NotFound from "./pages/NotFound";
 
-const Routers = () => {
+function Routers() {
   return (
     <Routes>
       <Route path="/" element={<MainLayout />}>
@@ -53,6 +53,6 @@ const Routers = () => {
       <Route path="*" element={<Navigate to="/not-found" />} />
     </Routes>
   );
-};
+}
 
 export default Routers;

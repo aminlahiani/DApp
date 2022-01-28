@@ -120,5 +120,12 @@ function HomeHero(props) {
     </Box>
   );
 }
+HomeHero.defaultProps = {
+  nomobileimg: false,
+};
+HomeHero.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  nomobileimg: PropTypes.bool,
+};
 
 export default HomeHero;

@@ -1,13 +1,16 @@
 import * as React from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { DarkThemeOptions } from "./DarkThemeOptions";
-import { LightThemeOptions } from "./LightThemeOptions";
-import { BaseThemeOptions } from "./BaseThemeOptions";
 import { ColorModeContext } from "contexts/ColorModeContext";
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+import DarkThemeOptions from "./DarkThemeOptions";
+import LightThemeOptions from "./LightThemeOptions";
+import BaseThemeOptions from "./BaseThemeOptions";
 
 const themeMode = localStorage.getItem("theme") || "light";
 
-export default function AppThemeProvider(props) {
+function AppThemeProvider(props) {
+  const { children } = props;
   const [mode, setMode] = React.useState(themeMode);
   const colorMode = React.useMemo(
     () => ({
@@ -27,7 +30,12 @@ export default function AppThemeProvider(props) {
 
   return (
     <ColorModeContext.Provider value={colorMode}>
-      <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
+      <ThemeProvider theme={theme}>{children}</ThemeProvider>
     </ColorModeContext.Provider>
   );
 }
+
+AppThemeProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+export default AppThemeProvider;
