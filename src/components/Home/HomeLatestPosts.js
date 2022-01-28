@@ -1,7 +1,11 @@
+// @mui material components
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
-import { Link as RouterLink } from "react-router-dom";
 
+// @mui icons
 import { ArrowForward } from "@mui/icons-material";
+
+// react-router-dom components
+import { Link as RouterLink } from "react-router-dom";
 
 import BlogCard from "components/Cards/BlogCard";
 

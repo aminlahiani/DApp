@@ -1,7 +1,7 @@
 // @mui material components
 import { Box, Icon, Typography } from "@mui/material";
 
-export const InfoCard = (props) => {
+const ServiceCardTwo = (props) => {
   const { data } = props;
 
   return (
@@ -44,3 +44,5 @@ export const InfoCard = (props) => {
     </>
   );
 };
+
+export default ServiceCardTwo;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -24,8 +24,7 @@ const pages = [
   { id: 6, title: "FAQ", href: "faq" },
   { id: 7, title: "Contact Us", href: "/contact" },
 ];
-//const settings = ["Profile", "Account", "Dashboard", "Logout"];
-//import { ColorModeContext } from "context/ColorModeContext";
+
 import { useTheme } from "@mui/material";
 import { ColorModeContext } from "contexts/ColorModeContext";
 
@@ -55,7 +54,7 @@ const MainNavbar = ({ setSelectedTheme, selectedTheme }) => {
     >
       <Container maxWidth="lg">
         <Toolbar sx={{ height: 59 }} disableGutters>
-          <Box component="img" src="/landingpage.svg" alt="macbook" height="30px" width="30px"   />
+          <Box component="img" src="/landingpage.svg" alt="macbook" height="30px" width="30px" />
 
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>

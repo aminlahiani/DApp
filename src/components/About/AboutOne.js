@@ -5,7 +5,7 @@ import { useTheme } from "@mui/material/styles";
 // react-router-dom components
 import { Link as RouterLink } from "react-router-dom";
 
-function AboutOne(props) {
+const  AboutOne = (props) => {
   const { data } = props;
 
   const theme = useTheme();

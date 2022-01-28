@@ -1,11 +1,9 @@
-import React from "react";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
+// @mui material components
+import { Box, Accordion, AccordionDetails , AccordionSummary , Typography} from "@mui/material";
+
+// @mui icons
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Box from "@mui/material/Box";
-import PropTypes from "prop-types";
-import { Typography } from "@mui/material";
+
 
 function FaqList(props) {
   const { data } = props;
@@ -52,7 +50,3 @@ function FaqList(props) {
 }
 
 export default FaqList;
-
-// FaqList.propTypes = {
-//   faqList: PropTypes.array.isRequired,
-// };

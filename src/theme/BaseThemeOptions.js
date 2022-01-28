@@ -8,7 +8,6 @@ export const BaseThemeOptions = {
       xl: 1920,
     },
   },
-  functions: {},
   components: {
     MuiAvatar: {
       styleOverrides: {
@@ -292,7 +291,7 @@ export const BaseThemeOptions = {
     },
     h1: {
       fontWeight: 700,
-    fontSize: "clamp(2.625rem, 1.2857rem + 3.5714vw, 4rem)",
+      fontSize: "clamp(2.625rem, 1.2857rem + 3.5714vw, 4rem)",
       lineHeight: 1.375,
     },
     h2: {

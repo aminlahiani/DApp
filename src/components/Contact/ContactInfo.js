@@ -1,5 +1,17 @@
-import { Box, Button, Card, Container, Grid, Typography, CardContent } from "@mui/material";
-import { Icon, List, ListItem, ListItemAvatar, ListItemText } from "@mui/material";
+// @mui material components
+import {
+  Box,
+  Card,
+  Container,
+  Grid,
+  Typography,
+  CardContent,
+  Icon,
+  List,
+  ListItem,
+  ListItemAvatar,
+  ListItemText,
+} from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
 function ContactInfo(props) {
@@ -16,7 +28,7 @@ function ContactInfo(props) {
       <Container maxWidth="lg">
         <Grid alignItems="center" container justifyContent="space-between" spacing={5}>
           <Grid item md={6} sm={8} xs={12}>
-          <Box
+            <Box
               sx={{ borderRadius: 3 }}
               component="img"
               src={theme.palette.mode === "light" ? data.imglight : data.imgdark}

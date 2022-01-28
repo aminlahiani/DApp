@@ -29,7 +29,6 @@ function ServisesHero(props) {
     <Box
       sx={{
         background: theme.palette.primary.mainGradient,
-        // height: { xs: nomobileimg ? "80vh" : "100vh", md: "584px" },
         minHeight: "584px",
         display: "flex",
         justifyContent: "center",

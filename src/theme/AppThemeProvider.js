@@ -1,12 +1,12 @@
 import * as React from "react";
-import {  ThemeProvider, createTheme } from "@mui/material/styles";
-//import { ColorModeContext } from 'context/ColorModeContext';
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { DarkThemeOptions } from "./DarkThemeOptions";
 import { LightThemeOptions } from "./LightThemeOptions";
 import { BaseThemeOptions } from "./BaseThemeOptions";
 import { ColorModeContext } from "contexts/ColorModeContext";
 
 const themeMode = localStorage.getItem("theme") || "light";
+
 export default function AppThemeProvider(props) {
   const [mode, setMode] = React.useState(themeMode);
   const colorMode = React.useMemo(

@@ -3,7 +3,7 @@ import { Box, Grid, Typography, Container } from "@mui/material";
 
 import TeamCard from "components/Cards/TeamCard";
 
-function AboutTeamList(props) {
+const AboutTeamList = (props) => {
   const { data } = props;
   return (
     <Box

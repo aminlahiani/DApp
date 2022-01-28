@@ -5,12 +5,12 @@ import { useTheme } from "@mui/material/styles";
 // react-router-dom components
 import { Link as RouterLink } from "react-router-dom";
 
-function BlogsHero(props) {
+const BlogsHero = (props) => {
   const { nomobileimg, data } = props;
 
   const theme = useTheme();
   const isXs = useMediaQuery(theme.breakpoints.down("sm"));
-  console.log(isXs);
+
   return (
     <Box
       sx={{
@@ -55,16 +55,15 @@ function BlogsHero(props) {
                   },
                 }}
               >
-            
-                  <Button
-                to={data.btnUrl}
-                component={RouterLink}
-                size="large"
-                variant={data.btnVariant}
-                fullWidth
-              >
-                {data.btnText}
-              </Button>
+                <Button
+                  to={data.btnUrl}
+                  component={RouterLink}
+                  size="large"
+                  variant={data.btnVariant}
+                  fullWidth
+                >
+                  {data.btnText}
+                </Button>
               </Box>
             </div>
           </Grid>
@@ -92,6 +91,6 @@ function BlogsHero(props) {
       </Container>
     </Box>
   );
-}
+};
 
 export default BlogsHero;

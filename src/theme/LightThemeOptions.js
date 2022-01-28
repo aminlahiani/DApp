@@ -16,7 +16,7 @@ const background = {
   default: "#F9FAFC",
   paper: "#FFFFFF",
 };
-//  background : "linear-gradient(to bottom, #fff , #eee )",
+
 function createGradient(color1, color2) {
   return `linear-gradient(to bottom, ${color1}, ${color2})`;
 }
@@ -28,7 +28,6 @@ const primary = {
   light: "#42a5f5",
   dark: "#1565c0",
   contrastText: "#FFFFFF",
-  // mainGradient: "linear-gradient(to right, tomato, cyan)",
   mainGradient: "linear-gradient(to bottom, #fff, #eee)",
   la: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
 };

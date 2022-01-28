@@ -1,7 +1,10 @@
-
+// @mui material components
 import { Box, Container, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+
+// image
 import bgImage from "assets/images/bg_servicedetails.jpg";
+
 const ServiceDetailsHero = () => {
   const theme = useTheme();
 

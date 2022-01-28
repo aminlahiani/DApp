@@ -3,8 +3,9 @@ import { Box, Container, Typography, Avatar, Grid, Icon } from "@mui/material";
 
 function AboutFeaturing(props) {
   const { data } = props;
+  
   return (
-    <Box sx={{ py : 3,  backgroundColor: "background.default" }}>
+    <Box sx={{ py: 3, backgroundColor: "background.default" }}>
       <Container maxWidth="lg">
         <Grid container>
           <Grid item md={6} sm={6} xs={12}>
@@ -25,7 +26,7 @@ function AboutFeaturing(props) {
                   sx={{
                     backgroundColor: `${item.iconbgColor}`,
                     height: 40,
-                 
+
                     width: 40,
                   }}
                   variant="rounded"

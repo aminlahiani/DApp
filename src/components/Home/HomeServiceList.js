@@ -1,9 +1,9 @@
-import { Avatar, Box, Container, Grid, Typography } from "@mui/material";
-import Icon from "@mui/material/Icon";
+// @mui material components
+import { Box, Container, Grid, Typography } from "@mui/material";
 
-import { InfoCard } from "components/Cards/InfoCard";
+import ServiceCardTwo from "components/Cards/ServiceCardTwo";
 
-function ServiceList(props) {
+const ServiceList = (props) => {
   const { data } = props;
   return (
     <Box
@@ -12,7 +12,7 @@ function ServiceList(props) {
         backgroundColor: "background.paper",
         display: "flex",
         alignItems: "center",
-        py:6
+        py: 6,
       }}
     >
       <Container
@@ -32,15 +32,15 @@ function ServiceList(props) {
         </Typography>
 
         <Grid container spacing={3}>
-          {data.services.map((item , index) => (
+          {data.services.map((item, index) => (
             <Grid key={index} item xs={12} md={6} lg={4}>
-              <InfoCard data={item} />
+              <ServiceCardTwo data={item} />
             </Grid>
           ))}
         </Grid>
       </Container>
     </Box>
   );
-}
+};
 
 export default ServiceList;
