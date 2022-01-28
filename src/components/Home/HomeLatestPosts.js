@@ -9,6 +9,9 @@ import { Link as RouterLink } from "react-router-dom";
 
 import BlogCard from "components/Cards/BlogCard";
 
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
 function HomeLatestPosts(props) {
   const { data } = props;
   return (

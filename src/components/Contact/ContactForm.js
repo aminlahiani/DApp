@@ -1,6 +1,9 @@
 // @mui material components
 import { Box, Button, Grid, Link, TextField, Typography, Container } from "@mui/material";
 
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
 function ContactForm(props) {
   const { data } = props;
   return (

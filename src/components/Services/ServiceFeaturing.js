@@ -5,14 +5,17 @@ import { useTheme } from "@mui/material/styles";
 // @mui icons
 import PlaylistAddCheckCircleIcon from "@mui/icons-material/PlaylistAddCheckCircle";
 
-const ServiceFeaturing = (props) => {
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
+function ServiceFeaturing(props) {
   const theme = useTheme();
   const { data } = props;
   return (
     <Box
       sx={{
         backgroundColor: "background.default",
-        py: 4,
+        py: 4
       }}
     >
       <Container maxWidth="lg">
@@ -24,8 +27,8 @@ const ServiceFeaturing = (props) => {
             sx={{
               order: {
                 xs: 2,
-                md: 1,
-              },
+                md: 1
+              }
             }}
           >
             <div>
@@ -41,7 +44,7 @@ const ServiceFeaturing = (props) => {
                   sx={{
                     alignItems: "center",
                     display: "flex",
-                    m: 2,
+                    m: 2
                   }}
                 >
                   <PlaylistAddCheckCircleIcon color="info" sx={{ mr: 1 }} />
@@ -60,8 +63,8 @@ const ServiceFeaturing = (props) => {
             sx={{
               order: {
                 xs: 1,
-                md: 2,
-              },
+                md: 2
+              }
             }}
           >
             <Box
@@ -69,12 +72,11 @@ const ServiceFeaturing = (props) => {
               component="img"
               src={theme.palette.mode === "light" ? data.imglight : data.imgdark}
               alt="macbook"
-              width="100%"
-            />
+              width="100%" />
           </Grid>
         </Grid>
       </Container>
     </Box>
   );
-};
+}
 export default ServiceFeaturing;

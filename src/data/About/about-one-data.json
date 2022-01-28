@@ -1,8 +1,14 @@
 {
   "heading": "Who We Are ?",
   "content": [
-    "Lorem ipsum dolor sit amet. Veritatis repellat et eligendi consequatur ut culpa totam. Sit nostrum temporibus sed magni unde sit ipsum officiis. Est odio odio eos distinctio assumenda ut iusto voluptatibus et soluta magnam.",
-    "Lorem ipsum dolor sit amet. Veritatis repellat et eligendi consequatur ut culpa totam. Sit nostrum temporibus sed magni unde sit ipsum officiis. Est odio odio eos distinctio assumenda ut iusto voluptatibus et soluta magnam."
+    {
+      "id": "1",
+      "paragraph": "Lorem ipsum dolor sit amet. Veritatis repellat et eligendi consequatur ut culpa totam. Sit nostrum temporibus sed magni unde sit ipsum officiis. Est odio odio eos distinctio assumenda ut iusto voluptatibus et soluta magnam."
+    },
+    {
+      "id": "2",
+      "paragraph": "Lorem ipsum dolor sit amet. Veritatis repellat et eligendi consequatur ut culpa totam. Sit nostrum temporibus sed magni unde sit ipsum officiis. Est odio odio eos distinctio assumenda ut iusto voluptatibus et soluta magnam."
+    }
   ],
   "image": "/static/about/about_one_light.png",
   "imageDark": "/static/about/about_one_dark.png"

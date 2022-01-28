@@ -6,6 +6,9 @@ import { Box, Button, Icon, Typography } from "@mui/material";
 // react-router-dom components
 import { Link as RouterLink } from "react-router-dom";
 
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
 const ServiceCardOne = (props) => {
   const { data } = props;
   const [rotate, setRotate] = useState(false);
@@ -127,5 +130,7 @@ const ServiceCardOne = (props) => {
     </>
   );
 };
-
+ServiceCardOne.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
+};
 export default ServiceCardOne;

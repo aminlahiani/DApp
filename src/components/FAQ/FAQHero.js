@@ -7,6 +7,9 @@ import { useTheme } from "@mui/material/styles";
 // typed-js
 import * as Typed from "typed.js";
 
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
 function FAQHero(props) {
   const { data } = props;
   const theme = useTheme();

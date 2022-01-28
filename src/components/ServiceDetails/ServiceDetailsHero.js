@@ -5,7 +5,10 @@ import { useTheme } from "@mui/material/styles";
 // image
 import bgImage from "assets/images/bg_servicedetails.jpg";
 
-const ServiceDetailsHero = () => {
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
+function ServiceDetailsHero() {
   const theme = useTheme();
 
   return (
@@ -16,7 +19,7 @@ const ServiceDetailsHero = () => {
         backgroundPosition: "center",
         minHeight: "50vh",
         alignItems: "center",
-        display: "flex",
+        display: "flex"
       }}
     >
       <Container maxWidth="md">
@@ -26,5 +29,5 @@ const ServiceDetailsHero = () => {
       </Container>
     </Box>
   );
-};
+}
 export default ServiceDetailsHero;

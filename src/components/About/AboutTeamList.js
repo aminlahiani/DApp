@@ -1,9 +1,15 @@
 // @mui material components
-import { Box, Grid, Typography, Container } from "@mui/material";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import Grid from "@mui/material/Grid";
+
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
 
 import TeamCard from "components/Cards/TeamCard";
 
-const AboutTeamList = (props) => {
+function AboutTeamList(props) {
   const { data } = props;
   return (
     <Box
@@ -22,8 +28,8 @@ const AboutTeamList = (props) => {
         </Typography>
 
         <Grid container spacing={3}>
-          {data.teamlist.map((item, index) => (
-            <Grid item key={index} md={3} sm={3} xs={12}>
+          {data.teamlist.map((item) => (
+            <Grid item key={item.id} md={3} sm={3} xs={12}>
               <TeamCard data={item} />
             </Grid>
           ))}
@@ -32,4 +38,8 @@ const AboutTeamList = (props) => {
     </Box>
   );
 }
+
+AboutTeamList.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
+};
 export default AboutTeamList;

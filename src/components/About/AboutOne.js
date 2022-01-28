@@ -1,11 +1,18 @@
 // @mui material components
-import { Box, Button, Container, Grid, Typography, useMediaQuery } from "@mui/material";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import Grid from "@mui/material/Grid";
+import useMediaQuery from "@mui/material/useMediaQuery";
+
+// import Icon from "@mui/material/Icon";
+// import { Box, Container, Grid, Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-// react-router-dom components
-import { Link as RouterLink } from "react-router-dom";
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
 
-const  AboutOne = (props) => {
+function AboutOne(props) {
   const { data } = props;
 
   const theme = useTheme();
@@ -41,9 +48,9 @@ const  AboutOne = (props) => {
               <Typography color="textPrimary" variant="h1">
                 {data.heading}
               </Typography>
-              {data.content.map((item, index) => (
-                <Typography key={index} color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
-                  {item}
+              {data.content.map((item) => (
+                <Typography key={item.id} color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
+                  {item.paragraph}
                 </Typography>
               ))}
             </div>
@@ -92,4 +99,7 @@ const  AboutOne = (props) => {
   );
 }
 
+AboutOne.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
+};
 export default AboutOne;

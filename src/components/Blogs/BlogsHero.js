@@ -5,12 +5,12 @@ import { useTheme } from "@mui/material/styles";
 // react-router-dom components
 import { Link as RouterLink } from "react-router-dom";
 
-const BlogsHero = (props) => {
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
+function BlogsHero(props) {
   const { nomobileimg, data } = props;
-
   const theme = useTheme();
-  const isXs = useMediaQuery(theme.breakpoints.down("sm"));
-
   return (
     <Box
       sx={{
@@ -91,6 +91,14 @@ const BlogsHero = (props) => {
       </Container>
     </Box>
   );
+}
+
+BlogsHero.defaultProps = {
+  nomobileimg: false,
+};
+BlogsHero.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  nomobileimg: PropTypes.bool,
 };
 
 export default BlogsHero;

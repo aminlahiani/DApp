@@ -3,6 +3,9 @@ import { Box, Container, Grid } from "@mui/material";
 
 import PortfolioCard from "components/Cards/PortfolioCard";
 
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
 function PortfolioList(props) {
   const { data } = props;
   return (

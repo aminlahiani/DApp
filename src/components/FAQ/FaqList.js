@@ -4,6 +4,8 @@ import { Box, Accordion, AccordionDetails , AccordionSummary , Typography} from 
 // @mui icons
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
 
 function FaqList(props) {
   const { data } = props;

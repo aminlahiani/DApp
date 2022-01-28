@@ -7,6 +7,9 @@ import { ArrowForward } from "@mui/icons-material";
 // react-router-dom components
 import { Link as RouterLink } from "react-router-dom";
 
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
 const BlogCard = (props) => {
   const { data } = props;
 
@@ -98,4 +101,7 @@ const BlogCard = (props) => {
   );
 };
 
+BlogCard.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
+};
 export default BlogCard;

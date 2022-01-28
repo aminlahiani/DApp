@@ -1,10 +1,14 @@
 // @mui material components
-import { Avatar, Box, Container, Typography } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import Avatar from "@mui/material/Avatar";
 
-const AboutTestimonial = (props) => {
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
+function AboutTestimonial(props) {
   const { data } = props;
-  const theme = useTheme();
 
   return (
     <Box
@@ -44,5 +48,9 @@ const AboutTestimonial = (props) => {
       </Container>
     </Box>
   );
+}
+
+AboutTestimonial.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 export default AboutTestimonial;

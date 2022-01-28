@@ -1,7 +1,10 @@
 // @mui material components
 import { Box, Container, Grid, Typography } from "@mui/material";
 
-const  AboutTwo = (props)  => {
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
+function AboutTwo(props) {
   const { data } = props;
   return (
     <Box
@@ -12,8 +15,8 @@ const  AboutTwo = (props)  => {
     >
       <Container maxWidth="lg">
         <Grid alignItems="center" container justifyContent="center" spacing={3}>
-          {data.map((item, index) => (
-            <Grid key={index} item md={6} xs={12}>
+          {data.map((item) => (
+            <Grid key={item.id} item md={6} xs={12}>
               <Typography color="textPrimary" variant="h2">
                 {item.heading}
               </Typography>
@@ -28,4 +31,7 @@ const  AboutTwo = (props)  => {
   );
 }
 
+AboutTwo.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
+};
 export default AboutTwo;

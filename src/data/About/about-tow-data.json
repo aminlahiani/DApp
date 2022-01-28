@@ -1,11 +1,11 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "heading": "Our values",
     "content": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed."
   },
   {
-    "id": 2,
+    "id": "2",
     "heading": "Our History",
     "content": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed."
   }

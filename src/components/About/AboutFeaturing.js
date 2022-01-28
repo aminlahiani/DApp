@@ -1,9 +1,16 @@
 // @mui material components
-import { Box, Container, Typography, Avatar, Grid, Icon } from "@mui/material";
+import Avatar from "@mui/material/Avatar";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import Grid from "@mui/material/Grid";
+import Icon from "@mui/material/Icon";
+
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
 
 function AboutFeaturing(props) {
   const { data } = props;
-  
   return (
     <Box sx={{ py: 3, backgroundColor: "background.default" }}>
       <Container maxWidth="lg">
@@ -13,8 +20,8 @@ function AboutFeaturing(props) {
               {data.heading}
             </Typography>
           </Grid>
-          {data.featuring.map((item, index) => (
-            <Grid key={index} item md={2} xs={4}>
+          {data.featuring.map((item) => (
+            <Grid key={item.id} item md={2} xs={4}>
               <Box
                 sx={{
                   alignItems: "center",
@@ -52,4 +59,8 @@ function AboutFeaturing(props) {
     </Box>
   );
 }
+
+AboutFeaturing.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
+};
 export default AboutFeaturing;

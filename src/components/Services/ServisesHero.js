@@ -7,6 +7,9 @@ import { Link as RouterLink } from "react-router-dom";
 // typed-js
 import * as Typed from "typed.js";
 
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
 function ServisesHero(props) {
   const { data, nomobileimg } = props;
   const theme = useTheme();

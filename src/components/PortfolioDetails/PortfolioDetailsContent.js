@@ -1,13 +1,16 @@
 // @mui material components
 import { Container, Box, Grid, Typography, Card, CardMedia } from "@mui/material";
 
-const PortfolioDetailsContent = (props) => {
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
+function PortfolioDetailsContent(props) {
   const { data } = props;
   return (
     <Box
       sx={{
         backgroundColor: "background.default",
-        py: 3,
+        py: 3
       }}
     >
       <Container maxWidth="md">
@@ -16,8 +19,7 @@ const PortfolioDetailsContent = (props) => {
           component="img"
           src={data.image}
           alt="macbook"
-          width="100%"
-        />
+          width="100%" />
 
         <Typography variant="h3" mt={3} color="textPrimary" mb={3}>
           {data.title}
@@ -42,5 +44,5 @@ const PortfolioDetailsContent = (props) => {
       </Container>
     </Box>
   );
-};
+}
 export default PortfolioDetailsContent;

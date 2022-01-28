@@ -1,12 +1,15 @@
 // @mui material components
 import { Chip, Container, Typography, Box, Card, CardMedia } from "@mui/material";
 
-const ServiceDetailsContent = (props) => {
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
+function ServiceDetailsContent(props) {
   const { data } = props;
   return (
     <Box
       sx={{
-        backgroundColor: "background.paper",
+        backgroundColor: "background.paper"
       }}
     >
       <Container maxWidth="md">
@@ -15,14 +18,13 @@ const ServiceDetailsContent = (props) => {
           component="img"
           src={data.image}
           alt="macbook"
-          width="100%"
-        />
+          width="100%" />
 
         <Typography
           color="textPrimary"
           sx={{
             fontWeight: "fontWeightBold",
-            mt: 3,
+            mt: 3
           }}
           variant="h2"
         >
@@ -48,6 +50,6 @@ const ServiceDetailsContent = (props) => {
       </Container>
     </Box>
   );
-};
+}
 
 export default ServiceDetailsContent;

@@ -3,6 +3,9 @@ import { Box, Typography } from "@mui/material";
 
 import RecentPostCard from "components/Cards/RecentPostCard";
 
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
 function RecentPostsList(props) {
   const { data } = props;
 
@@ -12,11 +15,14 @@ function RecentPostsList(props) {
         Recent Posts
       </Typography>
 
-      {data.map((item, index) => (
-        <RecentPostCard key={index} data={item} />
+      {data.map((item) => (
+        <RecentPostCard key={item.id} data={item} />
       ))}
     </Box>
   );
 }
 
+RecentPostsList.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
+};
 export default RecentPostsList;

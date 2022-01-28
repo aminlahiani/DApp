@@ -3,6 +3,7 @@
   "subHeding": " There's nothing I really wanted to do in life that I wasn't able to get good at. That's myskill.",
   "teamlist": [
     {
+      "id" : "1",
       "avatar": "/static/about/team/avatarone.jpg",
       "cover": "/static/about/team/teamone.jpg",
       "name": "Anika Visser",
@@ -10,6 +11,7 @@
       "shortDescription": " Send one-off and automated email, push, and in-app messages to people. Create betterstories."
     },
     {
+      "id" : "2",
       "avatar": "/static/about/team/avatartwo.jpg",
       "cover": "/static/about/team/teamtwo.jpg",  
        "name": "Anika Visser",
@@ -17,6 +19,7 @@
       "shortDescription": " Send one-off and automated email, push, and in-app messages to people. Create betterstories."
     },
     {
+      "id" : "3",
       "avatar": "/static/about/team/avatarthree.jpg",
       "cover": "/static/about/team/teamthree.jpg",
       "name": "Anika Visser",
@@ -24,6 +27,7 @@
       "shortDescription": " Send one-off and automated email, push, and in-app messages to people. Create betterstories."
     },
     {
+      "id" : "4",
       "avatar": "/static/about/team/avatarfour.jpg",
       "cover": "/static/about/team/teamfour.jpg",
       "name": "Anika Visser",

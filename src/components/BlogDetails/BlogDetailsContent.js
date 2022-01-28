@@ -1,7 +1,13 @@
 // @mui material components
-import { Chip, Container, Typography, Box, Card, CardMedia } from "@mui/material";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import Chip from "@mui/material/Chip";
 
-const BlogDetailsContent = (props) => {
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
+function BlogDetailsContent(props) {
   const { data } = props;
   return (
     <Box
@@ -66,6 +72,9 @@ const BlogDetailsContent = (props) => {
       </Container>
     </Box>
   );
-};
+}
 
+BlogDetailsContent.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
+};
 export default BlogDetailsContent;

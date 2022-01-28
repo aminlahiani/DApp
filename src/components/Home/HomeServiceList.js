@@ -3,7 +3,10 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 
 import ServiceCardTwo from "components/Cards/ServiceCardTwo";
 
-const ServiceList = (props) => {
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
+function ServiceList(props) {
   const { data } = props;
   return (
     <Box
@@ -12,7 +15,7 @@ const ServiceList = (props) => {
         backgroundColor: "background.paper",
         display: "flex",
         alignItems: "center",
-        py: 6,
+        py: 6
       }}
     >
       <Container
@@ -20,7 +23,7 @@ const ServiceList = (props) => {
         sx={{
           alignItems: "center",
           display: "flex",
-          flexDirection: "column",
+          flexDirection: "column"
         }}
       >
         <Typography align="center" color="textPrimary" variant="h4">
@@ -41,6 +44,6 @@ const ServiceList = (props) => {
       </Container>
     </Box>
   );
-};
+}
 
 export default ServiceList;

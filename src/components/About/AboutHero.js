@@ -1,8 +1,13 @@
 // @mui material components
-import { Box, Container, Grid, Icon, IconButton, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import Grid from "@mui/material/Grid";
+import IconButton from "@mui/material/IconButton";
+import Icon from "@mui/material/Icon";
 
-// SwiperJS
+// import Swiper core and required modules
 import SwiperCore, { Autoplay, Navigation } from "swiper";
 
 // SwiperJS react components
@@ -11,6 +16,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Styles must use direct files imports
 import "swiper/css"; // core Swiper
 import "swiper/css/navigation"; // Navigation module
+
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
 
 function AboutHero(props) {
   const { data } = props;
@@ -26,18 +34,16 @@ function AboutHero(props) {
       navigation
       loop
     >
-      {data.map((item, index) => (
-        <SwiperSlide key={index}>
+      {data.map((item) => (
+        <SwiperSlide key={item.id}>
           <Box
             minHeight="584px"
             width="100%"
             sx={{
               backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.2),  rgba(0,0,0,0.9)), url(${item.img})`,
-
               backgroundSize: "cover",
               backgroundPosition: "center",
               display: "flex",
-
               alignItems: { xs: "center", md: "center" },
             }}
           >
@@ -58,11 +64,14 @@ function AboutHero(props) {
                     alignItems: "center",
                   }}
                 >
-                  {item.socialIcons.map((socialIcon, index) => (
-                    <Box key={index} mr={index !== item.socialIcons.length - 1 ? 1 : 0}>
+                  {item.socialIcons.map((socialIcon) => (
+                    <Box
+                      key={socialIcon.id}
+                      mr={socialIcon.id !== item.socialIcons.length - 1 ? 1 : 0}
+                    >
                       <IconButton
                         aria-label={socialIcon.label}
-                        target={"_blank"}
+                        target="_blank"
                         sx={{
                           backgroundColor: theme.palette.background.default,
 
@@ -91,4 +100,7 @@ function AboutHero(props) {
   );
 }
 
+AboutHero.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
+};
 export default AboutHero;

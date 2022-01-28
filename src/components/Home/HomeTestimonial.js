@@ -2,17 +2,25 @@
 import { Avatar, Box, Container, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-// SwiperJS
-import SwiperCore, { Autoplay, Navigation } from "swiper";
 
-// SwiperJS react components
-import { Swiper, SwiperSlide } from "swiper/react";
+// import Swiper core and required modules
+import SwiperCore, { Autoplay, Navigation } from 'swiper';
 
-// Styles must use direct files imports
-import "swiper/css"; // core Swiper
-import "swiper/css/navigation"; // Navigation module
+import { Swiper, SwiperSlide } from 'swiper/react';
+// swiper bundle styles
+import 'swiper/css/bundle'
 
-const HomeTestimonial = (props) => {
+// swiper core styles
+import 'swiper/css'
+
+// modules styles
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
+function HomeTestimonial(props) {
   const { data } = props;
   const theme = useTheme();
 
@@ -31,7 +39,7 @@ const HomeTestimonial = (props) => {
           <Box
             sx={{
               backgroundColor: "#132F4C",
-              py: 15,
+              py: 15
             }}
           >
             <Container
@@ -39,7 +47,7 @@ const HomeTestimonial = (props) => {
               sx={{
                 alignItems: "center",
                 display: "flex",
-                flexDirection: "column",
+                flexDirection: "column"
               }}
             >
               <Typography align="center" color="white" variant="h3">
@@ -49,7 +57,7 @@ const HomeTestimonial = (props) => {
                 sx={{
                   alignItems: "center",
                   display: "flex",
-                  mt: 3,
+                  mt: 3
                 }}
               >
                 <Avatar src={item.avatar} sx={{ mr: 2 }} variant="rounded" />
@@ -68,5 +76,5 @@ const HomeTestimonial = (props) => {
       ))}
     </Swiper>
   );
-};
+}
 export default HomeTestimonial;

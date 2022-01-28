@@ -5,6 +5,9 @@ import { useTheme } from "@mui/material/styles";
 // react-router-dom components
 import { Link as RouterLink } from "react-router-dom";
 
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
 function ContactHero(props) {
   const { nomobileimg, data } = props;
 

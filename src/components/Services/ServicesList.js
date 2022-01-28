@@ -3,7 +3,10 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 
 import ServiceCardOne from "components/Cards/ServiceCardOne";
 
-const ServicesList = (props) => {
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
+function ServicesList(props) {
   const { data } = props;
   return (
     <Box
@@ -11,7 +14,7 @@ const ServicesList = (props) => {
       sx={{
         backgroundColor: "background.paper",
         display: "flex",
-        alignItems: "center",
+        alignItems: "center"
       }}
     >
       <Container
@@ -19,7 +22,7 @@ const ServicesList = (props) => {
         sx={{
           alignItems: "center",
           display: "flex",
-          flexDirection: "column",
+          flexDirection: "column"
         }}
       >
         <Typography align="center" color="textPrimary" variant="h4">
@@ -40,6 +43,6 @@ const ServicesList = (props) => {
       </Container>
     </Box>
   );
-};
+}
 
 export default ServicesList;

@@ -5,7 +5,10 @@ import { useTheme } from "@mui/material/styles";
 // react-router-dom components
 import { Link as RouterLink } from "react-router-dom";
 
-const HomeHero = (props) => {
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
+function HomeHero(props) {
   const { nomobileimg, data } = props;
   const theme = useTheme();
   const isXs = useMediaQuery(theme.breakpoints.down("sm"));
@@ -18,7 +21,7 @@ const HomeHero = (props) => {
         display: "flex",
         justifyContent: "center",
         alignItems: { xs: "center", md: "center" },
-        py: 3,
+        py: 3
       }}
     >
       <Container maxWidth="lg">
@@ -30,8 +33,8 @@ const HomeHero = (props) => {
             sx={{
               order: {
                 xs: 2,
-                md: 1,
-              },
+                md: 1
+              }
             }}
           >
             <div>
@@ -64,8 +67,8 @@ const HomeHero = (props) => {
                   mt: 2,
                   mb: 6,
                   "& > a": {
-                    m: 1,
-                  },
+                    m: 1
+                  }
                 }}
               >
                 <Button
@@ -99,8 +102,8 @@ const HomeHero = (props) => {
             sx={{
               order: {
                 xs: 1,
-                md: 2,
-              },
+                md: 2
+              }
             }}
           >
             <Box
@@ -109,13 +112,12 @@ const HomeHero = (props) => {
               src={theme.palette.mode === "light" ? data.image : data.imageDark}
               alt="macbook"
               height="100%"
-              width="100%"
-            />
+              width="100%" />
           </Grid>
         </Grid>
       </Container>
     </Box>
   );
-};
+}
 
 export default HomeHero;

@@ -4,6 +4,9 @@ import { Box, Card, CardMedia, Chip, Link, Typography } from "@mui/material";
 // react-router-dom components
 import { Link as RouterLink } from "react-router-dom";
 
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
 function RecentPostCard(props) {
   const { data } = props;
 
@@ -39,4 +42,7 @@ function RecentPostCard(props) {
     </>
   );
 }
+RecentPostCard.propTypes = {
+  data: PropTypes.objectOf(PropTypes.string).isRequired,
+};
 export default RecentPostCard;

@@ -2,7 +2,10 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-const HomeAbout = (props) => {
+// prop-types is a library for typechecking of props
+import PropTypes from "prop-types";
+
+function HomeAbout(props) {
   const { data } = props;
   const theme = useTheme();
 
@@ -15,7 +18,7 @@ const HomeAbout = (props) => {
         display: "flex",
         justifyContent: "center",
         alignItems: { xs: "center", md: "center" },
-        py: 6,
+        py: 6
       }}
     >
       <Container maxWidth="lg">
@@ -27,8 +30,8 @@ const HomeAbout = (props) => {
             sx={{
               order: {
                 xs: 2,
-                md: 1,
-              },
+                md: 1
+              }
             }}
           >
             <div>
@@ -67,8 +70,8 @@ const HomeAbout = (props) => {
             sx={{
               order: {
                 xs: 1,
-                md: 2,
-              },
+                md: 2
+              }
             }}
           >
             <Box
@@ -77,14 +80,12 @@ const HomeAbout = (props) => {
               src={theme.palette.mode === "light" ? data.image : data.imageDark}
               alt="macbook"
               height="100%"
-              width="100%"
-            
-            />
+              width="100%" />
           </Grid>
         </Grid>
       </Container>
     </Box>
   );
-};
+}
 
 export default HomeAbout;
