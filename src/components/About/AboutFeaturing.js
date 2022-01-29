@@ -61,6 +61,21 @@ function AboutFeaturing(props) {
 }
 
 AboutFeaturing.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  //  data: PropTypes.objectOf(PropTypes.string, PropTypes.array).isRequired,
+  data: PropTypes.shape({
+    heading: PropTypes.string,
+    featuring: PropTypes.arrayOf(PropTypes.string),
+    // featuring: PropTypes.shape({
+    //   id: PropTypes.string,
+    //   title: PropTypes.string,
+    //   icon: PropTypes.string,
+    //   baseicon: PropTypes.string,
+    //   iconbgColor: PropTypes.string,
+    // }),
+  }).isRequired,
 };
+
+// AboutFeaturing.propTypes = {
+//   data: PropTypes.objectOf(PropTypes.string).isRequired,
+// };
 export default AboutFeaturing;
