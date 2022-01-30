@@ -1,9 +1,6 @@
 // @mui material components
 import { Box, Container, Grid, Typography } from "@mui/material";
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 function AboutTwo(props) {
   const { data } = props;
   return (
@@ -30,15 +27,5 @@ function AboutTwo(props) {
     </Box>
   );
 }
-
-AboutTwo.propTypes = {
-  data: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      heading: PropTypes.string.isRequired,
-      content: PropTypes.string.isRequired,
-    }).isRequired
-  ).isRequired,
-};
 
 export default AboutTwo;

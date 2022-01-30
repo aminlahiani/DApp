@@ -2,13 +2,13 @@
 import { useParams } from "react-router-dom";
 
 // ServiceDetails  components
-import ServiceDetailsHero from "components/ServiceDetails/ServiceDetailsHero";
-import ServiceDetailsContent from "components/ServiceDetails/ServiceDetailsContent";
-import Newsletter from "components/Newsletter";
-import ReactHelmet from "components/ReactHelmet";
+import ServiceDetailsHero from "../components/ServiceDetails/ServiceDetailsHero";
+import ServiceDetailsContent from "../components/ServiceDetails/ServiceDetailsContent";
+import Newsletter from "../components/Newsletter";
+import ReactHelmet from "../components/ReactHelmet";
 
 // ServiceDetails data
-import ServicesData from "data/Services/services-data.json";
+import ServicesData from "../data/Services/services-data.json";
 
 function ServiceDetails() {
   const parameter = useParams();

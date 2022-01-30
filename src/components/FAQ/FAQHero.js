@@ -7,9 +7,6 @@ import { useTheme } from "@mui/material/styles";
 // typed-js
 import * as Typed from "typed.js";
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 function FAQHero(props) {
   const { data } = props;
   const theme = useTheme();
@@ -55,13 +52,5 @@ function FAQHero(props) {
     </Box>
   );
 }
-
-FAQHero.propTypes = {
-  data: PropTypes.shape({
-    heading: PropTypes.string.isRequired,
-    shortDescription: PropTypes.string.isRequired,
-    headingtypedJS: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
-  }).isRequired,
-};
 
 export default FAQHero;

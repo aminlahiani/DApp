@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 function ReactHelmet(props) {
@@ -12,7 +11,4 @@ function ReactHelmet(props) {
   );
 }
 
-ReactHelmet.propTypes = {
-  title: PropTypes.string.isRequired,
-};
 export default ReactHelmet;

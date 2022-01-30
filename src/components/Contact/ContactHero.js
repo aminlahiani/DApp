@@ -5,9 +5,6 @@ import { useTheme } from "@mui/material/styles";
 // react-router-dom components
 import { Link as RouterLink } from "react-router-dom";
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 function ContactHero(props) {
   const { nomobileimg, data } = props;
 
@@ -109,19 +106,5 @@ function ContactHero(props) {
     </Box>
   );
 }
-ContactHero.defaultProps = {
-  nomobileimg: false,
-};
-ContactHero.propTypes = {
-  data: PropTypes.shape({
-    heading: PropTypes.string.isRequired,
-    shortDescription: PropTypes.string.isRequired,
-    btnText: PropTypes.string.isRequired,
-    btnUrl: PropTypes.string.isRequired,
-    btnVariant: PropTypes.string.isRequired,
-    imagesrc: PropTypes.string.isRequired,
-    imgdark: PropTypes.string.isRequired,
-  }).isRequired,
-  nomobileimg: PropTypes.bool,
-};
+
 export default ContactHero;

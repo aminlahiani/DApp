@@ -6,9 +6,6 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 function AboutFeaturing(props) {
   const { data } = props;
   return (
@@ -59,22 +56,5 @@ function AboutFeaturing(props) {
     </Box>
   );
 }
-AboutFeaturing.propTypes = {
-  data: PropTypes.shape({
-    heading: PropTypes.string,
-    featuring: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.string.isRequired,
-        title: PropTypes.string.isRequired,
-        subtitle: PropTypes.string.isRequired,
-        baseicon: PropTypes.string.isRequired,
-        iconbgColor: PropTypes.string.isRequired,
-      }).isRequired
-    ).isRequired,
-  }).isRequired,
-};
 
-// AboutFeaturing.propTypes = {
-//   data: PropTypes.objectOf(PropTypes.string).isRequired,
-// };
 export default AboutFeaturing;

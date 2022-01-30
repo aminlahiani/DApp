@@ -14,9 +14,6 @@ import {
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 function ContactInfo(props) {
   const { data } = props;
   const theme = useTheme();
@@ -71,21 +68,5 @@ function ContactInfo(props) {
     </Box>
   );
 }
-ContactInfo.propTypes = {
-  //  data: PropTypes.objectOf(PropTypes.string, PropTypes.array).isRequired,
-  data: PropTypes.shape({
-    imglight: PropTypes.string,
-    imgdark: PropTypes.string,
-    infoquot: PropTypes.string,
-    infolist: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.string,
-        baseicon: PropTypes.string,
-        icon: PropTypes.string,
-        infocontent: PropTypes.string,
-      }).isRequired
-    ).isRequired,
-  }).isRequired,
-};
 
 export default ContactInfo;

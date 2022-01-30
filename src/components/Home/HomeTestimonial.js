@@ -15,9 +15,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 function HomeTestimonial(props) {
   const { data } = props;
 
@@ -74,17 +71,5 @@ function HomeTestimonial(props) {
     </Swiper>
   );
 }
-
-HomeTestimonial.propTypes = {
-  data: PropTypes.arrayOf(
-    PropTypes.shape({
-      avatar: PropTypes.string.isRequired,
-      designation: PropTypes.string.isRequired,
-      id: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      testimonial: PropTypes.string.isRequired,
-    }).isRequired
-  ).isRequired,
-};
 
 export default HomeTestimonial;

@@ -1,6 +1,5 @@
 import * as React from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import PropTypes from "prop-types";
 import ColorModeContext from "./ColorModeContext";
 
 // prop-types is a library for typechecking of props
@@ -36,7 +35,4 @@ function AppThemeProvider(props) {
   );
 }
 
-AppThemeProvider.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 export default AppThemeProvider;

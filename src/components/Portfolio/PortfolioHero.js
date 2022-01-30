@@ -2,9 +2,6 @@
 import { Box, Container, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 function PortfolioHero(props) {
   const { data } = props;
   const theme = useTheme();
@@ -38,10 +35,4 @@ function PortfolioHero(props) {
   );
 }
 
-PortfolioHero.propTypes = {
-  data: PropTypes.shape({
-    heading: PropTypes.string.isRequired,
-    shortDescription: PropTypes.string.isRequired,
-  }).isRequired,
-};
 export default PortfolioHero;

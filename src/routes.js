@@ -2,7 +2,7 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 
 // layouts
-import NotFondLayout from "layout/NotFondLayout";
+import NotFondLayout from "./layout/NotFondLayout";
 import MainLayout from "./layout/MainLayout";
 
 // home page

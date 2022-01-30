@@ -4,9 +4,6 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 function AboutTestimonial(props) {
   const { data } = props;
 
@@ -50,12 +47,4 @@ function AboutTestimonial(props) {
   );
 }
 
-AboutTestimonial.propTypes = {
-  data: PropTypes.shape({
-    avatar: PropTypes.string.isRequired,
-    designation: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    testimonial: PropTypes.string.isRequired,
-  }).isRequired,
-};
 export default AboutTestimonial;

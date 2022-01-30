@@ -7,10 +7,8 @@ import { ArrowForward } from "@mui/icons-material";
 // react-router-dom components
 import { Link as RouterLink } from "react-router-dom";
 
-import BlogCard from "components/Cards/BlogCard";
-
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
+// Blog Card
+import BlogCard from "../Cards/BlogCard";
 
 function HomeLatestPosts(props) {
   const { data } = props;
@@ -55,17 +53,5 @@ function HomeLatestPosts(props) {
     </Box>
   );
 }
-HomeLatestPosts.propTypes = {
-  data: PropTypes.shape({
-    btnColor: PropTypes.string.isRequired,
-    btnText: PropTypes.string.isRequired,
-    btnUrl: PropTypes.string.isRequired,
-    btnVariant: PropTypes.string.isRequired,
-    heading: PropTypes.string.isRequired,
-    // serviceslist: PropTypes.arrayOf(PropTypes.string),
-    // serviceslist: PropTypes.array.isRequired,
-    posts: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
-  }).isRequired,
-};
 
 export default HomeLatestPosts;

@@ -1,10 +1,6 @@
 // @mui material components
 import { Box, Container, Grid, Typography } from "@mui/material";
-
-import ServiceCardTwo from "components/Cards/ServiceCardTwo";
-
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
+import ServiceCardTwo from "../Cards/ServiceCardTwo";
 
 function HomeServiceList(props) {
   const { data } = props;
@@ -45,15 +41,5 @@ function HomeServiceList(props) {
     </Box>
   );
 }
-HomeServiceList.propTypes = {
-  //  data: PropTypes.objectOf(PropTypes.string, PropTypes.array).isRequired,
-  data: PropTypes.shape({
-    heading: PropTypes.string,
-    subHeading: PropTypes.string,
-    // serviceslist: PropTypes.arrayOf(PropTypes.string),
-    // serviceslist: PropTypes.array.isRequired,
-    services: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)),
-  }).isRequired,
-};
 
 export default HomeServiceList;

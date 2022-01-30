@@ -2,7 +2,7 @@
 import { Box, Typography } from "@mui/material";
 
 // Images
-import bgImage from "assets/images/bg_blogdetails.jpg";
+import bgImage from "../../assets/images/bg_blogdetails.jpg";
 
 function BlogDetailsHero() {
   return (

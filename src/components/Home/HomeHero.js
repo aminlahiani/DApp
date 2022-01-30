@@ -5,9 +5,6 @@ import { useTheme } from "@mui/material/styles";
 // react-router-dom components
 import { Link as RouterLink } from "react-router-dom";
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 function HomeHero(props) {
   const { nomobileimg, data } = props;
   const theme = useTheme();
@@ -122,29 +119,5 @@ function HomeHero(props) {
     </Box>
   );
 }
-HomeHero.defaultProps = {
-  nomobileimg: false,
-};
-
-HomeHero.propTypes = {
-  data: PropTypes.PropTypes.shape({
-    btnOneColor: PropTypes.string.isRequired,
-    btnOneText: PropTypes.string.isRequired,
-    btnOneUrl: PropTypes.string.isRequired,
-    btnOneVariant: PropTypes.string.isRequired,
-    btnTwoColor: PropTypes.string.isRequired,
-    btnTwoText: PropTypes.string.isRequired,
-    btnTwoUrl: PropTypes.string.isRequired,
-    btnTwoVariant: PropTypes.string.isRequired,
-    heading: PropTypes.string.isRequired,
-    headingPartOne: PropTypes.string.isRequired,
-    hedinPartThree: PropTypes.string.isRequired,
-    hedingPartTwo: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    imageDark: PropTypes.string.isRequired,
-    subHeading: PropTypes.string.isRequired,
-  }).isRequired,
-  nomobileimg: PropTypes.bool,
-};
 
 export default HomeHero;

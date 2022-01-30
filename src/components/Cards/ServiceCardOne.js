@@ -6,9 +6,6 @@ import { Box, Button, Icon, Typography } from "@mui/material";
 // react-router-dom components
 import { Link as RouterLink } from "react-router-dom";
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 function ServiceCardOne(props) {
   const { data } = props;
   const [rotate, setRotate] = useState(false);
@@ -24,7 +21,6 @@ function ServiceCardOne(props) {
 
           position: "relative",
           transform: rotate ? "rotateY(180deg)" : "rotateY(0)",
-          // transition: "transform 0.6s",
           transition: "all 0.8s cubic-bezier(0.30, 1.45, 0.7, 1.2)",
           transformStyle: "preserve-3d",
         }}
@@ -106,9 +102,6 @@ function ServiceCardOne(props) {
           }}
         >
           <Box sx={{ px: 4 }}>
-            {/* <Typography align="center" variant="h5" color="textSecondary">
-                The Executive Team
-              </Typography> */}
             <Typography align="center" variant="subtitle1" color="white">
               {data.shortDescriptionBack}
             </Typography>
@@ -128,24 +121,5 @@ function ServiceCardOne(props) {
     </Box>
   );
 }
-// ServiceCardOne.propTypes = {
-//   data: PropTypes.objectOf(PropTypes.string).isRequired,
-// };
-ServiceCardOne.propTypes = {
-  //  data: PropTypes.objectOf(PropTypes.string, PropTypes.array).isRequired,
-  data: PropTypes.shape({
-    id: PropTypes.string,
-    title: PropTypes.string,
-    shortDescriptionFront: PropTypes.string,
-    shortDescriptionBack: PropTypes.string,
-    paragraphOne: PropTypes.string,
-    subtitle: PropTypes.string,
-    paragraphTwo: PropTypes.string,
-    baseicon: PropTypes.string,
-    icon: PropTypes.string,
-    image: PropTypes.string,
-    // serviceslist: PropTypes.arrayOf(PropTypes.string),
-    // serviceslist: PropTypes.array.isRequired,
-  }).isRequired,
-};
+
 export default ServiceCardOne;

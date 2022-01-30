@@ -2,7 +2,7 @@
 import { Box, Container, Typography } from "@mui/material";
 
 // image
-import bgImage from "assets/images/bg_servicedetails.jpg";
+import bgImage from "../../assets/images/bg_servicedetails.jpg";
 
 function ServiceDetailsHero() {
   return (

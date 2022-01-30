@@ -17,9 +17,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // core Swiper
 import "swiper/css/navigation"; // Navigation module
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 function AboutHero(props) {
   const { data } = props;
   const theme = useTheme();
@@ -100,24 +97,4 @@ function AboutHero(props) {
   );
 }
 
-AboutHero.propTypes = {
-  data: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      heading: PropTypes.string.isRequired,
-      shortDescription: PropTypes.string.isRequired,
-      keyword: PropTypes.string.isRequired,
-      img: PropTypes.string.isRequired,
-      socialIcons: PropTypes.arrayOf(
-        PropTypes.shape({
-          id: PropTypes.string.isRequired,
-          baseicon: PropTypes.string.isRequired,
-          icon: PropTypes.string.isRequired,
-          label: PropTypes.string.isRequired,
-          href: PropTypes.string.isRequired,
-        }).isRequired
-      ).isRequired,
-    }).isRequired
-  ).isRequired,
-};
 export default AboutHero;

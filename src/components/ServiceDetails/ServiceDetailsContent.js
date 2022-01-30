@@ -1,9 +1,6 @@
 // @mui material components
 import { Container, Typography, Box } from "@mui/material";
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 function ServiceDetailsContent(props) {
   const { data } = props;
   return (
@@ -53,19 +50,4 @@ function ServiceDetailsContent(props) {
   );
 }
 
-ServiceDetailsContent.propTypes = {
-  data: PropTypes.shape({
-    image: PropTypes.string.isRequired,
-    paragraphOne: PropTypes.string.isRequired,
-    paragraphTwo: PropTypes.string.isRequired,
-    shortDescriptionBack: PropTypes.string.isRequired,
-    shortDescriptionFront: PropTypes.string.isRequired,
-    subtitle: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-  }).isRequired,
-};
-
-// ServiceDetailsContent.propTypes = {
-//   data: PropTypes.objectOf(PropTypes.string).isRequired,
-// };
 export default ServiceDetailsContent;

@@ -1,18 +1,18 @@
 // Home  components
-import HomeHero from "components/Home/HomeHero";
-import HomeAbout from "components/Home/HomeAbout";
-import HomeTestimonial from "components/Home/HomeTestimonial";
-import HomeServiceList from "components/Home/HomeServiceList";
-import HomeLatestPosts from "components/Home/HomeLatestPosts";
-import Newsletter from "components/Newsletter";
-import ReactHelmet from "components/ReactHelmet";
+import HomeHero from "../components/Home/HomeHero";
+import HomeAbout from "../components/Home/HomeAbout";
+import HomeTestimonial from "../components/Home/HomeTestimonial";
+import HomeServiceList from "../components/Home/HomeServiceList";
+import HomeLatestPosts from "../components/Home/HomeLatestPosts";
+import Newsletter from "../components/Newsletter";
+import ReactHelmet from "../components/ReactHelmet";
 
 // Home  data
-import HomeHeroData from "data/Home/home-hero-data.json";
-import HomeServicesData from "data/Home/home-services-data.json";
-import HomeAboutData from "data/Home/home-about-data.json";
-import HomeTestimonialData from "data/Home/home-testimonial-data.json";
-import HomeLatestPostsData from "data/Home/home-latestposts-data.json";
+import HomeHeroData from "../data/Home/home-hero-data.json";
+import HomeServicesData from "../data/Home/home-services-data.json";
+import HomeAboutData from "../data/Home/home-about-data.json";
+import HomeTestimonialData from "../data/Home/home-testimonial-data.json";
+import HomeLatestPostsData from "../data/Home/home-latestposts-data.json";
 
 function Home() {
   return (

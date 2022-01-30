@@ -1,10 +1,7 @@
 // @mui material components
 import { Box, Container, Grid } from "@mui/material";
 
-import BlogCard from "components/Cards/BlogCard";
-
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
+import BlogCard from "../Cards/BlogCard";
 
 function BlogsList(props) {
   const { data } = props;
@@ -29,9 +26,5 @@ function BlogsList(props) {
     </Box>
   );
 }
-
-BlogsList.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
-};
 
 export default BlogsList;

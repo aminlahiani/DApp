@@ -4,9 +4,6 @@ import { Box, Accordion, AccordionDetails, AccordionSummary, Typography } from "
 // @mui icons
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 function FaqList(props) {
   const { data } = props;
   return (
@@ -48,15 +45,5 @@ function FaqList(props) {
     </Box>
   );
 }
-
-FaqList.propTypes = {
-  data: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      ques: PropTypes.string.isRequired,
-      ans: PropTypes.string.isRequired,
-    }).isRequired
-  ).isRequired,
-};
 
 export default FaqList;

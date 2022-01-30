@@ -3,14 +3,8 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
-// import useMediaQuery from "@mui/material/useMediaQuery";
 
-// import Icon from "@mui/material/Icon";
-// import { Box, Container, Grid, Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
 
 function AboutOne(props) {
   const { data } = props;
@@ -65,24 +59,6 @@ function AboutOne(props) {
               },
             }}
           >
-            {/* <Box
-              sx={{
-                display: "block",
-                position: "relative",
-                pt: "calc(960 / 1225 * 100%)",
-                "& img": {
-                  height: "auto",
-                  position: "absolute",
-                  top: 0,
-                  width: "100%",
-                },
-              }}
-            >
-              <img
-                alt="For developers"
-                src={theme.palette.mode === "dark" ? data.imgdark : data.imglight}
-              />
-            </Box> */}
             <Box
               sx={{ borderRadius: 3 }}
               component="img"
@@ -96,19 +72,5 @@ function AboutOne(props) {
     </Box>
   );
 }
-
-AboutOne.propTypes = {
-  data: PropTypes.shape({
-    heading: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    imageDark: PropTypes.string.isRequired,
-    content: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.string.isRequired,
-        paragraph: PropTypes.string.isRequired,
-      }).isRequired
-    ).isRequired,
-  }).isRequired,
-};
 
 export default AboutOne;

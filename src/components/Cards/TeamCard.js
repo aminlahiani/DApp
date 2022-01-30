@@ -13,9 +13,6 @@ import {
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 function TeamCard(props) {
   const { data } = props;
   const theme = useTheme();
@@ -124,7 +121,4 @@ function TeamCard(props) {
   );
 }
 
-TeamCard.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
-};
 export default TeamCard;

@@ -4,9 +4,6 @@ import { Box, Card, CardMedia, Chip, Link, Typography } from "@mui/material";
 // react-router-dom components
 import { Link as RouterLink } from "react-router-dom";
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 function PortfolioCard(props) {
   const { data } = props;
 
@@ -54,7 +51,5 @@ function PortfolioCard(props) {
     </Card>
   );
 }
-PortfolioCard.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
-};
+
 export default PortfolioCard;

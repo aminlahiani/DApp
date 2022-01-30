@@ -4,10 +4,7 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
-import TeamCard from "components/Cards/TeamCard";
+import TeamCard from "../Cards/TeamCard";
 
 function AboutTeamList(props) {
   const { data } = props;
@@ -39,11 +36,4 @@ function AboutTeamList(props) {
   );
 }
 
-AboutTeamList.propTypes = {
-  data: PropTypes.shape({
-    heading: PropTypes.string.isRequired,
-    subHeding: PropTypes.string.isRequired,
-    teamlist: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)),
-  }).isRequired,
-};
 export default AboutTeamList;

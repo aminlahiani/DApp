@@ -7,9 +7,6 @@ import { Link as RouterLink } from "react-router-dom";
 // typed-js
 import * as Typed from "typed.js";
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 function ServisesHero(props) {
   const { data, nomobileimg } = props;
   const theme = useTheme();
@@ -102,21 +99,4 @@ function ServisesHero(props) {
   );
 }
 
-ServisesHero.defaultProps = {
-  nomobileimg: false,
-};
-ServisesHero.propTypes = {
-  data: PropTypes.shape({
-    heading: PropTypes.string,
-    headingtypedJS: PropTypes.arrayOf(PropTypes.string),
-    subHeding: PropTypes.string,
-    btnText: PropTypes.string,
-    btnUrl: PropTypes.string,
-    btnVariant: PropTypes.string,
-    image: PropTypes.string,
-    imageDark: PropTypes.string,
-    shortDescription: PropTypes.string,
-  }).isRequired,
-  nomobileimg: PropTypes.bool,
-};
 export default ServisesHero;

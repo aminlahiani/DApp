@@ -8,9 +8,6 @@ import { useTheme } from "@mui/material/styles";
 // @mui icons
 import PlaylistAddCheckCircleIcon from "@mui/icons-material/PlaylistAddCheckCircle";
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 function AboutThree(props) {
   const { data } = props;
   const theme = useTheme();
@@ -67,15 +64,5 @@ function AboutThree(props) {
     </Box>
   );
 }
-
-AboutThree.propTypes = {
-  data: PropTypes.shape({
-    heading: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    imageDark: PropTypes.string.isRequired,
-    subHeading: PropTypes.string.isRequired,
-    featuring: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
-  }).isRequired,
-};
 
 export default AboutThree;

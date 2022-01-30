@@ -1,12 +1,12 @@
 // Blogs page components
-import BlogsHero from "components/Blogs/BlogsHero";
-import BlogsList from "components/Blogs/BlogsList";
-import Newsletter from "components/Newsletter";
-import ReactHelmet from "components/ReactHelmet";
+import BlogsHero from "../components/Blogs/BlogsHero";
+import BlogsList from "../components/Blogs/BlogsList";
+import Newsletter from "../components/Newsletter";
+import ReactHelmet from "../components/ReactHelmet";
 
 // Blogs page data
-import BlogsHeroData from "data/Blogs/blog-hero-data.json";
-import BlogsData from "data/Blogs/blogs-data.json";
+import BlogsHeroData from "../data/Blogs/blog-hero-data.json";
+import BlogsData from "../data/Blogs/blogs-data.json";
 
 function Blogs() {
   return (

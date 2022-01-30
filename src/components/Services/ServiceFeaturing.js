@@ -5,9 +5,6 @@ import { useTheme } from "@mui/material/styles";
 // @mui icons
 import PlaylistAddCheckCircleIcon from "@mui/icons-material/PlaylistAddCheckCircle";
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 function ServiceFeaturing(props) {
   const theme = useTheme();
   const { data } = props;
@@ -81,17 +78,4 @@ function ServiceFeaturing(props) {
   );
 }
 
-ServiceFeaturing.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
-};
-ServiceFeaturing.propTypes = {
-  //  data: PropTypes.objectOf(PropTypes.string, PropTypes.array).isRequired,
-  data: PropTypes.shape({
-    heading: PropTypes.string,
-    shortDescription: PropTypes.string,
-    imglight: PropTypes.string,
-    imgdark: PropTypes.string,
-    featuring: PropTypes.arrayOf(PropTypes.string),
-  }).isRequired,
-};
 export default ServiceFeaturing;

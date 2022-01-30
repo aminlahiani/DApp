@@ -2,9 +2,6 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 function HomeAbout(props) {
   const { data } = props;
   const theme = useTheme();
@@ -89,16 +86,4 @@ function HomeAbout(props) {
   );
 }
 
-HomeAbout.propTypes = {
-  data: PropTypes.PropTypes.shape({
-    headingOne: PropTypes.string.isRequired,
-    shortDescriptionOne: PropTypes.string.isRequired,
-    headingTow: PropTypes.string.isRequired,
-    shortDescriptionTwo: PropTypes.string.isRequired,
-    headingThree: PropTypes.string.isRequired,
-    shortDescriptionThree: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    imageDark: PropTypes.string.isRequired,
-  }).isRequired,
-};
 export default HomeAbout;
