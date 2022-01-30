@@ -30,11 +30,24 @@ function PortfolioDetailsContent(props) {
         </Typography>
 
         <Grid container spacing={5} mt={3}>
-          {data.images.map((item) => (
-            <Grid key={item} xs={12} lg={6} item>
-              <Box sx={{ borderRadius: 3 }} component="img" src={item} alt="macbook" width="100%" />
-            </Grid>
-          ))}
+          <Grid xs={12} lg={6} item>
+            <Box
+              sx={{ borderRadius: 3 }}
+              component="img"
+              src={data.imageOne}
+              alt="macbook"
+              width="100%"
+            />
+          </Grid>
+          <Grid xs={12} lg={6} item>
+            <Box
+              sx={{ borderRadius: 3 }}
+              component="img"
+              src={data.imageTwo}
+              alt="macbook"
+              width="100%"
+            />
+          </Grid>
         </Grid>
         <Typography color="textPrimary" sx={{ mt: 3 }} variant="h4">
           {data.subtitle}

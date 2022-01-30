@@ -30,6 +30,6 @@ function PortfolioList(props) {
 }
 
 PortfolioList.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  data: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
 };
 export default PortfolioList;

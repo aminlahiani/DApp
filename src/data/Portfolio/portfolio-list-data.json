@@ -6,7 +6,9 @@
     "image": "/static/portfolio/portfolio_one.jpg",
     "shortDescription": "Aliquam dapibus elementum nulla at malesuada. Ut mi nisl, aliquet non mollis vel, feugiat non nibh. Vivamus sit amet tristique .",
     "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
-    "images": ["/static/portfolio/portfolio_one1.jpg", "/static/portfolio/portfolio_one2.jpg"],
+    "imageOne": "/static/portfolio/portfolio_one1.jpg",
+    "imageTwo": "/static/portfolio/portfolio_one2.jpg",
+
     "subtitle": "We develop creative solutions",
     "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed."
   },
@@ -17,7 +19,8 @@
     "image": "/static/portfolio/portfolio_two.jpg",
     "shortDescription": "Aliquam dapibus elementum nulla at malesuada. Ut mi nisl, aliquet non mollis vel, feugiat non nibh. Vivamus sit amet tristique .",
     "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
-    "images": ["/static/portfolio/portfolio_two1.jpg", "/static/portfolio/portfolio_two2.jpg"],
+    "imageOne": "/static/portfolio/portfolio_one1.jpg",
+    "imageTwo": "/static/portfolio/portfolio_two2.jpg",
     "subtitle": "We develop creative solutions",
     "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed."
   },
@@ -28,7 +31,8 @@
     "image": "/static/portfolio/portfolio_three.jpg",
     "shortDescription": "Aliquam dapibus elementum nulla at malesuada. Ut mi nisl, aliquet non mollis vel, feugiat non nibh. Vivamus sit amet tristique .",
     "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
-    "images": ["/static/portfolio/portfolio_three1.jpg", "/static/portfolio/portfolio_three2.jpg"],
+    "imageOne": "/static/portfolio/portfolio_three1.jpg",
+    "imageTwo": "/static/portfolio/portfolio_three2.jpg",
     "subtitle": "We develop creative solutions",
     "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed."
   },
@@ -39,7 +43,8 @@
     "image": "/static/portfolio/portfolio_four.jpg",
     "shortDescription": "Aliquam dapibus elementum nulla at malesuada. Ut mi nisl, aliquet non mollis vel, feugiat non nibh. Vivamus sit amet tristique .",
     "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
-    "images": ["/static/portfolio/portfolio_four1.jpg", "/static/portfolio/portfolio_four2.jpg"],
+    "imageOne": "/static/portfolio/portfolio_four1.jpg",
+    "imageTwo": "/static/portfolio/portfolio_four2.jpg",
     "subtitle": "We develop creative solutions",
     "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed."
   },
@@ -50,7 +55,8 @@
     "image": "/static/portfolio/portfolio_five.jpg",
     "shortDescription": "Aliquam dapibus elementum nulla at malesuada. Ut mi nisl, aliquet non mollis vel, feugiat non nibh. Vivamus sit amet tristique .",
     "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
-    "images": ["/static/portfolio/portfolio_five1.jpg", "/static/portfolio/portfolio_five2.jpg"],
+    "imageOne": "/static/portfolio/portfolio_five1.jpg",
+    "imageTwo": "/static/portfolio/portfolio_five2.jpg",
     "subtitle": "We develop creative solutions",
     "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed."
   },
@@ -61,7 +67,8 @@
     "image": "/static/portfolio/portfolio_six.jpg",
     "shortDescription": "Aliquam dapibus elementum nulla at malesuada. Ut mi nisl, aliquet non mollis vel, feugiat non nibh. Vivamus sit amet tristique .",
     "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
-    "images": ["/static/portfolio/portfolio_six1.jpg", "/static/portfolio/portfolio_six2.jpg"],
+    "imageOne": "/static/portfolio/portfolio_six1.jpg",
+    "imageTwo": "/static/portfolio/portfolio_six2.jpg",
     "subtitle": "We develop creative solutions",
     "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed."
   }
