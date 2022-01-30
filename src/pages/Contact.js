@@ -14,7 +14,7 @@ function Contact() {
     <div>
       {/* {JSON.stringify(ContactHeroData)} */}
       <div data-aos="fade-up">
-        <ContactHero data={ContactHeroData} />
+        <ContactHero nomobileimg data={ContactHeroData} />
       </div>
       <div data-aos="fade-up">
         <ContactForm data={ContactFormData} />

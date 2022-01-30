@@ -15,11 +15,10 @@ function BlogsHero(props) {
     <Box
       sx={{
         background: theme.palette.primary.mainGradient,
-        height: { xs: nomobileimg ? "80vh" : "100vh", md: "584px" },
-
+        minHeight: "584px",
         display: "flex",
         justifyContent: "center",
-        alignItems: { xs: "center", md: "center" },
+        alignItems: "center",
       }}
     >
       <Container maxWidth="lg">
@@ -36,7 +35,11 @@ function BlogsHero(props) {
             }}
           >
             <div>
-              <Typography color="textPrimary" variant="h1">
+              <Typography
+                textAlign={{ xs: "center", md: "start" }}
+                color="textPrimary"
+                variant="h1"
+              >
                 {data.heading}
               </Typography>
               <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">

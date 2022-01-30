@@ -8,7 +8,6 @@ function BlogDetailsHero() {
   return (
     <Box
       minHeight="50vh"
-      width="100%"
       sx={{
         backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.4),  rgba(0,0,0,0.9)), url(${bgImage})`,
         backgroundSize: "cover",

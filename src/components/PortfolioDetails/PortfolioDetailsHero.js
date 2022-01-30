@@ -9,11 +9,10 @@ function PortfolioDetailsHero() {
     <Box
       sx={{
         background: theme.palette.primary.mainGradient,
-        py: 2,
-        height: "50vh",
+        minHeight: "50vh",
         display: "flex",
         justifyContent: "center",
-        alignItems: { xs: "baseline", md: "center" },
+        alignItems: "center",
       }}
     >
       <Container

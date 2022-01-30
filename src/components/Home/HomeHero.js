@@ -72,6 +72,7 @@ function HomeHero(props) {
                 }}
               >
                 <Button
+                  sx={{ flexGrow: 0.3 }}
                   to={data.btnOneUrl}
                   component={RouterLink}
                   size="large"
@@ -82,6 +83,7 @@ function HomeHero(props) {
                   {data.btnOneText}
                 </Button>
                 <Button
+                  sx={{ flexGrow: 1 }}
                   to={data.btnTwoUrl}
                   component={RouterLink}
                   size="large"

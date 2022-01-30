@@ -12,7 +12,7 @@ function PortfolioList(props) {
     <Box
       sx={{
         backgroundColor: "background.default",
-        minHeight: "100%",
+        minHeight: "50vh",
         py: 6,
       }}
     >

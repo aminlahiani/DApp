@@ -30,12 +30,10 @@ function FAQHero(props) {
     <Box
       sx={{
         background: theme.palette.primary.mainGradient,
-        py: 2,
-        height: { xs: "25vh", md: "50vh" },
-
+        minHeight: "50vh",
         display: "flex",
         justifyContent: "center",
-        alignItems: { xs: "baseline", md: "center" },
+        alignItems: "center",
       }}
     >
       <Container
