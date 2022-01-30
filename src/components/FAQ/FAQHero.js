@@ -59,6 +59,11 @@ function FAQHero(props) {
 }
 
 FAQHero.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  data: PropTypes.shape({
+    heading: PropTypes.string.isRequired,
+    shortDescription: PropTypes.string.isRequired,
+    headingtypedJS: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+  }).isRequired,
 };
+
 export default FAQHero;

@@ -1,20 +1,5 @@
 {
-  "heading": "The powerful and flexible theme for all kinds of businesses",
-  "shortDescription": " Send one-off and automated email, push, and in-app messages to people. Create betterstories.",
-  "featuring": [
-    "JavaScript",
-    "TypeScript",
-    "Figma",
-    "Sketch",
-    "JavaScript",
-    "TypeScript",
-    "Figma",
-    "Sketch",
-    "JavaScript",
-    "TypeScript",
-    "Figma",
-    "Sketch"
-  ],
+
   "imgdark": "/static/contact/contact_info_dark.png",
   "imglight": "/static/contact/contact_info_light.png",
   "infoquot": "Everyone thinks of changing the world, but no one thinks of changing himself",

@@ -110,7 +110,15 @@ ContactHero.defaultProps = {
   nomobileimg: false,
 };
 ContactHero.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  data: PropTypes.shape({
+    heading: PropTypes.string.isRequired,
+    shortDescription: PropTypes.string.isRequired,
+    btnText: PropTypes.string.isRequired,
+    btnUrl: PropTypes.string.isRequired,
+    btnVariant: PropTypes.string.isRequired,
+    imagesrc: PropTypes.string.isRequired,
+    imgdark: PropTypes.string.isRequired,
+  }).isRequired,
   nomobileimg: PropTypes.bool,
 };
 export default ContactHero;

@@ -54,6 +54,18 @@ function ServiceDetailsContent(props) {
 }
 
 ServiceDetailsContent.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  data: PropTypes.shape({
+    image: PropTypes.string.isRequired,
+    paragraphOne: PropTypes.string.isRequired,
+    paragraphTwo: PropTypes.string.isRequired,
+    shortDescriptionBack: PropTypes.string.isRequired,
+    shortDescriptionFront: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+  }).isRequired,
 };
+
+// ServiceDetailsContent.propTypes = {
+//   data: PropTypes.objectOf(PropTypes.string).isRequired,
+// };
 export default ServiceDetailsContent;

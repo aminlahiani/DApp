@@ -75,6 +75,22 @@ function BlogDetailsContent(props) {
 }
 
 BlogDetailsContent.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  data: PropTypes.shape({
+    authorname: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    paragraphFour: PropTypes.string.isRequired,
+    paragraphOne: PropTypes.string.isRequired,
+    paragraphThree: PropTypes.string.isRequired,
+    paragraphTwo: PropTypes.string.isRequired,
+    publishedAt: PropTypes.string.isRequired,
+    subtitleOne: PropTypes.string.isRequired,
+    subtitleTwo: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+  }).isRequired,
 };
+
+// BlogDetailsContent.propTypes = {
+//   data: PropTypes.objectOf(PropTypes.string).isRequired,
+// };
 export default BlogDetailsContent;

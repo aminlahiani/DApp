@@ -48,7 +48,15 @@ function FaqList(props) {
     </Box>
   );
 }
+
 FaqList.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      ques: PropTypes.string.isRequired,
+      ans: PropTypes.string.isRequired,
+    }).isRequired
+  ).isRequired,
 };
+
 export default FaqList;

@@ -74,8 +74,6 @@ function ContactInfo(props) {
 ContactInfo.propTypes = {
   //  data: PropTypes.objectOf(PropTypes.string, PropTypes.array).isRequired,
   data: PropTypes.shape({
-    heading: PropTypes.string,
-    shortDescription: PropTypes.string,
     imglight: PropTypes.string,
     imgdark: PropTypes.string,
     infoquot: PropTypes.string,
@@ -85,9 +83,8 @@ ContactInfo.propTypes = {
         baseicon: PropTypes.string,
         icon: PropTypes.string,
         infocontent: PropTypes.string,
-      })
-    ),
-    featuring: PropTypes.arrayOf(PropTypes.string),
+      }).isRequired
+    ).isRequired,
   }).isRequired,
 };
 

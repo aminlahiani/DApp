@@ -57,7 +57,13 @@ function ContactForm(props) {
     </Box>
   );
 }
+
 ContactForm.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  data: PropTypes.shape({
+    heading: PropTypes.string.isRequired,
+    msg: PropTypes.string.isRequired,
+    shortDescription: PropTypes.string.isRequired,
+  }).isRequired,
 };
+
 export default ContactForm;

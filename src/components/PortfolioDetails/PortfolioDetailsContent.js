@@ -61,6 +61,15 @@ function PortfolioDetailsContent(props) {
 }
 
 PortfolioDetailsContent.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  data: PropTypes.shape({
+    image: PropTypes.string.isRequired,
+    imageOne: PropTypes.string.isRequired,
+    imageTwo: PropTypes.string.isRequired,
+    paragraphOne: PropTypes.string.isRequired,
+    paragraphTwo: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+  }).isRequired,
 };
+
 export default PortfolioDetailsContent;
