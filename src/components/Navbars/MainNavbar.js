@@ -17,7 +17,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import NightsStayOutlinedIcon from "@mui/icons-material/NightsStayOutlined";
 
 import { useTheme } from "@mui/material";
-import ColorModeContext from "contexts/ColorModeContext";
+import ColorModeContext from "assets/theme/contexts/ColorModeContext";
 
 const pages = [
   { id: 1, title: "Home", href: "/" },
