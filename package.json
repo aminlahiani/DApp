@@ -21,7 +21,6 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
-    "date-fns": "^2.28.0",
     "prop-types": "^15.8.1",
     "react": "latest",
     "react-dom": "latest",
