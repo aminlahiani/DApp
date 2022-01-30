@@ -1,7 +1,7 @@
 import * as React from "react";
 import ReactDOM from "react-dom";
 import CssBaseline from "@mui/material/CssBaseline";
-import AppThemeProvider from "theme/AppThemeProvider";
+import AppThemeProvider from "assets/theme/AppThemeProvider";
 import reportWebVitals from "reportWebVitals";
 import App from "./App";
 
