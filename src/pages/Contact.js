@@ -1,31 +1,36 @@
-// Contact page components
+// Contact  components
 import ContactHero from "components/Contact/ContactHero";
 import ContactForm from "components/Contact/ContactForm";
 import ContactInfo from "components/Contact/ContactInfo";
-import CtaNewsletter from "components/Cta/CtaNewsletter";
+import Newsletter from "components/Newsletter";
+import ReactHelmet from "components/ReactHelmet";
 
-// Contact page data
+// Contact data
 import ContactHeroData from "data/Contact/contact-hero-data.json";
 import ContactFormData from "data/Contact/contact-form-data.json";
 import ContactInfoData from "data/Contact/contact-info-data.json";
 
 function Contact() {
   return (
-    <div>
-      {/* {JSON.stringify(ContactHeroData)} */}
+    <>
+      <ReactHelmet title="Contact" />
+      {/* Hero Section */}
       <div data-aos="fade-up">
         <ContactHero nomobileimg data={ContactHeroData} />
       </div>
+      {/* Contact Form Section */}
       <div data-aos="fade-up">
         <ContactForm data={ContactFormData} />
       </div>
+      {/* Contact Info Section */}
       <div data-aos="fade-up">
         <ContactInfo data={ContactInfoData} />
       </div>
+      {/* Newsletter Section  */}
       <div data-aos="fade-up">
-        <CtaNewsletter />
+        <Newsletter />
       </div>
-    </div>
+    </>
   );
 }
 

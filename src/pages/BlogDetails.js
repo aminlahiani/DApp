@@ -8,6 +8,8 @@ import { useParams } from "react-router-dom";
 import BlogDetailsHero from "components/BlogDetails/BlogDetailsHero";
 import BlogDetailsContent from "components/BlogDetails/BlogDetailsContent";
 import RecentPostsList from "components/BlogDetails/RecentPostsList";
+import Newsletter from "components/Newsletter";
+import ReactHelmet from "components/ReactHelmet";
 
 // BlogDetails page data
 import BlogsData from "data/Blogs/blogs-data.json";
@@ -18,20 +20,32 @@ function BlogDetails() {
   const data = BlogsData.filter((blog) => blog.id === postId);
 
   return (
-    <div>
-      <BlogDetailsHero />
-
-      <Container maxWidth="lg">
-        <Grid container spacing={3}>
-          <Grid item md={8} xs={12}>
-            <BlogDetailsContent data={data[0]} />
+    <>
+      <ReactHelmet title="Blog Details" />
+      {/* Hero Section */}
+      <div data-aos="fade-up">
+        <BlogDetailsHero />
+      </div>
+      {/* Blog Details  Section */}
+      <div data-aos="fade-up">
+        <Container maxWidth="lg">
+          <Grid container spacing={3}>
+            <Grid item md={8} xs={12}>
+              {/* Blog Details Content  */}
+              <BlogDetailsContent data={data[0]} />
+            </Grid>
+            <Grid item md={4} xs={12}>
+              {/* Recent Posts List  */}
+              <RecentPostsList data={BlogsData} />
+            </Grid>
           </Grid>
-          <Grid item md={4} xs={12}>
-            <RecentPostsList data={BlogsData} />
-          </Grid>
-        </Grid>
-      </Container>
-    </div>
+        </Container>
+      </div>
+      {/* Newsletter Section  */}
+      <div data-aos="fade-up">
+        <Newsletter />
+      </div>
+    </>
   );
 }
 

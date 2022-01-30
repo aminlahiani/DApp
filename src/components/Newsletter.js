@@ -1,7 +1,7 @@
 import { Box, Button, Container, Grid, TextField, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-function CtaNewsletter() {
+function Newsletter() {
   const theme = useTheme();
   const imgdark = "/static/newsletter/newsletter_dark.svg";
   const imgligth = "/static/newsletter/newsletter_light.svg";
@@ -84,4 +84,4 @@ function CtaNewsletter() {
   );
 }
 
-export default CtaNewsletter;
+export default Newsletter;

@@ -4,6 +4,8 @@ import { Container } from "@mui/material";
 // FAQ page components
 import FAQHero from "components/FAQ/FAQHero";
 import FaqList from "components/FAQ/FaqList";
+import ReactHelmet from "components/ReactHelmet";
+import Newsletter from "components/Newsletter";
 
 // FAQ page data
 import FAQHeroData from "data/FAQ/faq-hero-data.json";
@@ -12,12 +14,20 @@ import FaqListData from "data/FAQ/faq-list-data.json";
 function FAQ() {
   return (
     <>
-      {/* {JSON.stringify(FaqListData)} */}
-      <FAQHero data={FAQHeroData} />
-
-      <Container maxWidth="md" sx={{ py: 3 }}>
-        <FaqList data={FaqListData} />
-      </Container>
+      <ReactHelmet title="FAQ" />
+      {/* Hero Section */}
+      <div data-aos="fade-up">
+        <FAQHero data={FAQHeroData} />
+      </div>
+      <div data-aos="fade-up">
+        <Container maxWidth="md" sx={{ py: 3 }}>
+          <FaqList data={FaqListData} />
+        </Container>
+      </div>
+      {/* Newsletter  Section */}
+      <div data-aos="fade-up">
+        <Newsletter />
+      </div>
     </>
   );
 }
