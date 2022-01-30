@@ -5,20 +5,15 @@ import { Box } from "@mui/material";
 
 function MainLayout() {
   return (
-    <>
-      {/* <ButtonAppBar/> */}
-      <Box
-        sx={{
-          backgroundColor: "background.default",
-          // paddingTop: '59px'
-        }}
-      >
-        <MainNavbar />
-
-        <Outlet />
-        <MainFooter />
-      </Box>
-    </>
+    <Box
+      sx={{
+        backgroundColor: "background.default",
+      }}
+    >
+      <MainNavbar />
+      <Outlet />
+      <MainFooter />
+    </Box>
   );
 }
 
