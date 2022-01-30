@@ -2,16 +2,15 @@
   "heading": "We already completed 470 projects successfully and more counting.",
   "featuring": [
     {
-      "id" : "1",
+      "id": "1",
       "title": "4.5k+",
       "subtitle": "Happy customers",
-
       "baseicon": "fab",
       "icon": "fa-facebook-square",
       "iconbgColor": "primary.main"
     },
     {
-      "id" : "2",
+      "id": "2",
       "title": "4.9/5",
       "subtitle": "CUSTOMER Rating",
       "baseicon": "fab",
@@ -19,7 +18,7 @@
       "iconbgColor": "secondary.main"
     },
     {
-      "id" : "3",
+      "id": "3",
       "title": "$10k+",
       "subtitle": "In people hours saved",
       "baseicon": "fab",

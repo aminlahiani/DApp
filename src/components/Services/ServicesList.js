@@ -53,7 +53,10 @@ ServicesList.propTypes = {
   data: PropTypes.shape({
     heading: PropTypes.string,
     shortDescription: PropTypes.string,
-    serviceslist: PropTypes.arrayOf(PropTypes.object),
+    // serviceslist: PropTypes.arrayOf(PropTypes.string),
+    // serviceslist: PropTypes.array.isRequired,
+
+    serviceslist: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)),
   }).isRequired,
 };
 export default ServicesList;

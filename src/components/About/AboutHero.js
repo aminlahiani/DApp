@@ -101,14 +101,23 @@ function AboutHero(props) {
 }
 
 AboutHero.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      heading: PropTypes.string.isRequired,
+      shortDescription: PropTypes.string.isRequired,
+      keyword: PropTypes.string.isRequired,
+      img: PropTypes.string.isRequired,
+      socialIcons: PropTypes.arrayOf(
+        PropTypes.shape({
+          id: PropTypes.string.isRequired,
+          baseicon: PropTypes.string.isRequired,
+          icon: PropTypes.string.isRequired,
+          label: PropTypes.string.isRequired,
+          href: PropTypes.string.isRequired,
+        }).isRequired
+      ).isRequired,
+    }).isRequired
+  ).isRequired,
 };
-// AboutHero.propTypes = {
-//   //  data: PropTypes.objectOf(PropTypes.string, PropTypes.array).isRequired,
-//   data: PropTypes.shape({
-//     heading: PropTypes.string,
-//     shortDescription: PropTypes.string,
-//     serviceslist: PropTypes.arrayOf(PropTypes.object),
-//   }).isRequired,
-// };
 export default AboutHero;

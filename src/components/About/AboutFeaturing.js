@@ -59,19 +59,18 @@ function AboutFeaturing(props) {
     </Box>
   );
 }
-
 AboutFeaturing.propTypes = {
-  //  data: PropTypes.objectOf(PropTypes.string, PropTypes.array).isRequired,
   data: PropTypes.shape({
     heading: PropTypes.string,
-    featuring: PropTypes.arrayOf(PropTypes.string),
-    // featuring: PropTypes.shape({
-    //   id: PropTypes.string,
-    //   title: PropTypes.string,
-    //   icon: PropTypes.string,
-    //   baseicon: PropTypes.string,
-    //   iconbgColor: PropTypes.string,
-    // }),
+    featuring: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        subtitle: PropTypes.string.isRequired,
+        baseicon: PropTypes.string.isRequired,
+        iconbgColor: PropTypes.string.isRequired,
+      }).isRequired
+    ).isRequired,
   }).isRequired,
 };
 

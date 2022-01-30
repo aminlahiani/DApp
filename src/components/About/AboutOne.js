@@ -98,6 +98,17 @@ function AboutOne(props) {
 }
 
 AboutOne.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  data: PropTypes.shape({
+    heading: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    imageDark: PropTypes.string.isRequired,
+    content: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        paragraph: PropTypes.string.isRequired,
+      }).isRequired
+    ).isRequired,
+  }).isRequired,
 };
+
 export default AboutOne;

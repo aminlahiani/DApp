@@ -128,7 +128,24 @@ function ServiceCardOne(props) {
     </Box>
   );
 }
+// ServiceCardOne.propTypes = {
+//   data: PropTypes.objectOf(PropTypes.string).isRequired,
+// };
 ServiceCardOne.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  //  data: PropTypes.objectOf(PropTypes.string, PropTypes.array).isRequired,
+  data: PropTypes.shape({
+    id: PropTypes.string,
+    title: PropTypes.string,
+    shortDescriptionFront: PropTypes.string,
+    shortDescriptionBack: PropTypes.string,
+    paragraphOne: PropTypes.string,
+    subtitle: PropTypes.string,
+    paragraphTwo: PropTypes.string,
+    baseicon: PropTypes.string,
+    icon: PropTypes.string,
+    image: PropTypes.string,
+    // serviceslist: PropTypes.arrayOf(PropTypes.string),
+    // serviceslist: PropTypes.array.isRequired,
+  }).isRequired,
 };
 export default ServiceCardOne;

@@ -87,7 +87,7 @@ function HomeHero(props) {
                   size="large"
                   variant={data.btnTwoVariant}
                   fullWidth={isXs}
-                  color={data.btntwoColor}
+                  color={data.btnTwoColor}
                 >
                   {data.btnTwoText}
                 </Button>
@@ -123,8 +123,25 @@ function HomeHero(props) {
 HomeHero.defaultProps = {
   nomobileimg: false,
 };
+
 HomeHero.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  data: PropTypes.PropTypes.shape({
+    btnOneColor: PropTypes.string.isRequired,
+    btnOneText: PropTypes.string.isRequired,
+    btnOneUrl: PropTypes.string.isRequired,
+    btnOneVariant: PropTypes.string.isRequired,
+    btnTwoColor: PropTypes.string.isRequired,
+    btnTwoText: PropTypes.string.isRequired,
+    btnTwoUrl: PropTypes.string.isRequired,
+    btnTwoVariant: PropTypes.string.isRequired,
+    heading: PropTypes.string.isRequired,
+    headingPartOne: PropTypes.string.isRequired,
+    hedinPartThree: PropTypes.string.isRequired,
+    hedingPartTwo: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    imageDark: PropTypes.string.isRequired,
+    subHeading: PropTypes.string.isRequired,
+  }).isRequired,
   nomobileimg: PropTypes.bool,
 };
 

@@ -69,6 +69,13 @@ function AboutThree(props) {
 }
 
 AboutThree.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  data: PropTypes.shape({
+    heading: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    imageDark: PropTypes.string.isRequired,
+    subHeading: PropTypes.string.isRequired,
+    featuring: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+  }).isRequired,
 };
+
 export default AboutThree;

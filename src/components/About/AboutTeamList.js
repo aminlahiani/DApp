@@ -40,6 +40,10 @@ function AboutTeamList(props) {
 }
 
 AboutTeamList.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  data: PropTypes.shape({
+    heading: PropTypes.string.isRequired,
+    subHeding: PropTypes.string.isRequired,
+    teamlist: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)),
+  }).isRequired,
 };
 export default AboutTeamList;

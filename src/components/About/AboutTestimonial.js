@@ -51,6 +51,11 @@ function AboutTestimonial(props) {
 }
 
 AboutTestimonial.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  data: PropTypes.shape({
+    avatar: PropTypes.string.isRequired,
+    designation: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    testimonial: PropTypes.string.isRequired,
+  }).isRequired,
 };
 export default AboutTestimonial;

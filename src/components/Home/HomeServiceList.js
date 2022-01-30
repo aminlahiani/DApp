@@ -6,7 +6,7 @@ import ServiceCardTwo from "components/Cards/ServiceCardTwo";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
-function ServiceList(props) {
+function HomeServiceList(props) {
   const { data } = props;
   return (
     <Box
@@ -45,7 +45,15 @@ function ServiceList(props) {
     </Box>
   );
 }
-ServiceList.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
+HomeServiceList.propTypes = {
+  //  data: PropTypes.objectOf(PropTypes.string, PropTypes.array).isRequired,
+  data: PropTypes.shape({
+    heading: PropTypes.string,
+    subHeading: PropTypes.string,
+    // serviceslist: PropTypes.arrayOf(PropTypes.string),
+    // serviceslist: PropTypes.array.isRequired,
+    services: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)),
+  }).isRequired,
 };
-export default ServiceList;
+
+export default HomeServiceList;

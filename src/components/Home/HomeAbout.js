@@ -88,7 +88,17 @@ function HomeAbout(props) {
     </Box>
   );
 }
+
 HomeAbout.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  data: PropTypes.PropTypes.shape({
+    headingOne: PropTypes.string.isRequired,
+    shortDescriptionOne: PropTypes.string.isRequired,
+    headingTow: PropTypes.string.isRequired,
+    shortDescriptionTwo: PropTypes.string.isRequired,
+    headingThree: PropTypes.string.isRequired,
+    shortDescriptionThree: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    imageDark: PropTypes.string.isRequired,
+  }).isRequired,
 };
 export default HomeAbout;

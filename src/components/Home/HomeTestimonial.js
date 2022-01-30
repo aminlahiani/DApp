@@ -76,6 +76,15 @@ function HomeTestimonial(props) {
 }
 
 HomeTestimonial.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      avatar: PropTypes.string.isRequired,
+      designation: PropTypes.string.isRequired,
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      testimonial: PropTypes.string.isRequired,
+    }).isRequired
+  ).isRequired,
 };
+
 export default HomeTestimonial;

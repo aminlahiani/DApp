@@ -56,7 +56,16 @@ function HomeLatestPosts(props) {
   );
 }
 HomeLatestPosts.propTypes = {
-  data: PropTypes.objectOf(PropTypes.string).isRequired,
+  data: PropTypes.shape({
+    btnColor: PropTypes.string.isRequired,
+    btnText: PropTypes.string.isRequired,
+    btnUrl: PropTypes.string.isRequired,
+    btnVariant: PropTypes.string.isRequired,
+    heading: PropTypes.string.isRequired,
+    // serviceslist: PropTypes.arrayOf(PropTypes.string),
+    // serviceslist: PropTypes.array.isRequired,
+    posts: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
+  }).isRequired,
 };
 
 export default HomeLatestPosts;
