@@ -1,6 +1,11 @@
+// react-router-dom components
 import { Outlet } from "react-router-dom";
-import NotFondFooter from "../components/Footers/NotFondFooter";
+
+// NotFond Navbar
 import NotFondNav from "../components/Navbars/NotFondNav";
+
+// NotFond  Footer
+import NotFondFooter from "../components/Footers/NotFondFooter";
 
 function NotFondLayout() {
   return (
