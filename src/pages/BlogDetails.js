@@ -22,28 +22,31 @@ function BlogDetails() {
 
   return (
     <>
-      {/* React Helmet to manage structured data tags */}
+      {/* React Helmet : src > components > ReactHelmet  */}
       <ReactHelmet title="Blog Details" />
-      {/* Hero Section */}
+
+      {/* Hero Section : src > components > BlogDetails > BlogDetailsHero */}
       <div data-aos="fade-up">
         <BlogDetailsHero />
       </div>
+
       {/* Blog Details  Section */}
       <div data-aos="fade-up">
         <Container maxWidth="lg">
           <Grid container spacing={3}>
             <Grid item md={8} xs={12}>
-              {/* Blog Details Content  */}
+              {/* Blog Details Content : src > components > BlogDetails > BlogDetailsContent */}
               <BlogDetailsContent data={data[0]} />
             </Grid>
             <Grid item md={4} xs={12}>
-              {/* Recent Posts List  */}
+              {/* Recent Posts List : src > components > BlogDetails > RecentPostsList */}
               <RecentPostsList data={BlogsData} />
             </Grid>
           </Grid>
         </Container>
       </div>
-      {/* Newsletter Section  */}
+
+      {/* Newsletter Section : src > components > Newsletter */}
       <div data-aos="fade-up">
         <Newsletter />
       </div>

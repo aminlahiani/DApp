@@ -17,17 +17,20 @@ function ServiceDetails() {
 
   return (
     <>
-      {/* React Helmet to manage structured data tags */}
+      {/* React Helmet : src > components > ReactHelmet */}
       <ReactHelmet title="Portfolio Details" />
-      {/* Hero Section */}
+
+      {/* Hero Section  : src > components > ServiceDetails > ServiceDetailsHero */}
       <div data-aos="fade-up">
         <ServiceDetailsHero />
       </div>
-      {/* Service Details  Section */}
+
+      {/* Service Details  Section : src > components > ServiceDetails > ServiceDetailsContent */}
       <div data-aos="fade-up">
         <ServiceDetailsContent data={data[0]} />
       </div>
-      {/* Newsletter Section  */}
+
+      {/* Newsletter Section : src > components > Newsletter */}
       <div data-aos="fade-up">
         <Newsletter />
       </div>

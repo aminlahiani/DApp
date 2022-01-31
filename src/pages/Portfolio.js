@@ -11,17 +11,20 @@ import PortfolioListData from "../data/Portfolio/portfolio-list-data.json";
 function Portfolio() {
   return (
     <>
-      {/* React Helmet to manage structured data tags */}
+      {/* React Helmet : src > components > ReactHelmet */}
       <ReactHelmet title="Portfolio" />
-      {/* Hero Section */}
+
+      {/* Hero Section : src > components > Portfolio > PortfolioHero */}
       <div data-aos="fade-up">
         <PortfolioHero data={PortfolioHeroData} />
       </div>
-      {/* Hero Section */}
+
+      {/* Portfolio List Section : src > components > Portfolio > PortfolioList */}
       <div data-aos="fade-up">
         <PortfolioList data={PortfolioListData} />
       </div>
-      {/* Newsletter  Section */}
+
+      {/* Newsletter Section : src > components > Newsletter */}
       <div data-aos="fade-up">
         <Newsletter />
       </div>

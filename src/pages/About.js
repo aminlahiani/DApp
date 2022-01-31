@@ -21,37 +21,45 @@ import AboutTeamData from "../data/About/about-team-data.json";
 function About() {
   return (
     <>
-      {/* React Helmet to manage structured data tags */}
+      {/* React Helmet : src > components > ReactHelmet  */}
       <ReactHelmet title="About" />
-      {/* Hero Section */}
+
+      {/* Hero Section : src > components > About > AboutHero */}
       <div data-aos="fade-up">
         <AboutHero data={AboutHeroData} />
       </div>
-      {/* About One Section */}
+
+      {/* About One Section : src > components > About > AboutOne */}
       <div data-aos="fade-up">
         <AboutOne data={AboutOneData} />
       </div>
-      {/* About Two Section */}
+
+      {/* About Two Section : src > components > About > AboutTwo */}
       <div data-aos="fade-up">
         <AboutTwo data={AboutTowData} />
       </div>
-      {/* About Three Section */}
+
+      {/* About Three Section : src > components > About > AboutThree */}
       <div data-aos="fade-up">
         <AboutThree data={AboutThreeData} />
       </div>
-      {/* Featuring Section */}
+
+      {/* Featuring Section : src > components > About > AboutFeaturing */}
       <div data-aos="fade-up">
         <AboutFeaturing data={AboutFeaturingData} />
       </div>
-      {/* Testimonial Section */}
+
+      {/* Testimonial Section : src > components > About > AboutTestimonial */}
       <div data-aos="fade-up">
         <AboutTestimonial data={AboutTestimonialData} />
       </div>
-      {/* Team List Section */}
+
+      {/* Team List Section  : src > components > About > AboutTeamList  */}
       <div data-aos="fade-up">
         <AboutTeamList data={AboutTeamData} />
       </div>
-      {/* Newsletter Section  */}
+
+      {/* Newsletter Section : src > components > Newsletter */}
       <div data-aos="fade-up">
         <Newsletter />
       </div>

@@ -17,29 +17,35 @@ import HomeLatestPostsData from "../data/Home/home-latestposts-data.json";
 function Home() {
   return (
     <>
-      {/* React Helmet to manage structured data tags */}
+      {/* React Helmet : src > components > ReactHelmet */}
       <ReactHelmet title="Home" />
-      {/* Hero Section */}
+
+      {/* Hero Section : src > components > Home > HomeHero */}
       <div data-aos="fade-up">
         <HomeHero nomobileimg data={HomeHeroData} />
       </div>
-      {/* Services List Section  */}
+
+      {/* Services List Section : src > components > Home > HomeServiceList */}
       <div data-aos="fade-up">
         <HomeServiceList data={HomeServicesData} />
       </div>
-      {/* About Us  Section  */}
+
+      {/* About Us  Section : src > components > Home > HomeAbout */}
       <div data-aos="fade-up">
         <HomeAbout data={HomeAboutData} />
       </div>
-      {/* Testimonial Section  */}
+
+      {/* Testimonial Section  : src > components > Home > HomeTestimonial */}
       <div data-aos="fade-up">
         <HomeTestimonial data={HomeTestimonialData} />
       </div>
-      {/* Latest Posts Section  */}
+
+      {/* Latest Posts Section : src > components > Home > HomeLatestPosts */}
       <div data-aos="fade-up">
         <HomeLatestPosts data={HomeLatestPostsData} />
       </div>
-      {/* Newsletter Section  */}
+
+      {/* Newsletter Section : src > components > Newsletter */}
       <div data-aos="fade-up">
         <Newsletter />
       </div>

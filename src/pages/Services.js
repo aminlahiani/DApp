@@ -13,21 +13,25 @@ import ServiceFeaturingData from "../data/Services/services-featuring-data.json"
 function Services() {
   return (
     <>
-      {/* React Helmet to manage structured data tags */}
+      {/* React Helmet : src > components > ReactHelmet */}
       <ReactHelmet title="Services" />
-      {/* Hero Section */}
+
+      {/* Hero Section : src > components > Services > ServisesHero  */}
       <div data-aos="fade-up">
         <ServisesHero nomobileimg data={ServicesHeroData} />
       </div>
-      {/* Services List Section */}
+
+      {/* Services List Section : src > components > Services > ServicesList */}
       <div data-aos="fade-up">
         <ServicesList data={ServicesData} />
       </div>
-      {/* Featuring  Section */}
+
+      {/* Featuring  Section  : src > components > Services > ServiceFeaturing */}
       <div data-aos="fade-up">
         <ServiceFeaturing data={ServiceFeaturingData} />
       </div>
-      {/* Newsletter  Section */}
+
+      {/* Newsletter Section : src > components > Newsletter */}
       <div data-aos="fade-up">
         <Newsletter />
       </div>
