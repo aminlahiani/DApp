@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Portfolio Card
+// Portfolio Card components
 import PortfolioCard from "../Cards/PortfolioCard";
 
 function PortfolioList(props) {
@@ -20,6 +20,7 @@ function PortfolioList(props) {
         <Grid container spacing={3}>
           {data.map((item) => (
             <Grid item key={item.id} md={4} xs={12}>
+              {/* PortfolioCard : src > components > Cards > PortfolioCard */}
               <PortfolioCard data={item} />
             </Grid>
           ))}

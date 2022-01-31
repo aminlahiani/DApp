@@ -5,7 +5,6 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
-
 import { useTheme } from "@mui/material/styles";
 
 function Newsletter() {

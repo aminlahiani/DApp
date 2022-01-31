@@ -4,6 +4,7 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 
+// Team Card components
 import TeamCard from "../Cards/TeamCard";
 
 function AboutTeamList(props) {
@@ -27,6 +28,7 @@ function AboutTeamList(props) {
         <Grid container spacing={3}>
           {data.teamlist.map((item) => (
             <Grid item key={item.id} md={3} sm={3} xs={12}>
+              {/* TeamCard : src > components > Cards > TeamCard */}
               <TeamCard data={item} />
             </Grid>
           ))}

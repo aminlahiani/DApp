@@ -1,3 +1,4 @@
+// react Hooks
 import { useState } from "react";
 
 // @mui material components
@@ -14,6 +15,8 @@ import { useTheme } from "@mui/material/styles";
 function TeamCard(props) {
   const { data } = props;
   const theme = useTheme();
+
+  // Déclare une nouvelle variable d'état, qu’on va appeler « rotate »
   const [rotate, setRotate] = useState(false);
 
   const rotate0 = () => setRotate(false);
@@ -31,7 +34,7 @@ function TeamCard(props) {
           transformStyle: "preserve-3d",
         }}
       >
-        {/* routing team card front  */}
+        {/* Routing Team Card Front  */}
         <Box
           display="flex"
           justifyContent="center"
@@ -83,7 +86,7 @@ function TeamCard(props) {
             </CardContent>
           </Card>
         </Box>
-        {/* routing team card back  */}
+        {/* Routing Team Card Back  */}
 
         <Box
           display="flex"

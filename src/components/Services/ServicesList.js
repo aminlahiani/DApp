@@ -4,7 +4,7 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 
-// Service Card
+// Service Card components
 import ServiceCardOne from "../Cards/ServiceCardOne";
 
 function ServicesList(props) {
@@ -37,6 +37,7 @@ function ServicesList(props) {
         <Grid container spacing={3}>
           {data.serviceslist.map((item) => (
             <Grid key={item.id} item xs={12} md={6} lg={4}>
+              {/* ServiceCard One : src > components > Cards > ServiceCardOne */}
               <ServiceCardOne data={item} />
             </Grid>
           ))}

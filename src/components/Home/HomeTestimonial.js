@@ -8,15 +8,10 @@ import Typography from "@mui/material/Typography";
 import SwiperCore, { Autoplay, Navigation } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-// swiper bundle styles
-import "swiper/css/bundle";
 
-// swiper core styles
-import "swiper/css";
-
-// modules styles
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+// Styles must use direct files imports
+import "swiper/css"; // core Swiper
+import "swiper/css/navigation"; // Navigation module
 
 function HomeTestimonial(props) {
   const { data } = props;

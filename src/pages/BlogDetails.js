@@ -22,6 +22,7 @@ function BlogDetails() {
 
   return (
     <>
+      {/* React Helmet to manage structured data tags */}
       <ReactHelmet title="Blog Details" />
       {/* Hero Section */}
       <div data-aos="fade-up">

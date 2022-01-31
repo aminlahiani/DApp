@@ -1,3 +1,4 @@
+// react Hooks
 import { useState } from "react";
 
 // @mui material components
@@ -11,6 +12,8 @@ import { Link as RouterLink } from "react-router-dom";
 
 function ServiceCardOne(props) {
   const { data } = props;
+
+  // Déclare une nouvelle variable d'état, qu’on va appeler « rotate »
   const [rotate, setRotate] = useState(false);
 
   const rotate0 = () => setRotate(false);
@@ -28,7 +31,7 @@ function ServiceCardOne(props) {
           transformStyle: "preserve-3d",
         }}
       >
-        {/* routing team card front  */}
+        {/* Routing Service Card Front  */}
         <Box
           display="flex"
           justifyContent="center"
@@ -81,8 +84,7 @@ function ServiceCardOne(props) {
             </Typography>
           </Box>
         </Box>
-        {/* routing team card back  */}
-
+        {/* Routing Service Card Back  */}
         <Box
           display="flex"
           justifyContent="center"

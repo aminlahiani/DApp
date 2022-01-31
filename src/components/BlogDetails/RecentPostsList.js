@@ -2,7 +2,7 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
-// Recent Posts List Card
+// Recent Posts List Card components
 import RecentPostCard from "../Cards/RecentPostCard";
 
 function RecentPostsList(props) {
@@ -15,7 +15,10 @@ function RecentPostsList(props) {
       </Typography>
 
       {data.map((item) => (
-        <RecentPostCard key={item.id} data={item} />
+        <div>
+          {/* RecentPostCard : src > components > Cards > TeamCard */}
+          <RecentPostCard key={item.id} data={item} />
+        </div>
       ))}
     </Box>
   );

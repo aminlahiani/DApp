@@ -14,6 +14,7 @@ import FaqListData from "../data/FAQ/faq-list-data.json";
 function FAQ() {
   return (
     <>
+      {/* React Helmet to manage structured data tags */}
       <ReactHelmet title="FAQ" />
       {/* Hero Section */}
       <div data-aos="fade-up">

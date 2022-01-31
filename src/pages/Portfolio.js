@@ -11,6 +11,7 @@ import PortfolioListData from "../data/Portfolio/portfolio-list-data.json";
 function Portfolio() {
   return (
     <>
+      {/* React Helmet to manage structured data tags */}
       <ReactHelmet title="Portfolio" />
       {/* Hero Section */}
       <div data-aos="fade-up">

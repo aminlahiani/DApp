@@ -1,4 +1,7 @@
-import React from "react";
+// react Hooks
+import { useContext, useState } from "react";
+
+// @mui material components
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -9,16 +12,20 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import { useTheme } from "@mui/material";
 
-import { Link } from "react-router-dom";
+// @mui icons
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import GitHubIcon from "@mui/icons-material/GitHub";
-
 import NightsStayOutlinedIcon from "@mui/icons-material/NightsStayOutlined";
 
-import { useTheme } from "@mui/material";
+// react-router-dom components
+import { Link } from "react-router-dom";
+
+// Color Mode Context
 import ColorModeContext from "../../assets/theme/ColorModeContext";
 
+// pages
 const pages = [
   { id: 1, title: "Home", href: "/" },
   { id: 2, title: "About Us", href: "about" },
@@ -31,8 +38,8 @@ const pages = [
 
 function MainNavbar() {
   const theme = useTheme();
-  const colorMode = React.useContext(ColorModeContext);
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const colorMode = useContext(ColorModeContext);
+  const [anchorElNav, setAnchorElNav] = useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);

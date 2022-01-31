@@ -1,3 +1,4 @@
+// react Hooks
 import { useEffect, useRef } from "react";
 
 // @mui material components
@@ -8,7 +9,9 @@ import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import { useTheme } from "@mui/material/styles";
 
+// react-router-dom components
 import { Link as RouterLink } from "react-router-dom";
+
 // typed-js
 import * as Typed from "typed.js";
 

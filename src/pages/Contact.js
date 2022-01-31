@@ -13,6 +13,7 @@ import ContactInfoData from "../data/Contact/contact-info-data.json";
 function Contact() {
   return (
     <>
+      {/* React Helmet to manage structured data tags */}
       <ReactHelmet title="Contact" />
       {/* Hero Section */}
       <div data-aos="fade-up">

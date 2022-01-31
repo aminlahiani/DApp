@@ -17,6 +17,7 @@ import HomeLatestPostsData from "../data/Home/home-latestposts-data.json";
 function Home() {
   return (
     <>
+      {/* React Helmet to manage structured data tags */}
       <ReactHelmet title="Home" />
       {/* Hero Section */}
       <div data-aos="fade-up">

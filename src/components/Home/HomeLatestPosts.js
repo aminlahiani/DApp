@@ -11,7 +11,7 @@ import { ArrowForward } from "@mui/icons-material";
 // react-router-dom components
 import { Link as RouterLink } from "react-router-dom";
 
-// Blog Card
+// Blog Card components
 import BlogCard from "../Cards/BlogCard";
 
 function HomeLatestPosts(props) {
@@ -49,6 +49,7 @@ function HomeLatestPosts(props) {
         <Grid sx={{ mt: 2 }} container spacing={3}>
           {data.posts.map((item) => (
             <Grid item key={item.id} md={4} mt={2} xs={12}>
+              {/* BlogCard : src > components > Cards > BlogCard */}
               <BlogCard data={item} />
             </Grid>
           ))}

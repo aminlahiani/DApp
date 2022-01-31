@@ -8,14 +8,10 @@ import { useTheme } from "@mui/material/styles";
 
 function AboutOne(props) {
   const { data } = props;
-
   const theme = useTheme();
-  // const isXs = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Box
       sx={{
-        // background: theme.palette.primary.mainGradient,
-        // height: { xs: nomobileimg ? "80vh" : "100vh", md: "584px" },
         backgroundColor: "background.default",
         display: "flex",
         justifyContent: "center",

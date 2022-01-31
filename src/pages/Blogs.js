@@ -11,6 +11,7 @@ import BlogsData from "../data/Blogs/blogs-data.json";
 function Blogs() {
   return (
     <>
+      {/* React Helmet to manage structured data tags */}
       <ReactHelmet title="Blogs" />
       {/* Hero Section */}
       <div data-aos="fade-up">

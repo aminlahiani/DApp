@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Blog Card
+// Blog Card components
 import BlogCard from "../Cards/BlogCard";
 
 function BlogsList(props) {
@@ -21,6 +21,7 @@ function BlogsList(props) {
         <Grid container spacing={3}>
           {data.map((item) => (
             <Grid item key={item.id} md={4} mt={2} xs={12}>
+              {/* BlogCard : src > components > Cards > BlogCard */}
               <BlogCard data={item} />
             </Grid>
           ))}

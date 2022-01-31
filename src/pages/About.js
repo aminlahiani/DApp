@@ -21,6 +21,7 @@ import AboutTeamData from "../data/About/about-team-data.json";
 function About() {
   return (
     <>
+      {/* React Helmet to manage structured data tags */}
       <ReactHelmet title="About" />
       {/* Hero Section */}
       <div data-aos="fade-up">

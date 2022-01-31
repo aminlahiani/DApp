@@ -5,7 +5,6 @@ import Icon from "@mui/material/Icon";
 
 function ServiceCardTwo(props) {
   const { data } = props;
-
   return (
     <>
       <Box
@@ -36,7 +35,6 @@ function ServiceCardTwo(props) {
           />
         </Box>
       </Box>
-
       <Typography align="center" variant="h6" color="textPrimary" sx={{ mt: 2.5, mb: 1.5 }}>
         {data.title}
       </Typography>

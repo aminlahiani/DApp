@@ -17,6 +17,7 @@ function ServiceDetails() {
 
   return (
     <>
+      {/* React Helmet to manage structured data tags */}
       <ReactHelmet title="Portfolio Details" />
       {/* Hero Section */}
       <div data-aos="fade-up">
