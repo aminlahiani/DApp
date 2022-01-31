@@ -1,17 +1,16 @@
 // @mui material components
-import {
-  Box,
-  Card,
-  Container,
-  Grid,
-  Typography,
-  CardContent,
-  Icon,
-  List,
-  ListItem,
-  ListItemAvatar,
-  ListItemText,
-} from "@mui/material";
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import Grid from "@mui/material/Grid";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import CardContent from "@mui/material/CardContent";
+import Icon from "@mui/material/Icon";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemAvatar from "@mui/material/ListItemAvatar";
+import ListItemText from "@mui/material/ListItemText";
+
 import { useTheme } from "@mui/material/styles";
 
 function ContactInfo(props) {

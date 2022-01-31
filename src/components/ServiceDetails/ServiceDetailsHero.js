@@ -1,5 +1,7 @@
 // @mui material components
-import { Box, Container, Typography } from "@mui/material";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 
 // image
 import bgImage from "../../assets/images/bg_servicedetails.jpg";

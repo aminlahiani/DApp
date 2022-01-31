@@ -1,5 +1,9 @@
 // @mui material components
-import { Box, Accordion, AccordionDetails, AccordionSummary, Typography } from "@mui/material";
+import Box from "@mui/material/Box";
+import Accordion from "@mui/material/Accordion";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import Typography from "@mui/material/Typography";
 
 // @mui icons
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";

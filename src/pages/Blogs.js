@@ -1,10 +1,10 @@
-// Blogs page components
+// Blogs components
 import BlogsHero from "../components/Blogs/BlogsHero";
 import BlogsList from "../components/Blogs/BlogsList";
 import Newsletter from "../components/Newsletter";
 import ReactHelmet from "../components/ReactHelmet";
 
-// Blogs page data
+// Blogs data
 import BlogsHeroData from "../data/Blogs/blog-hero-data.json";
 import BlogsData from "../data/Blogs/blogs-data.json";
 

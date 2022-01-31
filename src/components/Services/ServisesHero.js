@@ -1,8 +1,13 @@
+import { useEffect, useRef } from "react";
+
 // @mui material components
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
 import { useTheme } from "@mui/material/styles";
 
-import { useEffect, useRef } from "react";
 import { Link as RouterLink } from "react-router-dom";
 // typed-js
 import * as Typed from "typed.js";

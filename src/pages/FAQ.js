@@ -1,13 +1,13 @@
 // @mui material components
-import { Container } from "@mui/material";
+import Container from "@mui/material/Container";
 
-// FAQ page components
+// FAQ components
 import FAQHero from "../components/FAQ/FAQHero";
 import FaqList from "../components/FAQ/FaqList";
 import ReactHelmet from "../components/ReactHelmet";
 import Newsletter from "../components/Newsletter";
 
-// FAQ page data
+// FAQ  data
 import FAQHeroData from "../data/FAQ/faq-hero-data.json";
 import FaqListData from "../data/FAQ/faq-list-data.json";
 

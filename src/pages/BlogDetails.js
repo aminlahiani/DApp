@@ -1,17 +1,18 @@
 // @mui material components
-import { Container, Grid } from "@mui/material";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
 
 // react-router-dom components
 import { useParams } from "react-router-dom";
 
-// BlogDetails page components
+// BlogDetails components
 import BlogDetailsHero from "../components/BlogDetails/BlogDetailsHero";
 import BlogDetailsContent from "../components/BlogDetails/BlogDetailsContent";
 import RecentPostsList from "../components/BlogDetails/RecentPostsList";
 import Newsletter from "../components/Newsletter";
 import ReactHelmet from "../components/ReactHelmet";
 
-// BlogDetails page data
+// BlogDetails data
 import BlogsData from "../data/Blogs/blogs-data.json";
 
 function BlogDetails() {

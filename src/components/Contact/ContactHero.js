@@ -1,5 +1,9 @@
 // @mui material components
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import Button from "@mui/material/Button";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
 import { useTheme } from "@mui/material/styles";
 
 // react-router-dom components

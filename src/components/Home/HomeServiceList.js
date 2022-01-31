@@ -1,5 +1,9 @@
 // @mui material components
-import { Box, Container, Grid, Typography } from "@mui/material";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
+
 import ServiceCardTwo from "../Cards/ServiceCardTwo";
 
 function HomeServiceList(props) {

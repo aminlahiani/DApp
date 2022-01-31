@@ -1,5 +1,12 @@
 // @mui material components
-import { Box, Button, Card, CardMedia, Chip, Link, Stack, Typography } from "@mui/material";
+import Button from "@mui/material/Button";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Card from "@mui/material/Card";
+import CardMedia from "@mui/material/CardMedia";
+import Link from "@mui/material/Link";
+import Chip from "@mui/material/Chip";
+import Stack from "@mui/material/Stack";
 
 // @mui icons
 import { ArrowForward } from "@mui/icons-material";
