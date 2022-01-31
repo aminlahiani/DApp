@@ -29,6 +29,7 @@ function HomeLatestPosts(props) {
             display: "flex",
 
             justifyContent: "space-between",
+            flexDirection: { xs: "column", md: "row" },
           }}
         >
           <Typography align="center" color="textPrimary" variant="h2">
