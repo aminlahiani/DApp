@@ -2,7 +2,6 @@ import * as React from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import ColorModeContext from "./ColorModeContext";
 
-// prop-types is a library for typechecking of props
 import DarkThemeOptions from "./DarkThemeOptions";
 import LightThemeOptions from "./LightThemeOptions";
 import BaseThemeOptions from "./BaseThemeOptions";
