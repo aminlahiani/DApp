@@ -1,8 +1,7 @@
 // react Hooks
-import React, { useEffect, useContext, useState } from "react";
+import { useEffect, useContext, useState } from "react";
 
 // @mui material components
-// import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
@@ -28,6 +27,9 @@ import { AnimatedAppBar } from "../Animated";
 // Color Mode Context
 import ColorModeContext from "../../assets/theme/ColorModeContext";
 
+// Logo
+import logo from "../../assets/images/logo.svg";
+
 // pages
 const pages = [
   { id: 1, title: "Home", href: "/" },
@@ -45,7 +47,7 @@ function MainNavbar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
 
   // ---------------------  animations ------------------
-  const [scrolled, setScrolled] = React.useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY > 200) {
@@ -103,7 +105,7 @@ function MainNavbar() {
     >
       <Container maxWidth="lg">
         <Toolbar sx={{ height: 59 }} disableGutters>
-          <Box component="img" src="/landingpage.svg" alt="macbook" height="30px" width="30px" />
+          <Box component="img" src={logo} alt="macbook" height="30px" width="30px" />
 
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
@@ -125,13 +127,6 @@ function MainNavbar() {
               <NightsStayOutlinedIcon fontSize="small" color="primary" />
             )}
           </IconButton>
-          {/* <IconButton onClick={handleSwitch}>
-            {selectedTheme === "light" ? (
-              <NightsStayOutlinedIcon fontSize="small" color="primary" />
-            ) : (
-              <LightModeOutlinedIcon fontSize="small" color="primary" />
-            )}
-          </IconButton> */}
           <IconButton>
             <GitHubIcon fontSize="small" color="primary" />
           </IconButton>
