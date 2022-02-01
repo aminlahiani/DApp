@@ -3,7 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 // layouts
 import NotFondLayout from "./layout/NotFondLayout";
-import MainLayout from "./layout/MainLayout";
+// import MainLayout from "./layout/MainLayout";
 
 // home page
 import Home from "./pages/Home";
@@ -30,11 +30,12 @@ import BlogDetails from "./pages/BlogDetails";
 
 // NotFound page
 import NotFound from "./pages/NotFound";
+import MainLayout1 from "./layout/MainLayout1";
 
 function Routers() {
   return (
     <Routes>
-      <Route path="/" element={<MainLayout />}>
+      <Route path="/" element={<MainLayout1 />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="services" element={<Services />} />
