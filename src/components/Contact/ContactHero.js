@@ -87,23 +87,13 @@ function ContactHero(props) {
             }}
           >
             <Box
-              sx={{
-                display: nomobileimg ? { xs: "none", md: "block" } : "block",
-                position: "relative",
-                pt: "calc(960 / 1225 * 100%)",
-                "& img": {
-                  height: "auto",
-                  position: "absolute",
-                  top: 0,
-                  width: "100%",
-                },
-              }}
-            >
-              <img
-                alt="For developers"
-                src={theme.palette.mode === "dark" ? data.imgdark : data.imagesrc}
-              />
-            </Box>
+              sx={{ display: nomobileimg ? { xs: "none", md: "block" } : "block" }}
+              component="img"
+              src={theme.palette.mode === "light" ? data.imagesrc : data.imgdark}
+              alt="macbook"
+              height="100%"
+              width="100%"
+            />
           </Grid>
         </Grid>
       </Container>

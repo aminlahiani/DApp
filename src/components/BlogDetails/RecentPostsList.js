@@ -15,9 +15,9 @@ function RecentPostsList(props) {
       </Typography>
 
       {data.map((item) => (
-        <div>
+        <div key={item.id}>
           {/* RecentPostCard : src > components > Cards > TeamCard */}
-          <RecentPostCard key={item.id} data={item} />
+          <RecentPostCard data={item} />
         </div>
       ))}
     </Box>
