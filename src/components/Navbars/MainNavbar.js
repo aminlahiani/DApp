@@ -1,7 +1,8 @@
 // react Hooks
-import { useEffect, useContext, useState } from "react";
+import { useContext, useState } from "react";
 
 // @mui material components
+import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
@@ -13,24 +14,19 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { useTheme } from "@mui/material";
 
+// react-router-dom components
+import { Link } from "react-router-dom";
+
 // @mui icons
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import NightsStayOutlinedIcon from "@mui/icons-material/NightsStayOutlined";
 
-// react-router-dom components
-import { Link } from "react-router-dom";
-
-// animated
-import { AnimatedAppBar } from "../Animated";
-
-// Color Mode Context
 import ColorModeContext from "../../assets/theme/ColorModeContext";
 
 // Logo
 import logo from "../../assets/images/logo.svg";
 
-// pages
 const pages = [
   { id: 1, title: "Home", href: "/" },
   { id: 2, title: "About Us", href: "about" },
@@ -41,27 +37,12 @@ const pages = [
   { id: 7, title: "Contact Us", href: "/contact" },
 ];
 
+const gitHub = { label: "GitHub", href: "https://github.com/" };
+
 function MainNavbar() {
   const theme = useTheme();
   const colorMode = useContext(ColorModeContext);
   const [anchorElNav, setAnchorElNav] = useState(null);
-
-  // ---------------------  animations ------------------
-  const [scrolled, setScrolled] = useState(false);
-
-  const handleScroll = () => {
-    if (window.scrollY > 200) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-  // -----------------------------------------------------
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -72,7 +53,7 @@ function MainNavbar() {
   };
 
   return (
-    <AnimatedAppBar
+    <AppBar
       elevation={3}
       sx={{
         position: "sticky",
@@ -80,28 +61,7 @@ function MainNavbar() {
         borderBottomColor: "divider",
         maxHeight: 59,
         opacity: 0.8,
-        overflow: "hidden",
       }}
-      animate={
-        scrolled
-          ? {
-              top: 30,
-              width: "80%",
-              margin: "0 auto",
-              borderRadius: 30,
-              // boxShadow: `0px 23px 34px 8px rgba(0,0,0, .1)`,
-              opacity: 1,
-            }
-          : {
-              top: 0,
-              width: "100%",
-              margin: 0,
-              borderRadius: 0,
-              //  boxShadow: "unset",
-              opacity: 0.8,
-            }
-      }
-      transition={{ type: "tween" }}
     >
       <Container maxWidth="lg">
         <Toolbar sx={{ height: 59 }} disableGutters>
@@ -127,10 +87,9 @@ function MainNavbar() {
               <NightsStayOutlinedIcon fontSize="small" color="primary" />
             )}
           </IconButton>
-          <IconButton>
+          <IconButton aria-label={gitHub.label} target="_blank" href={gitHub.href}>
             <GitHubIcon fontSize="small" color="primary" />
           </IconButton>
-
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -173,7 +132,7 @@ function MainNavbar() {
           </Box>
         </Toolbar>
       </Container>
-    </AnimatedAppBar>
+    </AppBar>
   );
 }
 export default MainNavbar;
