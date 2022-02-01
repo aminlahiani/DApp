@@ -9,14 +9,14 @@
       {
         "id": "1",
         "baseicon": "fab",
-        "icon": "fa-facebook-square",
+        "icon": "facebook-square",
         "label": "Facebook",
         "href": "https://facebook.com"
       },
       {
         "id": "2",
         "baseicon": "fab",
-        "icon": "fa-instagram",
+        "icon": "instagram",
         "label": "Instagram",
         "href": "https://www.instagram.com/"
       },
@@ -24,14 +24,14 @@
       {
         "id": "3",
         "baseicon": "fab",
-        "icon": "fa-linkedin",
+        "icon": "linkedin",
         "label": "LinkedIn",
         "href": "https://www.linkedin.com/"
       },
       {
         "id": "4",
         "baseicon": "fab",
-        "icon": "fa-twitter",
+        "icon": "twitter",
         "label": "Twitter",
         "href": "https://www.twitter.com/"
       }
@@ -47,14 +47,14 @@
       {
         "id": "1",
         "baseicon": "fab",
-        "icon": "fa-facebook-square",
+        "icon": "facebook-square",
         "label": "Facebook",
         "href": "https://facebook.com"
       },
       {
         "id": "2",
         "baseicon": "fab",
-        "icon": "fa-instagram",
+        "icon": "instagram",
         "label": "Instagram",
         "href": "https://www.instagram.com/"
       },
@@ -62,14 +62,14 @@
       {
         "id": "3",
         "baseicon": "fab",
-        "icon": "fa-linkedin",
+        "icon": "linkedin",
         "label": "LinkedIn",
         "href": "https://www.linkedin.com/"
       },
       {
         "id": "4",
         "baseicon": "fab",
-        "icon": "fa-twitter",
+        "icon": "twitter",
         "label": "Twitter",
         "href": "https://www.twitter.com/"
       }
@@ -85,14 +85,14 @@
       {
         "id": "1",
         "baseicon": "fab",
-        "icon": "fa-facebook-square",
+        "icon": "facebook-square",
         "label": "Facebook",
         "href": "https://facebook.com"
       },
       {
         "id": "2",
         "baseicon": "fab",
-        "icon": "fa-instagram",
+        "icon": "instagram",
         "label": "Instagram",
         "href": "https://www.instagram.com/"
       },
@@ -100,14 +100,14 @@
       {
         "id": "3",
         "baseicon": "fab",
-        "icon": "fa-linkedin",
+        "icon": "linkedin",
         "label": "LinkedIn",
         "href": "https://www.linkedin.com/"
       },
       {
         "id": "4",
         "baseicon": "fab",
-        "icon": "fa-twitter",
+        "icon": "twitter",
         "label": "Twitter",
         "href": "https://www.twitter.com/"
       }

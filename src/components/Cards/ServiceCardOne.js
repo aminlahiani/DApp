@@ -5,7 +5,9 @@ import { useState } from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import Icon from "@mui/material/Icon";
+
+// @fortawesome react-fontawesome components
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // react-router-dom components
 import { Link as RouterLink } from "react-router-dom";
@@ -68,11 +70,10 @@ function ServiceCardOne(props) {
                     "inset 0px 5px 8px rgba(256, 256, 256, 0.3), 0px 5px 8px rgba(21, 101, 192, 0.3)",
                 }}
               >
-                <Icon
-                  baseClassName={data.baseicon}
-                  className={data.icon}
+                <FontAwesomeIcon
+                  icon={[`${data.baseicon}`, `${data.icon}`]}
                   color="white"
-                  fontSize="small"
+                  size="lg"
                 />
               </Box>
             </Box>

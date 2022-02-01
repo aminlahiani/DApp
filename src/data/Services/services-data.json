@@ -4,77 +4,74 @@
   "serviceslist": [
     {
       "id": "1",
-      "title": "Business Stratagy",
+      "title": "Website Development",
+      "baseicon": "fas",
+      "icon": "globe",
       "shortDescriptionFront": "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever.",
       "shortDescriptionBack": "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever.",
       "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
       "subtitle": "We develop creative solutions",
       "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed.",
-
-      "baseicon": "fab",
-      "icon": "fa-instagram",
-
       "image": "/static/services/service/serviceone.jpg"
     },
     {
       "id": "2",
-      "title": "Website Development",
+      "title": "Mobile App Development",
+      "baseicon": "fas",
+      "icon": "mobile-alt",
       "shortDescriptionFront": "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever.",
       "shortDescriptionBack": "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever.",
       "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
       "subtitle": "We develop creative solutions",
       "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed.",
-
-      "baseicon": "fab",
-      "icon": "fa-instagram",
       "image": "/static/services/service/servicetwo.jpg"
     },
     {
       "id": "3",
-      "title": "Marketing & Reporting",
+      "title": "Application Development",
+      "baseicon": "fas",
+      "icon": "columns",
       "shortDescriptionFront": "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever.",
       "shortDescriptionBack": "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever.",
       "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
       "subtitle": "We develop creative solutions",
       "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed.",
-      "baseicon": "fab",
-      "icon": "fa-instagram",
       "image": "/static/services/service/servicethree.jpg"
     },
     {
       "id": "4",
-      "title": "Mobile App Development",
+      "title": "Business Stratagy",
+      "baseicon": "fas",
+      "icon": "sitemap",
       "shortDescriptionFront": "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever.",
       "shortDescriptionBack": "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever.",
       "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
       "subtitle": "We develop creative solutions",
       "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed.",
-      "baseicon": "fab",
-      "icon": "fa-instagram",
       "image": "/static/services/service/servicefour.jpg"
     },
     {
       "id": "5",
-      "title": "Application Development",
+      "title": "Marketing & Reporting",
+      "baseicon": "fas",
+      "icon": "bullhorn",
       "shortDescriptionFront": "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever.",
       "shortDescriptionBack": "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever.",
       "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
       "subtitle": "We develop creative solutions",
       "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed.",
-      "baseicon": "fab",
-      "icon": "fa-instagram",
       "image": "/static/services/service/servicefive.jpg"
     },
     {
       "id": "6",
       "title": "Seo Services",
+      "baseicon": "fab",
+      "icon": "searchengin",
       "shortDescriptionFront": "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever.",
       "shortDescriptionBack": "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, andthat process will continue whatever.",
       "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
       "subtitle": "We develop creative solutions",
       "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed.",
-      "baseicon": "fab",
-      "icon": "fa-instagram",
       "image": "/static/services/service/servicesix.jpg"
     }
   ]

@@ -5,7 +5,9 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import IconButton from "@mui/material/IconButton";
-import Icon from "@mui/material/Icon";
+
+// @fortawesome react-fontawesome components
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // import Swiper core and required modules
 import SwiperCore, { Autoplay, Navigation } from "swiper";
@@ -52,7 +54,7 @@ function AboutHero(props) {
                 <Typography color="white" sx={{ my: 3 }} variant="subtitle1">
                   {item.shortDescription}
                 </Typography>
-                <Typography variant="h5" color="white" mt={2} mb={1}>
+                <Typography variant="h5" color="white" mt={2} mb={1.5}>
                   {item.keyword}
                 </Typography>
                 <Box
@@ -78,11 +80,10 @@ function AboutHero(props) {
                         }}
                         href={socialIcon.href}
                       >
-                        <Icon
-                          baseClassName={socialIcon.baseicon}
-                          className={socialIcon.icon}
-                          color="primary"
-                          fontSize="small"
+                        <FontAwesomeIcon
+                          icon={[`${socialIcon.baseicon}`, `${socialIcon.icon}`]}
+                          color={theme.palette.primary.main}
+                          size="sm"
                         />
                       </IconButton>
                     </Box>
