@@ -7,10 +7,12 @@ import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
 import { useTheme } from "@mui/material/styles";
 
+// images
+import imageLight from "../assets/images/newsletter/newsletter_light.png";
+import imageDark from "../assets/images/newsletter/newsletter_dark.png";
+
 function Newsletter() {
   const theme = useTheme();
-  const imgdark = "/static/newsletter/newsletter_dark.svg";
-  const imgligth = "/static/newsletter/newsletter_light.svg";
   return (
     <Box
       sx={{
@@ -81,7 +83,7 @@ function Newsletter() {
                 },
               }}
             >
-              <img src={theme.palette.mode === "dark" ? imgdark : imgligth} alt="" />
+              <img src={theme.palette.mode === "dark" ? imageDark : imageLight} alt="newsletter" />
             </Box>
           </Grid>
         </Grid>
