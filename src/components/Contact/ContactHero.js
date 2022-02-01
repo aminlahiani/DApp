@@ -26,7 +26,7 @@ function ContactHero(props) {
       }}
     >
       <Container maxWidth="lg">
-        <Grid alignItems="center" container justifyContent="center" spacing={3}>
+        <Grid alignItems="center" container justifyContent="center" spacing={5}>
           <Grid
             item
             md={6}

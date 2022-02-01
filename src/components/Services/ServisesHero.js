@@ -45,7 +45,7 @@ function ServisesHero(props) {
       }}
     >
       <Container maxWidth="lg">
-        <Grid alignItems="center" container justifyContent="center" spacing={3}>
+        <Grid alignItems="center" container justifyContent="center" spacing={5}>
           <Grid
             item
             md={6}
@@ -69,15 +69,29 @@ function ServisesHero(props) {
               <Typography color="textSecondary" sx={{ my: 3 }} variant="subtitle1">
                 {data.subHeding}
               </Typography>
-              <Button
-                to={data.btnUrl}
-                component={RouterLink}
-                size="large"
-                variant={data.btnVariant}
-                fullWidth
+              <Box
+                sx={{
+                  display: "flex",
+                  flexWrap: "wrap",
+
+                  mx: -1,
+                  mt: 2,
+                  mb: 6,
+                  "& > a": {
+                    m: 1,
+                  },
+                }}
               >
-                {data.btnText}
-              </Button>
+                <Button
+                  to={data.btnUrl}
+                  component={RouterLink}
+                  size="large"
+                  variant={data.btnVariant}
+                  fullWidth
+                >
+                  {data.btnText}
+                </Button>
+              </Box>
             </div>
           </Grid>
           <Grid

@@ -1,8 +1,8 @@
 {
   "heading": "Organic company growth with targeted leads",
-  "shortDescription": " Not just a set of tools, the package includes ready-to-deploy conceptualapplications written in JavaScript & TypeScript.",
-  "imageDark": "/static/blogs/blog_hero_dark.svg",
-  "image": "/static/blogs/blog_hero_light.svg",
+  "shortDescription": "A professional React Template that comes with plenty of ready-to-use MUI Core components that will help you to build faster & beautiful website for your Digital Agency",
+  "imageDark": "/static/blogs/blog_hero_dark.png",
+  "image": "/static/blogs/blog_hero_light.png",
   "btnText": "Browse Components",
   "btnUrl": "/about",
   "btnVariant": "contained",

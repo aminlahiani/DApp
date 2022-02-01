@@ -1,8 +1,8 @@
 {
   "heading": "Organic company growth with targeted leads",
   "shortDescription": "A professional React Template that comes with plenty of ready-to-use MUI Core components that will help you to build faster & beautiful website for your Digital Agency",
-  "imgdark": "/static/contact/undraw_contact_us_dark.svg",
-  "imagesrc": "/static/contact/undraw_contact_us_light.svg",
+  "imgdark": "/static/contact/contact_us_dark.png",
+  "imagesrc": "/static/contact/contact_us_light.png",
   "btnText": "Browse Components",
   "btnUrl": "/about",
   "btnVariant": "contained",

@@ -54,6 +54,7 @@ function HomeHero(props) {
 
               <Typography
                 color="textSecondary"
+                sx={{ my: 3 }}
                 textAlign={{ xs: "center", md: "start" }}
                 variant="subtitle1"
               >
