@@ -89,7 +89,7 @@ function MainNavbar() {
               width: "80%",
               margin: "0 auto",
               borderRadius: 30,
-              boxShadow: `0px 23px 34px 8px rgba(0,0,0, .1)`,
+              // boxShadow: `0px 23px 34px 8px rgba(0,0,0, .1)`,
               opacity: 1,
             }
           : {
@@ -97,7 +97,7 @@ function MainNavbar() {
               width: "100%",
               margin: 0,
               borderRadius: 0,
-              boxShadow: "unset",
+              //  boxShadow: "unset",
               opacity: 0.8,
             }
       }

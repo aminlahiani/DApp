@@ -5,12 +5,14 @@ import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import CardContent from "@mui/material/CardContent";
-import Icon from "@mui/material/Icon";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import ListItemText from "@mui/material/ListItemText";
 import { useTheme } from "@mui/material/styles";
+
+// @fortawesome react-fontawesome components
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function ContactInfo(props) {
   const { data } = props;
@@ -44,11 +46,10 @@ function ContactInfo(props) {
                   {data.infolist.map((item) => (
                     <ListItem key={item.id} disableGutters divider>
                       <ListItemAvatar>
-                        <Icon
-                          baseClassName={item.baseicon}
-                          className={item.icon}
-                          color="primary"
-                          fontSize="small"
+                        <FontAwesomeIcon
+                          icon={[`${item.baseicon}`, `${item.icon}`]}
+                          size="lg"
+                          color={theme.palette.primary.main}
                         />
                       </ListItemAvatar>
                       <ListItemText

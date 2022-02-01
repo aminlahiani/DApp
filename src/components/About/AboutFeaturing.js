@@ -4,7 +4,9 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
-import Icon from "@mui/material/Icon";
+
+// @fortawesome react-fontawesome components
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function AboutFeaturing(props) {
   const { data } = props;
@@ -35,11 +37,10 @@ function AboutFeaturing(props) {
                   }}
                   variant="rounded"
                 >
-                  <Icon
-                    baseClassName={item.baseicon}
-                    className={item.icon}
+                  <FontAwesomeIcon
+                    icon={[`${item.baseicon}`, `${item.icon}`]}
+                    size="lg"
                     color="white"
-                    fontSize="small"
                   />
                 </Avatar>
                 <Typography color="textPrimary" textAlign="center" variant="h4">
