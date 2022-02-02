@@ -1,6 +1,3 @@
-import Box from "@mui/material/Box";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 // About components
 import AboutHero from "../components/About/AboutHero";
 import AboutOne from "../components/About/AboutOne";
@@ -66,19 +63,6 @@ function About() {
       <div data-aos="fade-up">
         <Newsletter />
       </div>
-      <Box
-        sx={{
-          backgroundColor: "background.default",
-          minHeight: "584px",
-        }}
-      >
-        <FontAwesomeIcon
-          icon={["fab", "facebook-square"]}
-          color="Mediumslateblue"
-          className="first-icon"
-          size="lg"
-        />
-      </Box>
     </>
   );
 }
