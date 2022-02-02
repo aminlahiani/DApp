@@ -37,7 +37,7 @@ function Newsletter() {
               }}
             >
               <Typography color="textPrimary" variant="h4">
-                Join the developer list
+                Let’s stay in touch
               </Typography>
               <Typography
                 color="textSecondary"
@@ -47,7 +47,7 @@ function Newsletter() {
                   mt: 1,
                 }}
               >
-                Subscribe to our newsletter to make sure you don&apos;t miss anything.
+                Subscribe to our newsletter to receive latest articles to your inbox weekly.
               </Typography>
               <TextField
                 fullWidth

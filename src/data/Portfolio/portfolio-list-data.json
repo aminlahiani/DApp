@@ -1,74 +1,74 @@
 [
   {
     "id": "1",
-    "title": "Why I Still Lisp, and You ",
+    "title": "Media Company",
     "category": "Programming",
     "image": "/static/portfolio/portfolio_one.jpg",
-    "shortDescription": "Aliquam dapibus elementum nulla at malesuada. Ut mi nisl, aliquet non mollis vel, feugiat non nibh. Vivamus sit amet tristique .",
-    "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
     "imageOne": "/static/portfolio/portfolio_one1.jpg",
     "imageTwo": "/static/portfolio/portfolio_one2.jpg",
+    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu cursus nunc, nec feugiat velit. Vivamus ultricies vulputate rhoncus.",
+    "paragraphOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu cursus nunc, nec feugiat velit. Vivamus ultricies vulputate rhoncus. Praesent nec leo in tortor volutpat tincidunt quis facilisis nibh. Suspendisse vel ex a purus lacinia porttitor eu eu lorem. Nulla sed porta mi. Nulla laoreet quam ac nibh ullamcorper, eget varius risus auctor. Vivamus euismod, leo ac tristique volutpat, ex nisi venenatis velit, vitae gravida lacus lacus convallis sapien. Vestibulum volutpat, nisl non vulputate rutrum, elit justo vestibulum mi, in pulvinar nisi nibh et purus. ",
     "subtitle": "We develop creative solutions",
-    "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed."
+    "paragraphTwo": "Proin varius eu elit sit amet pellentesque. Sed ac nunc sed augue facilisis viverra vitae vitae dui. Curabitur quis odio eget velit egestas efficitur vitae quis risus. Pellentesque ultricies posuere lacus, a ullamcorper nibh fermentum at. Quisque efficitur blandit accumsan. Praesent bibendum, neque eu eleifend pharetra, leo elit mollis sapien, et volutpat elit diam nec metus. Cras sollicitudin magna id luctus venenatis. Nam non odio vitae lorem molestie bibendum. Nunc in porttitor leo. Cras dignissim turpis bibendum quam sodales ultricies. Integer consequat erat eu ligula auctor consectetur. Aenean a ultrices justo. Curabitur nec lectus orci. Nullam vitae sodales libero. "
   },
   {
     "id": "2",
-    "title": "Why I Still Lisp, and 2 ",
+    "title": "Level Up Startup",
     "category": "Programming",
     "image": "/static/portfolio/portfolio_two.jpg",
-    "shortDescription": "Aliquam dapibus elementum nulla at malesuada. Ut mi nisl, aliquet non mollis vel, feugiat non nibh. Vivamus sit amet tristique .",
-    "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
-    "imageOne": "/static/portfolio/portfolio_one1.jpg",
+    "imageOne": "/static/portfolio/portfolio_two1.jpg",
     "imageTwo": "/static/portfolio/portfolio_two2.jpg",
+    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu cursus nunc, nec feugiat velit. Vivamus ultricies vulputate rhoncus.",
+    "paragraphOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu cursus nunc, nec feugiat velit. Vivamus ultricies vulputate rhoncus. Praesent nec leo in tortor volutpat tincidunt quis facilisis nibh. Suspendisse vel ex a purus lacinia porttitor eu eu lorem. Nulla sed porta mi. Nulla laoreet quam ac nibh ullamcorper, eget varius risus auctor. Vivamus euismod, leo ac tristique volutpat, ex nisi venenatis velit, vitae gravida lacus lacus convallis sapien. Vestibulum volutpat, nisl non vulputate rutrum, elit justo vestibulum mi, in pulvinar nisi nibh et purus. ",
     "subtitle": "We develop creative solutions",
-    "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed."
+    "paragraphTwo": "Proin varius eu elit sit amet pellentesque. Sed ac nunc sed augue facilisis viverra vitae vitae dui. Curabitur quis odio eget velit egestas efficitur vitae quis risus. Pellentesque ultricies posuere lacus, a ullamcorper nibh fermentum at. Quisque efficitur blandit accumsan. Praesent bibendum, neque eu eleifend pharetra, leo elit mollis sapien, et volutpat elit diam nec metus. Cras sollicitudin magna id luctus venenatis. Nam non odio vitae lorem molestie bibendum. Nunc in porttitor leo. Cras dignissim turpis bibendum quam sodales ultricies. Integer consequat erat eu ligula auctor consectetur. Aenean a ultrices justo. Curabitur nec lectus orci. Nullam vitae sodales libero. "
   },
   {
     "id": "3",
-    "title": "Why I Still Lisp 3 ",
-    "category": "Programming",
+    "title": "Fashion Shop Princesse ",
+    "category": "Shop",
     "image": "/static/portfolio/portfolio_three.jpg",
-    "shortDescription": "Aliquam dapibus elementum nulla at malesuada. Ut mi nisl, aliquet non mollis vel, feugiat non nibh. Vivamus sit amet tristique .",
-    "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
     "imageOne": "/static/portfolio/portfolio_three1.jpg",
     "imageTwo": "/static/portfolio/portfolio_three2.jpg",
+    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu cursus nunc, nec feugiat velit. Vivamus ultricies vulputate rhoncus.",
+    "paragraphOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu cursus nunc, nec feugiat velit. Vivamus ultricies vulputate rhoncus. Praesent nec leo in tortor volutpat tincidunt quis facilisis nibh. Suspendisse vel ex a purus lacinia porttitor eu eu lorem. Nulla sed porta mi. Nulla laoreet quam ac nibh ullamcorper, eget varius risus auctor. Vivamus euismod, leo ac tristique volutpat, ex nisi venenatis velit, vitae gravida lacus lacus convallis sapien. Vestibulum volutpat, nisl non vulputate rutrum, elit justo vestibulum mi, in pulvinar nisi nibh et purus. ",
     "subtitle": "We develop creative solutions",
-    "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed."
+    "paragraphTwo": "Proin varius eu elit sit amet pellentesque. Sed ac nunc sed augue facilisis viverra vitae vitae dui. Curabitur quis odio eget velit egestas efficitur vitae quis risus. Pellentesque ultricies posuere lacus, a ullamcorper nibh fermentum at. Quisque efficitur blandit accumsan. Praesent bibendum, neque eu eleifend pharetra, leo elit mollis sapien, et volutpat elit diam nec metus. Cras sollicitudin magna id luctus venenatis. Nam non odio vitae lorem molestie bibendum. Nunc in porttitor leo. Cras dignissim turpis bibendum quam sodales ultricies. Integer consequat erat eu ligula auctor consectetur. Aenean a ultrices justo. Curabitur nec lectus orci. Nullam vitae sodales libero. "
   },
   {
     "id": "4",
-    "title": "Why I Still Lisp, and You 4 ",
+    "title": "Court Univercity",
     "category": "Programming",
     "image": "/static/portfolio/portfolio_four.jpg",
-    "shortDescription": "Aliquam dapibus elementum nulla at malesuada. Ut mi nisl, aliquet non mollis vel, feugiat non nibh. Vivamus sit amet tristique .",
-    "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
     "imageOne": "/static/portfolio/portfolio_four1.jpg",
     "imageTwo": "/static/portfolio/portfolio_four2.jpg",
+    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu cursus nunc, nec feugiat velit. Vivamus ultricies vulputate rhoncus.",
+    "paragraphOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu cursus nunc, nec feugiat velit. Vivamus ultricies vulputate rhoncus. Praesent nec leo in tortor volutpat tincidunt quis facilisis nibh. Suspendisse vel ex a purus lacinia porttitor eu eu lorem. Nulla sed porta mi. Nulla laoreet quam ac nibh ullamcorper, eget varius risus auctor. Vivamus euismod, leo ac tristique volutpat, ex nisi venenatis velit, vitae gravida lacus lacus convallis sapien. Vestibulum volutpat, nisl non vulputate rutrum, elit justo vestibulum mi, in pulvinar nisi nibh et purus. ",
     "subtitle": "We develop creative solutions",
-    "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed."
+    "paragraphTwo": "Proin varius eu elit sit amet pellentesque. Sed ac nunc sed augue facilisis viverra vitae vitae dui. Curabitur quis odio eget velit egestas efficitur vitae quis risus. Pellentesque ultricies posuere lacus, a ullamcorper nibh fermentum at. Quisque efficitur blandit accumsan. Praesent bibendum, neque eu eleifend pharetra, leo elit mollis sapien, et volutpat elit diam nec metus. Cras sollicitudin magna id luctus venenatis. Nam non odio vitae lorem molestie bibendum. Nunc in porttitor leo. Cras dignissim turpis bibendum quam sodales ultricies. Integer consequat erat eu ligula auctor consectetur. Aenean a ultrices justo. Curabitur nec lectus orci. Nullam vitae sodales libero. "
   },
   {
     "id": "5",
-    "title": "Why I , and You 5 ",
+    "title": "Medical",
     "category": "Programming",
     "image": "/static/portfolio/portfolio_five.jpg",
-    "shortDescription": "Aliquam dapibus elementum nulla at malesuada. Ut mi nisl, aliquet non mollis vel, feugiat non nibh. Vivamus sit amet tristique .",
-    "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
     "imageOne": "/static/portfolio/portfolio_five1.jpg",
     "imageTwo": "/static/portfolio/portfolio_five2.jpg",
+    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu cursus nunc, nec feugiat velit. Vivamus ultricies vulputate rhoncus.",
+    "paragraphOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu cursus nunc, nec feugiat velit. Vivamus ultricies vulputate rhoncus. Praesent nec leo in tortor volutpat tincidunt quis facilisis nibh. Suspendisse vel ex a purus lacinia porttitor eu eu lorem. Nulla sed porta mi. Nulla laoreet quam ac nibh ullamcorper, eget varius risus auctor. Vivamus euismod, leo ac tristique volutpat, ex nisi venenatis velit, vitae gravida lacus lacus convallis sapien. Vestibulum volutpat, nisl non vulputate rutrum, elit justo vestibulum mi, in pulvinar nisi nibh et purus. ",
     "subtitle": "We develop creative solutions",
-    "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed."
+    "paragraphTwo": "Proin varius eu elit sit amet pellentesque. Sed ac nunc sed augue facilisis viverra vitae vitae dui. Curabitur quis odio eget velit egestas efficitur vitae quis risus. Pellentesque ultricies posuere lacus, a ullamcorper nibh fermentum at. Quisque efficitur blandit accumsan. Praesent bibendum, neque eu eleifend pharetra, leo elit mollis sapien, et volutpat elit diam nec metus. Cras sollicitudin magna id luctus venenatis. Nam non odio vitae lorem molestie bibendum. Nunc in porttitor leo. Cras dignissim turpis bibendum quam sodales ultricies. Integer consequat erat eu ligula auctor consectetur. Aenean a ultrices justo. Curabitur nec lectus orci. Nullam vitae sodales libero. "
   },
   {
     "id": "6",
-    "title": " Still Lisp, and You 6 ",
+    "title": "Sama Free",
     "category": "Programming",
     "image": "/static/portfolio/portfolio_six.jpg",
-    "shortDescription": "Aliquam dapibus elementum nulla at malesuada. Ut mi nisl, aliquet non mollis vel, feugiat non nibh. Vivamus sit amet tristique .",
-    "paragraphOne": "We develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae eut. develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae ",
     "imageOne": "/static/portfolio/portfolio_six1.jpg",
     "imageTwo": "/static/portfolio/portfolio_six2.jpg",
+    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu cursus nunc, nec feugiat velit. Vivamus ultricies vulputate rhoncus.",
+    "paragraphOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu cursus nunc, nec feugiat velit. Vivamus ultricies vulputate rhoncus. Praesent nec leo in tortor volutpat tincidunt quis facilisis nibh. Suspendisse vel ex a purus lacinia porttitor eu eu lorem. Nulla sed porta mi. Nulla laoreet quam ac nibh ullamcorper, eget varius risus auctor. Vivamus euismod, leo ac tristique volutpat, ex nisi venenatis velit, vitae gravida lacus lacus convallis sapien. Vestibulum volutpat, nisl non vulputate rutrum, elit justo vestibulum mi, in pulvinar nisi nibh et purus. ",
     "subtitle": "We develop creative solutions",
-    "paragraphTwo": "lorem in id tristique in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio   develop creative solutions for small and big brands alike, build authentic product identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non facilisis vitae posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus risus vitae feugiat fames aliquet sed."
+    "paragraphTwo": "Proin varius eu elit sit amet pellentesque. Sed ac nunc sed augue facilisis viverra vitae vitae dui. Curabitur quis odio eget velit egestas efficitur vitae quis risus. Pellentesque ultricies posuere lacus, a ullamcorper nibh fermentum at. Quisque efficitur blandit accumsan. Praesent bibendum, neque eu eleifend pharetra, leo elit mollis sapien, et volutpat elit diam nec metus. Cras sollicitudin magna id luctus venenatis. Nam non odio vitae lorem molestie bibendum. Nunc in porttitor leo. Cras dignissim turpis bibendum quam sodales ultricies. Integer consequat erat eu ligula auctor consectetur. Aenean a ultrices justo. Curabitur nec lectus orci. Nullam vitae sodales libero. "
   }
 ]
