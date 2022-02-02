@@ -1,9 +1,9 @@
 [
   {
     "id": "1",
-    "heading": "Material Design - News1",
-    "shortDescription": "Pain is what we go through as we become older. We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder",
-    "keyword": " Connect with us on",
+    "heading": "DAap - Digital Agency",
+    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et luctus dolor. Maecenas ultrices, ipsum nec elementum ultrices, est ex ornare nunc, a condimentum dolor ex eget velit",
+    "keyword": "Join us on",
     "img": "/static/about/about_hero_bgone.jpg",
     "socialIcons": [
       {
@@ -39,9 +39,9 @@
   },
   {
     "id": "2",
-    "heading": "Material Design - News2",
-    "shortDescription": "Pain is what we go through as we become older. We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder",
-    "keyword": " Connect with us on",
+    "heading": "News React template",
+    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et luctus dolor. Maecenas ultrices, ipsum nec elementum ultrices, est ex ornare nunc, a condimentum dolor ex eget velit",
+    "keyword": "Join us on",
     "img": "/static/about/about_hero_bgtwo.jpg",
     "socialIcons": [
       {
@@ -77,9 +77,9 @@
   },
   {
     "id": "3",
-    "heading": "Material Design - News3",
-    "shortDescription": "Pain is what we go through as we become older. We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder",
-    "keyword": " Connect with us on",
+    "heading": "Build with Mui v5",
+    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et luctus dolor. Maecenas ultrices, ipsum nec elementum ultrices, est ex ornare nunc, a condimentum dolor ex eget velit",
+    "keyword": "Join us on",
     "img": "/static/about/about_hero_bgthree.jpg",
     "socialIcons": [
       {

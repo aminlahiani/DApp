@@ -1,11 +1,11 @@
 {
-  "heading": "The powerful and flexible theme for all kinds of businesses",
-  "shortDescription": " Send one-off and automated email, push, and in-app messages to people. Create betterstories.",
+  "heading": "Daap  some of the best templates you can find for React.",
+  "shortDescription": "onec quis orci et lectus placerat aliquet vitae a dolor. Vestibulum at nibh nulla. Sed ut augue sapien. Ut nec cursus mi.",
   "featuring": [
-    "Send  and automated email, push, and in-app",
-    "Send one-off and  email, push, and in-app",
-    "Send one-off and automated email, push,  in-app",
-    "Send one-off and automated , push, and in-app"
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "Sed vehicula nunc sed erat porttitor dictum a ac ipsum.",
+    "Donec ac iaculis magna. Ut molestie orci sit amet libero",
+    "Pellentesque a lobortis nunc, vel bibendum sem."
   ],
   "imageDark": "/static/services/services_featuring_dark.jpg",
   "image": "/static/services/services_featuring_light.jpg"
