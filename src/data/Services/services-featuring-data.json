@@ -7,6 +7,6 @@
     "Send one-off and automated email, push,  in-app",
     "Send one-off and automated , push, and in-app"
   ],
-  "imgdark": "/static/services/services_featuring_dark.png",
-  "imglight": "/static/services/services_featuring_light.png"
+  "imageDark": "/static/services/services_featuring_dark.png",
+  "image": "/static/services/services_featuring_light.png"
 }
