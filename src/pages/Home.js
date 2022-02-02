@@ -12,7 +12,7 @@ import HomeHeroData from "../data/Home/home-hero-data.json";
 import HomeServicesData from "../data/Home/home-services-data.json";
 import HomeAboutData from "../data/Home/home-about-data.json";
 import HomeTestimonialData from "../data/Home/home-testimonial-data.json";
-import HomeLatestPostsData from "../data/Home/home-latestposts-data.json";
+import BlogsData from "../data/Blogs/blogs-data.json";
 
 function Home() {
   return (
@@ -42,7 +42,7 @@ function Home() {
 
       {/* Latest Posts Section : src > components > Home > HomeLatestPosts */}
       <div data-aos="fade-up">
-        <HomeLatestPosts data={HomeLatestPostsData} />
+        <HomeLatestPosts data={BlogsData} />
       </div>
 
       {/* Newsletter Section : src > components > Newsletter */}
