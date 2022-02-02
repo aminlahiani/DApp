@@ -26,7 +26,6 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
-    "framer-motion": "^6.2.3",
     "react": "latest",
     "react-dom": "latest",
     "react-helmet-async": "^1.2.2",

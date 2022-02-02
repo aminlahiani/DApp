@@ -1,7 +1,6 @@
 {
-
-  "imgdark": "/static/contact/contact_info_dark.png",
-  "imglight": "/static/contact/contact_info_light.png",
+  "imgdark": "/static/contact/contact_info_dark.jpg",
+  "imglight": "/static/contact/contact_info_light.jpg",
   "infoquot": "Everyone thinks of changing the world, but no one thinks of changing himself",
   "infolist": [
     {
