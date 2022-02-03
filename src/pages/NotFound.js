@@ -4,6 +4,9 @@ import { Button, Typography, Box, Container, useMediaQuery } from "@mui/material
 import React from "react";
 import { Link } from "react-router-dom";
 
+// images
+import error404 from "../assets/images/error404.png";
+
 function NotFound() {
   const theme = useTheme();
   const mobileDevice = useMediaQuery(theme.breakpoints.down("sm"));
@@ -34,9 +37,9 @@ function NotFound() {
           }}
         >
           <Box
-            alt="Under development"
+            alt="not-found"
             component="img"
-            src={`/static/error/error404_${theme.palette.mode}.svg`}
+            src={error404}
             sx={{
               height: "auto",
               maxWidth: "100%",

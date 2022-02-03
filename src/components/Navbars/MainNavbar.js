@@ -22,6 +22,7 @@ import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import NightsStayOutlinedIcon from "@mui/icons-material/NightsStayOutlined";
 
+// Color Mode Context
 import ColorModeContext from "../../assets/theme/ColorModeContext";
 
 // Logo
