@@ -1,7 +1,12 @@
+// @mui material components
+import Button from "@mui/material/Button";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@emotion/react";
-import { Button, Typography, Box, Container, useMediaQuery } from "@mui/material";
 
-import React from "react";
+// react-router-dom components
 import { Link } from "react-router-dom";
 
 // images
