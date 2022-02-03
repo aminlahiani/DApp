@@ -65,7 +65,7 @@ function MainNavbar() {
     >
       <Container maxWidth="lg">
         <Toolbar sx={{ height: 59 }} disableGutters>
-          <Box component="img" src={logo} alt="macbook" height="30px" width="30px" />
+          <Box component="img" src={logo} alt="macbook" height="40px" width="31px" />
 
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>

@@ -1,23 +1,22 @@
-import {
-  Box,
-  Container,
-  Divider,
-  Grid,
-  IconButton,
-  Link,
-  List,
-  ListItem,
-  ListItemAvatar,
-  ListItemText,
-  Typography,
-} from "@mui/material";
+// @mui material components
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Divider from "@mui/material/Divider";
+import Grid from "@mui/material/Grid";
+import IconButton from "@mui/material/IconButton";
+import List from "@mui/material/List";
+import Link from "@mui/material/Link";
+import ListItem from "@mui/material/ListItem";
+import ListItemAvatar from "@mui/material/ListItemAvatar";
+import ListItemText from "@mui/material/ListItemText";
+import Typography from "@mui/material/Typography";
 import { useTheme, alpha } from "@mui/material/styles";
 
+// @mui icons
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-
 import RemoveOutlinedIcon from "@mui/icons-material/RemoveOutlined";
 
 // Logo
@@ -36,6 +35,8 @@ function Copyright() {
     </Typography>
   );
 }
+
+// Footer sections
 const sections = [
   {
     title: "Menu One",
@@ -94,6 +95,7 @@ const sections = [
   },
 ];
 
+// Footer social Icons
 const socialIcons = [
   {
     id: "1",
@@ -155,10 +157,10 @@ function MainFooter(props) {
             }}
             xs={12}
           >
-            <Box component="img" src={logo} alt="daap" height="100px" width="100px" />
+            <Box component="img" src={logo} alt="daap" height="100px" width="78px" />
 
             <Typography variant="h6" color="textPrimary">
-              About the Company
+              About the Template
             </Typography>
             <Typography style={{ color: "#8f9296" }} mt={1} paragraph>
               A professional React Template that comes with plenty of ready-to-use MUI Core
