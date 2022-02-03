@@ -1,31 +1,31 @@
 {
   "imgdark": "/static/contact/contact_info_dark.jpg",
   "imglight": "/static/contact/contact_info_light.jpg",
-  "infoquot": "Everyone thinks of changing the world, but no one thinks of changing himself",
+  "infoquot": "We are a web and mobile application development and webmarketing company",
   "infolist": [
     {
       "id": "1",
-      "baseicon": "fab",
-      "icon": "facebook-square",
-      "infocontent": "Everyone thinks of changing"
+      "baseicon": "far",
+      "icon": "envelope",
+      "infocontent": "aminlahiani@outlook.com"
     },
     {
       "id": "2",
-      "baseicon": "fab",
-      "icon": "facebook-square",
-      "infocontent": "Everyone thinks of changing"
+      "baseicon": "fas",
+      "icon": "map-marked-alt",
+      "infocontent": "4422 Wildrose Lane Detroit, MI 48201 "
     },
     {
       "id": "3",
-      "baseicon": "fab",
-      "icon": "facebook-square",
-      "infocontent": "Everyone thinks of changing"
+      "baseicon": "fas",
+      "icon": "fax",
+      "infocontent": "313-832-6548"
     },
     {
       "id": "4",
-      "baseicon": "fab",
-      "icon": "facebook-square",
-      "infocontent": "Everyone thinks of changing"
+      "baseicon": "fas",
+      "icon": "phone-square",
+      "infocontent": "353-832-6578"
     }
   ]
 }

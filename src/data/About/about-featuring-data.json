@@ -1,9 +1,9 @@
 {
-  "heading": "We already completed 470 projects successfully and more counting.",
+  "heading": "We already completed 90 projects successfully .",
   "featuring": [
     {
       "id": "1",
-      "title": "4.5k+",
+      "title": "1.1k+",
       "subtitle": "Happy customers",
       "baseicon": "fas",
       "icon": "users",
@@ -11,7 +11,7 @@
     },
     {
       "id": "2",
-      "title": "4.9/5",
+      "title": "4.5/5",
       "subtitle": "CUSTOMER Rating",
       "baseicon": "fas",
       "icon": "star",
@@ -19,7 +19,7 @@
     },
     {
       "id": "3",
-      "title": "$10k+",
+      "title": "$3+",
       "subtitle": "In people hours saved",
       "baseicon": "fas",
       "icon": "praying-hands",

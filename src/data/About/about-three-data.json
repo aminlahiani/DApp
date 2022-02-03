@@ -1,19 +1,19 @@
 {
-  "heading": "The powerful and flexible theme for all kinds of businesses",
+  "heading": "The powerful and flexible template for for your Digital Agency",
   "subHeading": " Lorem ipsum dolor sit amet. Qui quia porro eos deleniti suscipit et tempora accusamus At explicabo",
   "featuring": [
-    "avaScript1",
-    "TypeSipt2",
-    "Figma173",
-    "Ske15tch",
-    "JavaScript",
-    "TypeSript",
-    "Fig13ma",
-    "Sketch4",
-    "JavaS10cript",
-    "TyeS11cript",
-    "Fi7ga",
-    "Ske5ch"
+    "Creativity",
+    "Flexibility",
+    "Productivity",
+    "Innovation",
+    "Dynamic",
+    "Responsive",
+    "Solutions",
+    "Strategy",
+    "Performance",
+    "Components",
+    "Javascript",
+    "React"
   ],
   "imageDark": "/static/about/about_three_dark.jpg",
   "image": "/static/about/about_three_light.jpg"
