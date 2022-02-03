@@ -26,7 +26,7 @@ import NightsStayOutlinedIcon from "@mui/icons-material/NightsStayOutlined";
 import ColorModeContext from "../../assets/theme/ColorModeContext";
 
 // Logo
-import logo from "../../assets/images/logo.svg";
+import logo from "../../assets/images/logo.png";
 
 const pages = [
   { id: 1, title: "Home", href: "/" },
@@ -66,7 +66,7 @@ function MainNavbar() {
     >
       <Container maxWidth="lg">
         <Toolbar sx={{ height: 59 }} disableGutters>
-          <Box component="img" src={logo} alt="macbook" height="40px" width="31px" />
+          <Box component="img" src={logo} alt="macbook" height="40px" width="40px" />
 
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>

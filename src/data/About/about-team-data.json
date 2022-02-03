@@ -4,7 +4,7 @@
   "teamlist": [
     {
       "id" : "1",
-      "avatar": "/static/about/team/avatarone.jpg",
+      "avatar": "/static/about/team/avatarone.png",
       "cover": "/static/about/team/teamone.jpg",
       "name": "Anika Visser",
       "designation": "Community Manager",
@@ -12,7 +12,7 @@
     },
     {
       "id" : "2",
-      "avatar": "/static/about/team/avatartwo.jpg",
+      "avatar": "/static/about/team/avatartwo.png",
       "cover": "/static/about/team/teamtwo.jpg",  
        "name": "Anika Visser",
       "designation": "Web Developper",
@@ -21,7 +21,7 @@
     },
     {
       "id" : "3",
-      "avatar": "/static/about/team/avatarthree.jpg",
+      "avatar": "/static/about/team/avatarthree.png",
       "cover": "/static/about/team/teamthree.jpg",
       "name": "Anika Visser",
       "designation": "Mobile Developper",
@@ -29,7 +29,7 @@
     },
     {
       "id" : "4",
-      "avatar": "/static/about/team/avatarfour.jpg",
+      "avatar": "/static/about/team/avatarfour.png",
       "cover": "/static/about/team/teamfour.jpg",
       "name": "Anika Visser",
       "designation": "UI Designer",

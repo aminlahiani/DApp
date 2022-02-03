@@ -20,7 +20,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import RemoveOutlinedIcon from "@mui/icons-material/RemoveOutlined";
 
 // Logo
-import logo from "../../assets/images/logo.svg";
+import logo from "../../assets/images/logo.png";
 
 // Copyright
 
@@ -157,15 +157,21 @@ function MainFooter(props) {
             }}
             xs={12}
           >
-            <Box component="img" src={logo} alt="daap" height="100px" width="78px" />
+            <Box
+              component="img"
+              src={logo}
+              alt="daap"
+              height="50px"
+              width="50px"
+            />
 
             <Typography variant="h6" color="textPrimary">
               About the Template
             </Typography>
             <Typography style={{ color: "#8f9296" }} mt={1} paragraph>
-              A professional React Template that comes with plenty of ready-to-use MUI Core
-              components that will help you to build faster & beautiful website for your Digital
-              Agency
+              A professional React Template that comes with plenty of
+              ready-to-use MUI Core components that will help you to build
+              faster & beautiful website for your Digital Agency
             </Typography>
           </Grid>
           {sections.map((section, index) => (
@@ -207,7 +213,11 @@ function MainFooter(props) {
                     </ListItemAvatar>
                     <ListItemText
                       primary={
-                        <Link href={link.href} color="textPrimary" variant="subtitle2">
+                        <Link
+                          href={link.href}
+                          color="textPrimary"
+                          variant="subtitle2"
+                        >
                           {link.title}
                         </Link>
                       }
@@ -238,7 +248,10 @@ function MainFooter(props) {
 
           <Box display="flex">
             {socialIcons.map((socialIcon) => (
-              <Box key={socialIcon.id} mr={socialIcon.id !== socialIcons.length - 1 ? 1 : 0}>
+              <Box
+                key={socialIcon.id}
+                mr={socialIcon.id !== socialIcons.length - 1 ? 1 : 0}
+              >
                 <IconButton
                   target="_blank"
                   aria-label={socialIcon.label}
