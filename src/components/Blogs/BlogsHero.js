@@ -88,7 +88,8 @@ function BlogsHero(props) {
               sx={{ display: nomobileimg ? { xs: "none", md: "block" } : "block" }}
               component="img"
               src={theme.palette.mode === "light" ? data.image : data.imageDark}
-              alt="macbook"
+              alt={data.heading}
+              height="100%"
               width="100%"
             />
           </Grid>
