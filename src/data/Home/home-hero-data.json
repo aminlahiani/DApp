@@ -10,8 +10,8 @@
   "btnOneUrl": "/about",
   "btnOneVariant": "contained",
   "btnOneColor": "primary",
-  "btnTwoText": "About Us",
-  "btnTwoUrl": "/about",
+  "btnTwoText": "Contact Us",
+  "btnTwoUrl": "/contact",
   "btnTwoVariant": "outlined",
   "btnTwoColor": "primary"
 }

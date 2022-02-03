@@ -6,5 +6,5 @@
   "btnText": "Browse Components",
   "btnUrl": "/about",
   "btnVariant": "contained",
-  "buttonColor": "btn-warning"
+  "btnColor": "primary"
 }

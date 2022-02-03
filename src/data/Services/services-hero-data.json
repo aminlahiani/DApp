@@ -7,5 +7,5 @@
   "btnText": "Contact Us",
   "btnUrl": "/contact",
   "btnVariant": "contained",
-  "buttonColor": "btn-warning"
+  "btnColor": "primary"
 }

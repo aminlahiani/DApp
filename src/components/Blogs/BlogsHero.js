@@ -64,6 +64,7 @@ function BlogsHero(props) {
                   component={RouterLink}
                   size="large"
                   variant={data.btnVariant}
+                  color={data.btnColor}
                   fullWidth
                 >
                   {data.btnText}
