@@ -31,7 +31,7 @@ function ServisesHero(props) {
     });
 
     return () => typedJS.destroy();
-  }, []);
+  });
   // const isXs = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Box

@@ -25,7 +25,7 @@ function FAQHero(props) {
       loop: true,
     });
     return () => typedJS.destroy();
-  }, []);
+  });
   return (
     <Box
       sx={{
