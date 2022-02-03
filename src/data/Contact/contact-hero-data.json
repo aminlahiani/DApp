@@ -3,7 +3,7 @@
   "shortDescription": "A professional React Template that comes with plenty of ready-to-use MUI Core components that will help you to build faster & beautiful website for your Digital Agency",
   "imgdark": "/static/contact/contact_us_dark.png",
   "imagesrc": "/static/contact/contact_us_light.png",
-  "btnText": "Browse Components",
+  "btnText": "About Us",
   "btnUrl": "/about",
   "btnVariant": "contained",
   "btnColor": "primary"

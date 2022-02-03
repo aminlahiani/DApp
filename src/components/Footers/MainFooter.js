@@ -43,11 +43,11 @@ const sections = [
     links: [
       {
         title: "Home",
-        href: "/home",
+        href: "/",
       },
       {
         title: "About Us",
-        href: "/docs/welcome",
+        href: "/about",
       },
       {
         title: "Services",
